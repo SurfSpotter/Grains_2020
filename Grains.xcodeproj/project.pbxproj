@@ -13,6 +13,7 @@
 		32DF8CEF23E77EC400C738F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DF8CED23E77EC400C738F7 /* Main.storyboard */; };
 		32DF8CF123E77ECA00C738F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DF8CF023E77ECA00C738F7 /* Assets.xcassets */; };
 		32DF8CF423E77ECA00C738F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DF8CF223E77ECA00C738F7 /* LaunchScreen.storyboard */; };
+		32DF8CFC23E787D700C738F7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DF8CFB23E787D700C738F7 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		32DF8CF023E77ECA00C738F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32DF8CF323E77ECA00C738F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32DF8CF523E77ECA00C738F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32DF8CFB23E787D700C738F7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				32DF8CE723E77EC400C738F7 /* AppDelegate.swift */,
 				32DF8CE923E77EC400C738F7 /* SceneDelegate.swift */,
 				32DF8CEB23E77EC400C738F7 /* ViewController.swift */,
+				32DF8CFB23E787D700C738F7 /* Model.swift */,
 				32DF8CED23E77EC400C738F7 /* Main.storyboard */,
 				32DF8CF023E77ECA00C738F7 /* Assets.xcassets */,
 				32DF8CF223E77ECA00C738F7 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				32DF8CEC23E77EC400C738F7 /* ViewController.swift in Sources */,
 				32DF8CE823E77EC400C738F7 /* AppDelegate.swift in Sources */,
 				32DF8CEA23E77EC400C738F7 /* SceneDelegate.swift in Sources */,
+				32DF8CFC23E787D700C738F7 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
