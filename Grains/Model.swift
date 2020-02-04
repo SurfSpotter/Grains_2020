@@ -43,6 +43,7 @@ protocol GrainProtocol {
     var protein: Double {get}
     var caloriesInCcal: Double {get}
     var grainImgName: String {get}
+    var backgroundColour: UIColor {get}
     var description: String {get}
     
     
@@ -52,6 +53,8 @@ protocol GrainProtocol {
 // MARK:-  Class of Grains
 
 class Grain: GrainProtocol {
+    
+    
     
     
     
@@ -77,10 +80,11 @@ class Grain: GrainProtocol {
     
     var grainImgName: String
     
+    var backgroundColour: UIColor
     
  //Make constructor
     
-    init(name: String, keyWords: [String], timeOfBoil: Int, proportions: Double, finalVolume: Double, fat: Double, carbohydrate: Double , protein: Double , caloriesInCcal: Double , description: String, imageName: String ) {
+    init(name: String, keyWords: [String], timeOfBoil: Int, proportions: Double, finalVolume: Double, fat: Double, carbohydrate: Double , protein: Double , caloriesInCcal: Double , description: String, imageName: String, backGroundColorRed: CGFloat, backGroundColorGreen: CGFloat, backGroundColorBlue: CGFloat, backGroundColorAlpha: CGFloat ) {
         self.name = name
         self.keyWords = keyWords
         self.timeOfBoil = timeOfBoil
@@ -92,7 +96,7 @@ class Grain: GrainProtocol {
         self.caloriesInCcal = caloriesInCcal
         self.description = description
         self.grainImgName = imageName
-        //Model.grains.grainsAllTogether.append(self)
+        self.backgroundColour = UIColor(red: backGroundColorRed/255, green: backGroundColorGreen/255, blue: backGroundColorBlue/255, alpha: backGroundColorAlpha)
     }
     
 
@@ -131,7 +135,12 @@ class Model: NSObject {
                      protein: 4,
                      caloriesInCcal: 5,
                      description: "desc",
-                     imageName: "Buckwheat"   )
+                     imageName: "Rice",
+                     backGroundColorRed: 200,
+                     backGroundColorGreen: 189,
+                     backGroundColorBlue: 140,
+                     backGroundColorAlpha: 1
+    )
 
     let buckwheat = Grain(name: "Гречневая крупа",
                           keyWords: ["buckwheat, Buckwheat, греча, гречка, ядрица, гречиха "],
@@ -143,9 +152,26 @@ class Model: NSObject {
                           protein: 27,
                           caloriesInCcal: 120,
                           description: "description of buckwheat",
-                          imageName: "Buckwheat")
-    let oatmeal = Grain(name: "Геркулес", keyWords: ["геркулес, овсянка, овес, хлопья"], timeOfBoil: 14, proportions: 0.5, finalVolume: 3, fat: 10, carbohydrate: 50, protein: 40, caloriesInCcal: 200, description: "descripton of oatmeal", imageName: "Oatmeal")
-    
+                          imageName: "Buckwheat",
+                            backGroundColorRed: 157 ,
+                            backGroundColorGreen: 105,
+                            backGroundColorBlue: 47,
+                            backGroundColorAlpha: 1
+    )
+    let oatmeal = Grain(name: "Геркулес",
+                        keyWords: ["геркулес, овсянка, овес, хлопья"],
+                        timeOfBoil: 14, proportions: 0.5,
+                        finalVolume: 3,
+                        fat: 10, carbohydrate: 50,
+                        protein: 40,
+                        caloriesInCcal: 200,
+                        description: "descripton of oatmeal",
+                        imageName: "Oatmeal",
+                        backGroundColorRed: 178 ,
+                        backGroundColorGreen: 150,
+                        backGroundColorBlue: 108,
+                        backGroundColorAlpha: 1
+    )
   // function to Append Grains into ArrayAllTogether
     
     
@@ -159,6 +185,7 @@ class Model: NSObject {
             let name = i.name
             print (name)
         }
+        print(Model.shared.grainsAllTogether.count)
         print ("This is all Grains in AllTogetherArray")
         
         
