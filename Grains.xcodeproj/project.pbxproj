@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		32A7445D23EA2497000173D4 /* IMG_2432.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 32A7445C23EA2497000173D4 /* IMG_2432.PNG */; };
+		32A7445F23EB5892000173D4 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7445E23EB5892000173D4 /* DescriptionViewController.swift */; };
 		32DB9ED123E9E0CB00D07561 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB9ED023E9E0CB00D07561 /* MainTableViewController.swift */; };
 		32DB9ED323E9FB0200D07561 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB9ED223E9FB0200D07561 /* MainTableViewCell.swift */; };
 		32DB9EF823EA105F00D07561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DB9EF723EA105F00D07561 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		32A7445C23EA2497000173D4 /* IMG_2432.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2432.PNG; sourceTree = "<group>"; };
+		32A7445E23EB5892000173D4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		32DB9ED023E9E0CB00D07561 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		32DB9ED223E9FB0200D07561 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		32DB9EF723EA105F00D07561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				32DF8CE923E77EC400C738F7 /* SceneDelegate.swift */,
 				32DB9ED023E9E0CB00D07561 /* MainTableViewController.swift */,
 				32DB9ED223E9FB0200D07561 /* MainTableViewCell.swift */,
+				32A7445E23EB5892000173D4 /* DescriptionViewController.swift */,
 				32DF8CFB23E787D700C738F7 /* Model.swift */,
 				32DF8CF223E77ECA00C738F7 /* LaunchScreen.storyboard */,
 				32DF8CF523E77ECA00C738F7 /* Info.plist */,
@@ -151,6 +154,7 @@
 				32DB9ED123E9E0CB00D07561 /* MainTableViewController.swift in Sources */,
 				32DF8CE823E77EC400C738F7 /* AppDelegate.swift in Sources */,
 				32DF8CEA23E77EC400C738F7 /* SceneDelegate.swift in Sources */,
+				32A7445F23EB5892000173D4 /* DescriptionViewController.swift in Sources */,
 				32DF8CFC23E787D700C738F7 /* Model.swift in Sources */,
 				32DB9ED323E9FB0200D07561 /* MainTableViewCell.swift in Sources */,
 			);

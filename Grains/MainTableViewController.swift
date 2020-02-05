@@ -8,32 +8,39 @@
 
 import UIKit
 
-class MainTableViewController: UITableViewController, UISearchControllerDelegate{
+class MainTableViewController: UITableViewController, UISearchControllerDelegate {
 
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBarAndSetupNavController()
+        setUpSearchBar()
+        SetupNavController()
         Model.shared.appendToArr()
         tableView.reloadData()
-      
-        
     
     }
+ 
     
     
-    // MARK:- Search Bar and settings NavigationController
     
     
-    func searchBarAndSetupNavController() {
+    
+    
+    
+    
+    
+    // MARK:- Search Bar
+    
+    
+    func setUpSearchBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
-        
-        
         let searchController = UISearchController()
         navigationItem.searchController = searchController
+        searchController.searchResultsUpdater = self
         searchController.searchBar.placeholder = "Введите название"
         searchController.searchBar.delegate = self
+        
     }
     
     
@@ -59,58 +66,76 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
         
     }
 
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+ // Segue
+    
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToDesctription", sender: self)
+        
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "goToDesctription" {
+            let selectedCellIndexRow = tableView.indexPathForSelectedRow?.row
+            (segue.destination as! DescriptionViewController).descriptionGrainClass = Model.shared.grainsAllTogether[selectedCellIndexRow ?? 0]
+        }
     }
-    */
+   
+    
+ // Navigation Controller Settings
+    
+    
+    func SetupNavController() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+    }
 
-}
- 
-extension MainTableViewController: UISearchBarDelegate{
-func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-print (searchText)
+
+
+// MARK: - Filter searchFilter
+    var filteredGrains: [Grain] = []
+    var grainsAllTogether: [Grain] = Model.shared.grainsAllTogether
+    
+    
+    
+//   extension ViewController: UISearchBarDelegate {
+//       func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//           inputTextInSearchField = searchText
+//           searchAndInsertIntoArray()
+//           tableViewAfterEraseSearchBarToDefuault()
+//           safetyInputInSearchBarWithMistakes()
+//       }
+       
+      //MARK: - function SearchBar
+  
+//    func filterContent(searchText: String) {
+//        filteredGrains = grainsAllTogether.filter({ (Grain) -> Bool in
+//            let keyWordMatch = Grain.name.range(of: searchText)
+//            return keyWordMatch != nil
+//        })
+//
+//    }
     
 }
+extension MainTableViewController: UISearchBarDelegate{
+func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
 }
+    
+    
+}
+
+extension MainTableViewController: UISearchResultsUpdating {
+  
+    
+    func updateSearchResults(for searchController: UISearchController) {
+//    if let searchText = searchController.searchBar.text {
+//        filterContent(searchText: searchText)
+//        tableView.reloadData()
+//        print ("filtered")
+//        print (filteredGrains.count)
+    }
+        
+
+  }
 
