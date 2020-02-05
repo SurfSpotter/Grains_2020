@@ -8,16 +8,35 @@
 
 import UIKit
 
-class MainTableViewController: UITableViewController {
+class MainTableViewController: UITableViewController, UISearchControllerDelegate{
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBarAndSetupNavController()
         Model.shared.appendToArr()
         tableView.reloadData()
+      
         
-        
+    
     }
-
+    
+    
+    // MARK:- Search Bar and settings NavigationController
+    
+    
+    func searchBarAndSetupNavController() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        
+        let searchController = UISearchController()
+        navigationItem.searchController = searchController
+        searchController.searchBar.placeholder = "Введите название"
+        searchController.searchBar.delegate = self
+    }
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -87,3 +106,11 @@ class MainTableViewController: UITableViewController {
     */
 
 }
+ 
+extension MainTableViewController: UISearchBarDelegate{
+func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+print (searchText)
+    
+}
+}
+
