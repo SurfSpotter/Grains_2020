@@ -115,24 +115,64 @@
             <objects>
                 <viewController id="zn7-Ny-qAU" customClass="DescriptionViewController" customModule="Grains" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X6O-e7-6ns">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdP-IS-H6F">
-                                <rect key="frame" x="70" y="222" width="248" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IpP-YK-448">
+                                <rect key="frame" x="0.0" y="-18" width="414" height="1180"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFy-ih-5RN">
+                                        <rect key="frame" x="8" y="43" width="434" height="1092"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vf-SM-sC9">
+                                                <rect key="frame" x="194" y="158" width="46" height="52"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="46" id="3Cr-1o-J9C"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ID0-U9-NdJ">
+                                                <rect key="frame" x="189" y="884" width="42" height="103"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="42" id="01i-JX-BDZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ID0-U9-NdJ" secondAttribute="bottom" constant="146" id="8Gr-eS-eA6"/>
+                                            <constraint firstAttribute="bottom" secondItem="0vf-SM-sC9" secondAttribute="bottom" constant="708" id="Lfj-P9-Dqt"/>
+                                            <constraint firstItem="0vf-SM-sC9" firstAttribute="top" secondItem="wFy-ih-5RN" secondAttribute="top" constant="158" id="cN6-At-gey"/>
+                                            <constraint firstItem="ID0-U9-NdJ" firstAttribute="top" secondItem="wFy-ih-5RN" secondAttribute="topMargin" constant="979" id="cbc-8f-0SJ"/>
+                                            <constraint firstItem="ID0-U9-NdJ" firstAttribute="top" secondItem="0vf-SM-sC9" secondAttribute="bottom" constant="777" id="s8P-t7-jVx"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wFy-ih-5RN" firstAttribute="top" secondItem="IpP-YK-448" secondAttribute="top" constant="-20" id="70Z-X3-aCM"/>
+                                    <constraint firstAttribute="bottom" secondItem="wFy-ih-5RN" secondAttribute="bottom" id="UcB-FX-F3X"/>
+                                    <constraint firstAttribute="trailing" secondItem="wFy-ih-5RN" secondAttribute="trailing" constant="-20" id="cLZ-TV-k1P"/>
+                                    <constraint firstItem="wFy-ih-5RN" firstAttribute="leading" secondItem="IpP-YK-448" secondAttribute="leading" id="g3q-Pn-ohu"/>
+                                    <constraint firstItem="wFy-ih-5RN" firstAttribute="width" secondItem="IpP-YK-448" secondAttribute="width" constant="20" id="jCb-Qc-jkI"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="IpP-YK-448" secondAttribute="bottom" id="2xZ-KM-LyP"/>
+                            <constraint firstItem="IpP-YK-448" firstAttribute="leading" secondItem="lHJ-36-u23" secondAttribute="leading" id="eAf-Qt-Aa5"/>
+                            <constraint firstItem="IpP-YK-448" firstAttribute="trailing" secondItem="lHJ-36-u23" secondAttribute="trailing" id="sTR-fg-ZhH"/>
+                            <constraint firstItem="IpP-YK-448" firstAttribute="top" secondItem="X6O-e7-6ns" secondAttribute="top" constant="20" symbolic="YES" id="twP-bO-zMW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lHJ-36-u23"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ayw-Nj-gYN"/>
-                    <connections>
-                        <outlet property="labelOutlet" destination="hdP-IS-H6F" id="9cC-G8-f5Z"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="ayw-Nj-gYN">
+                        <barButtonItem key="rightBarButtonItem" image="timer" catalog="system" id="hfp-eX-VO8"/>
+                    </navigationItem>
+                    <size key="freeformSize" width="414" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDJ-r8-sax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -197,5 +237,6 @@
     <resources>
         <image name="heart" catalog="system" width="64" height="54"/>
         <image name="timer" width="256" height="256"/>
+        <image name="timer" catalog="system" width="64" height="60"/>
     </resources>
 </document>

@@ -82,7 +82,6 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
         }
     }
    
-    
  // Navigation Controller Settings
     
     

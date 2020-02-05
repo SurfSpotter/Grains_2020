@@ -17,10 +17,9 @@ class DescriptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(descriptionGrainClass?.name)
-       
-    }
-    
+        navigationItem.title = descriptionGrainClass?.name
+        
 
     
+}
 }
