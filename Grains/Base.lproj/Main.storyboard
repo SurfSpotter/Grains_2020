@@ -121,54 +121,57 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZS-NY-NMt">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D91-P5-lgq">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1131"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D91-P5-lgq">
+                                        <rect key="frame" x="0.0" y="-88" width="414" height="1219"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fzs-Lw-0ee">
-                                                <rect key="frame" x="87" y="886" width="240" height="128"/>
+                                                <rect key="frame" x="87" y="988" width="240" height="128"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="240" id="ghd-KK-vFL"/>
                                                     <constraint firstAttribute="height" constant="128" id="rQ4-4s-iMe"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Buckwheat" translatesAutoresizingMaskIntoConstraints="NO" id="Pnq-vd-eSH">
-                                                <rect key="frame" x="87" y="30" width="240" height="128"/>
-                                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="240" id="Onq-zY-Who"/>
-                                                    <constraint firstAttribute="height" constant="128" id="SOW-ZI-aQl"/>
-                                                </constraints>
-                                            </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CMH-S3-EFh">
-                                                <rect key="frame" x="87" y="458" width="240" height="128"/>
+                                                <rect key="frame" x="87" y="560" width="240" height="128"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="240" id="U9P-g9-LH7"/>
                                                     <constraint firstAttribute="height" constant="128" id="fak-97-1D2"/>
                                                 </constraints>
                                             </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Buckwheat" translatesAutoresizingMaskIntoConstraints="NO" id="Pnq-vd-eSH" userLabel="grainMainImage">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="406"/>
+                                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="fzs-Lw-0ee" firstAttribute="top" secondItem="CMH-S3-EFh" secondAttribute="bottom" constant="300" id="0fG-h6-bvu"/>
+                                            <constraint firstItem="Pnq-vd-eSH" firstAttribute="width" secondItem="D91-P5-lgq" secondAttribute="width" id="76i-Qd-oVF"/>
                                             <constraint firstItem="CMH-S3-EFh" firstAttribute="leading" secondItem="D91-P5-lgq" secondAttribute="leading" constant="87" id="885-Mf-hob"/>
-                                            <constraint firstItem="CMH-S3-EFh" firstAttribute="top" secondItem="Pnq-vd-eSH" secondAttribute="bottom" constant="300" id="BxS-L0-Rio"/>
+                                            <constraint firstItem="CMH-S3-EFh" firstAttribute="top" secondItem="Pnq-vd-eSH" secondAttribute="bottom" constant="154" id="BxS-L0-Rio"/>
                                             <constraint firstAttribute="trailing" secondItem="fzs-Lw-0ee" secondAttribute="trailing" constant="87" id="HE7-bg-Eru"/>
+                                            <constraint firstItem="Pnq-vd-eSH" firstAttribute="centerX" secondItem="D91-P5-lgq" secondAttribute="centerX" id="ILf-Ul-BAP"/>
                                             <constraint firstAttribute="trailing" secondItem="CMH-S3-EFh" secondAttribute="trailing" constant="87" id="Lgf-oE-Q3H"/>
-                                            <constraint firstAttribute="bottom" secondItem="fzs-Lw-0ee" secondAttribute="bottom" constant="117" id="M9L-va-a6O"/>
-                                            <constraint firstAttribute="trailing" secondItem="Pnq-vd-eSH" secondAttribute="trailing" constant="87" id="NTf-4F-LBl"/>
+                                            <constraint firstAttribute="bottom" secondItem="fzs-Lw-0ee" secondAttribute="bottom" constant="103" id="M9L-va-a6O"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pnq-vd-eSH" secondAttribute="trailing" id="NTf-4F-LBl"/>
+                                            <constraint firstItem="Pnq-vd-eSH" firstAttribute="width" secondItem="D91-P5-lgq" secondAttribute="width" id="O63-eQ-158"/>
+                                            <constraint firstItem="Pnq-vd-eSH" firstAttribute="width" secondItem="D91-P5-lgq" secondAttribute="height" multiplier="18:53" id="V0j-5T-dbE"/>
                                             <constraint firstItem="fzs-Lw-0ee" firstAttribute="leading" secondItem="D91-P5-lgq" secondAttribute="leading" constant="87" id="VdY-d0-Cqu"/>
-                                            <constraint firstItem="Pnq-vd-eSH" firstAttribute="top" secondItem="D91-P5-lgq" secondAttribute="top" constant="30" id="deg-6P-dtM"/>
-                                            <constraint firstItem="Pnq-vd-eSH" firstAttribute="leading" secondItem="D91-P5-lgq" secondAttribute="leading" constant="87" id="mow-lr-e03"/>
+                                            <constraint firstItem="Pnq-vd-eSH" firstAttribute="leading" secondItem="D91-P5-lgq" secondAttribute="leading" id="Y0U-GB-Du2"/>
+                                            <constraint firstItem="Pnq-vd-eSH" firstAttribute="top" secondItem="D91-P5-lgq" secondAttribute="top" id="deg-6P-dtM"/>
+                                            <constraint firstItem="Pnq-vd-eSH" firstAttribute="leading" secondItem="D91-P5-lgq" secondAttribute="leading" id="mow-lr-e03"/>
+                                            <constraint firstItem="Pnq-vd-eSH" firstAttribute="width" secondItem="D91-P5-lgq" secondAttribute="height" multiplier="18:53" id="o62-Hu-PQ5"/>
+                                            <constraint firstAttribute="bottom" secondItem="Pnq-vd-eSH" secondAttribute="bottom" constant="813" id="qdd-DA-lu0"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="D91-P5-lgq" secondAttribute="trailing" id="1jj-wK-r5p"/>
                                     <constraint firstItem="D91-P5-lgq" firstAttribute="width" secondItem="tZS-NY-NMt" secondAttribute="width" id="4bY-aN-fDh"/>
-                                    <constraint firstAttribute="bottom" secondItem="D91-P5-lgq" secondAttribute="bottom" id="7JF-Wy-2yz"/>
-                                    <constraint firstItem="D91-P5-lgq" firstAttribute="height" secondItem="tZS-NY-NMt" secondAttribute="height" priority="250" id="fOV-pT-Fed"/>
+                                    <constraint firstAttribute="bottom" secondItem="D91-P5-lgq" secondAttribute="bottom" constant="-19" id="7JF-Wy-2yz"/>
+                                    <constraint firstItem="D91-P5-lgq" firstAttribute="height" secondItem="tZS-NY-NMt" secondAttribute="height" priority="250" constant="19" id="fOV-pT-Fed"/>
                                     <constraint firstItem="D91-P5-lgq" firstAttribute="top" secondItem="tZS-NY-NMt" secondAttribute="top" id="hpm-Ir-He9"/>
                                     <constraint firstItem="D91-P5-lgq" firstAttribute="leading" secondItem="tZS-NY-NMt" secondAttribute="leading" id="pRv-NE-XId"/>
                                 </constraints>
@@ -189,6 +192,10 @@
                         <barButtonItem key="rightBarButtonItem" image="timer" catalog="system" id="hfp-eX-VO8"/>
                     </navigationItem>
                     <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="grainMainImageOut" destination="Pnq-vd-eSH" id="Txe-E5-1mv"/>
+                        <outlet property="viewOutlet" destination="D91-P5-lgq" id="OXz-EW-xBf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDJ-r8-sax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
