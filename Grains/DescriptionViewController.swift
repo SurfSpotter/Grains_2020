@@ -16,13 +16,25 @@ class DescriptionViewController: UIViewController {
     
     @IBOutlet weak var grainMainImageOut: UIImageView!
     
+    @IBOutlet weak var charactersViewOutlet: UIView!
     
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = descriptionGrainClass?.name
         viewOutlet.backgroundColor = descriptionGrainClass?.backgroundColour // цвет фона из класса крупы
         setGrainImage()
+        
+        
+        
+        settingsCharactersViewOutlet()
+        
+        
+//
+//        self.layer.cornerRadius = self.frame.height / 2
+//        self.layer.masksToBounds = false
+//        self.clipsToBounds = true
 }
     
     
@@ -43,4 +55,14 @@ class DescriptionViewController: UIViewController {
             print ("image not found!")
         }
     }
+    
+    
+    
+    fileprivate func settingsCharactersViewOutlet() {
+           charactersViewOutlet.layer.cornerRadius = 15
+           charactersViewOutlet.layer.masksToBounds = false
+           charactersViewOutlet.clipsToBounds = true
+        charactersViewOutlet.alpha = 0.9
+       }
+       
 }
