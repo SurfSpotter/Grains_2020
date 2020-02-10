@@ -28,7 +28,8 @@ class DescriptionViewController: UIViewController {
     
     @IBOutlet weak var boilTimeLabOut: UILabel!
     
-    @IBOutlet weak var calLabOut: UILabel!
+    @IBOutlet weak var calMainDescLabOut: UILabel!
+    
     
     
     // calories Descriprtion
@@ -39,6 +40,9 @@ class DescriptionViewController: UIViewController {
     
     @IBOutlet weak var protLabOut: UILabel!
     
+    @IBOutlet weak var in100GrLabOut: UILabel!
+    
+    @IBOutlet weak var calLabOut: UILabel!
     
     override func viewDidLoad() {
         
@@ -53,6 +57,9 @@ class DescriptionViewController: UIViewController {
         carbLabOut.isHidden = true
         protLabOut.isHidden = true
         fatLabOut.isHidden = true
+        in100GrLabOut.isHidden = true
+        calLabOut.isHidden = true
+        
         
         
         settingsCharactersViewOutlet()
@@ -78,8 +85,8 @@ class DescriptionViewController: UIViewController {
         self.animationOfView(item: self.charactersViewOutlet)
         self.timerButtonOut.isHidden = true
         self.caloriesButtonOut.isHidden = true
-        self.calLabOut.isHidden = true
         self.boilTimeLabOut.isHidden = true
+        calMainDescLabOut.isHidden = true
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
             
             if (self.descriptionGrainClass) != nil {
@@ -88,8 +95,13 @@ class DescriptionViewController: UIViewController {
                 self.protLabOut.isHidden = false
                 self.protLabOut.text = " Белков: \(String(describing: self.descriptionGrainClass!.protein) )"
                 self.fatLabOut.isHidden = false
-                self.fatLabOut.text = " Жиров: \(String(describing: self.descriptionGrainClass!.fat) )" }
-           
+                self.fatLabOut.text = " Жиров: \(String(describing: self.descriptionGrainClass!.fat) )"
+                self.in100GrLabOut.isHidden = false
+                self.in100GrLabOut.text = "В 100 граммах содержиться: "
+                self.calLabOut.isHidden = false
+                self.calLabOut.text = "Калорийность \(self.descriptionGrainClass!.caloriesInCcal)ккал"
+            }
+            
         }
         
         
