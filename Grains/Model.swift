@@ -151,7 +151,7 @@ class Model: NSObject {
                           carbohydrate: 60,
                           protein: 27,
                           caloriesInCcal: 120,
-                          description: "description of buckwheat",
+                          description: "Налить в кастрюлю холодной воды - в 2,5 раза больше, чем гречки: на 1 стакан гречки 2,5 стакана воды. Посолить воду. Поставить кастрюлю на тихий огонь, довести до кипения. Гречку варить на медленном огне, под крышкой, 20 минут. Затем добавить кубик сливочного масла, перемешать и дать настояться 10 минут под крышкой.",
                           imageName: "Buckwheat",
                             backGroundColorRed: 157 ,
                             backGroundColorGreen: 105,

@@ -18,18 +18,24 @@ class DescriptionViewController: UIViewController {
     
     @IBOutlet weak var charactersViewOutlet: UIView!
     
+    @IBOutlet weak var descriptionViewOtlet: UIView!
     
-   
+    @IBOutlet weak var descLabelOutlet: UILabel!
+    
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = descriptionGrainClass?.name
+        descLabelOutlet.text = descriptionGrainClass?.description
         viewOutlet.backgroundColor = descriptionGrainClass?.backgroundColour // цвет фона из класса крупы
         setGrainImage()
         
         
         
         settingsCharactersViewOutlet()
-        
+        settingsDescriptionViewOtlet()
         
 //
 //        self.layer.cornerRadius = self.frame.height / 2
@@ -62,7 +68,17 @@ class DescriptionViewController: UIViewController {
            charactersViewOutlet.layer.cornerRadius = 15
            charactersViewOutlet.layer.masksToBounds = false
            charactersViewOutlet.clipsToBounds = true
-        charactersViewOutlet.alpha = 0.9
+           charactersViewOutlet.alpha = 0.9
        }
+    
+    fileprivate func settingsDescriptionViewOtlet() {
+        descriptionViewOtlet.layer.cornerRadius = 15
+        descriptionViewOtlet.layer.masksToBounds = false
+        descriptionViewOtlet.clipsToBounds = true
+        descriptionViewOtlet.alpha = 0.9
+    }
+    override func viewWillLayoutSubviews() {
+        descLabelOutlet.sizeToFit()
+    }
        
 }
