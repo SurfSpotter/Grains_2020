@@ -44,6 +44,43 @@ class DescriptionViewController: UIViewController {
     
     @IBOutlet weak var calLabOut: UILabel!
     
+    // Add to favourites Button
+    
+    var statusFavButton: Bool = false
+    
+    
+    @IBOutlet weak var addToFavButOut: UIButton!
+    
+    @IBAction func addToFavButAction(_ sender: Any) {
+        statusFavButton =  statusFavButton.reverse()
+        if statusFavButton == false {
+           
+           addToFavButOut.setBackgroundImage(UIImage(systemName: "heart"), for: .normal)
+        }
+        else {
+            
+            addToFavButOut.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
+            
+        }
+        
+        
+        // Animation of button
+        
+        addToFavButOut.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+
+        UIView.animate(withDuration: 2.0,
+                                   delay: 0,
+                                   usingSpringWithDamping: CGFloat(0.20),
+                                   initialSpringVelocity: CGFloat(6.0),
+                                   options: UIView.AnimationOptions.allowUserInteraction,
+                                   animations: {
+                                    self.addToFavButOut.transform = CGAffineTransform.identity
+            },
+                                   completion: { Void in()  }
+        )
+    }
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -65,10 +102,6 @@ class DescriptionViewController: UIViewController {
         settingsCharactersViewOutlet()
         settingsDescriptionViewOtlet()
         
-//
-//        self.layer.cornerRadius = self.frame.height / 2
-//        self.layer.masksToBounds = false
-//        self.clipsToBounds = true
 }
     
     
@@ -82,6 +115,9 @@ class DescriptionViewController: UIViewController {
     // При нажатии на кнопку, переворачивется экран и показываются калории
     
     @IBAction func showCaloriesButton(_ sender: Any) {
+        
+        
+        
         self.animationOfView(item: self.charactersViewOutlet)
         self.timerButtonOut.isHidden = true
         self.caloriesButtonOut.isHidden = true
@@ -103,7 +139,6 @@ class DescriptionViewController: UIViewController {
             }
             
         }
-        
         
        
     }
@@ -163,4 +198,18 @@ class DescriptionViewController: UIViewController {
     }
     
     
+}
+
+
+// revers bool var
+extension Bool{
+    mutating func reverse() -> Bool{
+        if self == true {
+            self = false
+            return self
+        } else {
+          self = true
+          return self
+        }
+    }
 }
