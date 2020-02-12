@@ -52,32 +52,64 @@ class DescriptionViewController: UIViewController {
     @IBOutlet weak var addToFavButOut: UIButton!
     
     @IBAction func addToFavButAction(_ sender: Any) {
-        statusFavButton =  statusFavButton.reverse()
-        if statusFavButton == false {
-           
-           addToFavButOut.setBackgroundImage(UIImage(systemName: "heart"), for: .normal)
+        
+        
+        
+        //statusFavButton =  statusFavButton.reverse()
+        
+        
+        
+        let checking = checkFavArrToContains()
+        if checking == false && descriptionGrainClass != nil {
+            
+            
+          // add to Fav array
+           addToFavButOut.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
+            Model.shared.favGrains.append(descriptionGrainClass!)
+            print ("true in grain Check")
+    for i in Model.shared.favGrains {
+        print (i.name)
+    }
+
+            
+            
+            // Animation of button
+                   
+                   addToFavButOut.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+
+                   UIView.animate(withDuration: 2.0,
+                                              delay: 0,
+                                              usingSpringWithDamping: CGFloat(0.20),
+                                              initialSpringVelocity: CGFloat(6.0),
+                                              options: UIView.AnimationOptions.allowUserInteraction,
+                                              animations: {
+                                               self.addToFavButOut.transform = CGAffineTransform.identity
+                       },
+                                              completion: { Void in()  }
+                   )
         }
         else {
             
-            addToFavButOut.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
+            
+            
+            removeInFavGrainArr()
+            
+            addToFavButOut.setBackgroundImage(UIImage(systemName: "heart"), for: .normal)
+            
+            
+            
+            
+            print ("false in Grain Check")
+            print (Model.shared.favGrains.count)
+            for i in Model.shared.favGrains {
+                print (i.name)
+            }
+            
             
         }
         
         
-        // Animation of button
-        
-        addToFavButOut.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
-
-        UIView.animate(withDuration: 2.0,
-                                   delay: 0,
-                                   usingSpringWithDamping: CGFloat(0.20),
-                                   initialSpringVelocity: CGFloat(6.0),
-                                   options: UIView.AnimationOptions.allowUserInteraction,
-                                   animations: {
-                                    self.addToFavButOut.transform = CGAffineTransform.identity
-            },
-                                   completion: { Void in()  }
-        )
+       
     }
     
     
@@ -196,6 +228,30 @@ class DescriptionViewController: UIViewController {
     })
     
     }
+    
+
+// Checking array to contains doubled classes
+    
+    
+    
+    func checkFavArrToContains() -> Bool {
+        
+        for names in Model.shared.favGrains {
+            if descriptionGrainClass?.name == names.name {
+                return true
+            }
+        }
+        return false
+    }
+    
+    func removeInFavGrainArr() {
+        for (index,names) in Model.shared.favGrains.enumerated() {
+            if names === descriptionGrainClass {
+                Model.shared.favGrains.remove(at: index) }
+           }
+    }
+    
+    
     
     
 }

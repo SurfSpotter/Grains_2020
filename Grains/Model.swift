@@ -122,6 +122,9 @@ class Model: NSObject {
    
     var grainsAllTogether: [Grain] = []
     
+    var favGrains: [Grain] = []
+    
+    
     
     // Grains variable initialized
     
@@ -191,6 +194,6 @@ class Model: NSObject {
         
     }
     
-    
-    
 }
+    
+
