@@ -52,7 +52,6 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print ("this is count in tableView \(Model.shared.grainsAllTogether.count)")
         return Model.shared.grainsAllTogether.count
        
     }
