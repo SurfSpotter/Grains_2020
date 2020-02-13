@@ -32,7 +32,32 @@ class DescriptionViewController: UIViewController {
     
     
     
-    // calories Descriprtion
+   // Timer Outlet's
+    
+    @IBOutlet weak var progressBarOut: UIProgressView!
+    
+    
+    @IBOutlet weak var coutndownTimerOut: UILabel!
+    
+    
+    @IBOutlet weak var startButtonOut: UIButton!
+    
+    
+    @IBOutlet weak var setTimeOut: UIButton!
+    
+    
+    @IBAction func startButtonAction(_ sender: Any) {
+    }
+    
+    @IBAction func setTimeButtonAction(_ sender: Any) {
+    }
+
+    
+
+    
+    
+    
+    //MARK:-  calories Descriprtion
     
     @IBOutlet weak var carbLabOut: UILabel!
     
@@ -44,6 +69,12 @@ class DescriptionViewController: UIViewController {
     
     @IBOutlet weak var calLabOut: UILabel!
     
+    
+   
+       
+    
+    
+   
     // Add to favourites Button
     
     var statusFavButton: Bool = false
@@ -113,6 +144,8 @@ class DescriptionViewController: UIViewController {
     }
     
     
+   
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -120,15 +153,10 @@ class DescriptionViewController: UIViewController {
         descLabelOutlet.text = descriptionGrainClass?.description
         viewOutlet.backgroundColor = descriptionGrainClass?.backgroundColour // цвет фона из класса крупы
         setGrainImage()
+        hideTimerViewItems()
      
-        // Hide the labels in calories description Window
-        
-        carbLabOut.isHidden = true
-        protLabOut.isHidden = true
-        fatLabOut.isHidden = true
-        in100GrLabOut.isHidden = true
-        calLabOut.isHidden = true
-        
+        hideCaloriesViewItems()
+        self.backButtomOut.isHidden = true
         
         
         settingsCharactersViewOutlet()
@@ -139,6 +167,12 @@ class DescriptionViewController: UIViewController {
     
     @IBAction func setTimerAction(_ sender: Any) {
         animationOfView(item: charactersViewOutlet)
+        hideMainItems()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
+            self.showHiddenTimerViewItems()
+            self.backButtomOut.isHidden = false
+        }
+        
         
     }
     
@@ -146,17 +180,16 @@ class DescriptionViewController: UIViewController {
     
     // При нажатии на кнопку, переворачивется экран и показываются калории
     
+    
+    
     @IBAction func showCaloriesButton(_ sender: Any) {
         
         
         
         self.animationOfView(item: self.charactersViewOutlet)
-        self.timerButtonOut.isHidden = true
-        self.caloriesButtonOut.isHidden = true
-        self.boilTimeLabOut.isHidden = true
-        calMainDescLabOut.isHidden = true
+        hideMainItems()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
-            
+            self.backButtomOut.isHidden = false
             if (self.descriptionGrainClass) != nil {
                 self.carbLabOut.isHidden = false
                 self.carbLabOut.text = " Углеводов: \(String(describing: self.descriptionGrainClass!.carbohydrate) )"
@@ -175,7 +208,25 @@ class DescriptionViewController: UIViewController {
        
     }
     
+    @IBOutlet weak var backButtomOut: UIButton!
     
+    @IBAction func backButtonAction(_ sender: Any) {
+        self.animationOfView(item: self.charactersViewOutlet)
+        backButtomOut.isHidden = true
+        hideTimerViewItems()
+        hideCaloriesViewItems()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
+            
+            self.showHiddenMainItems()
+        }
+        
+        
+        
+        
+        
+        
+    }
     
     
     
@@ -195,6 +246,73 @@ class DescriptionViewController: UIViewController {
             print ("image not found!")
         }
     }
+    
+    
+    // MARK - Hide and Show items of menu
+    
+    fileprivate func hideMainItems() {
+        self.timerButtonOut.isHidden = true
+        self.caloriesButtonOut.isHidden = true
+        self.boilTimeLabOut.isHidden = true
+        calMainDescLabOut.isHidden = true
+    }
+    
+    // Show hidden main menu items
+    
+    fileprivate func showHiddenMainItems() {
+        self.timerButtonOut.isHidden = false
+        self.caloriesButtonOut.isHidden = false
+        self.boilTimeLabOut.isHidden = false
+        calMainDescLabOut.isHidden = false
+    }
+    
+    fileprivate func hideCaloriesViewItems() {
+                 // Hide the labels in calories description Window
+                 
+                 carbLabOut.isHidden = true
+                 protLabOut.isHidden = true
+                 fatLabOut.isHidden = true
+                 in100GrLabOut.isHidden = true
+                 calLabOut.isHidden = true
+             }
+    
+    // Show hidden calories menu items
+    
+    fileprivate func showHiddenCaloriesViewItems() {
+        // Hide the labels in calories description Window
+        
+        carbLabOut.isHidden = false
+        protLabOut.isHidden = false
+        fatLabOut.isHidden = false
+        in100GrLabOut.isHidden = false
+        calLabOut.isHidden = false
+    }
+    
+    
+    // function to hide items
+        
+        fileprivate func hideTimerViewItems() {
+            progressBarOut.isHidden = true
+            coutndownTimerOut.isHidden = true
+            startButtonOut.isHidden = true
+            setTimeOut.isHidden = true
+            
+        }
+    // function to show items
+        fileprivate func showHiddenTimerViewItems() {
+               progressBarOut.isHidden = false
+               coutndownTimerOut.isHidden = false
+               startButtonOut.isHidden = false
+               setTimeOut.isHidden = false
+        
+        }
+    
+    
+    
+    
+    
+    
+    
     
     
     

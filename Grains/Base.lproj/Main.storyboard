@@ -225,7 +225,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="message" size="11"/>
+                                                                        <font key="NSFont" metaFont="menu" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -236,37 +236,76 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="carbLabOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtY-pz-ubl">
-                                                        <rect key="frame" x="45" y="150" width="306" height="35"/>
+                                                        <rect key="frame" x="45" y="156" width="306" height="35"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FatLabOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16S-Zb-Cq8">
-                                                        <rect key="frame" x="45" y="107" width="306" height="35"/>
+                                                        <rect key="frame" x="45" y="122" width="306" height="35"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ProtLabOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtc-b7-33I">
-                                                        <rect key="frame" x="45" y="61" width="306" height="35"/>
+                                                        <rect key="frame" x="45" y="90" width="306" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="in 100gramms" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8F-vE-Ch2">
+                                                        <rect key="frame" x="48" y="8" width="281" height="74"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="in 100gramms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8F-vE-Ch2">
-                                                        <rect key="frame" x="8" y="18" width="360" height="35"/>
+                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jfz-Ir-HfA">
+                                                        <rect key="frame" x="45" y="225" width="299" height="3"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    </progressView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsV-SR-Z0u">
+                                                        <rect key="frame" x="80" y="50" width="216" height="107"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="71"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FB-iG-HSC" userLabel="start">
+                                                        <rect key="frame" x="100" y="150" width="177" height="47"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <state key="normal" title="Старт"/>
+                                                        <connections>
+                                                            <action selector="startButtonAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="Grl-9X-ZaY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arp-LM-kT5" userLabel="setTime">
+                                                        <rect key="frame" x="325" y="12" width="43" height="39"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <state key="normal" backgroundImage="gear" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="setTimeButtonAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="Lvo-HO-J89"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ux5-Gs-dJF" userLabel="back">
+                                                        <rect key="frame" x="8" y="14" width="40" height="35"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" backgroundImage="arrow.left" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="backButtonAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="J8E-Q5-khQ"/>
+                                                        </connections>
+                                                    </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CaloriesLabOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRX-wF-Ab7" userLabel="caloriesLabOut">
-                                                        <rect key="frame" x="45" y="193" width="306" height="35"/>
+                                                        <rect key="frame" x="48" y="193" width="306" height="35"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -351,18 +390,23 @@
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
                         <outlet property="addToFavButOut" destination="aN9-tT-Gko" id="McG-yV-MbL"/>
+                        <outlet property="backButtomOut" destination="ux5-Gs-dJF" id="TzK-4n-t6D"/>
                         <outlet property="boilTimeLabOut" destination="fZ0-xf-Iwn" id="4hk-eE-5f3"/>
                         <outlet property="calLabOut" destination="SRX-wF-Ab7" id="Hyj-VN-lW3"/>
                         <outlet property="calMainDescLabOut" destination="Ha7-B9-Yb1" id="9Ai-Pm-fnw"/>
                         <outlet property="caloriesButtonOut" destination="0Rr-PS-ST8" id="JwA-aH-ig6"/>
                         <outlet property="carbLabOut" destination="NtY-pz-ubl" id="LBb-5j-OnT"/>
                         <outlet property="charactersViewOutlet" destination="r76-Ov-Wcx" id="2g7-jj-qht"/>
+                        <outlet property="coutndownTimerOut" destination="CsV-SR-Z0u" id="gwn-su-rsB"/>
                         <outlet property="descLabelOutlet" destination="jT3-Ls-QvX" id="eWR-Bm-X1a"/>
                         <outlet property="descriptionViewOtlet" destination="zxg-6q-PF7" id="Rlf-LI-5Xh"/>
                         <outlet property="fatLabOut" destination="16S-Zb-Cq8" id="79s-go-uUz"/>
                         <outlet property="grainMainImageOut" destination="Pnq-vd-eSH" id="Txe-E5-1mv"/>
                         <outlet property="in100GrLabOut" destination="m8F-vE-Ch2" id="gVL-n5-uQ1"/>
+                        <outlet property="progressBarOut" destination="jfz-Ir-HfA" id="4Cz-Qz-hBV"/>
                         <outlet property="protLabOut" destination="Vtc-b7-33I" id="vyJ-tn-upm"/>
+                        <outlet property="setTimeOut" destination="arp-LM-kT5" id="S05-2V-lR2"/>
+                        <outlet property="startButtonOut" destination="0FB-iG-HSC" id="nt9-qj-qty"/>
                         <outlet property="timerButtonOut" destination="3Mf-I0-Rew" id="hFE-7T-VJs"/>
                         <outlet property="viewOutlet" destination="D91-P5-lgq" id="OXz-EW-xBf"/>
                     </connections>
@@ -448,7 +492,9 @@
     </scenes>
     <resources>
         <image name="Buckwheat" width="180" height="180"/>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="fire.png" width="384" height="384"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
         <image name="heart" catalog="system" width="64" height="54"/>
         <image name="suit.heart" catalog="system" width="64" height="54"/>
         <image name="timer" catalog="system" width="64" height="60"/>
