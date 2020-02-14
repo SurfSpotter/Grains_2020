@@ -124,6 +124,7 @@ class Model: NSObject {
     
     var favGrains: [Grain] = []
     
+    let usDefFavGrains = UserDefaults.standard
     
     
     // Grains variable initialized

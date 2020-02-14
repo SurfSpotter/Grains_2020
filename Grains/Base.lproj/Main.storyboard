@@ -303,7 +303,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CaloriesLabOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRX-wF-Ab7" userLabel="caloriesLabOut">
-                                                        <rect key="frame" x="48" y="193" width="306" height="35"/>
+                                                        <rect key="frame" x="48" y="192" width="306" height="35"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
@@ -384,9 +384,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lHJ-36-u23"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ayw-Nj-gYN">
-                        <barButtonItem key="rightBarButtonItem" image="timer" catalog="system" id="hfp-eX-VO8"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="ayw-Nj-gYN"/>
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
                         <outlet property="addToFavButOut" destination="aN9-tT-Gko" id="McG-yV-MbL"/>
@@ -497,7 +495,6 @@
         <image name="gear" catalog="system" width="64" height="58"/>
         <image name="heart" catalog="system" width="64" height="54"/>
         <image name="suit.heart" catalog="system" width="64" height="54"/>
-        <image name="timer" catalog="system" width="64" height="60"/>
         <image name="timer" width="256" height="256"/>
         <image name="timer 2.png" width="512" height="512"/>
     </resources>

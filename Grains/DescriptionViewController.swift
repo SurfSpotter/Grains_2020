@@ -32,7 +32,19 @@ class DescriptionViewController: UIViewController {
     
     
     
-   // Timer Outlet's
+   //MARK: - Timer
+    
+    var timer = Timer()
+    var seconds:Int = 0
+    var minutes:Int = 0
+    var hours:Int = 0
+    var timerString:String = ""
+    var timerStatus:Bool = false
+    var boilTimeInSeconds: Int = 0
+    
+    
+    
+    // Outlets
     
     @IBOutlet weak var progressBarOut: UIProgressView!
     
@@ -45,17 +57,63 @@ class DescriptionViewController: UIViewController {
     
     @IBOutlet weak var setTimeOut: UIButton!
     
+    // Action of timer
     
     @IBAction func startButtonAction(_ sender: Any) {
+        if  timerStatus == false {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerSelector) , userInfo: nil, repeats: true)
+        timerStatus = true
+            startButtonOut.setTitle("Пауза", for: .normal)
+            progressBarWithSeconds()
+        }
+        else {
+            timer.invalidate()
+            startButtonOut.setTitle("Старт", for: .normal)
+            timerStatus = false
+            
+        }
     }
     
     @IBAction func setTimeButtonAction(_ sender: Any) {
     }
 
     
+    
+    @objc func timerSelector() {
+        
+        boilTimeInSeconds = boilTimeInSeconds - 1
+        coutndownTimerOut.text = secondToMMSSFotmatString()
+        
 
+    }
+  // Making String Time in format 00:00
+    func secondToMMSSFotmatString() -> String {
+        let seconds: Int = boilTimeInSeconds % 60
+        let minutes: Int = boilTimeInSeconds / 60
+
+        return "\(minutes):\(seconds)"
+        
+    }
     
     
+ // function to get boil time in seconds and set him into "boilTimeInSeconds"
+    fileprivate func boilTimeGiveInSec() {
+        if let inMinutes = descriptionGrainClass?.timeOfBoil {
+       
+            boilTimeInSeconds = 60 * inMinutes
+            
+        }
+        else {
+            print ("=====descriptionGrainClass?.timeOfBoil = nil=====")
+            
+    }
+
+    }
+    
+    fileprivate func progressBarWithSeconds() {
+        boilTimeGiveInSec()
+        progressBarOut.progress = 0.5
+    }
     
     //MARK:-  calories Descriprtion
     
@@ -75,7 +133,7 @@ class DescriptionViewController: UIViewController {
     
     
    
-    // Add to favourites Button
+    //MARK: -  Add to favourites Button
     
     var statusFavButton: Bool = false
     
@@ -161,6 +219,10 @@ class DescriptionViewController: UIViewController {
         
         settingsCharactersViewOutlet()
         settingsDescriptionViewOtlet()
+        
+        
+        // timer
+        boilTimeGiveInSec()
         
 }
     
@@ -248,7 +310,7 @@ class DescriptionViewController: UIViewController {
     }
     
     
-    // MARK - Hide and Show items of menu
+    //MARK: - Hide and Show items of menu
     
     fileprivate func hideMainItems() {
         self.timerButtonOut.isHidden = true
