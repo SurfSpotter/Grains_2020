@@ -15,6 +15,7 @@ class FavouritesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
+        Model.shared.addIntoUDToFavArr()
     }
 
      // MARK: - Table view data source

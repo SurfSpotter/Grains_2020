@@ -9,10 +9,15 @@
 import UIKit
 
 class DescriptionViewController: UIViewController {
-
+    
+    //MARK: - Variables
+    
+let  saveInUDBoolStatOfFav = UserDefaults.standard
+var descriptionGrainClass: Grain?
+    
+    
+    
     @IBOutlet weak var viewOutlet: UIView!  // Фон
-
-    var descriptionGrainClass: Grain?
     
     @IBOutlet weak var grainMainImageOut: UIImageView!
     
@@ -155,11 +160,28 @@ class DescriptionViewController: UIViewController {
           // add to Fav array
            addToFavButOut.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
             Model.shared.favGrains.append(descriptionGrainClass!)
+         
+            
+        // UserDefaults
+            
+            if descriptionGrainClass != nil {
+                saveInUDBoolStatOfFav.set(true, forKey: descriptionGrainClass!.name)
+                print ("Saved to UD")
+            }
+        
+            
+            
+        
+            
+            
+            
+    
             print ("true in grain Check")
     for i in Model.shared.favGrains {
         print (i.name)
     }
-
+            
+            
             
             
             // Animation of button
@@ -183,7 +205,17 @@ class DescriptionViewController: UIViewController {
             
             removeInFavGrainArr()
             
+            // UserDefaults
+            
+            saveInUDBoolStatOfFav.removeObject(forKey: descriptionGrainClass!.name)
+            
+            
+            
+            
+            
+            
             addToFavButOut.setBackgroundImage(UIImage(systemName: "heart"), for: .normal)
+            
             
             
             

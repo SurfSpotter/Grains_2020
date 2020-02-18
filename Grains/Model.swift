@@ -124,8 +124,17 @@ class Model: NSObject {
     
     var favGrains: [Grain] = []
     
-    let usDefFavGrains = UserDefaults.standard
+    var testUDFavArr: Grain?
+
     
+    
+    
+    
+    
+    /*let array = ["horse", "cow", "camel", "sheep", "goat"]
+
+    let defaults = UserDefaults.standard
+    defaults.set(array, forKey: "SavedStringArray") */
     
     // Grains variable initialized
     
@@ -176,6 +185,29 @@ class Model: NSObject {
                         backGroundColorBlue: 108,
                         backGroundColorAlpha: 1
     )
+
+    
+// User Defaults
+    
+    
+    func addIntoUDToFavArr () {
+        let usDef = UserDefaults.standard
+        
+        for i in grainsAllTogether {
+            if usDef.bool(forKey: i.name) == true {
+                print ("UDef if work!")
+                print (i.name)
+            }
+            
+        }
+    }
+    
+
+    
+    
+    
+    
+    
   // function to Append Grains into ArrayAllTogether
     
     
