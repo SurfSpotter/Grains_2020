@@ -187,16 +187,15 @@ class Model: NSObject {
     )
 
     
-// User Defaults
+// User Defaults, add To Favourite Array
     
     
-    func addIntoUDToFavArr () {
+    func getUsDefToFavArr () {
         let usDef = UserDefaults.standard
-        
+        favGrains.removeAll()
         for i in grainsAllTogether {
             if usDef.bool(forKey: i.name) == true {
-                print ("UDef if work!")
-                print (i.name)
+                favGrains.append(i)
             }
             
         }

@@ -145,95 +145,104 @@ var descriptionGrainClass: Grain?
     
     @IBOutlet weak var addToFavButOut: UIButton!
     
+    
+    
     @IBAction func addToFavButAction(_ sender: Any) {
         
+        if descriptionGrainClass != nil {
         
-        
-        //statusFavButton =  statusFavButton.reverse()
-        
-        
-        
-        let checking = checkFavArrToContains()
-        if checking == false && descriptionGrainClass != nil {
-            
-            
-          // add to Fav array
-           addToFavButOut.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
-            Model.shared.favGrains.append(descriptionGrainClass!)
-         
-            
-        // UserDefaults
-            
-            if descriptionGrainClass != nil {
+            if saveInUDBoolStatOfFav.object(forKey: descriptionGrainClass!.name) == nil {
                 saveInUDBoolStatOfFav.set(true, forKey: descriptionGrainClass!.name)
-                print ("Saved to UD")
-            }
-        
-            
-            
-        
-            
-            
-            
-    
-            print ("true in grain Check")
-    for i in Model.shared.favGrains {
-        print (i.name)
-    }
-            
-            
-            
-            
-            // Animation of button
-                   
-                   addToFavButOut.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
-
-                   UIView.animate(withDuration: 2.0,
-                                              delay: 0,
-                                              usingSpringWithDamping: CGFloat(0.20),
-                                              initialSpringVelocity: CGFloat(6.0),
-                                              options: UIView.AnimationOptions.allowUserInteraction,
-                                              animations: {
-                                               self.addToFavButOut.transform = CGAffineTransform.identity
-                       },
-                                              completion: { Void in()  }
-                   )
+                addToFavButOut.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
+                animationOfButton()
+            print ("check New UD, added... Bool is nil")
+                
         }
+            else if saveInUDBoolStatOfFav.object(forKey: descriptionGrainClass!.name) as! Bool == false {
+                    saveInUDBoolStatOfFav.set(true, forKey: descriptionGrainClass!.name)
+                    addToFavButOut.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
+                    animationOfButton()
+                print ("check New UD, added...Bool is  false")
+                    
+            }
+            
+            else if saveInUDBoolStatOfFav.object(forKey: descriptionGrainClass!.name) as! Bool == true {
+                    saveInUDBoolStatOfFav.set(false, forKey: descriptionGrainClass!.name)
+                    addToFavButOut.setBackgroundImage(UIImage(systemName: "heart"), for: .normal)
+                print ("check New UD, added...Bool is true")
+                    
+            }
+            }
+            
         else {
-            
-            
-            
-            removeInFavGrainArr()
-            
-            // UserDefaults
-            
-            saveInUDBoolStatOfFav.removeObject(forKey: descriptionGrainClass!.name)
-            
-            
-            
-            
-            
-            
-            addToFavButOut.setBackgroundImage(UIImage(systemName: "heart"), for: .normal)
-            
-            
-            
-            
-            
-            print ("false in Grain Check")
-            print (Model.shared.favGrains.count)
-            for i in Model.shared.favGrains {
-                print (i.name)
-            }
-            
-            
+            print ("Attention! descriptionGrainClass = nil")
         }
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
         
        
     }
     
     
+     // Animation of button
+    fileprivate func animationOfButton() {
+       
+        
+        addToFavButOut.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+        
+        UIView.animate(withDuration: 2.0,
+                       delay: 0,
+                       usingSpringWithDamping: CGFloat(0.20),
+                       initialSpringVelocity: CGFloat(6.0),
+                       options: UIView.AnimationOptions.allowUserInteraction,
+                       animations: {
+                        self.addToFavButOut.transform = CGAffineTransform.identity
+        },
+                       completion: { Void in()  }
+        )
+    }
+    
+    // set image "heart" from User Defaults Status
+       
+       fileprivate func setImageFromUsDefBoolStatus() {
+          
+           
+           
+           if descriptionGrainClass != nil {
+               
+               if saveInUDBoolStatOfFav.object(forKey: descriptionGrainClass!.name) == nil {
+                   addToFavButOut.setBackgroundImage(UIImage(systemName: "heart"), for: .normal)
+               }
+               else if saveInUDBoolStatOfFav.object(forKey: descriptionGrainClass!.name) as! Bool == false {
+                   addToFavButOut.setBackgroundImage(UIImage(systemName: "heart"), for: .normal)
+                   
+               }
+                   
+               else if saveInUDBoolStatOfFav.object(forKey: descriptionGrainClass!.name) as! Bool == true {
+                   addToFavButOut.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
+                   
+               }
+           }
+               
+           else {
+               print ("Attention! descriptionGrainClass = nil")
+               
+           }
+       }
+       
    
     
     override func viewDidLoad() {
@@ -247,6 +256,9 @@ var descriptionGrainClass: Grain?
      
         hideCaloriesViewItems()
         self.backButtomOut.isHidden = true
+        setImageFromUsDefBoolStatus()
+        
+        
         
         
         settingsCharactersViewOutlet()

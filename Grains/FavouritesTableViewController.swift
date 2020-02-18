@@ -15,7 +15,7 @@ class FavouritesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
-        Model.shared.addIntoUDToFavArr()
+        Model.shared.getUsDefToFavArr()
     }
 
      // MARK: - Table view data source
@@ -40,6 +40,7 @@ class FavouritesTableViewController: UITableViewController {
        }
 
     override func viewDidAppear(_ animated: Bool) {
+        Model.shared.getUsDefToFavArr()
         tableView.reloadData()
         
     }
