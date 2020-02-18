@@ -173,7 +173,7 @@ class Model: NSObject {
     )
     let oatmeal = Grain(name: "Геркулес",
                         keyWords: ["геркулес, овсянка, овес, хлопья"],
-                        timeOfBoil: 14, proportions: 0.5,
+                        timeOfBoil: 1, proportions: 0.5,
                         finalVolume: 3,
                         fat: 10, carbohydrate: 50,
                         protein: 40,

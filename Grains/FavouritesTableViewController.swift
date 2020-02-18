@@ -10,14 +10,21 @@ import UIKit
 
 class FavouritesTableViewController: UITableViewController {
 
+    @IBOutlet weak var emptyView: UIView!
     
+    @IBOutlet weak var ifEmpyLabel: UILabel!
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
         Model.shared.getUsDefToFavArr()
+        messIfFavEmpty()
     }
 
+    
+    
      // MARK: - Table view data source
 
        override func numberOfSections(in tableView: UITableView) -> Int {
@@ -41,7 +48,9 @@ class FavouritesTableViewController: UITableViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         Model.shared.getUsDefToFavArr()
+        messIfFavEmpty()
         tableView.reloadData()
+        
         
     }
     
@@ -58,4 +67,13 @@ class FavouritesTableViewController: UITableViewController {
             (segue.destination as! DescriptionViewController).descriptionGrainClass = Model.shared.favGrains [selectedCellIndexRow ?? 0]
         }
     }
+
+    
+    // Write message is table is Empty
+    fileprivate func messIfFavEmpty() {
+           ifEmpyLabel.isHidden = true
+           if Model.shared.favGrains.isEmpty {
+               ifEmpyLabel.isHidden = false
+           }
+       }
 }

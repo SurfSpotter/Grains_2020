@@ -65,12 +65,13 @@ var descriptionGrainClass: Grain?
     // Action of timer
     
     @IBAction func startButtonAction(_ sender: Any) {
-        if  timerStatus == false {
+        if  timerStatus == false && boilTimeInSeconds >= 1 {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerSelector) , userInfo: nil, repeats: true)
         timerStatus = true
             startButtonOut.setTitle("Пауза", for: .normal)
-            progressBarWithSeconds()
+            progressBar()
         }
+        
         else {
             timer.invalidate()
             startButtonOut.setTitle("Старт", for: .normal)
@@ -88,6 +89,15 @@ var descriptionGrainClass: Grain?
         
         boilTimeInSeconds = boilTimeInSeconds - 1
         coutndownTimerOut.text = secondToMMSSFotmatString()
+        progressBar()
+        if boilTimeInSeconds <= 0 {
+            timer.invalidate()
+            coutndownTimerOut.text = "Готово!"
+            startButtonOut.setTitle("Сброс", for: .normal)
+            timerStatus = false
+            
+            
+        }
         
 
     }
@@ -95,13 +105,18 @@ var descriptionGrainClass: Grain?
     func secondToMMSSFotmatString() -> String {
         let seconds: Int = boilTimeInSeconds % 60
         let minutes: Int = boilTimeInSeconds / 60
-
+        if seconds <= 9 {
+          return "\(minutes):0\(seconds)"
+        }
         return "\(minutes):\(seconds)"
         
     }
     
     
  // function to get boil time in seconds and set him into "boilTimeInSeconds"
+    
+    
+    
     fileprivate func boilTimeGiveInSec() {
         if let inMinutes = descriptionGrainClass?.timeOfBoil {
        
@@ -115,9 +130,11 @@ var descriptionGrainClass: Grain?
 
     }
     
-    fileprivate func progressBarWithSeconds() {
-        boilTimeGiveInSec()
-        progressBarOut.progress = 0.5
+    fileprivate func progressBar() {
+        let startTime  = Float((descriptionGrainClass!.timeOfBoil) * 60)
+        let goingTime = Float(boilTimeInSeconds) + 0.01
+        progressBarOut.progress = 1.0 - ( goingTime / startTime)
+        
     }
     
     //MARK:-  calories Descriprtion
@@ -139,8 +156,6 @@ var descriptionGrainClass: Grain?
     
    
     //MARK: -  Add to favourites Button
-    
-    var statusFavButton: Bool = false
     
     
     @IBOutlet weak var addToFavButOut: UIButton!
@@ -248,8 +263,14 @@ var descriptionGrainClass: Grain?
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        
+        
+        
         navigationItem.title = descriptionGrainClass?.name
         descLabelOutlet.text = descriptionGrainClass?.description
+        boilTimeLabOut.text = "\(descriptionGrainClass!.timeOfBoil) минут"
+        coutndownTimerOut.text = "\(descriptionGrainClass!.timeOfBoil):00"
         viewOutlet.backgroundColor = descriptionGrainClass?.backgroundColour // цвет фона из класса крупы
         setGrainImage()
         hideTimerViewItems()
@@ -267,6 +288,9 @@ var descriptionGrainClass: Grain?
         
         // timer
         boilTimeGiveInSec()
+        
+        
+        
         
 }
     
