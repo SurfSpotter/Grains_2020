@@ -156,7 +156,7 @@ class Model: NSObject {
     )
 
     let buckwheat = Grain(name: "Гречневая крупа",
-                          keyWords: ["buckwheat, Buckwheat, греча, гречка, ядрица, гречиха "],
+                          keyWords: ["buckwheat, Buckwheat, Греча, Гречка, греча, гречка, ядрица, гречиха "],
                           timeOfBoil: 12,
                           proportions: 0.5,
                           finalVolume: 3.0,

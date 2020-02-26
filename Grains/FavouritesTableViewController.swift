@@ -11,7 +11,7 @@ import UIKit
 class FavouritesTableViewController: UITableViewController {
 
     @IBOutlet weak var emptyView: UIView!
-    
+    @IBOutlet weak var emptyImgView: UIImageView!
     @IBOutlet weak var ifEmpyLabel: UILabel!
     
    
@@ -21,6 +21,12 @@ class FavouritesTableViewController: UITableViewController {
         tableView.reloadData()
         Model.shared.getUsDefToFavArr()
         messIfFavEmpty()
+        
+        
+        if #available(iOS 11.0, *) {
+               self.navigationController?.navigationBar.prefersLargeTitles = true
+            self.navigationItem.largeTitleDisplayMode = .always
+               }
     }
 
     
@@ -51,9 +57,10 @@ class FavouritesTableViewController: UITableViewController {
         messIfFavEmpty()
         tableView.reloadData()
         
+       
+        
         
     }
-    
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -72,8 +79,11 @@ class FavouritesTableViewController: UITableViewController {
     // Write message is table is Empty
     fileprivate func messIfFavEmpty() {
            ifEmpyLabel.isHidden = true
+        emptyImgView.isHidden = true
            if Model.shared.favGrains.isEmpty {
                ifEmpyLabel.isHidden = false
+                emptyImgView.isHidden = false
+            
            }
        }
 }

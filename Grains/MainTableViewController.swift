@@ -14,6 +14,9 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+       
         setUpSearchBar()
         SetupNavController()
         Model.shared.appendToArr()
@@ -21,9 +24,12 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
     
     }
  
-    
-    
-    
+    override func viewDidAppear(_ animated: Bool) {
+        Model.shared.grainsAllTogether.removeAll()
+        Model.shared.appendToArr()
+        tableView.reloadData()
+    }
+   
     
     
     
@@ -34,7 +40,10 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
     
     
     func setUpSearchBar() {
-        navigationController?.navigationBar.prefersLargeTitles = true
+         if #available(iOS 11.0, *) {
+               self.navigationController?.navigationBar.prefersLargeTitles = true
+               self.navigationItem.largeTitleDisplayMode = .automatic
+               }
         let searchController = UISearchController()
         navigationItem.searchController = searchController
         searchController.searchResultsUpdater = self
@@ -97,43 +106,123 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
     
     
     
-//   extension ViewController: UISearchBarDelegate {
-//       func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//           inputTextInSearchField = searchText
-//           searchAndInsertIntoArray()
-//           tableViewAfterEraseSearchBarToDefuault()
-//           safetyInputInSearchBarWithMistakes()
-//       }
+
        
       //MARK: - function SearchBar
   
-//    func filterContent(searchText: String) {
-//        filteredGrains = grainsAllTogether.filter({ (Grain) -> Bool in
-//            let keyWordMatch = Grain.name.range(of: searchText)
-//            return keyWordMatch != nil
-//        })
-//
-//    }
+
     
 }
 extension MainTableViewController: UISearchBarDelegate{
 func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+
 }
-    
-    
+
+
+func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        Model.shared.grainsAllTogether.removeAll()
+        Model.shared.appendToArr()
+        tableView.reloadData()
+    }
 }
 
 extension MainTableViewController: UISearchResultsUpdating {
   
+    //MARK: - Function of SearchField:
+    
+    
     
     func updateSearchResults(for searchController: UISearchController) {
-//    if let searchText = searchController.searchBar.text {
-//        filterContent(searchText: searchText)
-//        tableView.reloadData()
-//        print ("filtered")
-//        print (filteredGrains.count)
+       print (searchController.searchBar.text!)
+        if searchController.searchBar.text != nil && searchController.searchBar.text!.count > 2 {  // если в текстовом поле больше 3х букв то:
+            
+            // Обнуляем прежний массив
+            Model.shared.grainsAllTogether.removeAll()
+            Model.shared.appendToArr()
+            tableView.reloadData()
+            
+            // перечисляем массив классов круп
+           for i in Model.shared.grainsAllTogether {
+            
+            // перечисляем в классе конкретной крупы массив синонимов
+            for keyword in i.keyWords {
+            // если синоним совпадает с введенным текстом то обнуляем массив и добавляем в пустой массив эту крупу
+            if keyword.contains(searchController.searchBar.text!) {     // i это название класса
+                print(i.name)
+                filteredGrains.removeAll()
+                tableView.reloadData()
+                
+                filteredGrains.append(i)
+                print ("searchArray: \(filteredGrains.count)")
+                Model.shared.grainsAllTogether.removeAll()
+                
+                Model.shared.grainsAllTogether = filteredGrains
+                tableView.reloadData()
+                
+                }
+                
+                    
+                }
+            }
+            tableView.reloadData()
+            }
+//        else if searchController.searchBar.text == ""  {
+//          Model.shared.grainsAllTogether.removeAll()
+//            Model.shared.appendToArr()
+//            tableView.reloadData()
+//
+//        }
+        }
+        
+        
+    
     }
+    
         
 
-  }
+  
 
+
+
+/*
+ extension ViewController: UISearchBarDelegate {
+     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+         inputTextInSearchField = searchText
+         searchAndInsertIntoArray()
+         tableViewAfterEraseSearchBarToDefuault()
+         safetyInputInSearchBarWithMistakes()
+     }
+     
+    //MARK: - function SearchBar
+     func searchAndInsertIntoArray() {for item in GrainsData.singletone.ourGrainArray { // перечисляем основной массив
+         if inputTextInSearchField.count > 1 {   // если букв в текстовом поле больше 3 то:
+         if item[5].contains(inputTextInSearchField) {// Это индекс с синонимами
+             
+             var ourGrainArrayServiceCase:[[String]] = [[]] //временный массив, для обхода нила
+             ourGrainArrayServiceCase.removeAll()
+             ourGrainArrayServiceCase.append(item)
+             ourGrainArrayAfterSinonimChecking = ourGrainArrayServiceCase // если массив содержит слово из текстфилда, то кидаем его в новый массив
+             safetyMisInput = false
+             self.tableView.isHidden = false
+             self.tableView.reloadData()    // refresh the tableView }
+             }}
+         }
+ }
+     func tableViewAfterEraseSearchBarToDefuault() {
+         if inputTextInSearchField == "" {
+             ourGrainArrayAfterSinonimChecking = GrainsData.singletone.ourGrainArray
+             safetyMisInput = true
+             self.tableView.isHidden = false
+             self.tableView.reloadData()
+         }
+     }
+     func safetyInputInSearchBarWithMistakes() {
+         if inputTextInSearchField.count > 2 && safetyMisInput == true {  //если количество символов в поле более трёх и переменная не сработало то это означает что в поле введены неверные символы
+             self.tableView.isHidden = true
+             self.tableView.reloadData()
+         }
+     }
+ }
+
+
+ */
