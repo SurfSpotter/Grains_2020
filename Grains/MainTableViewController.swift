@@ -41,8 +41,8 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
     
     func setUpSearchBar() {
          if #available(iOS 11.0, *) {
-               self.navigationController?.navigationBar.prefersLargeTitles = true
-               self.navigationItem.largeTitleDisplayMode = .automatic
+               //self.navigationController?.navigationBar.prefersLargeTitles = true
+               //self.navigationItem.largeTitleDisplayMode = .automatic
                }
         let searchController = UISearchController()
         navigationItem.searchController = searchController
@@ -94,7 +94,9 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
     
     
     func SetupNavController() {
-        navigationController?.navigationBar.prefersLargeTitles = true
+//        navigationController?.navigationBar.prefersLargeTitles = true
+//        self.navigationItem.largeTitleDisplayMode = .automatic
+    
         
     }
 
@@ -115,7 +117,6 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
 }
 extension MainTableViewController: UISearchBarDelegate{
 func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-
 }
 
 
@@ -124,6 +125,8 @@ func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         Model.shared.appendToArr()
         tableView.reloadData()
     }
+    
+    
 }
 
 extension MainTableViewController: UISearchResultsUpdating {
@@ -160,8 +163,10 @@ extension MainTableViewController: UISearchResultsUpdating {
                 tableView.reloadData()
                 
                 }
+            else {
+                  
                 
-                    
+                }
                 }
             }
             tableView.reloadData()
@@ -184,45 +189,4 @@ extension MainTableViewController: UISearchResultsUpdating {
 
 
 
-/*
- extension ViewController: UISearchBarDelegate {
-     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-         inputTextInSearchField = searchText
-         searchAndInsertIntoArray()
-         tableViewAfterEraseSearchBarToDefuault()
-         safetyInputInSearchBarWithMistakes()
-     }
-     
-    //MARK: - function SearchBar
-     func searchAndInsertIntoArray() {for item in GrainsData.singletone.ourGrainArray { // перечисляем основной массив
-         if inputTextInSearchField.count > 1 {   // если букв в текстовом поле больше 3 то:
-         if item[5].contains(inputTextInSearchField) {// Это индекс с синонимами
-             
-             var ourGrainArrayServiceCase:[[String]] = [[]] //временный массив, для обхода нила
-             ourGrainArrayServiceCase.removeAll()
-             ourGrainArrayServiceCase.append(item)
-             ourGrainArrayAfterSinonimChecking = ourGrainArrayServiceCase // если массив содержит слово из текстфилда, то кидаем его в новый массив
-             safetyMisInput = false
-             self.tableView.isHidden = false
-             self.tableView.reloadData()    // refresh the tableView }
-             }}
-         }
- }
-     func tableViewAfterEraseSearchBarToDefuault() {
-         if inputTextInSearchField == "" {
-             ourGrainArrayAfterSinonimChecking = GrainsData.singletone.ourGrainArray
-             safetyMisInput = true
-             self.tableView.isHidden = false
-             self.tableView.reloadData()
-         }
-     }
-     func safetyInputInSearchBarWithMistakes() {
-         if inputTextInSearchField.count > 2 && safetyMisInput == true {  //если количество символов в поле более трёх и переменная не сработало то это означает что в поле введены неверные символы
-             self.tableView.isHidden = true
-             self.tableView.reloadData()
-         }
-     }
- }
 
-
- */

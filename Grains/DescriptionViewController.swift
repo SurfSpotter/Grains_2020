@@ -81,6 +81,7 @@ var descriptionGrainClass: Grain?
     }
     
     @IBAction func setTimeButtonAction(_ sender: Any) {
+        
     }
 
     
@@ -266,7 +267,7 @@ var descriptionGrainClass: Grain?
         
         
         
-        
+       
         navigationItem.title = descriptionGrainClass?.name
         descLabelOutlet.text = descriptionGrainClass?.description
         boilTimeLabOut.text = "\(descriptionGrainClass!.timeOfBoil) минут"
@@ -301,6 +302,8 @@ var descriptionGrainClass: Grain?
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
             self.showHiddenTimerViewItems()
             self.backButtomOut.isHidden = false
+            
+            
         }
         
         
@@ -345,7 +348,6 @@ var descriptionGrainClass: Grain?
         backButtomOut.isHidden = true
         hideTimerViewItems()
         hideCaloriesViewItems()
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
             
             self.showHiddenMainItems()

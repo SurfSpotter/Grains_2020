@@ -18,6 +18,7 @@
 		325CC20023F4BED90009551A /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325CC1FF23F4BED90009551A /* FavTableViewCell.swift */; };
 		32A7445D23EA2497000173D4 /* IMG_2432.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 32A7445C23EA2497000173D4 /* IMG_2432.PNG */; };
 		32A7445F23EB5892000173D4 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7445E23EB5892000173D4 /* DescriptionViewController.swift */; };
+		32C36A7E240E709C0027D410 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C36A7D240E709C0027D410 /* OtherViewController.swift */; };
 		32DB9ED123E9E0CB00D07561 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB9ED023E9E0CB00D07561 /* MainTableViewController.swift */; };
 		32DB9ED323E9FB0200D07561 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB9ED223E9FB0200D07561 /* MainTableViewCell.swift */; };
 		32DB9EF823EA105F00D07561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DB9EF723EA105F00D07561 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		325CC1FF23F4BED90009551A /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 		32A7445C23EA2497000173D4 /* IMG_2432.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2432.PNG; sourceTree = "<group>"; };
 		32A7445E23EB5892000173D4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		32C36A7D240E709C0027D410 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		32DB9ED023E9E0CB00D07561 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		32DB9ED223E9FB0200D07561 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		32DB9EF723EA105F00D07561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				32A7445E23EB5892000173D4 /* DescriptionViewController.swift */,
 				325CC1FD23F4A23B0009551A /* FavouritesTableViewController.swift */,
 				325CC1FF23F4BED90009551A /* FavTableViewCell.swift */,
+				32C36A7D240E709C0027D410 /* OtherViewController.swift */,
 				32DF8CFB23E787D700C738F7 /* Model.swift */,
 				32DF8CF223E77ECA00C738F7 /* LaunchScreen.storyboard */,
 				32DF8CF523E77ECA00C738F7 /* Info.plist */,
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32DB9ED123E9E0CB00D07561 /* MainTableViewController.swift in Sources */,
+				32C36A7E240E709C0027D410 /* OtherViewController.swift in Sources */,
 				325CC20023F4BED90009551A /* FavTableViewCell.swift in Sources */,
 				32DF8CE823E77EC400C738F7 /* AppDelegate.swift in Sources */,
 				32DF8CEA23E77EC400C738F7 /* SceneDelegate.swift in Sources */,
@@ -337,12 +341,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84ZHP38C6Z;
 				INFOPLIST_FILE = Grains/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.surfSpot.Grains.Grains;
+				PRODUCT_BUNDLE_IDENTIFIER = com.surfSpot.Grains;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,12 +359,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84ZHP38C6Z;
 				INFOPLIST_FILE = Grains/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.surfSpot.Grains.Grains;
+				PRODUCT_BUNDLE_IDENTIFIER = com.surfSpot.Grains;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
