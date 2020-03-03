@@ -83,18 +83,17 @@
                             <rect key="frame" x="0.0" y="146" width="414" height="579"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Добавляйте сюда избранные крупы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlA-Dy-eaM">
-                                    <rect key="frame" x="0.0" y="352" width="406" height="80"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgroundFavVC" translatesAutoresizingMaskIntoConstraints="NO" id="MMw-OS-IeP">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="746"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Добавляйте сюда любимые крупы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlA-Dy-eaM">
+                                    <rect key="frame" x="0.0" y="544" width="406" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fdS-zW-zLp">
-                                    <rect key="frame" x="150" y="234.5" width="114" height="109"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="tintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                </imageView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
@@ -141,7 +140,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="vAh-zD-BC3"/>
                     <connections>
-                        <outlet property="emptyImgView" destination="fdS-zW-zLp" id="hes-kL-0ON"/>
+                        <outlet property="backgroundImgOut" destination="MMw-OS-IeP" id="OdO-CX-eDI"/>
                         <outlet property="emptyView" destination="WMO-HB-pIk" id="d5r-uQ-FDN"/>
                         <outlet property="ifEmpyLabel" destination="TlA-Dy-eaM" id="blv-is-2gH"/>
                         <segue destination="zn7-Ny-qAU" kind="show" identifier="goToDescrip" id="vLR-gk-Brw"/>
@@ -230,7 +229,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="menu" size="11"/>
+                                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -567,6 +566,7 @@
         <image name="Buckwheat" width="180" height="180"/>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="bgrounOtherVC" width="871" height="1552.5"/>
+        <image name="bgroundFavVC" width="1707" height="2560.5"/>
         <image name="fire.png" width="384" height="384"/>
         <image name="gear" catalog="system" width="64" height="58"/>
         <image name="heart" catalog="system" width="64" height="54"/>
@@ -575,7 +575,6 @@
         <image name="rateApp 4" width="60" height="60"/>
         <image name="sendMail 6" width="60" height="60"/>
         <image name="shareApp 5" width="60" height="60"/>
-        <image name="star" catalog="system" width="64" height="58"/>
         <image name="suit.heart" catalog="system" width="64" height="54"/>
         <image name="timer 2.png" width="512" height="512"/>
     </resources>

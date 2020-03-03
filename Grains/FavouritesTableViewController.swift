@@ -11,8 +11,8 @@ import UIKit
 class FavouritesTableViewController: UITableViewController {
 
     @IBOutlet weak var emptyView: UIView!
-    @IBOutlet weak var emptyImgView: UIImageView!
     @IBOutlet weak var ifEmpyLabel: UILabel!
+    @IBOutlet weak var backgroundImgOut: UIImageView!
     
    
     
@@ -78,11 +78,15 @@ class FavouritesTableViewController: UITableViewController {
     
     // Write message is table is Empty
     fileprivate func messIfFavEmpty() {
+           backgroundImgOut.alpha = 0.4
            ifEmpyLabel.isHidden = true
-        emptyImgView.isHidden = true
            if Model.shared.favGrains.isEmpty {
                ifEmpyLabel.isHidden = false
-                emptyImgView.isHidden = false
+               tabBarController?.tabBar.alpha = 0.9
+               navigationController?.navigationBar.alpha = 0.9
+            tableView.isScrollEnabled = false
+            backgroundImgOut.alpha = 1.0
+            
             
            }
        }
