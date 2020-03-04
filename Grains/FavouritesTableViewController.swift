@@ -23,10 +23,10 @@ class FavouritesTableViewController: UITableViewController {
         messIfFavEmpty()
         
         
-        if #available(iOS 11.0, *) {
-               self.navigationController?.navigationBar.prefersLargeTitles = true
-            self.navigationItem.largeTitleDisplayMode = .always
-               }
+//        if #available(iOS 11.0, *) {
+//               self.navigationController?.navigationBar.prefersLargeTitles = true
+//            self.navigationItem.largeTitleDisplayMode = .always
+//               }
     }
 
     

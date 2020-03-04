@@ -229,7 +229,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                                        <font key="NSFont" metaFont="message" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -313,6 +313,22 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raS-CC-EMt" userLabel="plusButton">
+                                                        <rect key="frame" x="284" y="82.5" width="42" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" backgroundImage="plus.circle" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="plusButTimerAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="bkn-Na-xFs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uab-ZU-u3k" userLabel="minusButton">
+                                                        <rect key="frame" x="48" y="83" width="42" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" backgroundImage="minus.circle" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="minusButTimerAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="ADL-6l-TBJ"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -405,6 +421,8 @@
                         <outlet property="fatLabOut" destination="16S-Zb-Cq8" id="79s-go-uUz"/>
                         <outlet property="grainMainImageOut" destination="Pnq-vd-eSH" id="Txe-E5-1mv"/>
                         <outlet property="in100GrLabOut" destination="m8F-vE-Ch2" id="gVL-n5-uQ1"/>
+                        <outlet property="minusButTimerOut" destination="Uab-ZU-u3k" id="Pdn-tj-8ud"/>
+                        <outlet property="plusButTimerOut" destination="raS-CC-EMt" id="4kb-zZ-Ubl"/>
                         <outlet property="progressBarOut" destination="jfz-Ir-HfA" id="4Cz-Qz-hBV"/>
                         <outlet property="protLabOut" destination="Vtc-b7-33I" id="vyJ-tn-upm"/>
                         <outlet property="setTimeOut" destination="arp-LM-kT5" id="S05-2V-lR2"/>
@@ -571,6 +589,8 @@
         <image name="gear" catalog="system" width="64" height="58"/>
         <image name="heart" catalog="system" width="64" height="54"/>
         <image name="measures 3" width="60" height="60"/>
+        <image name="minus.circle" catalog="system" width="64" height="60"/>
+        <image name="plus.circle" catalog="system" width="64" height="60"/>
         <image name="purchaseApp 2" width="60" height="60"/>
         <image name="rateApp 4" width="60" height="60"/>
         <image name="sendMail 6" width="60" height="60"/>

@@ -46,6 +46,7 @@ var descriptionGrainClass: Grain?
     var timerString:String = ""
     var timerStatus:Bool = false
     var boilTimeInSeconds: Int = 0
+    var checkBoilTime: Int = 0
     
     
     
@@ -62,7 +63,37 @@ var descriptionGrainClass: Grain?
     
     @IBOutlet weak var setTimeOut: UIButton!
     
+    
+    @IBOutlet weak var minusButTimerOut: UIButton!
+    
+    
+    @IBOutlet weak var plusButTimerOut: UIButton!
+    
+    
+    
     // Action of timer
+    
+   
+    @IBAction func minusButTimerAction(_ sender: Any) {
+        if boilTimeInSeconds > 0 {
+            
+            boilTimeInSeconds = boilTimeInSeconds - 60
+            coutndownTimerOut.text = secondToMMSSFotmatString()
+    
+            descriptionGrainClass?.timeOfBoil = boilTimeInSeconds / 60
+    
+        progressBar()
+        }
+    }
+    
+    
+    @IBAction func plusButTimerAction(_ sender: Any) {
+        boilTimeInSeconds = boilTimeInSeconds + 60
+        coutndownTimerOut.text = secondToMMSSFotmatString()
+        descriptionGrainClass?.timeOfBoil = boilTimeInSeconds / 60
+        progressBar()
+    }
+    
     
     @IBAction func startButtonAction(_ sender: Any) {
         if  timerStatus == false && boilTimeInSeconds >= 1 {
@@ -70,17 +101,40 @@ var descriptionGrainClass: Grain?
         timerStatus = true
             startButtonOut.setTitle("Пауза", for: .normal)
             progressBar()
+            
+            
+            plusButTimerOut.isHidden = true
+            minusButTimerOut.isHidden = true
         }
         
         else {
             timer.invalidate()
             startButtonOut.setTitle("Старт", for: .normal)
             timerStatus = false
+            progressBar()
             
         }
     }
     
+    
+    // set custom time in timer
+    
+    
     @IBAction func setTimeButtonAction(_ sender: Any) {
+        minusButTimerOut.isHidden = false
+        plusButTimerOut.isHidden = false
+        setTimeOut.isHidden = true
+        
+        timer.invalidate()
+        
+        startButtonOut.setTitle("Старт", for: .normal)
+        timerStatus = false
+        
+        boilTimeGiveInSec()
+        coutndownTimerOut.text = secondToMMSSFotmatString()
+        
+        progressBar()
+        
         
     }
 
@@ -96,6 +150,7 @@ var descriptionGrainClass: Grain?
             coutndownTimerOut.text = "Готово!"
             startButtonOut.setTitle("Сброс", for: .normal)
             timerStatus = false
+            
             
             
         }
@@ -137,6 +192,7 @@ var descriptionGrainClass: Grain?
         progressBarOut.progress = 1.0 - ( goingTime / startTime)
         
     }
+    
     
     //MARK:-  calories Descriprtion
     
@@ -266,7 +322,7 @@ var descriptionGrainClass: Grain?
         super.viewDidLoad()
         
         
-        
+    
        
         navigationItem.title = descriptionGrainClass?.name
         descLabelOutlet.text = descriptionGrainClass?.description
@@ -300,6 +356,9 @@ var descriptionGrainClass: Grain?
         animationOfView(item: charactersViewOutlet)
         hideMainItems()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
+            self.boilTimeGiveInSec()
+            
+            
             self.showHiddenTimerViewItems()
             self.backButtomOut.isHidden = false
             
@@ -348,7 +407,17 @@ var descriptionGrainClass: Grain?
         backButtomOut.isHidden = true
         hideTimerViewItems()
         hideCaloriesViewItems()
+        
+        
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
+            
+            self.timer.invalidate()
+            self.boilTimeGiveInSec()
+            self.coutndownTimerOut.text = self.secondToMMSSFotmatString()
+            self.timerStatus = false
+            self.startButtonOut.titleLabel?.text = "Старт"
+            self.progressBar()
             
             self.showHiddenMainItems()
         }
@@ -428,6 +497,8 @@ var descriptionGrainClass: Grain?
             coutndownTimerOut.isHidden = true
             startButtonOut.isHidden = true
             setTimeOut.isHidden = true
+            minusButTimerOut.isHidden = true
+            plusButTimerOut.isHidden = true
             
         }
     // function to show items
