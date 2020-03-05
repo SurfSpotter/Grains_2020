@@ -14,7 +14,8 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Rate App 
+        RateManager.rate()
         
        
         setUpSearchBar()
