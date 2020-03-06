@@ -41,12 +41,13 @@ class OtherViewController: UIViewController {
     }
     
     @IBAction func shareButtonAction(_ sender: Any) {
-        if let imageForSharing = UIImage(named: "iconImg.png") {
+        
+           
             let urlForSharing : NSURL = NSURL(string: "http://surfspotdevelopco.tilda.ws")!
             let desctriptionForSharing = "Привет! Скачай вот это приложение \(urlForSharing) уверен тебе понравится!"
             
             
-            let vc = UIActivityViewController(activityItems: [imageForSharing, desctriptionForSharing], applicationActivities: [])
+            let vc = UIActivityViewController(activityItems: [desctriptionForSharing], applicationActivities: [])
             vc.excludedActivityTypes = [ .airDrop,
                                          .assignToContact,
                                          .openInIBooks,
@@ -55,7 +56,7 @@ class OtherViewController: UIViewController {
                                          
         ]
             present(vc, animated: true)
-        }
+        
 
         
     }
@@ -102,7 +103,7 @@ class OtherViewController: UIViewController {
            let composer = MFMailComposeViewController()
            composer.mailComposeDelegate = self
            composer.setToRecipients(["surfspotdevelop@gmail.com"])
-           composer.setSubject("GMMoney")
+           composer.setSubject("Grains")
            composer.setMessageBody("Привет! Ваше приложение просто супер!, но я бы добавил...(напишите ваше пожелание)", isHTML: false)
            present(composer, animated: true)
            
