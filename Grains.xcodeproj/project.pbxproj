@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		325C593C2417E7EF0067B3BC /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325C593B2417E7EF0067B3BC /* StoreManager.swift */; };
 		325CC1E923EE19E10009551A /* timer 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 325CC1E723EE19E10009551A /* timer 2.png */; };
 		325CC1EA23EE19E10009551A /* calories.png in Resources */ = {isa = PBXBuildFile; fileRef = 325CC1E823EE19E10009551A /* calories.png */; };
 		325CC1EC23EE1B8C0009551A /* volume.png in Resources */ = {isa = PBXBuildFile; fileRef = 325CC1EB23EE1B8C0009551A /* volume.png */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		325C593B2417E7EF0067B3BC /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		325CC1E723EE19E10009551A /* timer 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timer 2.png"; sourceTree = "<group>"; };
 		325CC1E823EE19E10009551A /* calories.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calories.png; sourceTree = "<group>"; };
 		325CC1EB23EE1B8C0009551A /* volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume.png; sourceTree = "<group>"; };
@@ -65,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		325C593D2417E8210067B3BC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				325C593B2417E7EF0067B3BC /* StoreManager.swift */,
+				326D17FC24119A0800DE6195 /* RateManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		32DF8CDB23E77EC400C738F7 = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +112,7 @@
 				325CC1FF23F4BED90009551A /* FavTableViewCell.swift */,
 				32C36A7D240E709C0027D410 /* OtherViewController.swift */,
 				32DF8CFB23E787D700C738F7 /* Model.swift */,
-				326D17FC24119A0800DE6195 /* RateManager.swift */,
+				325C593D2417E8210067B3BC /* Managers */,
 				32DF8CF223E77ECA00C738F7 /* LaunchScreen.storyboard */,
 				32DF8CF523E77ECA00C738F7 /* Info.plist */,
 				32DB9EF723EA105F00D07561 /* Assets.xcassets */,
@@ -196,6 +207,7 @@
 				32DF8CFC23E787D700C738F7 /* Model.swift in Sources */,
 				326D17FD24119A0800DE6195 /* RateManager.swift in Sources */,
 				32DB9ED323E9FB0200D07561 /* MainTableViewCell.swift in Sources */,
+				325C593C2417E7EF0067B3BC /* StoreManager.swift in Sources */,
 				325CC1FE23F4A23B0009551A /* FavouritesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

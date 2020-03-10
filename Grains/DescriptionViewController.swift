@@ -316,8 +316,16 @@ var descriptionGrainClass: Grain?
        }
        
    
+    // MARK: - viewDidLoad()
     
     override func viewDidLoad() {
+        
+        //MARK: - Приложение куплено
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: nPurchaseCompleted), object: nil, queue: nil) { (notification) in
+            print ("Notification About purchasing App sended!")
+            // Действия после покупки проложения
+        }
         
         super.viewDidLoad()
         

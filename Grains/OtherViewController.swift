@@ -13,6 +13,9 @@ class OtherViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: nPurchaseCompleted), object: nil, queue: nil) { (notification) in
+            print ("Notification About purchasing App sended!")
+        }
         tabBarController?.tabBar.alpha = 0.9
         mesuresSCOutlet.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "uDSelectedMeasureIntCell")
        
