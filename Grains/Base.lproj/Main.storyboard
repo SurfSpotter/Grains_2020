@@ -172,12 +172,41 @@
                                                 <rect key="frame" x="19" y="637" width="376" height="527"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT3-Ls-QvX">
-                                                        <rect key="frame" x="33" y="33" width="291" height="94"/>
+                                                        <rect key="frame" x="43" y="185" width="291" height="94"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="quantityOfWater" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aP-rJ-2KR">
+                                                        <rect key="frame" x="76" y="125" width="258" height="42"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="quantityOfGrain" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JL3-68-n1a">
+                                                        <rect key="frame" x="76" y="68" width="266" height="52"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Пропорции:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25P-jK-g2n">
+                                                        <rect key="frame" x="0.0" y="8" width="376" height="52"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="measure" translatesAutoresizingMaskIntoConstraints="NO" id="EHM-2p-0o7">
+                                                        <rect key="frame" x="33" y="74" width="35" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="b6b-z4-jcg">
+                                                        <rect key="frame" x="33" y="130" width="35" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
@@ -434,7 +463,10 @@
                         <outlet property="minusButTimerOut" destination="Uab-ZU-u3k" id="Pdn-tj-8ud"/>
                         <outlet property="plusButTimerOut" destination="raS-CC-EMt" id="4kb-zZ-Ubl"/>
                         <outlet property="progressBarOut" destination="jfz-Ir-HfA" id="4Cz-Qz-hBV"/>
+                        <outlet property="propotionsLabOut" destination="25P-jK-g2n" id="1kP-xW-wBb"/>
                         <outlet property="protLabOut" destination="Vtc-b7-33I" id="vyJ-tn-upm"/>
+                        <outlet property="quanOfWaterOut" destination="8aP-rJ-2KR" id="BV9-40-eoA"/>
+                        <outlet property="quantOfGrainOut" destination="JL3-68-n1a" id="9Ws-3w-2x0"/>
                         <outlet property="setTimeOut" destination="arp-LM-kT5" id="S05-2V-lR2"/>
                         <outlet property="startButtonOut" destination="0FB-iG-HSC" id="nt9-qj-qty"/>
                         <outlet property="timerButtonOut" destination="3Mf-I0-Rew" id="hFE-7T-VJs"/>
@@ -539,7 +571,7 @@
                                 <rect key="frame" x="0.0" y="671.5" width="414" height="32"/>
                                 <segments>
                                     <segment title="Граммы"/>
-                                    <segment title="Фунты"/>
+                                    <segment title="Унции"/>
                                     <segment title="Пропорции"/>
                                 </segments>
                                 <connections>
@@ -645,6 +677,7 @@
         <image name="fire.png" width="384" height="384"/>
         <image name="gear" catalog="system" width="64" height="58"/>
         <image name="heart" catalog="system" width="64" height="54"/>
+        <image name="measure" width="90" height="90"/>
         <image name="measures 3" width="60" height="60"/>
         <image name="minus.circle" catalog="system" width="64" height="60"/>
         <image name="plus.circle" catalog="system" width="64" height="60"/>
@@ -654,6 +687,7 @@
         <image name="shareApp 5" width="60" height="60"/>
         <image name="suit.heart" catalog="system" width="64" height="54"/>
         <image name="timer 2.png" width="512" height="512"/>
+        <image name="water" width="90" height="90"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="vLR-gk-Brw"/>

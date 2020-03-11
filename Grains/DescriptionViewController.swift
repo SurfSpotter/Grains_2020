@@ -15,6 +15,12 @@ class DescriptionViewController: UIViewController {
 let  saveInUDBoolStatOfFav = UserDefaults.standard
 var descriptionGrainClass: Grain?
     
+// Количество ингредиентов
+    let constValueOfGrain = 100.0
+    
+    
+
+
     
     
     @IBOutlet weak var viewOutlet: UIView!  // Фон
@@ -26,6 +32,12 @@ var descriptionGrainClass: Grain?
     @IBOutlet weak var descriptionViewOtlet: UIView!
     
     @IBOutlet weak var descLabelOutlet: UILabel!
+    
+    @IBOutlet weak var propotionsLabOut: UILabel!
+    
+    @IBOutlet weak var quantOfGrainOut: UILabel!
+    
+    @IBOutlet weak var quanOfWaterOut: UILabel!
     
     @IBOutlet weak var timerButtonOut: UIButton!
     
@@ -334,6 +346,8 @@ var descriptionGrainClass: Grain?
        
         navigationItem.title = descriptionGrainClass?.name
         descLabelOutlet.text = descriptionGrainClass?.description
+        quanOfWaterOut.text = quanOfWater
+        quantOfGrainOut.text = quanOfGrain
         boilTimeLabOut.text = "\(descriptionGrainClass!.timeOfBoil) минут"
         coutndownTimerOut.text = "\(descriptionGrainClass!.timeOfBoil):00"
         viewOutlet.backgroundColor = descriptionGrainClass?.backgroundColour // цвет фона из класса крупы
@@ -358,6 +372,11 @@ var descriptionGrainClass: Grain?
         
         
 }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        quanOfWaterOut.text = quanOfWater
+        quantOfGrainOut.text = quanOfGrain
+    }
     
     
     @IBAction func setTimerAction(_ sender: Any) {
@@ -519,9 +538,79 @@ var descriptionGrainClass: Grain?
         }
     
     
+    //MARK: - Measure types converter:
+    
+    var quanOfGrain: String {
+        let usDefSegmentContValue = UserDefaults.standard.integer(forKey: "uDSelectedMeasureIntCell")
+        switch usDefSegmentContValue {
+        case 0:
+            return "\(String(constValueOfGrain).replacingOccurrences(of: ".0", with: "")) граммов крупы"
+        case 1:
+            let inOz : Double =  round(Double((0.033814 * constValueOfGrain)*100.00)) / 100.00 // Округляем
+        return "\(inOz) Oz крупы"
+        case 2:
+            let inProportions : Double = 1.0
+            let inProportionsStr = String(inProportions).replacingOccurrences(of: ".0", with: "") // убираем ноль после запитую
+            
+            // Склоняем слово "Чашка"
+            var sklCups = "чашки"
+            switch inProportions  {
+            case 0:
+                sklCups = "чашек"
+            case 0.01...0.99:
+            sklCups = "чашки"
+            case 1:
+            sklCups = "чашка"
+            case 6...20:
+            sklCups = "чашек"
+            default:
+                sklCups = "чашки"
+            }
+            return ("\(inProportionsStr) \(sklCups) крупы")
+        default:
+            return "default"
+        }
+        
+    }
     
     
     
+    
+    var quanOfWater: String  {
+        let usDefSegmentContValue = UserDefaults.standard.integer(forKey: "uDSelectedMeasureIntCell")
+        switch usDefSegmentContValue {
+           case 0:
+            let rounded = round(Double(constValueOfGrain / descriptionGrainClass!.proportions) * 10) / 10.00
+            return "\(String(rounded).replacingOccurrences(of: ".0", with: "")) мл воды"
+           case 1:
+            let inOz : Double =  round(Double((0.033814 * constValueOfGrain)*10.00) / descriptionGrainClass!.proportions ) / 10.00
+           return "\(inOz) Oz воды"
+           case 2:
+               
+               //let inProportions : Double =  Double(signOf: ( constValueOfGrain / descriptionGrainClass!.proportions  ) / 200,  magnitudeOf: descriptionGrainClass!.proportions)
+            let inProportions: Double = round(Double((1.0 / descriptionGrainClass!.proportions)) * 10) / 10
+            let inProportionInStr: String = String(inProportions).replacingOccurrences(of: ".0", with: "")
+            
+             // Склоняем слово "Чашка"
+               var sklCups = "чашки"
+               switch inProportions  {
+               case 0:
+                   sklCups = "чашек"
+               case 0.01...0.99:
+                sklCups = "чашки"
+               case 1:
+               sklCups = "чашка"
+               case 5...20:
+               sklCups = "чашек"
+               default:
+                   sklCups = "чашки"
+               }
+               return ("\(inProportionInStr) \(sklCups) воды")
+           default:
+               return "default"
+           }
+    
+    }
     
     
     

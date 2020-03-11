@@ -28,6 +28,7 @@ class StoreManager: NSObject {
         
         let request = SKProductsRequest(productIdentifiers: [inAppId])
         request.delegate = self
+        request.start()
     }
     
     
@@ -42,7 +43,7 @@ extension StoreManager: SKProductsRequestDelegate {
             SKPaymentQueue.default().add(payment)
         }
       
-            print ("нерабочие идентификаторы!")
+        else {print ("нерабочие идентификаторы!")}
         
     }
     
@@ -83,19 +84,3 @@ extension StoreManager: SKPaymentTransactionObserver {
 }
 
 
-/*
- public enum SKPaymentTransactionState : Int {
-
-     
-     case purchasing // Transaction is being added to the server queue.
-
-     case purchased // Transaction is in queue, user has been charged.  Client should complete the transaction.
-
-     case failed // Transaction was cancelled or failed before being added to the server queue.
-
-     case restored // Transaction was restored from user's purchase history.  Client should complete the transaction.
-
-     @available(iOS 8.0, *)
-     case deferred // The transaction is in the queue, but its final status is pending external action.
- }
- */

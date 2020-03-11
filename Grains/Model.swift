@@ -142,7 +142,7 @@ class Model: NSObject {
     let rice = Grain(name: "Рис",
                      keyWords: ["Рис, Rice, rice, rise, ris"],
                      timeOfBoil: 12,
-                     proportions: 0.5,
+                     proportions: 0.9,
                      finalVolume: 2, fat: 2,
                      carbohydrate: 2,
                      protein: 4,
@@ -173,12 +173,13 @@ class Model: NSObject {
     )
     let oatmeal = Grain(name: "Геркулес",
                         keyWords: ["геркулес, овсянка, овес, хлопья"],
-                        timeOfBoil: 1, proportions: 0.5,
+                        timeOfBoil: 1,
+                        proportions: 0.1,
                         finalVolume: 3,
                         fat: 10, carbohydrate: 50,
                         protein: 40,
                         caloriesInCcal: 200,
-                        description: "descripton of oatmeal",
+                        description: " Налить в кастрюлю холодной воды - в 2,5 раза больше, чем овсянки: на 1 стакан гречки 2,5 стакана воды. Посолить воду. Поставить кастрюлю на тихий огонь, довести до кипения. Гречку варить на медленном огне, под крышкой, 20 минут. Затем добавить кубик сливочного масла, перемешать и дать настояться 10 минут под крышкой.",
                         imageName: "Oatmeal",
                         backGroundColorRed: 178 ,
                         backGroundColorGreen: 150,
@@ -200,9 +201,6 @@ class Model: NSObject {
             
         }
     }
-    
-
-    
     
     
     

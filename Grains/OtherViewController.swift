@@ -11,6 +11,8 @@ import MessageUI
 
 class OtherViewController: UIViewController {
 
+let buyInApp = StoreManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: nPurchaseCompleted), object: nil, queue: nil) { (notification) in
@@ -40,7 +42,10 @@ class OtherViewController: UIViewController {
     
     ///! Do purschase the App Function!
     @IBAction func purchaseFullVersion(_ sender: Any) {
-        print (UserDefaults.standard.integer(forKey: "uDSelectedMeasureIntCell"))
+        buyInApp.buyInApp(inAppId: "grainsFullversion1")
+        
+        
+        
     }
     
     @IBAction func shareButtonAction(_ sender: Any) {
