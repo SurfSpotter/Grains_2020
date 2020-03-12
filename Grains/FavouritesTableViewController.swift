@@ -80,14 +80,16 @@ class FavouritesTableViewController: UITableViewController {
     fileprivate func messIfFavEmpty() {
            backgroundImgOut.alpha = 0.4
            ifEmpyLabel.isHidden = true
+        backgroundImgOut.isHidden = true
            if Model.shared.favGrains.isEmpty {
                ifEmpyLabel.isHidden = false
                tabBarController?.tabBar.alpha = 0.9
                navigationController?.navigationBar.alpha = 0.9
             tableView.isScrollEnabled = false
             backgroundImgOut.alpha = 1.0
-            
+            backgroundImgOut.isHidden = false
             
            }
+           
        }
 }

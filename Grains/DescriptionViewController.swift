@@ -161,7 +161,8 @@ var descriptionGrainClass: Grain?
             timer.invalidate()
             coutndownTimerOut.text = "Готово!"
             startButtonOut.setTitle("Сброс", for: .normal)
-            timerStatus = false
+            boilTimeGiveInSec()
+            timerStatus = true
             
             
             
@@ -341,11 +342,12 @@ var descriptionGrainClass: Grain?
         
         super.viewDidLoad()
         
-        
+        if descriptionGrainClass != nil {
+        calMainDescLabOut.text = "\(descriptionGrainClass!.caloriesInCcal)  Ккал".replacingOccurrences(of: ".0", with: "") }
     
-       
         navigationItem.title = descriptionGrainClass?.name
         descLabelOutlet.text = descriptionGrainClass?.description
+        
         quanOfWaterOut.text = quanOfWater
         quantOfGrainOut.text = quanOfGrain
         boilTimeLabOut.text = "\(descriptionGrainClass!.timeOfBoil) минут"
