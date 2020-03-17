@@ -35,7 +35,7 @@
                                             <color key="backgroundColor" red="0.30335146190000001" green="0.383259356" blue="0.63924336429999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NameGrain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cef-fb-qri">
-                                            <rect key="frame" x="98" y="11" width="231" height="41"/>
+                                            <rect key="frame" x="98" y="11" width="303" height="41"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                             <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -259,7 +259,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                                        <font key="NSFont" metaFont="message" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -547,20 +547,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vaE-0a-qkA">
                                 <rect key="frame" x="17" y="313" width="67" height="270"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="shareApp 5" translatesAutoresizingMaskIntoConstraints="NO" id="DvM-Fz-Jmm">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareApp 5" translatesAutoresizingMaskIntoConstraints="NO" id="DvM-Fz-Jmm">
                                         <rect key="frame" x="0.0" y="0.0" width="67" height="60"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="purchaseApp 2" translatesAutoresizingMaskIntoConstraints="NO" id="bP7-Db-cwB">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purchaseApp 2" translatesAutoresizingMaskIntoConstraints="NO" id="bP7-Db-cwB">
                                         <rect key="frame" x="0.0" y="70" width="67" height="60"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="rateApp 4" translatesAutoresizingMaskIntoConstraints="NO" id="tx4-Sa-H1D">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rateApp 4" translatesAutoresizingMaskIntoConstraints="NO" id="tx4-Sa-H1D">
                                         <rect key="frame" x="0.0" y="140" width="67" height="60"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="67" id="nkm-SD-Dpk"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="sendMail 6" translatesAutoresizingMaskIntoConstraints="NO" id="sQN-x3-ZBG">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sendMail 6" translatesAutoresizingMaskIntoConstraints="NO" id="sQN-x3-ZBG">
                                         <rect key="frame" x="0.0" y="210" width="67" height="60"/>
                                     </imageView>
                                 </subviews>
@@ -695,6 +695,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vLR-gk-Brw"/>
+        <segue reference="ruM-Qa-UhP"/>
     </inferredMetricsTieBreakers>
 </document>

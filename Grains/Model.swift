@@ -131,15 +131,30 @@ class Model: NSObject {
     
     
     
-    /*let array = ["horse", "cow", "camel", "sheep", "goat"]
-
-    let defaults = UserDefaults.standard
-    defaults.set(array, forKey: "SavedStringArray") */
-    
+   
     // Grains variable initialized
     
+    let boulgour = Grain(name: "Булгур",
+                     keyWords: ["Булгур булгур Bulgur bulgur"],
+                     timeOfBoil: 25,
+                     proportions: 0.5,
+                     finalVolume: 2,
+                     fat: 0.24,
+                     carbohydrate: 14.08,
+                     protein: 3.08,
+                     caloriesInCcal: 83,
+                     description: "Булгур перед варкой промыть в проточной воде, выложив в сито, слить воду и обжарить булгур в кастрюле на растительном масле 1 минуту, добавить кипяток, варить 20 минут под крышкой на тихом огне, помешивая.",
+                     imageName: "Rice",
+                     backGroundColorRed: 200,
+                     backGroundColorGreen: 189,
+                     backGroundColorBlue: 140,
+                     backGroundColorAlpha: 1
+    )
     
-    let rice = Grain(name: "Рис",
+    
+    
+    
+    let rice = Grain(name: "Рис длиннозерный пропаренный",
                      keyWords: ["Рис, Rice, rice, rise, ris"],
                      timeOfBoil: 12,
                      proportions: 0.9,
@@ -209,10 +224,11 @@ class Model: NSObject {
     
     
     func appendToArr() -> Void {
+        //grainsAllTogether.append(boulgour)
         grainsAllTogether.append(rice)
         grainsAllTogether.append(buckwheat)
         grainsAllTogether.append(oatmeal)
-        
+        //grainsAllTogether = grainsAllTogether.sorted {$0.name < $1.name}
         print("This print from function: appendToArr" )
         for i in Model.shared.grainsAllTogether {
             let name = i.name
