@@ -48,6 +48,7 @@ var descriptionGrainClass: Grain?
     @IBOutlet weak var calMainDescLabOut: UILabel!
     
     
+   
     
    //MARK: - Timer
     
@@ -59,8 +60,8 @@ var descriptionGrainClass: Grain?
     var timerStatus:Bool = false
     var boilTimeInSeconds: Int = 0
     var checkBoilTime: Int = 0
-    
-    
+    var startTime: Int = 0
+    var boilTimeMinus: Int = 0
     
     // Outlets
     
@@ -109,6 +110,10 @@ var descriptionGrainClass: Grain?
     
     @IBAction func startButtonAction(_ sender: Any) {
         if  timerStatus == false && boilTimeInSeconds >= 1 {
+        let startTimeSet: TimeInterval = Date().timeIntervalSince1970
+        startTime = Int(startTimeSet) //записываем время старта таймера
+        boilTimeMinus = boilTimeInSeconds
+        print (startTime)
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerSelector) , userInfo: nil, repeats: true)
         timerStatus = true
             startButtonOut.setTitle("Пауза", for: .normal)
@@ -153,8 +158,10 @@ var descriptionGrainClass: Grain?
     
     
     @objc func timerSelector() {
-        
-        boilTimeInSeconds = boilTimeInSeconds - 1
+        let time: TimeInterval = Date().timeIntervalSince1970
+        let timeInt = Int(time)
+        let countDown = timeInt - startTime
+        boilTimeInSeconds = boilTimeMinus - countDown
         coutndownTimerOut.text = secondToMMSSFotmatString()
         progressBar()
         if boilTimeInSeconds <= 0 {
@@ -263,21 +270,7 @@ var descriptionGrainClass: Grain?
             print ("Attention! descriptionGrainClass = nil")
         }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-        
+    
        
     }
     
@@ -333,6 +326,7 @@ var descriptionGrainClass: Grain?
     
     override func viewDidLoad() {
         
+        
         //MARK: - Приложение куплено
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: nPurchaseCompleted), object: nil, queue: nil) { (notification) in
@@ -376,6 +370,9 @@ var descriptionGrainClass: Grain?
 }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        
+        
         quanOfWaterOut.text = quanOfWater
         quantOfGrainOut.text = quanOfGrain
     }
@@ -436,6 +433,7 @@ var descriptionGrainClass: Grain?
         backButtomOut.isHidden = true
         hideTimerViewItems()
         hideCaloriesViewItems()
+        boilTimeLabOut.text = "\(descriptionGrainClass!.timeOfBoil) мин."
         
         
         
