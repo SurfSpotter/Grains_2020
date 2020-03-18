@@ -10,6 +10,7 @@ import UIKit
 
 class DescriptionViewController: UIViewController {
     
+    static let shared = DescriptionViewController()
     //MARK: - Variables
     
 let  saveInUDBoolStatOfFav = UserDefaults.standard
@@ -344,7 +345,7 @@ var descriptionGrainClass: Grain?
         
         quanOfWaterOut.text = quanOfWater
         quantOfGrainOut.text = quanOfGrain
-        boilTimeLabOut.text = "\(descriptionGrainClass!.timeOfBoil) минут"
+        boilTimeLabOut.text = "\(descriptionGrainClass!.timeOfBoil) \(Model.shared.skloneniaMinut(boilTime: descriptionGrainClass!))"
         coutndownTimerOut.text = "\(descriptionGrainClass!.timeOfBoil):00"
         viewOutlet.backgroundColor = descriptionGrainClass?.backgroundColour // цвет фона из класса крупы
         setGrainImage()
@@ -433,7 +434,7 @@ var descriptionGrainClass: Grain?
         backButtomOut.isHidden = true
         hideTimerViewItems()
         hideCaloriesViewItems()
-        boilTimeLabOut.text = "\(descriptionGrainClass!.timeOfBoil) мин."
+        boilTimeLabOut.text = "\(descriptionGrainClass!.timeOfBoil) \(Model.shared.skloneniaMinut(boilTime: descriptionGrainClass!))"
         
         
         
@@ -574,7 +575,7 @@ var descriptionGrainClass: Grain?
     }
     
     
-    
+   // MARK: Склонения и прочее
     
     var quanOfWater: String  {
         let usDefSegmentContValue = UserDefaults.standard.integer(forKey: "uDSelectedMeasureIntCell")
@@ -613,6 +614,7 @@ var descriptionGrainClass: Grain?
     }
     
     
+
     
     
     

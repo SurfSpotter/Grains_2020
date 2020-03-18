@@ -19,16 +19,30 @@ class MainTableViewCell: UITableViewCell {
     @IBAction func pushStartTimerAction(_ sender: Any) {
     }
     
+   
+    static let shared = MainTableViewCell()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
     func initCell (grain: Grain) {
+        
+        
+        
+  // Склонения(Знаю что костыль))))
+        
+       
+        
         imgOfGrain.image = UIImage(named: grain.grainImgName)
         nameOfGrainLabel.text = grain.name
-        timeOfBoilLabel.text = String(grain.timeOfBoil) + " минут"
+        timeOfBoilLabel.text = String(grain.timeOfBoil) + " \(Model.shared.skloneniaMinut(boilTime: grain))"
         self.backgroundColor? = grain.backgroundColour
+        
+        
+        
+
     }
    
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -37,4 +51,7 @@ class MainTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+   
+   
+    
 }

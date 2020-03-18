@@ -21,9 +21,11 @@ class FavTableViewCell: UITableViewCell {
         // Initialization code
     }
     func initCell (grain: Grain) {
+        
+        
         imageOut.image = UIImage(named: grain.grainImgName)
         nameOut.text = grain.name
-        timeBoilOut.text = String(grain.timeOfBoil) + " минут"
+        timeBoilOut.text = String(grain.timeOfBoil) + " \(Model.shared.skloneniaMinut(boilTime: grain))"
         self.backgroundColor? = grain.backgroundColour
     }
     override func setSelected(_ selected: Bool, animated: Bool) {

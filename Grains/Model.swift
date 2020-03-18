@@ -217,8 +217,46 @@ class Model: NSObject {
         }
     }
     
+   // Склонения минут
     
-    
+func skloneniaMinut(boilTime: Grain) -> String {
+               switch  boilTime.timeOfBoil  {
+                  case 0:
+                  return "минут"
+                  case 1:
+                  return "минута"
+                  case 2...4 :
+                  return "минуты"
+                  case 5...20 :
+                  return "минут"
+                  case 21:
+                  return "минута"
+                  case 22...24 :
+                  return "минуты"
+                  case 25...30 :
+                  return "минут"
+                  case 31 :
+                  return "минута"
+                  case 32...34 :
+                  return "минуты"
+                  case 35...40 :
+                  return "минут"
+                  case 41 :
+                  return "минута"
+                  case 42...44 :
+                  return "минуты"
+                  case 45...50 :
+                  return "минут"
+                  case 51 :
+                  return "минута"
+                  case 52...54 :
+                  return "минуты"
+                  case 55...60 :
+                  return "минут"
+                  default:
+                      return "мин."
+                  }
+              }
     
   // function to Append Grains into ArrayAllTogether
     
