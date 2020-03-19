@@ -106,6 +106,7 @@ var descriptionGrainClass: Grain?
         coutndownTimerOut.text = secondToMMSSFotmatString()
         descriptionGrainClass?.timeOfBoil = boilTimeInSeconds / 60
         progressBar()
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["notification"])
     }
     
     
@@ -114,7 +115,11 @@ var descriptionGrainClass: Grain?
         let startTimeSet: TimeInterval = Date().timeIntervalSince1970
         startTime = Int(startTimeSet) //записываем время старта таймера
         boilTimeMinus = boilTimeInSeconds
+            
+        UserNotifications.shared.createNotification(timeInSeconds: boilTimeInSeconds, nameOfGrain: descriptionGrainClass!.name) // Уведомление
+        
         print (startTime)
+        print ("boilTimeInSeconds \(boilTimeInSeconds)")
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerSelector) , userInfo: nil, repeats: true)
         timerStatus = true
             startButtonOut.setTitle("Пауза", for: .normal)
@@ -126,6 +131,7 @@ var descriptionGrainClass: Grain?
         }
         
         else {
+            UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["notification"])
             timer.invalidate()
             startButtonOut.setTitle("Старт", for: .normal)
             timerStatus = false
@@ -152,7 +158,7 @@ var descriptionGrainClass: Grain?
         coutndownTimerOut.text = secondToMMSSFotmatString()
         
         progressBar()
-        
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["notification"])
         
     }
 
@@ -171,7 +177,7 @@ var descriptionGrainClass: Grain?
             startButtonOut.setTitle("Сброс", for: .normal)
             boilTimeGiveInSec()
             timerStatus = true
-            
+        
             
             
         }
@@ -451,6 +457,7 @@ var descriptionGrainClass: Grain?
         }
         
         
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["notification"])
         
         
         
