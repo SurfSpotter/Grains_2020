@@ -16,7 +16,7 @@ class UserNotifications: NSObject {
     func requestAuthorization() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (success, error) in
             if success {
-                //create Notification
+                //
             }
             else {
                 print (error?.localizedDescription ?? "error of authorization Notification")
