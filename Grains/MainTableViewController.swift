@@ -19,6 +19,7 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
         
         
        
+       
         setUpSearchBar()
         SetupNavController()
         Model.shared.appendToArr()
