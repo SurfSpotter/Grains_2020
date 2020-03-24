@@ -260,7 +260,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="message" size="11"/>
+                                                                        <font key="NSFont" metaFont="menu" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -496,7 +496,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgrounOtherVC" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-pz-FRg" userLabel="backgroundImage">
-                                <rect key="frame" x="0.0" y="-10" width="414" height="906"/>
+                                <rect key="frame" x="0.0" y="-28" width="414" height="924"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Единицы измерения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZf-xe-FBM">
                                 <rect key="frame" x="113.66666666666669" y="619.66666666666663" width="187" height="24"/>
@@ -588,9 +588,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="eVT-pz-FRg" firstAttribute="width" secondItem="qeE-4N-sEt" secondAttribute="width" id="BYm-Rn-cWf"/>
-                            <constraint firstItem="eVT-pz-FRg" firstAttribute="centerY" secondItem="pWy-Vw-z4m" secondAttribute="centerY" constant="14.5" id="JHI-ih-9QU"/>
+                            <constraint firstItem="eVT-pz-FRg" firstAttribute="centerY" secondItem="pWy-Vw-z4m" secondAttribute="centerY" constant="5.5" id="JHI-ih-9QU"/>
                             <constraint firstItem="eVT-pz-FRg" firstAttribute="centerX" secondItem="pWy-Vw-z4m" secondAttribute="centerX" id="kNr-0J-cbX"/>
-                            <constraint firstItem="eVT-pz-FRg" firstAttribute="height" secondItem="qeE-4N-sEt" secondAttribute="height" constant="10" id="wUz-ze-853"/>
+                            <constraint firstItem="eVT-pz-FRg" firstAttribute="height" secondItem="qeE-4N-sEt" secondAttribute="height" constant="28" id="wUz-ze-853"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pWy-Vw-z4m"/>
                     </view>
@@ -665,7 +665,7 @@
     <resources>
         <image name="Buckwheat" width="180" height="180"/>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
-        <image name="bgrounOtherVC" width="871" height="1552.5"/>
+        <image name="bgrounOtherVC" width="871" height="1466"/>
         <image name="bgroundFavVC" width="1707" height="2560.5"/>
         <image name="fire.png" width="384" height="384"/>
         <image name="gear" catalog="system" width="64" height="58"/>
