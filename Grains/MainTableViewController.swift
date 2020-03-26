@@ -137,7 +137,6 @@ extension MainTableViewController: UISearchResultsUpdating {
     //MARK: - Function of SearchField:
     
     
-    
     func updateSearchResults(for searchController: UISearchController) {
        print (searchController.searchBar.text!)
         if searchController.searchBar.text != nil && searchController.searchBar.text!.count > 2 {  // если в текстовом поле больше 3х букв то:
@@ -153,17 +152,17 @@ extension MainTableViewController: UISearchResultsUpdating {
             // перечисляем в классе конкретной крупы массив синонимов
             for keyword in i.keyWords {
             // если синоним совпадает с введенным текстом то обнуляем массив и добавляем в пустой массив эту крупу
-            if keyword.contains(searchController.searchBar.text!) {     // i это название класса
+                if keyword.contains(searchController.searchBar.text!.lowercased()) {     // i это название класса
                 print(i.name)
-                filteredGrains.removeAll()
-                tableView.reloadData()
                 
                 filteredGrains.append(i)
-                print ("searchArray: \(filteredGrains.count)")
-                Model.shared.grainsAllTogether.removeAll()
-                
-                Model.shared.grainsAllTogether = filteredGrains
+                    
                 tableView.reloadData()
+                print ("searchArray: \(filteredGrains.count)")
+                //Model.shared.grainsAllTogether.removeAll()
+                
+                //Model.shared.grainsAllTogether = filteredGrains
+                
                 
                 }
             else {
@@ -171,15 +170,18 @@ extension MainTableViewController: UISearchResultsUpdating {
                 
                 }
                 }
+            Model.shared.grainsAllTogether = filteredGrains
+            //filteredGrains.removeAll()
+            tableView.reloadData()
             }
             tableView.reloadData()
             }
-//        else if searchController.searchBar.text == ""  {
-//          Model.shared.grainsAllTogether.removeAll()
-//            Model.shared.appendToArr()
-//            tableView.reloadData()
-//
-//        }
+        else if searchController.searchBar.text == ""  {
+          Model.shared.grainsAllTogether.removeAll()
+            Model.shared.appendToArr()
+            tableView.reloadData()
+
+        }
         }
         
         
