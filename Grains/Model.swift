@@ -604,8 +604,116 @@ class Model: NSObject {
     backGroundColorAlpha: 1
     )
     
+    let fasolWhite = Grain(name: "Фасоль белая",
+    keyWords: ["фасоль", "белая"],
+    timeOfBoil: 50,
+    proportions: 0.33,
+    finalVolume: 1,
+    fat: 1.6,
+    carbohydrate: 55,
+    protein: 22.3,
+    caloriesInCcal: 324,
+    description: "Залить фасоль водой и оставить на время до 10 часов, именно столько времени нужно, чтобы бобы размягчились, а все вредные вещества ушли в воду.",
+    imageName: "default",
+    backGroundColorRed: 157 ,
+    backGroundColorGreen: 105,
+    backGroundColorBlue: 47,
+    backGroundColorAlpha: 1
+    )
+    
+    
+    let fasolRed = Grain(name: "Фасоль красная",
+    keyWords: ["фасоль", "красная"],
+    timeOfBoil: 60,
+    proportions: 0.33,
+    finalVolume: 1,
+    fat: 2,
+    carbohydrate: 55,
+    protein: 22,
+    caloriesInCcal: 330,
+    description: "Залить фасоль водой и оставить на время до 10 часов, именно столько времени нужно, чтобы бобы размягчились, а все вредные вещества ушли в воду. Перед приготовлением смените воду",
+    imageName: "default",
+    backGroundColorRed: 157 ,
+    backGroundColorGreen: 105,
+    backGroundColorBlue: 47,
+    backGroundColorAlpha: 1
+    )
+    
+    
+    let chechevicaGreen = Grain(name: "Чечевица зеленая",
+    keyWords: ["Чечевица", "зеленая"],
+    timeOfBoil: 40,
+    proportions: 0.5,
+    finalVolume: 1,
+    fat: 2,
+    carbohydrate: 65,
+    protein: 20,
+    caloriesInCcal: 350,
+    description: "Замочите в холодной воде на 1–2 часа. Слейте жидкость и промойте под проточной водой.",
+    imageName: "default",
+    backGroundColorRed: 157 ,
+    backGroundColorGreen: 105,
+    backGroundColorBlue: 47,
+    backGroundColorAlpha: 1
+    )
+    
+    let chechevicaRed = Grain(name: "Чечевица красная",
+    keyWords: ["Чечевица", "красная"],
+    timeOfBoil: 15,
+    proportions: 0.5,
+    finalVolume: 1,
+    fat: 1.2,
+    carbohydrate: 62.5,
+    protein: 24.7,
+    caloriesInCcal: 328,
+    description: "Красная и жёлтая чечевица не требует замачивания и хорошо разваривается. Выложите промытую чечевицу в кастрюлю и добавьте воду.",
+    imageName: "default",
+    backGroundColorRed: 157 ,
+    backGroundColorGreen: 105,
+    backGroundColorBlue: 47,
+    backGroundColorAlpha: 1
+    )
+    
+    
+    let yachmen = Grain(name: "Ячмень",
+    keyWords: ["Ячмень"],
+    timeOfBoil: 35,
+    proportions: 0.4,
+    finalVolume: 1,
+    fat: 0.2,
+    carbohydrate: 86,
+    protein: 6,
+    caloriesInCcal: 370,
+    description: "После варки слить воду и дать постоять под крышкой 15 минут.",
+    imageName: "default",
+    backGroundColorRed: 157 ,
+    backGroundColorGreen: 105,
+    backGroundColorBlue: 47,
+    backGroundColorAlpha: 1
+    )
+    
+    let yachnevayaGrain = Grain(name: "Ячневая крупа",
+    keyWords: ["Ячневая", "крупа"],
+    timeOfBoil: 20,
+    proportions: 0.33,
+    finalVolume: 1,
+    fat: 1.3,
+    carbohydrate: 67.7,
+    protein: 10,
+    caloriesInCcal: 324,
+    description: "Варить регулярно перемешивая. После варки слить воду и дать постоять под крышкой 15 минут.",
+    imageName: "default",
+    backGroundColorRed: 157 ,
+    backGroundColorGreen: 105,
+    backGroundColorBlue: 47,
+    backGroundColorAlpha: 1
+    )
  /*
+     Ячневая крупа
+     Ячмень
      Рис длиннозерный пропаренный
+     Чечевица зеленая
+     chechevicaRed
 Перед варкой бобы обязательно замочить в холодной воде минимум на 12 часов.
      
      для длиннозёрного — 1 : 1,5–2;
@@ -701,6 +809,12 @@ func skloneniaMinut(boilTime: Grain) -> String {
         grainsAllTogether.append(riceSteamed)
         grainsAllTogether.append(riceJasmin)
         grainsAllTogether.append(riceRound)
+        grainsAllTogether.append(fasolWhite)
+        grainsAllTogether.append(fasolRed)
+        grainsAllTogether.append(chechevicaGreen)
+        grainsAllTogether.append(chechevicaRed)
+        grainsAllTogether.append(yachmen)
+        grainsAllTogether.append(yachnevayaGrain)
         grainsAllTogether = grainsAllTogether.sorted {$0.name < $1.name}
         print("This print from function: appendToArr" )
         for i in Model.shared.grainsAllTogether {
