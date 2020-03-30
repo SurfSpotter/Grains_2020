@@ -353,7 +353,8 @@ var descriptionGrainClass: Grain?
         quantOfGrainOut.text = quanOfGrain
         boilTimeLabOut.text = "\(descriptionGrainClass!.timeOfBoil) \(Model.shared.skloneniaMinut(boilTime: descriptionGrainClass!))"
         coutndownTimerOut.text = "\(descriptionGrainClass!.timeOfBoil):00"
-        viewOutlet.backgroundColor = descriptionGrainClass?.backgroundColour // цвет фона из класса крупы
+        
+        viewOutlet.backgroundColor = Model.shared.hexStringToUIColor(hex: descriptionGrainClass!.backgroungColorInHex) // цвет фона из класса крупы
         setGrainImage()
         hideTimerViewItems()
      
@@ -552,14 +553,14 @@ var descriptionGrainClass: Grain?
         let usDefSegmentContValue = UserDefaults.standard.integer(forKey: "uDSelectedMeasureIntCell")
         switch usDefSegmentContValue {
         case 0:
-            return "\(String(constValueOfGrain).replacingOccurrences(of: ".0", with: "")) граммов крупы"
+            return "\(String( (round(constValueOfGrain * 10000) / 10000)).replacingOccurrences(of: ".0", with: "")) граммов крупы"
         case 1:
             let inOz : Double =  round(Double((0.033814 * constValueOfGrain)*100.00)) / 100.00 // Округляем
         return "\(inOz) Oz крупы"
         case 2:
             let inProportions : Double = 1.0
-            let inProportionsStr = String(inProportions).replacingOccurrences(of: ".0", with: "") // убираем ноль после запитую
-            
+            let inProportionsStr = String(round(inProportions * 10000) / 10000).replacingOccurrences(of: ".0", with: "") // убираем ноль после запитую
+           
             // Склоняем слово "Чашка"
             var sklCups = "чашки"
             switch inProportions  {

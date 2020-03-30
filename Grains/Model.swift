@@ -35,7 +35,7 @@ protocol GrainProtocol {
     var keyWords: [String] {get}
     var timeOfBoil: Int {get}
     var proportions: Double {get}
-    var finalVolume: Double {get}
+    var backgroungColorInHex: String {get}
     
     
     var fat: Double {get}
@@ -66,7 +66,7 @@ class Grain: GrainProtocol {
     
     var proportions: Double
     
-    var finalVolume: Double
+    var backgroungColorInHex: String
     
     var fat: Double
     
@@ -84,12 +84,12 @@ class Grain: GrainProtocol {
     
  //Make constructor
     
-    init(name: String, keyWords: [String], timeOfBoil: Int, proportions: Double, finalVolume: Double, fat: Double, carbohydrate: Double , protein: Double , caloriesInCcal: Double , description: String, imageName: String, backGroundColorRed: CGFloat, backGroundColorGreen: CGFloat, backGroundColorBlue: CGFloat, backGroundColorAlpha: CGFloat ) {
+    init(name: String, keyWords: [String], timeOfBoil: Int, proportions: Double, backgroungColorInHex: String, fat: Double, carbohydrate: Double , protein: Double , caloriesInCcal: Double , description: String, imageName: String, backGroundColorRed: CGFloat, backGroundColorGreen: CGFloat, backGroundColorBlue: CGFloat, backGroundColorAlpha: CGFloat ) {
         self.name = name
         self.keyWords = keyWords
         self.timeOfBoil = timeOfBoil
         self.proportions = proportions
-        self.finalVolume = finalVolume
+        self.backgroungColorInHex = backgroungColorInHex
         self.fat = fat
         self.carbohydrate = carbohydrate
         self.protein = protein
@@ -138,13 +138,13 @@ class Model: NSObject {
                      keyWords: ["Булгур булгур Bulgur bulgur"],
                      timeOfBoil: 25,
                      proportions: 0.5,
-                     finalVolume: 2,
+                     backgroungColorInHex: "#BE874A",
                      fat: 0.24,
                      carbohydrate: 14.08,
                      protein: 3.08,
                      caloriesInCcal: 83,
                      description: "Булгур перед варкой промыть в проточной воде, выложив в сито, слить воду и обжарить булгур в кастрюле на растительном масле 1 минуту, добавить кипяток, варить 20 минут под крышкой на тихом огне, помешивая.",
-                    imageName: "Ric",
+                    imageName: "boulgour",
                     backGroundColorRed: 1 ,
                     backGroundColorGreen: 1,
                     backGroundColorBlue: 1,
@@ -157,7 +157,7 @@ class Model: NSObject {
                           keyWords: ["buckwheat, Buckwheat, Греча, Гречка, греча, гречка, ядрица, гречиха "],
                           timeOfBoil: 15,
                           proportions: 0.25,
-                          finalVolume: 1.0,
+                          backgroungColorInHex: "#B45A17",
                           fat: 2.5,
                           carbohydrate: 72,
                           protein: 13,
@@ -173,12 +173,12 @@ class Model: NSObject {
                         keyWords: ["Oatmeal", "oatmeal", "овес", "овсянка", "хлопья", "геркулес"],
                         timeOfBoil: 20,
                         proportions: 0.3,
-                        finalVolume: 1,
+                        backgroungColorInHex: "#A99364",
                         fat: 6.5, carbohydrate: 60,
                         protein: 13,
                         caloriesInCcal: 370,
                         description: "Варить на медленном огне, периодически помешивая",
-                        imageName: "Oatmeal",
+                        imageName: "herkuless",
                         backGroundColorRed: 1 ,
                         backGroundColorGreen: 1,
                         backGroundColorBlue: 1,
@@ -189,31 +189,31 @@ class Model: NSObject {
                     keyWords: ["Горох горох"],
                     timeOfBoil: 60,
                     proportions: 0.3,
-                    finalVolume: 1.0,
+                    backgroungColorInHex: "#D1AA85" ,
                     fat: 2.0,
                     carbohydrate: 53.0,
                     protein: 22.0,
                     caloriesInCcal: 320.0,
                     
                             description: "Чтобы горох быстрее сварился его надо заранее замочить, лучше залить водой (её нужно взять раза в 3-4 больше) и поставить в холодильник. Если забыли об этом с вечера, но у вас есть время, можно залить горох кипятком и дать ему постоять часик. До начала процесса приготовления колотый горох следует хорошо промыть. Еще один вариант ускорения приготовления гороха колотого без замачивания – его прокаливание на сковороде перед приготовлением на небольшом огне в течение 10-15 минут, постоянно помешивая.",
-                    imageName: "default" ,
+                    imageName: "goroh" ,
                     backGroundColorRed: 30 ,
                     backGroundColorGreen: 30,
                     backGroundColorBlue: 30,
                     backGroundColorAlpha: 30 )
     
     
-    let dolihos = Grain(name: "Долихос",
+    let dolichos = Grain(name: "Долихос",
                         keyWords: ["Долихос долихос dolihos"],
                         timeOfBoil: 120,
                         proportions: 0.25,
-                        finalVolume: 1,
+                        backgroungColorInHex: "#D2B566",
                         fat: 1,
                         carbohydrate: 59,
                         protein: 21,
                         caloriesInCcal: 329,
                         description: "Перед тем, как варить долихос (лаблаб), он требует замачивания на 8-10 часов в большом количестве холодной воды. После этой процедуры достаточно промыть долихос и можно варить - залить крупу в кастрюле крутым кипятком с запасом пару сантиметров варить без крышки на тихом огне.",
-                        imageName: "default",
+                        imageName: "dolichos",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
                         backGroundColorBlue: 47,
@@ -224,13 +224,13 @@ class Model: NSObject {
                         keyWords: ["киноа Киноа"],
                         timeOfBoil: 15,
                         proportions: 0.5,
-                        finalVolume: 1,
+                        backgroungColorInHex: "#B5BAC0",
                         fat: 7,
                         carbohydrate: 67,
                         protein: 14,
                         caloriesInCcal: 390,
                         description: "Промойте крупу в мелком сите под холодной проточной водой, перетирая и промывая зерна пальцами, чтобы удалить как можно горечи и пенистой воды, которую дает сапонин (горькое вещество растительного происхождения на поверхности зерён). Промывайте в общей сложности 2 минуты.",
-                        imageName: "default",
+                        imageName: "kinoa",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
                         backGroundColorBlue: 47,
@@ -241,13 +241,13 @@ class Model: NSObject {
                         keyWords: ["кукуруза Кукуруза"],
                         timeOfBoil: 30,
                         proportions: 0.2,
-                        finalVolume: 1,
+                        backgroungColorInHex: "#DE7B0A",
                         fat: 1,
                         carbohydrate: 80,
                         protein: 7,
                         caloriesInCcal: 360,
                         description: "Сваренную кукурузную кашу желательно сразу употреблять в пищу, так как, если она постоит и остынет, до слипнется и загустеет, независимо от того, была она жидкой или густой до этого.",
-                        imageName: "default",
+                        imageName: "kukuruza",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
                         backGroundColorBlue: 47,
@@ -258,13 +258,13 @@ class Model: NSObject {
                         keyWords: ["Кускус кускус кус"],
                         timeOfBoil: 5,
                         proportions: 0.5,
-                        finalVolume: 1,
+                        backgroungColorInHex: "#F8BF79",
                         fat: 1,
                         carbohydrate: 73,
                         protein: 13,
                         caloriesInCcal: 350,
                         description: "Кускус высыпать в кастрюлю и залить его горячей водой, желательно только что закипевшей. Затем накрыть кастрюлю плотной крышкой и дать постоять 5-7 минут. После этого аккуратно взбить кускус вилкой, чтобы он получился рассыпчатым.",
-                        imageName: "default",
+                        imageName: "kuskus",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
                         backGroundColorBlue: 47,
@@ -273,17 +273,17 @@ class Model: NSObject {
     
     
     
-    let manka = Grain(name: "Манная крупа",
+    let semolina = Grain(name: "Манная крупа",
                         keyWords: ["Манка манная манка "],
                         timeOfBoil: 7,
                         proportions: 0.1,
-                        finalVolume: 1,
+                        backgroungColorInHex: "#C3C7C1",
                         fat: 1,
                         carbohydrate: 73,
                         protein: 13,
                         caloriesInCcal: 360,
                         description: "Крупу засыпают в кипящее молоко или воду и варят 7 минут постоянно помешивая. После того, как вы снимете кастрюлю с плиты, каше нужно еще минут 10 постоять под крышкой.",
-                        imageName: "default",
+                        imageName: "semolina",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
                         backGroundColorBlue: 47,
@@ -295,13 +295,13 @@ class Model: NSObject {
                         keyWords: ["mash Mash маш Маш"],
                         timeOfBoil: 35,
                         proportions: 0.4,
-                        finalVolume: 1,
+                        backgroungColorInHex: "#C5A972",
                         fat: 2,
                         carbohydrate: 46,
                         protein: 23.5 ,
                         caloriesInCcal: 300,
                         description: "Рекомендуется предварительно замачивать зеленый маш на несколько часов. Прежде чем отваривать, маш нужно хорошо промыть, и только потом закладывать в кипящую воду.",
-                        imageName: "default",
+                        imageName: "mash",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
                         backGroundColorBlue: 47,
@@ -313,13 +313,13 @@ class Model: NSObject {
                         keyWords: ["Нут нут "],
                         timeOfBoil: 40,
                         proportions: 0.333,
-                        finalVolume: 1,
+                        backgroungColorInHex: "#CFB8A4",
                         fat: 6,
                         carbohydrate: 61,
                         protein: 19 ,
                         caloriesInCcal: 364,
                         description: "Рекомендуется предварительно замачивать около 8 часов или всю ночь. Помните, что при замачивании нут увеличивается в 2–3 раза.",
-                        imageName: "default",
+                        imageName: "nout",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
                         backGroundColorBlue: 47,
@@ -331,13 +331,13 @@ class Model: NSObject {
                         keyWords: ["овсяные" , "овес", "хлопья" ],
                         timeOfBoil: 5,
                         proportions: 0.5,
-                        finalVolume: 1,
+                        backgroungColorInHex: "#83665B",
                         fat: 6,
                         carbohydrate: 61,
                         protein: 19 ,
                         caloriesInCcal: 364,
                         description: "Залейте хлопья водой или горячим молоком, тщательно размешайте. Накройте крышкой и дайте настояться в течение 3-5 минут. ",
-                        imageName: "default",
+                        imageName: "oatmealNoBoil",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
                         backGroundColorBlue: 47,
@@ -349,13 +349,13 @@ class Model: NSObject {
                         keyWords: ["овсяные" , "овес", "хлопья" ],
                         timeOfBoil: 10,
                         proportions: 0.33,
-                        finalVolume: 1,
+                        backgroungColorInHex: "#C1AD93",
                         fat: 7,
                         carbohydrate: 60,
                         protein: 13 ,
                         caloriesInCcal: 380,
                         description: "Варите на медленном огне. Оставьте кашу томиться под крышкой 2-3 минуты.",
-                        imageName: "default",
+                        imageName: "oatmealNo1",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
                         backGroundColorBlue: 47,
@@ -367,13 +367,13 @@ class Model: NSObject {
                         keyWords: ["овсяные" , "овес", "хлопья" ],
                         timeOfBoil: 5,
                         proportions: 0.33,
-                        finalVolume: 1,
+                        backgroungColorInHex: "#C8C1AC",
                         fat: 7,
                         carbohydrate: 60,
                         protein: 13 ,
                         caloriesInCcal: 380,
                         description: "Варите на медленном огне. Оставьте кашу томиться под крышкой 2-3 минуты.",
-                        imageName: "default",
+                        imageName: "oatmealNo2",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
                         backGroundColorBlue: 47,
@@ -385,13 +385,13 @@ class Model: NSObject {
                         keyWords: ["овсяные" , "овес", "хлопья" ],
                         timeOfBoil: 3,
                         proportions: 0.33,
-                        finalVolume: 1,
+                        backgroungColorInHex: "#947763",
                         fat: 7,
                         carbohydrate: 60,
                         protein: 13 ,
                         caloriesInCcal: 380,
                         description: "Варите на медленном огне. Оставьте кашу томиться под крышкой 2-3 минуты.",
-                        imageName: "default",
+                        imageName: "oatmealNo3",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
                         backGroundColorBlue: 47,
@@ -400,17 +400,17 @@ class Model: NSObject {
     
     
     
-    let perlovka = Grain(name: "Перловая крупа",
+    let pearlBarley = Grain(name: "Перловая крупа",
     keyWords: ["перловая" , "перловка" ],
     timeOfBoil: 45,
     proportions: 0.2,
-    finalVolume: 1,
+    backgroungColorInHex: "#DBBC9E",
     fat: 1,
     carbohydrate: 69,
     protein: 10 ,
     caloriesInCcal: 320,
     description: "Если вы предварительно замачивали крупу, то время варки сокращается на 15 минут.",
-    imageName: "default",
+    imageName: "pearlBarley",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -425,13 +425,13 @@ class Model: NSObject {
        keyWords: ["полба"],
        timeOfBoil: 30,
        proportions: 0.333,
-       finalVolume: 1,
+       backgroungColorInHex: "#BC9F82",
        fat: 2.2,
        carbohydrate: 61.2,
        protein: 14.7 ,
        caloriesInCcal: 323,
        description: "Полбу перед варкой промывают, замачивают в холодной воде на час для большей мягкости, заливают в просторной кастрюле холодной водой и варят на тихом огне под крышкой.",
-       imageName: "default",
+       imageName: "polba",
        backGroundColorRed: 157 ,
        backGroundColorGreen: 105,
        backGroundColorBlue: 47,
@@ -440,17 +440,17 @@ class Model: NSObject {
     
     
     
-    let psheno = Grain(name: "Пшено",
+    let millet = Grain(name: "Пшено",
     keyWords: ["пшено", "пшеничная"],
     timeOfBoil: 25,
     proportions: 0.333,
-    finalVolume: 1,
+    backgroungColorInHex: "#DEB051",
     fat: 3,
     carbohydrate: 73,
     protein: 11 ,
     caloriesInCcal: 360,
     description: "Пшено обязательно нужно промывать несколько раз (до 5 раз) теплой водой перед варкой, чтобы полностью вымыть всю пыль, мелкие соринки, а также смыть пленку с крупинок, из-за которой они потом могут слипаться и горчить.",
-    imageName: "default",
+    imageName: "millet",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -463,13 +463,13 @@ class Model: NSObject {
     keyWords: ["рис", "басмати"],
     timeOfBoil: 15,
     proportions: 0.5,
-    finalVolume: 1,
+    backgroungColorInHex: "#C8C0B9",
     fat: 0.6,
     carbohydrate: 76.4,
     protein: 7.6,
     caloriesInCcal: 340,
     description: "Если вода выпарилась, а рис суховат - необходимо добавить кипятка (полстакана кипятка на 1 стакан риса), не перемешивая рис, и варить рис ещё 3-4 минуты, затем попробовать на вкус. ",
-    imageName: "default",
+    imageName: "riceBasmati",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -481,13 +481,13 @@ class Model: NSObject {
     keyWords: ["рис", "арборио", "Rice", "Arborio"],
     timeOfBoil: 20,
     proportions: 0.5,
-    finalVolume: 1,
+    backgroungColorInHex: "#D1C6B2",
     fat: 1.6,
     carbohydrate: 78.8,
     protein: 6.8,
     caloriesInCcal: 338,
     description: "Когда вода начнет бурлить, огонь необходимо уменьшить до минимума, регулярно помешивая большой ложкой.  Ввиду того, что такой рис довольно легко переварить, снимать его с плиты рекомендуется в полуготовом виде. Спустя несколько минут горячий рис дойдет самостоятельно и при этом сохранит свою форму.",
-    imageName: "default",
+    imageName: "riceArborio",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -500,13 +500,13 @@ class Model: NSObject {
     keyWords: ["рис", "дикий", "Rice", "wild"],
     timeOfBoil: 40,
     proportions: 0.333,
-    finalVolume: 1,
+    backgroungColorInHex: "#968173",
     fat: 0.5,
     carbohydrate: 72,
     protein: 14,
     caloriesInCcal: 357,
     description: "Обязательно замачивайте дикий рис, поскольку его зерна являются очень жесткими.",
-    imageName: "default",
+    imageName: "riceWild",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -519,13 +519,13 @@ class Model: NSObject {
     keyWords: ["рис", "длиннозерный", "Rice"],
     timeOfBoil: 25,
     proportions: 0.5,
-    finalVolume: 1,
+    backgroungColorInHex: "#6E462D",
     fat: 0.66,
     carbohydrate: 80,
     protein: 7,
     caloriesInCcal: 365,
     description: "Если вы варите рис в кастрюле, сначала доведите подсоленную воду до кипения, а после высыпьте в неё крупу. Перемешайте рис один раз, чтобы зёрнышки не прилипали к дну. Затем дождитесь, когда блюдо начнёт бурлить, убавьте огонь до минимума и накройте кастрюлю крышкой.",
-    imageName: "default",
+    imageName: "riceLong",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -537,13 +537,13 @@ class Model: NSObject {
        keyWords: ["рис", "пропаренный"],
        timeOfBoil: 25,
        proportions: 0.5,
-       finalVolume: 1,
+       backgroungColorInHex: "#C5B096",
        fat: 1,
        carbohydrate: 74,
        protein: 7,
        caloriesInCcal: 333,
        description: "При варке рис не перемешивают.",
-       imageName: "default",
+       imageName: "riceSteamed",
        backGroundColorRed: 157 ,
        backGroundColorGreen: 105,
        backGroundColorBlue: 47,
@@ -555,13 +555,13 @@ class Model: NSObject {
     keyWords: ["рис", "жасмин"],
     timeOfBoil: 30,
     proportions: 0.67,
-    finalVolume: 1,
+    backgroungColorInHex: "#999589",
     fat: 1,
     carbohydrate: 76,
     protein: 7.5,
     caloriesInCcal: 340,
     description: "Чтобы рис приготовился равномерно, не рекомендуется крышку",
-    imageName: "default",
+    imageName: "riceJasmin",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -573,13 +573,13 @@ class Model: NSObject {
     keyWords: ["рис", "круглозерный"],
     timeOfBoil: 25,
     proportions: 0.33,
-    finalVolume: 1,
+    backgroungColorInHex: "#ADACAB",
     fat: 0.5,
     carbohydrate: 83,
     protein: 6.5,
     caloriesInCcal: 360,
     description: "Перед приговлением промойте рис.",
-    imageName: "default",
+    imageName: "riceRound",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -591,13 +591,13 @@ class Model: NSObject {
     keyWords: ["соевые", "бобы"],
     timeOfBoil: 25,
     proportions: 0.5,
-    finalVolume: 1,
+    backgroungColorInHex: "#DFD0C9",
     fat: 0.5,
     carbohydrate: 83,
     protein: 6.5,
     caloriesInCcal: 360,
     description: "Перед варкой бобы обязательно замочить в холодной воде минимум на 12 часов.",
-    imageName: "default",
+    imageName: "soyaBeans",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -608,13 +608,13 @@ class Model: NSObject {
     keyWords: ["фасоль", "белая"],
     timeOfBoil: 50,
     proportions: 0.33,
-    finalVolume: 1,
+    backgroungColorInHex: "#726F60",
     fat: 1.6,
     carbohydrate: 55,
     protein: 22.3,
     caloriesInCcal: 324,
     description: "Залить фасоль водой и оставить на время до 10 часов, именно столько времени нужно, чтобы бобы размягчились, а все вредные вещества ушли в воду.",
-    imageName: "default",
+    imageName: "fasolWhite",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -626,13 +626,13 @@ class Model: NSObject {
     keyWords: ["фасоль", "красная"],
     timeOfBoil: 60,
     proportions: 0.33,
-    finalVolume: 1,
+    backgroungColorInHex: "#E66A75",
     fat: 2,
     carbohydrate: 55,
     protein: 22,
     caloriesInCcal: 330,
     description: "Залить фасоль водой и оставить на время до 10 часов, именно столько времени нужно, чтобы бобы размягчились, а все вредные вещества ушли в воду. Перед приготовлением смените воду",
-    imageName: "default",
+    imageName: "fasolRed",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -644,13 +644,13 @@ class Model: NSObject {
     keyWords: ["Чечевица", "зеленая"],
     timeOfBoil: 40,
     proportions: 0.5,
-    finalVolume: 1,
+    backgroungColorInHex: "#AE9F8A",
     fat: 2,
     carbohydrate: 65,
     protein: 20,
     caloriesInCcal: 350,
     description: "Замочите в холодной воде на 1–2 часа. Слейте жидкость и промойте под проточной водой.",
-    imageName: "default",
+    imageName: "chechevicaGreen",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -661,13 +661,13 @@ class Model: NSObject {
     keyWords: ["Чечевица", "красная"],
     timeOfBoil: 15,
     proportions: 0.5,
-    finalVolume: 1,
+    backgroungColorInHex: "#D27E5E",
     fat: 1.2,
     carbohydrate: 62.5,
     protein: 24.7,
     caloriesInCcal: 328,
     description: "Красная и жёлтая чечевица не требует замачивания и хорошо разваривается. Выложите промытую чечевицу в кастрюлю и добавьте воду.",
-    imageName: "default",
+    imageName: "chechevicaRed",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
@@ -675,40 +675,27 @@ class Model: NSObject {
     )
     
     
-    let yachmen = Grain(name: "Ячмень",
-    keyWords: ["Ячмень"],
-    timeOfBoil: 35,
-    proportions: 0.4,
-    finalVolume: 1,
-    fat: 0.2,
-    carbohydrate: 86,
-    protein: 6,
-    caloriesInCcal: 370,
-    description: "После варки слить воду и дать постоять под крышкой 15 минут.",
-    imageName: "default",
-    backGroundColorRed: 157 ,
-    backGroundColorGreen: 105,
-    backGroundColorBlue: 47,
-    backGroundColorAlpha: 1
-    )
+
     
     let yachnevayaGrain = Grain(name: "Ячневая крупа",
     keyWords: ["Ячневая", "крупа"],
     timeOfBoil: 20,
     proportions: 0.33,
-    finalVolume: 1,
+    backgroungColorInHex: "#D7B683",
     fat: 1.3,
     carbohydrate: 67.7,
     protein: 10,
     caloriesInCcal: 324,
     description: "Варить регулярно перемешивая. После варки слить воду и дать постоять под крышкой 15 минут.",
-    imageName: "default",
+    imageName: "yachnevayaGrain",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
     backGroundColorBlue: 47,
     backGroundColorAlpha: 1
     )
  /*
+     
+     2688 х 1242 пикселя. В обоих случаях плотность пикселей равна 458 пикселей на дюйм.
      Ячневая крупа
      Ячмень
      Рис длиннозерный пропаренный
@@ -725,6 +712,29 @@ class Model: NSObject {
 
      */
 // User Defaults, add To Favourite Array
+    
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+
+        var rgbValue:UInt64 = 0
+        Scanner(string: cString).scanHexInt64(&rgbValue)
+
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
+    
     
     
     func getUsDefToFavArr () {
@@ -788,20 +798,20 @@ func skloneniaMinut(boilTime: Grain) -> String {
         grainsAllTogether.append(oatmeal)
         grainsAllTogether.append(boulgour)
         grainsAllTogether.append(goroh)
-        grainsAllTogether.append(dolihos)
+        grainsAllTogether.append(dolichos)
         grainsAllTogether.append(kinoa)
         grainsAllTogether.append(kukuruza)
         grainsAllTogether.append(kuskus)
-        grainsAllTogether.append(manka)
+        grainsAllTogether.append(semolina)
         grainsAllTogether.append(mash)
         grainsAllTogether.append(nout)
         grainsAllTogether.append(oatmealNoBoil)
         grainsAllTogether.append(oatmealNo1)
         grainsAllTogether.append(oatmealNo2)
         grainsAllTogether.append(oatmealNo3)
-        grainsAllTogether.append(perlovka)
+        grainsAllTogether.append(pearlBarley)
         grainsAllTogether.append(polba)
-        grainsAllTogether.append(psheno)
+        grainsAllTogether.append(millet)
         grainsAllTogether.append(riceBasmati)
         grainsAllTogether.append(riceArborio)
         grainsAllTogether.append(riceWild)
@@ -813,7 +823,6 @@ func skloneniaMinut(boilTime: Grain) -> String {
         grainsAllTogether.append(fasolRed)
         grainsAllTogether.append(chechevicaGreen)
         grainsAllTogether.append(chechevicaRed)
-        grainsAllTogether.append(yachmen)
         grainsAllTogether.append(yachnevayaGrain)
         grainsAllTogether = grainsAllTogether.sorted {$0.name < $1.name}
         print("This print from function: appendToArr" )

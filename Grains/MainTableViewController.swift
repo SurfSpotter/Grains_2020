@@ -18,6 +18,8 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
         RateManager.rate()
         
         
+        
+        
        
        
         setUpSearchBar()
