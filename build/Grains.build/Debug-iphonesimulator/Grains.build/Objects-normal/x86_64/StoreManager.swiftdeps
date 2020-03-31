@@ -1,0 +1,644 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "nPurchaseCompleted"
+- "StoreManager"
+provides-nominal:
+- "6Grains12StoreManagerC"
+provides-member:
+- ["6Grains12StoreManagerC", ""]
+provides-dynamic-lookup:
+- "paymentQueue"
+- "productsRequest"
+depends-top-level:
+- !private "!"
+- !private "=="
+- !private ">"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "NSNotification"
+- "NSObject"
+- !private "NotificationCenter"
+- !private "SKPayment"
+- "SKPaymentQueue"
+- "SKPaymentTransaction"
+- "SKPaymentTransactionObserver"
+- !private "SKPaymentTransactionState"
+- "SKProductsRequest"
+- "SKProductsRequestDelegate"
+- "SKProductsResponse"
+- "StoreManager"
+- "String"
+- "StringLiteralType"
+- !private "UserDefaults"
+- "nPurchaseCompleted"
+- !private "print"
+depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "count"]
+- !private ["SK", "subscript"]
+- !private ["s7CVarArgP", "NSNotification"]
+- !private ["s7CVarArgP", "Name"]
+- !private ["s7CVarArgP", "NotificationCenter"]
+- !private ["s7CVarArgP", "SKPayment"]
+- !private ["s7CVarArgP", "SKPaymentQueue"]
+- !private ["s7CVarArgP", "SKPaymentTransactionState"]
+- !private ["s7CVarArgP", "SKProductsRequest"]
+- !private ["s7CVarArgP", "StoreManager"]
+- !private ["s7CVarArgP", "UserDefaults"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "add"]
+- !private ["s7CVarArgP", "bool"]
+- !private ["s7CVarArgP", "canMakePayments"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "didBuyFullVersion"]
+- !private ["s7CVarArgP", "finishTransaction"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "nPurchaseCompleted"]
+- !private ["s7CVarArgP", "payment"]
+- ["s7CVarArgP", "paymentQueue"]
+- ["s7CVarArgP", "paymentQueueDidChangeStorefront"]
+- ["s7CVarArgP", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["s7CVarArgP", "post"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "productIdentifier"]
+- !private ["s7CVarArgP", "products"]
+- ["s7CVarArgP", "productsRequest"]
+- ["s7CVarArgP", "request"]
+- ["s7CVarArgP", "requestDidFinish"]
+- !private ["s7CVarArgP", "set"]
+- !private ["s7CVarArgP", "standard"]
+- !private ["s7CVarArgP", "start"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "synchronize"]
+- !private ["s7CVarArgP", "transactionState"]
+- !private ["Sl", "count"]
+- !private ["Sl", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "NSNotification"]
+- !private ["s28CustomDebugStringConvertibleP", "Name"]
+- !private ["s28CustomDebugStringConvertibleP", "NotificationCenter"]
+- !private ["s28CustomDebugStringConvertibleP", "SKPayment"]
+- !private ["s28CustomDebugStringConvertibleP", "SKPaymentQueue"]
+- !private ["s28CustomDebugStringConvertibleP", "SKPaymentTransactionState"]
+- !private ["s28CustomDebugStringConvertibleP", "SKProductsRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "StoreManager"]
+- !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "add"]
+- !private ["s28CustomDebugStringConvertibleP", "bool"]
+- !private ["s28CustomDebugStringConvertibleP", "canMakePayments"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "didBuyFullVersion"]
+- !private ["s28CustomDebugStringConvertibleP", "finishTransaction"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "nPurchaseCompleted"]
+- !private ["s28CustomDebugStringConvertibleP", "payment"]
+- ["s28CustomDebugStringConvertibleP", "paymentQueue"]
+- ["s28CustomDebugStringConvertibleP", "paymentQueueDidChangeStorefront"]
+- ["s28CustomDebugStringConvertibleP", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["s28CustomDebugStringConvertibleP", "post"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "productIdentifier"]
+- !private ["s28CustomDebugStringConvertibleP", "products"]
+- ["s28CustomDebugStringConvertibleP", "productsRequest"]
+- ["s28CustomDebugStringConvertibleP", "request"]
+- ["s28CustomDebugStringConvertibleP", "requestDidFinish"]
+- !private ["s28CustomDebugStringConvertibleP", "set"]
+- !private ["s28CustomDebugStringConvertibleP", "standard"]
+- !private ["s28CustomDebugStringConvertibleP", "start"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "synchronize"]
+- !private ["s28CustomDebugStringConvertibleP", "transactionState"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "NSNotification"]
+- !private ["s23CustomStringConvertibleP", "Name"]
+- !private ["s23CustomStringConvertibleP", "NotificationCenter"]
+- !private ["s23CustomStringConvertibleP", "SKPayment"]
+- !private ["s23CustomStringConvertibleP", "SKPaymentQueue"]
+- !private ["s23CustomStringConvertibleP", "SKPaymentTransactionState"]
+- !private ["s23CustomStringConvertibleP", "SKProductsRequest"]
+- !private ["s23CustomStringConvertibleP", "StoreManager"]
+- !private ["s23CustomStringConvertibleP", "UserDefaults"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "add"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "bool"]
+- !private ["s23CustomStringConvertibleP", "canMakePayments"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "didBuyFullVersion"]
+- !private ["s23CustomStringConvertibleP", "finishTransaction"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "nPurchaseCompleted"]
+- !private ["s23CustomStringConvertibleP", "payment"]
+- ["s23CustomStringConvertibleP", "paymentQueue"]
+- ["s23CustomStringConvertibleP", "paymentQueueDidChangeStorefront"]
+- ["s23CustomStringConvertibleP", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["s23CustomStringConvertibleP", "post"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "productIdentifier"]
+- !private ["s23CustomStringConvertibleP", "products"]
+- ["s23CustomStringConvertibleP", "productsRequest"]
+- ["s23CustomStringConvertibleP", "request"]
+- ["s23CustomStringConvertibleP", "requestDidFinish"]
+- !private ["s23CustomStringConvertibleP", "set"]
+- !private ["s23CustomStringConvertibleP", "standard"]
+- !private ["s23CustomStringConvertibleP", "start"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "synchronize"]
+- !private ["s23CustomStringConvertibleP", "transactionState"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "count"]
+- !private ["Se", "subscript"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "count"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "NSNotification"]
+- !private ["SQ", "Name"]
+- !private ["SQ", "NotificationCenter"]
+- !private ["SQ", "SKPayment"]
+- !private ["SQ", "SKPaymentQueue"]
+- !private ["SQ", "SKPaymentTransactionState"]
+- !private ["SQ", "SKProductsRequest"]
+- !private ["SQ", "StoreManager"]
+- !private ["SQ", "UserDefaults"]
+- ["SQ", ""]
+- !private ["SQ", "add"]
+- !private ["SQ", "bool"]
+- !private ["SQ", "canMakePayments"]
+- !private ["SQ", "count"]
+- !private ["SQ", "default"]
+- !private ["SQ", "deferred"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "didBuyFullVersion"]
+- !private ["SQ", "failed"]
+- !private ["SQ", "finishTransaction"]
+- !private ["SQ", "init"]
+- !private ["SQ", "nPurchaseCompleted"]
+- !private ["SQ", "payment"]
+- ["SQ", "paymentQueue"]
+- ["SQ", "paymentQueueDidChangeStorefront"]
+- ["SQ", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["SQ", "post"]
+- !private ["SQ", "print"]
+- !private ["SQ", "productIdentifier"]
+- !private ["SQ", "products"]
+- ["SQ", "productsRequest"]
+- !private ["SQ", "purchased"]
+- !private ["SQ", "purchasing"]
+- ["SQ", "request"]
+- ["SQ", "requestDidFinish"]
+- !private ["SQ", "restored"]
+- !private ["SQ", "set"]
+- !private ["SQ", "standard"]
+- !private ["SQ", "start"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "synchronize"]
+- !private ["SQ", "transactionState"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["SH", "NSNotification"]
+- !private ["SH", "Name"]
+- !private ["SH", "NotificationCenter"]
+- !private ["SH", "SKPayment"]
+- !private ["SH", "SKPaymentQueue"]
+- !private ["SH", "SKPaymentTransactionState"]
+- !private ["SH", "SKProductsRequest"]
+- !private ["SH", "StoreManager"]
+- !private ["SH", "UserDefaults"]
+- ["SH", ""]
+- !private ["SH", "add"]
+- !private ["SH", "bool"]
+- !private ["SH", "canMakePayments"]
+- !private ["SH", "count"]
+- !private ["SH", "default"]
+- !private ["SH", "deferred"]
+- !private ["SH", "delegate"]
+- !private ["SH", "didBuyFullVersion"]
+- !private ["SH", "failed"]
+- !private ["SH", "finishTransaction"]
+- !private ["SH", "init"]
+- !private ["SH", "nPurchaseCompleted"]
+- !private ["SH", "payment"]
+- ["SH", "paymentQueue"]
+- ["SH", "paymentQueueDidChangeStorefront"]
+- ["SH", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["SH", "post"]
+- !private ["SH", "print"]
+- !private ["SH", "productIdentifier"]
+- !private ["SH", "products"]
+- ["SH", "productsRequest"]
+- !private ["SH", "purchased"]
+- !private ["SH", "purchasing"]
+- ["SH", "request"]
+- ["SH", "requestDidFinish"]
+- !private ["SH", "restored"]
+- !private ["SH", "set"]
+- !private ["SH", "standard"]
+- !private ["SH", "start"]
+- !private ["SH", "subscript"]
+- !private ["SH", "synchronize"]
+- !private ["SH", "transactionState"]
+- !private ["SM", "count"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSCodingP", "Name"]
+- !private ["So9NSCopyingP", "Name"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "productIdentifier"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "productIdentifier"]
+- !private ["So14NSNotificationC", "Name"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "NSNotification"]
+- !private ["So8NSObjectC", "Name"]
+- !private ["So8NSObjectC", "NotificationCenter"]
+- !private ["So8NSObjectC", "SKPayment"]
+- ["So8NSObjectC", "SKPaymentQueue"]
+- ["So8NSObjectC", "SKPaymentTransaction"]
+- !private ["So8NSObjectC", "SKPaymentTransactionState"]
+- ["So8NSObjectC", "SKProductsRequest"]
+- ["So8NSObjectC", "SKProductsResponse"]
+- !private ["So8NSObjectC", "StoreManager"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UserDefaults"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "add"]
+- !private ["So8NSObjectC", "bool"]
+- ["So8NSObjectC", "buyInApp"]
+- !private ["So8NSObjectC", "canMakePayments"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "didBuyFullVersion"]
+- !private ["So8NSObjectC", "finishTransaction"]
+- ["So8NSObjectC", "ifFullVersion"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "nPurchaseCompleted"]
+- !private ["So8NSObjectC", "payment"]
+- ["So8NSObjectC", "paymentQueue"]
+- ["So8NSObjectC", "paymentQueueDidChangeStorefront"]
+- ["So8NSObjectC", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["So8NSObjectC", "post"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "productIdentifier"]
+- !private ["So8NSObjectC", "products"]
+- ["So8NSObjectC", "productsRequest"]
+- ["So8NSObjectC", "request"]
+- ["So8NSObjectC", "requestDidFinish"]
+- !private ["So8NSObjectC", "set"]
+- !private ["So8NSObjectC", "standard"]
+- !private ["So8NSObjectC", "start"]
+- !private ["So8NSObjectC", "synchronize"]
+- !private ["So8NSObjectC", "transactionState"]
+- !private ["So8NSObjectP", "NSNotification"]
+- !private ["So8NSObjectP", "Name"]
+- !private ["So8NSObjectP", "NotificationCenter"]
+- !private ["So8NSObjectP", "SKPayment"]
+- !private ["So8NSObjectP", "SKPaymentQueue"]
+- !private ["So8NSObjectP", "SKPaymentTransactionState"]
+- !private ["So8NSObjectP", "SKProductsRequest"]
+- !private ["So8NSObjectP", "StoreManager"]
+- !private ["So8NSObjectP", "UserDefaults"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "add"]
+- !private ["So8NSObjectP", "bool"]
+- !private ["So8NSObjectP", "canMakePayments"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "didBuyFullVersion"]
+- !private ["So8NSObjectP", "finishTransaction"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "nPurchaseCompleted"]
+- !private ["So8NSObjectP", "payment"]
+- ["So8NSObjectP", "paymentQueue"]
+- ["So8NSObjectP", "paymentQueueDidChangeStorefront"]
+- ["So8NSObjectP", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["So8NSObjectP", "post"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "productIdentifier"]
+- !private ["So8NSObjectP", "products"]
+- ["So8NSObjectP", "productsRequest"]
+- ["So8NSObjectP", "request"]
+- ["So8NSObjectP", "requestDidFinish"]
+- !private ["So8NSObjectP", "set"]
+- !private ["So8NSObjectP", "standard"]
+- !private ["So8NSObjectP", "start"]
+- !private ["So8NSObjectP", "synchronize"]
+- !private ["So8NSObjectP", "transactionState"]
+- !private ["So18NSNotificationNamea", "init"]
+- !private ["So20NSNotificationCenterC", "default"]
+- !private ["So20NSNotificationCenterC", "post"]
+- !private ["Sk", "count"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "count"]
+- !private ["Sm", "subscript"]
+- !private ["SY", "deferred"]
+- !private ["SY", "failed"]
+- !private ["SY", "init"]
+- !private ["SY", "purchased"]
+- !private ["SY", "purchasing"]
+- !private ["SY", "restored"]
+- !private ["So9SKPaymentC", "init"]
+- !private ["So9SKPaymentC", "productIdentifier"]
+- !private ["So14SKPaymentQueueC", "add"]
+- !private ["So14SKPaymentQueueC", "canMakePayments"]
+- !private ["So14SKPaymentQueueC", "default"]
+- !private ["So14SKPaymentQueueC", "finishTransaction"]
+- !private ["So20SKPaymentTransactionC", "payment"]
+- !private ["So20SKPaymentTransactionC", "transactionState"]
+- !private ["So28SKPaymentTransactionObserverP", "NSNotification"]
+- !private ["So28SKPaymentTransactionObserverP", "NotificationCenter"]
+- !private ["So28SKPaymentTransactionObserverP", "SKPayment"]
+- !private ["So28SKPaymentTransactionObserverP", "SKPaymentQueue"]
+- !private ["So28SKPaymentTransactionObserverP", "SKPaymentTransactionState"]
+- !private ["So28SKPaymentTransactionObserverP", "SKProductsRequest"]
+- !private ["So28SKPaymentTransactionObserverP", "StoreManager"]
+- !private ["So28SKPaymentTransactionObserverP", "UserDefaults"]
+- ["So28SKPaymentTransactionObserverP", ""]
+- !private ["So28SKPaymentTransactionObserverP", "didBuyFullVersion"]
+- !private ["So28SKPaymentTransactionObserverP", "nPurchaseCompleted"]
+- ["So28SKPaymentTransactionObserverP", "paymentQueue"]
+- ["So28SKPaymentTransactionObserverP", "paymentQueueDidChangeStorefront"]
+- ["So28SKPaymentTransactionObserverP", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["So28SKPaymentTransactionObserverP", "print"]
+- ["So28SKPaymentTransactionObserverP", "productsRequest"]
+- ["So28SKPaymentTransactionObserverP", "request"]
+- ["So28SKPaymentTransactionObserverP", "requestDidFinish"]
+- !private ["So25SKPaymentTransactionStateV", "deferred"]
+- !private ["So25SKPaymentTransactionStateV", "failed"]
+- !private ["So25SKPaymentTransactionStateV", "purchased"]
+- !private ["So25SKPaymentTransactionStateV", "purchasing"]
+- !private ["So25SKPaymentTransactionStateV", "restored"]
+- !private ["So17SKProductsRequestC", "delegate"]
+- !private ["So17SKProductsRequestC", "init"]
+- !private ["So17SKProductsRequestC", "start"]
+- !private ["So25SKProductsRequestDelegateP", "NSNotification"]
+- !private ["So25SKProductsRequestDelegateP", "NotificationCenter"]
+- !private ["So25SKProductsRequestDelegateP", "SKPayment"]
+- !private ["So25SKProductsRequestDelegateP", "SKPaymentQueue"]
+- !private ["So25SKProductsRequestDelegateP", "SKPaymentTransactionState"]
+- !private ["So25SKProductsRequestDelegateP", "SKProductsRequest"]
+- !private ["So25SKProductsRequestDelegateP", "StoreManager"]
+- !private ["So25SKProductsRequestDelegateP", "UserDefaults"]
+- ["So25SKProductsRequestDelegateP", ""]
+- !private ["So25SKProductsRequestDelegateP", "didBuyFullVersion"]
+- !private ["So25SKProductsRequestDelegateP", "nPurchaseCompleted"]
+- ["So25SKProductsRequestDelegateP", "paymentQueue"]
+- ["So25SKProductsRequestDelegateP", "paymentQueueDidChangeStorefront"]
+- ["So25SKProductsRequestDelegateP", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["So25SKProductsRequestDelegateP", "print"]
+- ["So25SKProductsRequestDelegateP", "productsRequest"]
+- ["So25SKProductsRequestDelegateP", "request"]
+- ["So25SKProductsRequestDelegateP", "requestDidFinish"]
+- !private ["So18SKProductsResponseC", "products"]
+- !private ["So9SKRequestC", "delegate"]
+- !private ["So9SKRequestC", "init"]
+- !private ["So9SKRequestC", "start"]
+- !private ["So17SKRequestDelegateP", "NSNotification"]
+- !private ["So17SKRequestDelegateP", "NotificationCenter"]
+- !private ["So17SKRequestDelegateP", "SKPayment"]
+- !private ["So17SKRequestDelegateP", "SKPaymentQueue"]
+- !private ["So17SKRequestDelegateP", "SKPaymentTransactionState"]
+- !private ["So17SKRequestDelegateP", "SKProductsRequest"]
+- !private ["So17SKRequestDelegateP", "StoreManager"]
+- !private ["So17SKRequestDelegateP", "UserDefaults"]
+- ["So17SKRequestDelegateP", ""]
+- !private ["So17SKRequestDelegateP", "didBuyFullVersion"]
+- !private ["So17SKRequestDelegateP", "nPurchaseCompleted"]
+- ["So17SKRequestDelegateP", "paymentQueue"]
+- ["So17SKRequestDelegateP", "paymentQueueDidChangeStorefront"]
+- ["So17SKRequestDelegateP", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["So17SKRequestDelegateP", "print"]
+- ["So17SKRequestDelegateP", "productsRequest"]
+- ["So17SKRequestDelegateP", "request"]
+- ["So17SKRequestDelegateP", "requestDidFinish"]
+- !private ["ST", "count"]
+- !private ["ST", "subscript"]
+- ["6Grains12StoreManagerC", "Bool"]
+- !private ["6Grains12StoreManagerC", "NSNotification"]
+- !private ["6Grains12StoreManagerC", "NotificationCenter"]
+- !private ["6Grains12StoreManagerC", "SKPayment"]
+- ["6Grains12StoreManagerC", "SKPaymentQueue"]
+- ["6Grains12StoreManagerC", "SKPaymentTransaction"]
+- !private ["6Grains12StoreManagerC", "SKPaymentTransactionState"]
+- ["6Grains12StoreManagerC", "SKProductsRequest"]
+- ["6Grains12StoreManagerC", "SKProductsResponse"]
+- !private ["6Grains12StoreManagerC", "StoreManager"]
+- ["6Grains12StoreManagerC", "String"]
+- !private ["6Grains12StoreManagerC", "UserDefaults"]
+- ["6Grains12StoreManagerC", "buyInApp"]
+- ["6Grains12StoreManagerC", "deinit"]
+- ["6Grains12StoreManagerC", "didBuyFullVersion"]
+- ["6Grains12StoreManagerC", "ifFullVersion"]
+- ["6Grains12StoreManagerC", "init"]
+- !private ["6Grains12StoreManagerC", "nPurchaseCompleted"]
+- ["6Grains12StoreManagerC", "paymentQueue"]
+- ["6Grains12StoreManagerC", "paymentQueueDidChangeStorefront"]
+- ["6Grains12StoreManagerC", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["6Grains12StoreManagerC", "print"]
+- ["6Grains12StoreManagerC", "productsRequest"]
+- ["6Grains12StoreManagerC", "request"]
+- ["6Grains12StoreManagerC", "requestDidFinish"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So14NSUserDefaultsC", "bool"]
+- !private ["So14NSUserDefaultsC", "set"]
+- !private ["So14NSUserDefaultsC", "standard"]
+- !private ["So14NSUserDefaultsC", "synchronize"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "Name"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSNotification"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationCenter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SKPayment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SKPaymentQueue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SKPaymentTransactionState"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SKProductsRequest"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "StoreManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "add"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bool"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "canMakePayments"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didBuyFullVersion"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "finishTransaction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "nPurchaseCompleted"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "payment"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "paymentQueue"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "paymentQueueDidChangeStorefront"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "post"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "productIdentifier"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "products"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "productsRequest"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "request"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "requestDidFinish"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "start"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "synchronize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "transactionState"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSNotification"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Name"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NotificationCenter"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SKPayment"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SKPaymentQueue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SKPaymentTransactionState"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SKProductsRequest"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "StoreManager"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UserDefaults"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "add"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bool"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "canMakePayments"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "default"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "didBuyFullVersion"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "finishTransaction"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "nPurchaseCompleted"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "payment"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "paymentQueue"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "paymentQueueDidChangeStorefront"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "post"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "productIdentifier"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "products"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "productsRequest"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "request"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "requestDidFinish"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "set"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "standard"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "start"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "synchronize"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "transactionState"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s20_SwiftNewtypeWrapperP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So16NSMutableCopyingP"
+- !private "So14NSNotificationC"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So18NSNotificationNamea"
+- !private "So20NSNotificationCenterC"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "So9SKPaymentC"
+- !private "So14SKPaymentQueueC"
+- !private "So20SKPaymentTransactionC"
+- "So28SKPaymentTransactionObserverP"
+- !private "So25SKPaymentTransactionStateV"
+- !private "So17SKProductsRequestC"
+- "So25SKProductsRequestDelegateP"
+- !private "So18SKProductsResponseC"
+- !private "So9SKRequestC"
+- "So17SKRequestDelegateP"
+- !private "ST"
+- "6Grains12StoreManagerC"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "So14NSUserDefaultsC"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreImage.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/QuartzCore.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Metal.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/UIKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "ab9c5589471779c2c89ee7e09aebe61e"

@@ -1,0 +1,685 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MainTableViewCell"
+provides-nominal:
+- "6Grains17MainTableViewCellC"
+provides-member:
+- ["6Grains17MainTableViewCellC", ""]
+provides-dynamic-lookup:
+- "awakeFromNib"
+- "imgOfGrain"
+- "nameOfGrainLabel"
+- "pushStartTimerAction"
+- "setSelected"
+- "timeOfBoilLabel"
+depends-top-level:
+- !private "+"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "FloatLiteralType"
+- "Grain"
+- !private "IntegerLiteralType"
+- "MainTableViewCell"
+- !private "Model"
+- !private "String"
+- !private "StringLiteralType"
+- !private "UIImage"
+- "UIImageView"
+- "UILabel"
+- "UITableViewCell"
+- !private "UnicodeScalarType"
+depends-member:
+- !private ["SK", "init"]
+- ["So15CALayerDelegateP", "MainTableViewCell"]
+- !private ["So15CALayerDelegateP", "Model"]
+- !private ["So15CALayerDelegateP", "String"]
+- !private ["So15CALayerDelegateP", "UIImage"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "awakeFromNib"]
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "imgOfGrain"]
+- ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "nameOfGrainLabel"]
+- !private ["So15CALayerDelegateP", "setSelected"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "timeOfBoilLabel"]
+- ["s7CVarArgP", "MainTableViewCell"]
+- !private ["s7CVarArgP", "Model"]
+- !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "UIImage"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "awakeFromNib"]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "hexStringToUIColor"]
+- !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "imgOfGrain"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "nameOfGrainLabel"]
+- !private ["s7CVarArgP", "setSelected"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "skloneniaMinut"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "timeOfBoilLabel"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "MainTableViewCell"]
+- !private ["s28CustomDebugStringConvertibleP", "Model"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "hexStringToUIColor"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "imgOfGrain"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "nameOfGrainLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "setSelected"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "skloneniaMinut"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "timeOfBoilLabel"]
+- !private ["s17CustomReflectableP", "image"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "text"]
+- ["s23CustomStringConvertibleP", "MainTableViewCell"]
+- !private ["s23CustomStringConvertibleP", "Model"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "UIImage"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "awakeFromNib"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "hexStringToUIColor"]
+- !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "imgOfGrain"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "nameOfGrainLabel"]
+- !private ["s23CustomStringConvertibleP", "setSelected"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "skloneniaMinut"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "timeOfBoilLabel"]
+- !private ["Se", "image"]
+- !private ["Se", "init"]
+- !private ["Se", "text"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "image"]
+- !private ["SE", "init"]
+- !private ["SE", "text"]
+- ["SQ", "MainTableViewCell"]
+- !private ["SQ", "Model"]
+- !private ["SQ", "String"]
+- !private ["SQ", "UIImage"]
+- ["SQ", ""]
+- !private ["SQ", "awakeFromNib"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "hexStringToUIColor"]
+- !private ["SQ", "image"]
+- !private ["SQ", "imgOfGrain"]
+- ["SQ", "init"]
+- !private ["SQ", "nameOfGrainLabel"]
+- !private ["SQ", "setSelected"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "skloneniaMinut"]
+- !private ["SQ", "text"]
+- !private ["SQ", "timeOfBoilLabel"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "image"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["6Grains5GrainC", "backgroungColorInHex"]
+- !private ["6Grains5GrainC", "deinit"]
+- !private ["6Grains5GrainC", "grainImgName"]
+- !private ["6Grains5GrainC", "name"]
+- !private ["6Grains5GrainC", "timeOfBoil"]
+- !private ["6Grains13GrainProtocolP", "backgroungColorInHex"]
+- !private ["6Grains13GrainProtocolP", "grainImgName"]
+- !private ["6Grains13GrainProtocolP", "name"]
+- !private ["6Grains13GrainProtocolP", "timeOfBoil"]
+- ["SH", "MainTableViewCell"]
+- !private ["SH", "Model"]
+- !private ["SH", "String"]
+- !private ["SH", "UIImage"]
+- ["SH", ""]
+- !private ["SH", "awakeFromNib"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "hexStringToUIColor"]
+- !private ["SH", "image"]
+- !private ["SH", "imgOfGrain"]
+- ["SH", "init"]
+- !private ["SH", "nameOfGrainLabel"]
+- !private ["SH", "setSelected"]
+- !private ["SH", "shared"]
+- !private ["SH", "skloneniaMinut"]
+- !private ["SH", "text"]
+- !private ["SH", "timeOfBoilLabel"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- ["6Grains17MainTableViewCellC", "Bool"]
+- ["6Grains17MainTableViewCellC", "Grain"]
+- ["6Grains17MainTableViewCellC", "MainTableViewCell"]
+- !private ["6Grains17MainTableViewCellC", "Model"]
+- !private ["6Grains17MainTableViewCellC", "String"]
+- !private ["6Grains17MainTableViewCellC", "UIImage"]
+- ["6Grains17MainTableViewCellC", "UIImageView"]
+- ["6Grains17MainTableViewCellC", "UILabel"]
+- ["6Grains17MainTableViewCellC", "awakeFromNib"]
+- !private ["6Grains17MainTableViewCellC", "backgroundColor"]
+- ["6Grains17MainTableViewCellC", "deinit"]
+- ["6Grains17MainTableViewCellC", "imgOfGrain"]
+- ["6Grains17MainTableViewCellC", "init"]
+- ["6Grains17MainTableViewCellC", "initCell"]
+- ["6Grains17MainTableViewCellC", "nameOfGrainLabel"]
+- ["6Grains17MainTableViewCellC", "pushStartTimerAction"]
+- ["6Grains17MainTableViewCellC", "setSelected"]
+- ["6Grains17MainTableViewCellC", "shared"]
+- ["6Grains17MainTableViewCellC", "timeOfBoilLabel"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["6Grains5ModelC", "hexStringToUIColor"]
+- !private ["6Grains5ModelC", "shared"]
+- !private ["6Grains5ModelC", "skloneniaMinut"]
+- ["So8NSCodingP", "MainTableViewCell"]
+- !private ["So8NSCodingP", "Model"]
+- !private ["So8NSCodingP", "String"]
+- !private ["So8NSCodingP", "UIImage"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "awakeFromNib"]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "image"]
+- !private ["So8NSCodingP", "imgOfGrain"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "nameOfGrainLabel"]
+- !private ["So8NSCodingP", "setSelected"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "timeOfBoilLabel"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "Grain"]
+- ["So8NSObjectC", "MainTableViewCell"]
+- !private ["So8NSObjectC", "Model"]
+- !private ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UIImage"]
+- ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "awakeFromNib"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "hexStringToUIColor"]
+- !private ["So8NSObjectC", "image"]
+- ["So8NSObjectC", "imgOfGrain"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "initCell"]
+- ["So8NSObjectC", "nameOfGrainLabel"]
+- ["So8NSObjectC", "pushStartTimerAction"]
+- ["So8NSObjectC", "setSelected"]
+- ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "skloneniaMinut"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "timeOfBoilLabel"]
+- ["So8NSObjectP", "MainTableViewCell"]
+- !private ["So8NSObjectP", "Model"]
+- !private ["So8NSObjectP", "String"]
+- !private ["So8NSObjectP", "UIImage"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "awakeFromNib"]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "hexStringToUIColor"]
+- !private ["So8NSObjectP", "image"]
+- !private ["So8NSObjectP", "imgOfGrain"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "nameOfGrainLabel"]
+- !private ["So8NSObjectP", "setSelected"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "skloneniaMinut"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "timeOfBoilLabel"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["Sq", "image"]
+- !private ["Sq", "text"]
+- !private ["Sm", "init"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- ["So29UIAccessibilityIdentificationP", "MainTableViewCell"]
+- !private ["So29UIAccessibilityIdentificationP", "Model"]
+- !private ["So29UIAccessibilityIdentificationP", "String"]
+- !private ["So29UIAccessibilityIdentificationP", "UIImage"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "imgOfGrain"]
+- ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "nameOfGrainLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "setSelected"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "timeOfBoilLabel"]
+- ["So12UIAppearanceP", "MainTableViewCell"]
+- !private ["So12UIAppearanceP", "Model"]
+- !private ["So12UIAppearanceP", "String"]
+- !private ["So12UIAppearanceP", "UIImage"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "awakeFromNib"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "imgOfGrain"]
+- ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "nameOfGrainLabel"]
+- !private ["So12UIAppearanceP", "setSelected"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "timeOfBoilLabel"]
+- ["So21UIAppearanceContainerP", "MainTableViewCell"]
+- !private ["So21UIAppearanceContainerP", "Model"]
+- !private ["So21UIAppearanceContainerP", "String"]
+- !private ["So21UIAppearanceContainerP", "UIImage"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "awakeFromNib"]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "image"]
+- !private ["So21UIAppearanceContainerP", "imgOfGrain"]
+- ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "nameOfGrainLabel"]
+- !private ["So21UIAppearanceContainerP", "setSelected"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "timeOfBoilLabel"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- ["So17UICoordinateSpaceP", "MainTableViewCell"]
+- !private ["So17UICoordinateSpaceP", "Model"]
+- !private ["So17UICoordinateSpaceP", "String"]
+- !private ["So17UICoordinateSpaceP", "UIImage"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "awakeFromNib"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "imgOfGrain"]
+- ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "nameOfGrainLabel"]
+- !private ["So17UICoordinateSpaceP", "setSelected"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "timeOfBoilLabel"]
+- ["So13UIDynamicItemP", "MainTableViewCell"]
+- !private ["So13UIDynamicItemP", "Model"]
+- !private ["So13UIDynamicItemP", "String"]
+- !private ["So13UIDynamicItemP", "UIImage"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "awakeFromNib"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "imgOfGrain"]
+- ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "nameOfGrainLabel"]
+- !private ["So13UIDynamicItemP", "setSelected"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "timeOfBoilLabel"]
+- ["So18UIFocusEnvironmentP", "MainTableViewCell"]
+- !private ["So18UIFocusEnvironmentP", "Model"]
+- !private ["So18UIFocusEnvironmentP", "String"]
+- !private ["So18UIFocusEnvironmentP", "UIImage"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "image"]
+- !private ["So18UIFocusEnvironmentP", "imgOfGrain"]
+- ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "nameOfGrainLabel"]
+- !private ["So18UIFocusEnvironmentP", "setSelected"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "timeOfBoilLabel"]
+- ["So11UIFocusItemP", "MainTableViewCell"]
+- !private ["So11UIFocusItemP", "Model"]
+- !private ["So11UIFocusItemP", "String"]
+- !private ["So11UIFocusItemP", "UIImage"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "awakeFromNib"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "imgOfGrain"]
+- ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "nameOfGrainLabel"]
+- !private ["So11UIFocusItemP", "setSelected"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "timeOfBoilLabel"]
+- ["So20UIFocusItemContainerP", "MainTableViewCell"]
+- !private ["So20UIFocusItemContainerP", "Model"]
+- !private ["So20UIFocusItemContainerP", "String"]
+- !private ["So20UIFocusItemContainerP", "UIImage"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "awakeFromNib"]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "image"]
+- !private ["So20UIFocusItemContainerP", "imgOfGrain"]
+- ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "nameOfGrainLabel"]
+- !private ["So20UIFocusItemContainerP", "setSelected"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "timeOfBoilLabel"]
+- ["So27UIGestureRecognizerDelegateP", "MainTableViewCell"]
+- !private ["So27UIGestureRecognizerDelegateP", "Model"]
+- !private ["So27UIGestureRecognizerDelegateP", "String"]
+- !private ["So27UIGestureRecognizerDelegateP", "UIImage"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
+- !private ["So27UIGestureRecognizerDelegateP", "backgroundColor"]
+- !private ["So27UIGestureRecognizerDelegateP", "imgOfGrain"]
+- ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "nameOfGrainLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
+- !private ["So27UIGestureRecognizerDelegateP", "timeOfBoilLabel"]
+- !private ["So7UIImageC", "init"]
+- !private ["So11UIImageViewC", "image"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So7UILabelC", "text"]
+- ["So24UILargeContentViewerItemP", "MainTableViewCell"]
+- !private ["So24UILargeContentViewerItemP", "Model"]
+- !private ["So24UILargeContentViewerItemP", "String"]
+- !private ["So24UILargeContentViewerItemP", "UIImage"]
+- ["So24UILargeContentViewerItemP", ""]
+- !private ["So24UILargeContentViewerItemP", "awakeFromNib"]
+- !private ["So24UILargeContentViewerItemP", "backgroundColor"]
+- !private ["So24UILargeContentViewerItemP", "image"]
+- !private ["So24UILargeContentViewerItemP", "imgOfGrain"]
+- ["So24UILargeContentViewerItemP", "init"]
+- !private ["So24UILargeContentViewerItemP", "nameOfGrainLabel"]
+- !private ["So24UILargeContentViewerItemP", "setSelected"]
+- !private ["So24UILargeContentViewerItemP", "text"]
+- !private ["So24UILargeContentViewerItemP", "timeOfBoilLabel"]
+- ["So30UIPasteConfigurationSupportingP", "MainTableViewCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "Model"]
+- !private ["So30UIPasteConfigurationSupportingP", "String"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
+- !private ["So30UIPasteConfigurationSupportingP", "imgOfGrain"]
+- ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "nameOfGrainLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "timeOfBoilLabel"]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "Grain"]
+- ["So11UIResponderC", "MainTableViewCell"]
+- !private ["So11UIResponderC", "Model"]
+- !private ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "UIImage"]
+- ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "awakeFromNib"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- !private ["So11UIResponderC", "image"]
+- ["So11UIResponderC", "imgOfGrain"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "initCell"]
+- ["So11UIResponderC", "nameOfGrainLabel"]
+- ["So11UIResponderC", "pushStartTimerAction"]
+- ["So11UIResponderC", "setSelected"]
+- ["So11UIResponderC", "shared"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "timeOfBoilLabel"]
+- ["So30UIResponderStandardEditActionsP", "MainTableViewCell"]
+- !private ["So30UIResponderStandardEditActionsP", "Model"]
+- !private ["So30UIResponderStandardEditActionsP", "String"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
+- !private ["So30UIResponderStandardEditActionsP", "imgOfGrain"]
+- ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "nameOfGrainLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "setSelected"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "timeOfBoilLabel"]
+- ["So15UITableViewCellC", "Bool"]
+- ["So15UITableViewCellC", "Grain"]
+- ["So15UITableViewCellC", "MainTableViewCell"]
+- !private ["So15UITableViewCellC", "Model"]
+- !private ["So15UITableViewCellC", "String"]
+- !private ["So15UITableViewCellC", "UIImage"]
+- ["So15UITableViewCellC", "UIImageView"]
+- ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", ""]
+- ["So15UITableViewCellC", "awakeFromNib"]
+- !private ["So15UITableViewCellC", "backgroundColor"]
+- ["So15UITableViewCellC", "imgOfGrain"]
+- ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "initCell"]
+- ["So15UITableViewCellC", "nameOfGrainLabel"]
+- ["So15UITableViewCellC", "pushStartTimerAction"]
+- ["So15UITableViewCellC", "setSelected"]
+- ["So15UITableViewCellC", "shared"]
+- ["So15UITableViewCellC", "timeOfBoilLabel"]
+- ["So18UITraitEnvironmentP", "MainTableViewCell"]
+- !private ["So18UITraitEnvironmentP", "Model"]
+- !private ["So18UITraitEnvironmentP", "String"]
+- !private ["So18UITraitEnvironmentP", "UIImage"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "awakeFromNib"]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "image"]
+- !private ["So18UITraitEnvironmentP", "imgOfGrain"]
+- ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "nameOfGrainLabel"]
+- !private ["So18UITraitEnvironmentP", "setSelected"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "timeOfBoilLabel"]
+- ["So23UIUserActivityRestoringP", "MainTableViewCell"]
+- !private ["So23UIUserActivityRestoringP", "Model"]
+- !private ["So23UIUserActivityRestoringP", "String"]
+- !private ["So23UIUserActivityRestoringP", "UIImage"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "awakeFromNib"]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "image"]
+- !private ["So23UIUserActivityRestoringP", "imgOfGrain"]
+- ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "nameOfGrainLabel"]
+- !private ["So23UIUserActivityRestoringP", "setSelected"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "timeOfBoilLabel"]
+- ["So6UIViewC", "Bool"]
+- ["So6UIViewC", "Grain"]
+- ["So6UIViewC", "MainTableViewCell"]
+- !private ["So6UIViewC", "Model"]
+- !private ["So6UIViewC", "String"]
+- !private ["So6UIViewC", "UIImage"]
+- ["So6UIViewC", "UIImageView"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "awakeFromNib"]
+- !private ["So6UIViewC", "backgroundColor"]
+- !private ["So6UIViewC", "image"]
+- ["So6UIViewC", "imgOfGrain"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "initCell"]
+- ["So6UIViewC", "nameOfGrainLabel"]
+- ["So6UIViewC", "pushStartTimerAction"]
+- ["So6UIViewC", "setSelected"]
+- ["So6UIViewC", "shared"]
+- !private ["So6UIViewC", "text"]
+- ["So6UIViewC", "timeOfBoilLabel"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "MainTableViewCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Model"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hexStringToUIColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imgOfGrain"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "nameOfGrainLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "skloneniaMinut"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "timeOfBoilLabel"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MainTableViewCell"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Model"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "String"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImage"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "awakeFromNib"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "backgroundColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "hexStringToUIColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "image"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "imgOfGrain"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "nameOfGrainLabel"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setSelected"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "skloneniaMinut"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "timeOfBoilLabel"]
+- !private ["s21_ObjectiveCBridgeableP", "image"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "MainTableViewCell"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "Model"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "String"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "UIImage"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "imgOfGrain"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "nameOfGrainLabel"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setSelected"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "timeOfBoilLabel"]
+depends-nominal:
+- !private "SK"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "6Grains5GrainC"
+- !private "6Grains13GrainProtocolP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- "6Grains17MainTableViewCellC"
+- !private "s10MirrorPathP"
+- !private "6Grains5ModelC"
+- "So8NSCodingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
+- !private "Sm"
+- !private "ST"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- "So27UIGestureRecognizerDelegateP"
+- !private "So7UIImageC"
+- !private "So11UIImageViewC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "So7UILabelC"
+- "So24UILargeContentViewerItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So15UITableViewCellC"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- !private "s19_HasContiguousBytesP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+- "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreImage.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/QuartzCore.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Metal.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/UIKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "90c73f14579ebed31d134d8a99702119"
