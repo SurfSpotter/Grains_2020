@@ -287,8 +287,9 @@ SWIFT_CLASS("_TtC6Grains29FavouritesTableViewController")
 @interface FavouritesTableViewController : UITableViewController
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified emptyView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified ifEmpyLabel;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backgroundImgOut;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified ImgIfEmptyOut;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -318,6 +319,7 @@ SWIFT_CLASS("_TtC6Grains23MainTableViewController")
 @interface MainTableViewController : UITableViewController <UISearchControllerDelegate>
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;

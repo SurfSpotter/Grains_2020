@@ -16,7 +16,8 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
         super.viewDidLoad()
         // Rate App 
         RateManager.rate()
-        
+    
+    
         
         
         
@@ -36,7 +37,9 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
     }
    
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        addBackgroundImage()
+    }
     
     
     
@@ -131,7 +134,17 @@ func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         tableView.reloadData()
     }
     
-    
+  
+    // MARK: - Add BackgroundImg
+    func addBackgroundImage() {
+           // Add background Image
+           let backgroundImage = UIImage(named: "kukuruzaBackground.png")
+           let imageView = UIImageView(image: backgroundImage)
+           imageView.alpha = 0.3
+           
+           imageView.contentMode = UIView.ContentMode.scaleAspectFill
+           self.tableView.backgroundView = imageView
+       }
 }
 
 extension MainTableViewController: UISearchResultsUpdating {

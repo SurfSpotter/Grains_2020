@@ -12,7 +12,8 @@ class FavouritesTableViewController: UITableViewController {
 
     @IBOutlet weak var emptyView: UIView!
     @IBOutlet weak var ifEmpyLabel: UILabel!
-    @IBOutlet weak var backgroundImgOut: UIImageView!
+    @IBOutlet weak var ImgIfEmptyOut: UIImageView!
+    
     
    
     
@@ -29,7 +30,11 @@ class FavouritesTableViewController: UITableViewController {
 //               }
     }
 
+   
     
+    override func viewWillAppear(_ animated: Bool) {
+        addBackgroundImage()
+    }
     
      // MARK: - Table view data source
 
@@ -78,18 +83,27 @@ class FavouritesTableViewController: UITableViewController {
     
     // Write message is table is Empty
     fileprivate func messIfFavEmpty() {
-           backgroundImgOut.alpha = 0.4
            ifEmpyLabel.isHidden = true
-        backgroundImgOut.isHidden = true
-           if Model.shared.favGrains.isEmpty {
+        ImgIfEmptyOut.isHidden = true
+            if Model.shared.favGrains.isEmpty {
                ifEmpyLabel.isHidden = false
+                ImgIfEmptyOut.isHidden = false
                tabBarController?.tabBar.alpha = 0.9
                navigationController?.navigationBar.alpha = 0.9
             tableView.isScrollEnabled = false
-            backgroundImgOut.alpha = 1.0
-            backgroundImgOut.isHidden = false
             
            }
            
+       }
+    
+    // MARK: - Add BackgroundImg
+    func addBackgroundImage() {
+           // Add background Image
+           let backgroundImage = UIImage(named: "kukuruzaBackground.png")
+           let imageView = UIImageView(image: backgroundImage)
+           imageView.alpha = 0.2
+           
+           imageView.contentMode = UIView.ContentMode.scaleAspectFill
+           self.tableView.backgroundView = imageView
        }
 }
