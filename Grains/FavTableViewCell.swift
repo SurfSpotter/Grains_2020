@@ -26,7 +26,7 @@ class FavTableViewCell: UITableViewCell {
         imageOut.image = UIImage(named: grain.grainImgName)
         nameOut.text = grain.name
         timeBoilOut.text = String(grain.timeOfBoil) + " \(Model.shared.skloneniaMinut(boilTime: grain))"
-        self.backgroundColor? = grain.backgroundColour
+        self.backgroundColor? = Model.shared.hexStringToUIColor(hex: grain.backgroungColorInHex)
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
