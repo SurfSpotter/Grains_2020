@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
 options: "da7676e90fa7a57083987e25c768c06c"
-build_time: [1585766257, 304420000]
+build_time: [1585766423, 909917000]
 inputs:
   "/Users/alexeichigarskikh/Documents/Xcode and Swift/Grains/Grains/Grains/MainTableViewController.swift": [1585766257, 208018782]
   "/Users/alexeichigarskikh/Documents/Xcode and Swift/Grains/Grains/Grains/OtherViewController.swift": [1584829664, 38453916]
@@ -12,5 +12,5 @@ inputs:
   "/Users/alexeichigarskikh/Documents/Xcode and Swift/Grains/Grains/Grains/RateManager.swift": [1583443631, 370011521]
   "/Users/alexeichigarskikh/Documents/Xcode and Swift/Grains/Grains/Grains/MainTableViewCell.swift": [1585590607, 513965830]
   "/Users/alexeichigarskikh/Documents/Xcode and Swift/Grains/Grains/Grains/StoreManager.swift": [1583942735, 400987954]
-  "/Users/alexeichigarskikh/Documents/Xcode and Swift/Grains/Grains/Grains/FavouritesTableViewController.swift": [1585766230, 155991040]
+  "/Users/alexeichigarskikh/Documents/Xcode and Swift/Grains/Grains/Grains/FavouritesTableViewController.swift": [1585766374, 981859754]
   "/Users/alexeichigarskikh/Documents/Xcode and Swift/Grains/Grains/Grains/UserNotifications.swift": [1584662344, 512983884]

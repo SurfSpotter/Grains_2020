@@ -87,7 +87,7 @@ class FavouritesTableViewController: UITableViewController {
            ifEmpyLabel.isHidden = true
         ImgIfEmptyOut.isHidden = true
         tableView.isScrollEnabled = true
-        self.tableView.backgroundView?.alpha = 1.0
+        self.tableView.backgroundView?.alpha = 0.3
             if Model.shared.favGrains.isEmpty {
                ifEmpyLabel.isHidden = false
                 ImgIfEmptyOut.isHidden = false
