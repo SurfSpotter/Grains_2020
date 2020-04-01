@@ -21,6 +21,7 @@ class FavouritesTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.reloadData()
         Model.shared.getUsDefToFavArr()
+        navigationController?.navigationBar.alpha = 0.3
         messIfFavEmpty()
         
         
@@ -85,12 +86,15 @@ class FavouritesTableViewController: UITableViewController {
     fileprivate func messIfFavEmpty() {
            ifEmpyLabel.isHidden = true
         ImgIfEmptyOut.isHidden = true
+        tableView.isScrollEnabled = true
+        self.tableView.backgroundView?.alpha = 1.0
             if Model.shared.favGrains.isEmpty {
                ifEmpyLabel.isHidden = false
                 ImgIfEmptyOut.isHidden = false
                tabBarController?.tabBar.alpha = 0.9
                navigationController?.navigationBar.alpha = 0.9
             tableView.isScrollEnabled = false
+                self.tableView.backgroundView?.alpha = 0.3
             
            }
            
@@ -99,10 +103,10 @@ class FavouritesTableViewController: UITableViewController {
     // MARK: - Add BackgroundImg
     func addBackgroundImage() {
            // Add background Image
-           let backgroundImage = UIImage(named: "kukuruzaBackground.png")
+           let backgroundImage = UIImage(named: "bgrounOtherVC.png")
            let imageView = UIImageView(image: backgroundImage)
-           imageView.alpha = 0.2
-           
+           imageView.alpha = 0.3
+        
            imageView.contentMode = UIView.ContentMode.scaleAspectFill
            self.tableView.backgroundView = imageView
        }

@@ -16,6 +16,7 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
         super.viewDidLoad()
         // Rate App 
         RateManager.rate()
+        navigationController?.navigationBar.alpha = 0.1
     
     
         
@@ -138,7 +139,7 @@ func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
     // MARK: - Add BackgroundImg
     func addBackgroundImage() {
            // Add background Image
-           let backgroundImage = UIImage(named: "kukuruzaBackground.png")
+           let backgroundImage = UIImage(named: "bgrounOtherVC.png")
            let imageView = UIImageView(image: backgroundImage)
            imageView.alpha = 0.3
            
