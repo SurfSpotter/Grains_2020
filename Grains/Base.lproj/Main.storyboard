@@ -276,7 +276,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="label" size="11"/>
+                                                                        <font key="NSFont" metaFont="message" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -323,10 +323,13 @@
                                                 <color key="backgroundColor" name="backgroundCustomDarkMode"/>
                                                 <constraints>
                                                     <constraint firstItem="0Rr-PS-ST8" firstAttribute="top" secondItem="r76-Ov-Wcx" secondAttribute="top" constant="55.669998168945312" id="Izu-UN-Ojl"/>
+                                                    <constraint firstItem="3Mf-I0-Rew" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r76-Ov-Wcx" secondAttribute="leading" constant="10" id="Q5b-pI-IAa"/>
                                                     <constraint firstItem="fZ0-xf-Iwn" firstAttribute="centerX" secondItem="3Mf-I0-Rew" secondAttribute="centerX" id="TTo-fL-t2P"/>
+                                                    <constraint firstItem="0Rr-PS-ST8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3Mf-I0-Rew" secondAttribute="trailing" constant="40" id="WBe-9R-nUq"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Rr-PS-ST8" secondAttribute="trailing" constant="10" id="cRO-jg-7FS"/>
                                                     <constraint firstAttribute="bottom" secondItem="Ha7-B9-Yb1" secondAttribute="bottom" constant="35" id="cxA-VT-6ug"/>
-                                                    <constraint firstItem="3Mf-I0-Rew" firstAttribute="leading" secondItem="r76-Ov-Wcx" secondAttribute="leading" constant="40" id="ePC-gr-cdp"/>
-                                                    <constraint firstAttribute="trailing" secondItem="0Rr-PS-ST8" secondAttribute="trailing" constant="40" id="fNN-vg-KQc"/>
+                                                    <constraint firstItem="3Mf-I0-Rew" firstAttribute="leading" secondItem="r76-Ov-Wcx" secondAttribute="leading" priority="750" constant="40" id="ePC-gr-cdp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0Rr-PS-ST8" secondAttribute="trailing" priority="750" constant="40" id="fNN-vg-KQc"/>
                                                     <constraint firstAttribute="bottom" secondItem="fZ0-xf-Iwn" secondAttribute="bottom" constant="35" id="fxz-x4-Xre"/>
                                                     <constraint firstItem="3Mf-I0-Rew" firstAttribute="top" secondItem="r76-Ov-Wcx" secondAttribute="top" constant="55" id="m8M-mA-ZsS"/>
                                                     <constraint firstItem="Ha7-B9-Yb1" firstAttribute="centerX" secondItem="0Rr-PS-ST8" secondAttribute="centerX" id="ux3-1e-kdr"/>
