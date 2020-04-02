@@ -29,7 +29,7 @@ class MainTableViewCell: UITableViewCell {
     
     func initCell (grain: Grain) {
         
-        imgOfGrain.image = UIImage(named: grain.grainImgName)
+        imgOfGrain.image = UIImage(named: grain.grainImgName + "300px")
         nameOfGrainLabel.text = grain.name
         timeOfBoilLabel.text = String(grain.timeOfBoil) + " \(Model.shared.skloneniaMinut(boilTime: grain))"
         self.backgroundColor? = Model.shared.hexStringToUIColor(hex: grain.backgroungColorInHex)
