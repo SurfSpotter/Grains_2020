@@ -8,16 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		325C593C2417E7EF0067B3BC /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325C593B2417E7EF0067B3BC /* StoreManager.swift */; };
-		325CC1E923EE19E10009551A /* timer 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 325CC1E723EE19E10009551A /* timer 2.png */; };
-		325CC1EA23EE19E10009551A /* calories.png in Resources */ = {isa = PBXBuildFile; fileRef = 325CC1E823EE19E10009551A /* calories.png */; };
-		325CC1EC23EE1B8C0009551A /* volume.png in Resources */ = {isa = PBXBuildFile; fileRef = 325CC1EB23EE1B8C0009551A /* volume.png */; };
 		325CC1F723F1EB690009551A /* likeMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 325CC1F523F1EB690009551A /* likeMe.png */; };
 		325CC1F823F1EB690009551A /* liked.png in Resources */ = {isa = PBXBuildFile; fileRef = 325CC1F623F1EB690009551A /* liked.png */; };
-		325CC1FA23F1FF1F0009551A /* flame.png in Resources */ = {isa = PBXBuildFile; fileRef = 325CC1F923F1FF1F0009551A /* flame.png */; };
-		325CC1FC23F200C80009551A /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 325CC1FB23F200C70009551A /* fire.png */; };
 		325CC1FE23F4A23B0009551A /* FavouritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325CC1FD23F4A23B0009551A /* FavouritesTableViewController.swift */; };
 		325CC20023F4BED90009551A /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325CC1FF23F4BED90009551A /* FavTableViewCell.swift */; };
 		326D17FD24119A0800DE6195 /* RateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D17FC24119A0800DE6195 /* RateManager.swift */; };
+		3297408C243631A900711058 /* timerFill.png in Resources */ = {isa = PBXBuildFile; fileRef = 3297408B243631A900711058 /* timerFill.png */; };
 		32A7445F23EB5892000173D4 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7445E23EB5892000173D4 /* DescriptionViewController.swift */; };
 		32C36A7E240E709C0027D410 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C36A7D240E709C0027D410 /* OtherViewController.swift */; };
 		32CBEEC5242418E1009ADDE9 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */; };
@@ -33,16 +29,12 @@
 
 /* Begin PBXFileReference section */
 		325C593B2417E7EF0067B3BC /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
-		325CC1E723EE19E10009551A /* timer 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timer 2.png"; sourceTree = "<group>"; };
-		325CC1E823EE19E10009551A /* calories.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calories.png; sourceTree = "<group>"; };
-		325CC1EB23EE1B8C0009551A /* volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume.png; sourceTree = "<group>"; };
 		325CC1F523F1EB690009551A /* likeMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeMe.png; sourceTree = "<group>"; };
 		325CC1F623F1EB690009551A /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
-		325CC1F923F1FF1F0009551A /* flame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flame.png; sourceTree = "<group>"; };
-		325CC1FB23F200C70009551A /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		325CC1FD23F4A23B0009551A /* FavouritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewController.swift; sourceTree = "<group>"; };
 		325CC1FF23F4BED90009551A /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 		326D17FC24119A0800DE6195 /* RateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateManager.swift; sourceTree = "<group>"; };
+		3297408B243631A900711058 /* timerFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timerFill.png; sourceTree = "<group>"; };
 		32A7445E23EB5892000173D4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		32C36A7D240E709C0027D410 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
@@ -84,13 +76,8 @@
 			children = (
 				32DF8CE623E77EC400C738F7 /* Grains */,
 				32DF8CE523E77EC400C738F7 /* Products */,
-				325CC1FB23F200C70009551A /* fire.png */,
-				325CC1E823EE19E10009551A /* calories.png */,
 				325CC1F623F1EB690009551A /* liked.png */,
 				325CC1F523F1EB690009551A /* likeMe.png */,
-				325CC1E723EE19E10009551A /* timer 2.png */,
-				325CC1EB23EE1B8C0009551A /* volume.png */,
-				325CC1F923F1FF1F0009551A /* flame.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +106,7 @@
 				32DF8CF223E77ECA00C738F7 /* LaunchScreen.storyboard */,
 				32DF8CF523E77ECA00C738F7 /* Info.plist */,
 				32DB9EF723EA105F00D07561 /* Assets.xcassets */,
+				3297408B243631A900711058 /* timerFill.png */,
 			);
 			path = Grains;
 			sourceTree = "<group>";
@@ -183,14 +171,10 @@
 			files = (
 				32DF8CF423E77ECA00C738F7 /* LaunchScreen.storyboard in Resources */,
 				32DB9EF823EA105F00D07561 /* Assets.xcassets in Resources */,
-				325CC1EC23EE1B8C0009551A /* volume.png in Resources */,
-				325CC1FC23F200C80009551A /* fire.png in Resources */,
-				325CC1E923EE19E10009551A /* timer 2.png in Resources */,
+				3297408C243631A900711058 /* timerFill.png in Resources */,
 				325CC1F723F1EB690009551A /* likeMe.png in Resources */,
 				325CC1F823F1EB690009551A /* liked.png in Resources */,
 				32DF8CEF23E77EC400C738F7 /* Main.storyboard in Resources */,
-				325CC1EA23EE19E10009551A /* calories.png in Resources */,
-				325CC1FA23F1FF1F0009551A /* flame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
