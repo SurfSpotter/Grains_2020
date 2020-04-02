@@ -267,7 +267,7 @@
                                                 <rect key="frame" x="19" y="354" width="376" height="248"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Rr-PS-ST8">
-                                                        <rect key="frame" x="230" y="56.666666666666686" width="106" height="103"/>
+                                                        <rect key="frame" x="230" y="55.666666666666686" width="106" height="103"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="106" id="f3S-sH-9Ou"/>
                                                             <constraint firstAttribute="height" constant="103" id="u8i-dM-2aM"/>
@@ -276,7 +276,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="message" size="11"/>
+                                                                        <font key="NSFont" metaFont="label" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -322,7 +322,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" name="backgroundCustomDarkMode"/>
                                                 <constraints>
-                                                    <constraint firstItem="0Rr-PS-ST8" firstAttribute="top" secondItem="r76-Ov-Wcx" secondAttribute="top" constant="56.670000000000002" id="Izu-UN-Ojl"/>
+                                                    <constraint firstItem="0Rr-PS-ST8" firstAttribute="top" secondItem="r76-Ov-Wcx" secondAttribute="top" constant="55.669998168945312" id="Izu-UN-Ojl"/>
                                                     <constraint firstItem="fZ0-xf-Iwn" firstAttribute="centerX" secondItem="3Mf-I0-Rew" secondAttribute="centerX" id="TTo-fL-t2P"/>
                                                     <constraint firstAttribute="bottom" secondItem="Ha7-B9-Yb1" secondAttribute="bottom" constant="35" id="cxA-VT-6ug"/>
                                                     <constraint firstItem="3Mf-I0-Rew" firstAttribute="leading" secondItem="r76-Ov-Wcx" secondAttribute="leading" constant="40" id="ePC-gr-cdp"/>
@@ -469,7 +469,7 @@
                             <constraint firstItem="tZS-NY-NMt" firstAttribute="leading" secondItem="lHJ-36-u23" secondAttribute="leading" id="3c0-W7-drJ"/>
                             <constraint firstItem="tZS-NY-NMt" firstAttribute="bottom" secondItem="lHJ-36-u23" secondAttribute="bottom" constant="83" id="hFN-RD-rzJ"/>
                             <constraint firstItem="lHJ-36-u23" firstAttribute="trailing" secondItem="tZS-NY-NMt" secondAttribute="trailing" id="mNm-CI-67c"/>
-                            <constraint firstItem="lHJ-36-u23" firstAttribute="top" secondItem="tZS-NY-NMt" secondAttribute="top" constant="88" id="nAM-qx-zMv"/>
+                            <constraint firstItem="lHJ-36-u23" firstAttribute="top" secondItem="tZS-NY-NMt" secondAttribute="topMargin" constant="-8" id="nAM-qx-zMv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lHJ-36-u23"/>
                     </view>
