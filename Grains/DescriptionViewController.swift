@@ -339,9 +339,13 @@ var descriptionGrainClass: Grain?
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: nPurchaseCompleted), object: nil, queue: nil) { (notification) in
             print ("Notification About purchasing App sended!")
             // Действия после покупки проложения
+            
+            
         }
         
         super.viewDidLoad()
+        
+       
         
         if descriptionGrainClass != nil {
         calMainDescLabOut.text = "\(descriptionGrainClass!.caloriesInCcal)  Ккал".replacingOccurrences(of: ".0", with: "") }
@@ -379,7 +383,22 @@ var descriptionGrainClass: Grain?
     
     override func viewDidAppear(_ animated: Bool) {
         
-        
+        // Убрать после отладки констрентов!
+              self.carbLabOut.isHidden = false
+               self.carbLabOut.text = " Углеводов: \(String(describing: self.descriptionGrainClass!.carbohydrate) )"
+               self.protLabOut.isHidden = false
+               self.protLabOut.text = " Белков: \(String(describing: self.descriptionGrainClass!.protein) )"
+               self.fatLabOut.isHidden = false
+               self.fatLabOut.text = " Жиров: \(String(describing: self.descriptionGrainClass!.fat) )"
+               self.in100GrLabOut.isHidden = false
+               self.in100GrLabOut.text = "В 100 граммах содержиться: "
+               self.calLabOut.isHidden = false
+               self.calLabOut.text = "Калорийность \(self.descriptionGrainClass!.caloriesInCcal)ккал"
+               
+        self.backButtomOut.isHidden = false
+               
+               // Убрать после отладки констрентов!
+               
         
         quanOfWaterOut.text = quanOfWater
         quantOfGrainOut.text = quanOfGrain
