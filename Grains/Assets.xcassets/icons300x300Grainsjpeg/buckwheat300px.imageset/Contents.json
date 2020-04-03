@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "buckwheat300px.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "buckwheat300px.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },

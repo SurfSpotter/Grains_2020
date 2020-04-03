@@ -87,7 +87,7 @@
                                         <constraint firstAttribute="width" constant="129" id="fl5-Qv-48b"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавляйте сюда любимые крупы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlA-Dy-eaM">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавляйте сюда любимые крупы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlA-Dy-eaM">
                                     <rect key="frame" x="5" y="392.66666666666669" width="365" height="25.333333333333314"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25.329999999999998" id="yqX-Z9-AXj"/>
@@ -284,8 +284,21 @@
                                                             <action selector="backButtonAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="J8E-Q5-khQ"/>
                                                         </connections>
                                                     </button>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="kd8-NG-05j">
-                                                        <rect key="frame" x="50" y="65.333333333333314" width="321" height="134"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arp-LM-kT5" userLabel="setTime">
+                                                        <rect key="frame" x="325" y="8.3333333333333108" width="43" height="39"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="43" id="Ezn-Zg-Lp8"/>
+                                                            <constraint firstAttribute="height" constant="38.670000000000002" id="pAM-cU-I9j"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <state key="normal" backgroundImage="gear" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="setTimeButtonAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="Lvo-HO-J89"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="kd8-NG-05j">
+                                                        <rect key="frame" x="36" y="65.333333333333314" width="320" height="129"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ProtLabOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtc-b7-33I">
                                                                 <rect key="frame" x="0.0" y="0.0" width="100.33333333333333" height="24"/>
@@ -294,18 +307,27 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FatLabOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16S-Zb-Cq8">
-                                                                <rect key="frame" x="0.0" y="55" width="92" height="24"/>
+                                                                <rect key="frame" x="0.0" y="35" width="92" height="24"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="carbLabOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtY-pz-ubl">
-                                                                <rect key="frame" x="0.0" y="110.00000000000006" width="104" height="24"/>
+                                                                <rect key="frame" x="0.0" y="70" width="104" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CaloriesLabOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SRX-wF-Ab7" userLabel="caloriesLabOut">
+                                                                <rect key="frame" x="0.0" y="105.00000000000006" width="136.33333333333334" height="24"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="320" id="NGt-4E-k1e"/>
+                                                        </constraints>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Rr-PS-ST8">
                                                         <rect key="frame" x="230" y="55.666666666666686" width="106" height="103"/>
@@ -363,10 +385,12 @@
                                                 </subviews>
                                                 <color key="backgroundColor" name="backgroundCustomDarkMode"/>
                                                 <constraints>
+                                                    <constraint firstItem="kd8-NG-05j" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r76-Ov-Wcx" secondAttribute="leading" constant="30" id="61m-9S-CSf"/>
+                                                    <constraint firstItem="arp-LM-kT5" firstAttribute="centerY" secondItem="m8F-vE-Ch2" secondAttribute="centerY" id="AI2-9W-fKk"/>
                                                     <constraint firstItem="m8F-vE-Ch2" firstAttribute="centerY" secondItem="ux5-Gs-dJF" secondAttribute="centerY" id="HaR-kQ-GJg"/>
                                                     <constraint firstItem="0Rr-PS-ST8" firstAttribute="top" secondItem="r76-Ov-Wcx" secondAttribute="top" constant="55.669998168945312" id="Izu-UN-Ojl"/>
-                                                    <constraint firstAttribute="trailing" secondItem="kd8-NG-05j" secondAttribute="trailing" constant="5" id="JJd-5T-sMJ"/>
-                                                    <constraint firstItem="kd8-NG-05j" firstAttribute="leading" secondItem="ux5-Gs-dJF" secondAttribute="leading" constant="40" id="Kwq-Sz-xS3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kd8-NG-05j" secondAttribute="trailing" constant="20" id="JJd-5T-sMJ"/>
+                                                    <constraint firstItem="kd8-NG-05j" firstAttribute="leading" secondItem="ux5-Gs-dJF" secondAttribute="leading" priority="750" constant="40" id="Kwq-Sz-xS3"/>
                                                     <constraint firstItem="3Mf-I0-Rew" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r76-Ov-Wcx" secondAttribute="leading" constant="10" id="Q5b-pI-IAa"/>
                                                     <constraint firstItem="m8F-vE-Ch2" firstAttribute="top" secondItem="r76-Ov-Wcx" secondAttribute="top" constant="15" id="QwV-Q2-8zg"/>
                                                     <constraint firstItem="fZ0-xf-Iwn" firstAttribute="centerX" secondItem="3Mf-I0-Rew" secondAttribute="centerX" id="TTo-fL-t2P"/>
@@ -381,20 +405,19 @@
                                                     <constraint firstItem="m8F-vE-Ch2" firstAttribute="centerY" secondItem="ux5-Gs-dJF" secondAttribute="centerY" id="hza-Yw-BjS"/>
                                                     <constraint firstItem="3Mf-I0-Rew" firstAttribute="top" secondItem="r76-Ov-Wcx" secondAttribute="top" constant="55" id="m8M-mA-ZsS"/>
                                                     <constraint firstItem="m8F-vE-Ch2" firstAttribute="centerX" secondItem="r76-Ov-Wcx" secondAttribute="centerX" id="p9v-Bo-W8h"/>
+                                                    <constraint firstAttribute="trailing" secondItem="arp-LM-kT5" secondAttribute="trailing" constant="8" id="qyf-Pl-86A"/>
                                                     <constraint firstItem="Ha7-B9-Yb1" firstAttribute="centerX" secondItem="0Rr-PS-ST8" secondAttribute="centerX" id="ux3-1e-kdr"/>
                                                     <constraint firstItem="kd8-NG-05j" firstAttribute="top" secondItem="m8F-vE-Ch2" secondAttribute="bottom" constant="25" id="x8s-wa-NmH"/>
                                                 </constraints>
+                                                <variation key="default">
+                                                    <mask key="subviews">
+                                                        <exclude reference="0Rr-PS-ST8"/>
+                                                        <exclude reference="fZ0-xf-Iwn"/>
+                                                        <exclude reference="Ha7-B9-Yb1"/>
+                                                        <exclude reference="3Mf-I0-Rew"/>
+                                                    </mask>
+                                                </variation>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arp-LM-kT5" userLabel="setTime">
-                                                <rect key="frame" x="56" y="18" width="43" height="39"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <state key="normal" backgroundImage="gear" catalog="system"/>
-                                                <connections>
-                                                    <action selector="setTimeButtonAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="Lvo-HO-J89"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raS-CC-EMt" userLabel="plusButton">
                                                 <rect key="frame" x="107" y="15.999999999999886" width="42" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -433,13 +456,6 @@
                                                     <action selector="startButtonAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="Grl-9X-ZaY"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CaloriesLabOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRX-wF-Ab7" userLabel="caloriesLabOut">
-                                                <rect key="frame" x="56" y="133" width="306" height="35"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jfz-Ir-HfA">
                                                 <rect key="frame" x="85" y="329" width="299" height="3"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
