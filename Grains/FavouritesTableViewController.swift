@@ -103,7 +103,7 @@ class FavouritesTableViewController: UITableViewController {
     // MARK: - Add BackgroundImg
     func addBackgroundImage() {
            // Add background Image
-           let backgroundImage = UIImage(named: "bgrounOtherVC.png")
+           let backgroundImage = UIImage(named: "Bgr.png")
            let imageView = UIImageView(image: backgroundImage)
            imageView.alpha = 0.3
         
