@@ -384,14 +384,6 @@
                                                     <constraint firstItem="Ha7-B9-Yb1" firstAttribute="centerX" secondItem="0Rr-PS-ST8" secondAttribute="centerX" id="ux3-1e-kdr"/>
                                                     <constraint firstItem="kd8-NG-05j" firstAttribute="top" secondItem="m8F-vE-Ch2" secondAttribute="bottom" constant="25" id="x8s-wa-NmH"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="subviews">
-                                                        <exclude reference="0Rr-PS-ST8"/>
-                                                        <exclude reference="fZ0-xf-Iwn"/>
-                                                        <exclude reference="Ha7-B9-Yb1"/>
-                                                        <exclude reference="3Mf-I0-Rew"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arp-LM-kT5" userLabel="setTime">
                                                 <rect key="frame" x="56" y="18" width="43" height="39"/>
