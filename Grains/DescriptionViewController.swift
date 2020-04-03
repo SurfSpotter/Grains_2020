@@ -437,11 +437,11 @@ var descriptionGrainClass: Grain?
             self.backButtomOut.isHidden = false
             if (self.descriptionGrainClass) != nil {
                 self.carbLabOut.isHidden = false
-                self.carbLabOut.text = " Углеводов: \(String(describing: self.descriptionGrainClass!.carbohydrate) )"
+                self.carbLabOut.text = "Углеводов: \(String(describing: self.descriptionGrainClass!.carbohydrate) )"
                 self.protLabOut.isHidden = false
-                self.protLabOut.text = " Белков: \(String(describing: self.descriptionGrainClass!.protein) )"
+                self.protLabOut.text = "Белков: \(String(describing: self.descriptionGrainClass!.protein) )"
                 self.fatLabOut.isHidden = false
-                self.fatLabOut.text = " Жиров: \(String(describing: self.descriptionGrainClass!.fat) )"
+                self.fatLabOut.text = "Жиров: \(String(describing: self.descriptionGrainClass!.fat) )"
                 self.in100GrLabOut.isHidden = false
                 self.in100GrLabOut.text = "В 100 граммах содержится: "
                 self.calLabOut.isHidden = false

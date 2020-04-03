@@ -130,7 +130,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NameGrain" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kq-nQ-Fxv">
-                                            <rect key="frame" x="98" y="0.0" width="303" height="62"/>
+                                            <rect key="frame" x="98" y="0.0" width="261" height="62"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -188,7 +188,7 @@
                                                 <rect key="frame" x="341" y="20" width="54" height="43.666666666666657"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46.666666666666657" id="Cmy-aP-ZhL"/>
-                                                    <constraint firstAttribute="width" constant="54" id="tkT-4e-Dkw"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="54" id="tkT-4e-Dkw"/>
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="  " backgroundImage="suit.heart" catalog="system"/>
@@ -318,7 +318,7 @@
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CaloriesLabOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SRX-wF-Ab7" userLabel="caloriesLabOut">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CaloriesLabOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRX-wF-Ab7" userLabel="caloriesLabOut">
                                                                 <rect key="frame" x="0.0" y="105.00000000000006" width="136.33333333333334" height="24"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -403,7 +403,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="130:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="55" translatesAutoresizingMaskIntoConstraints="NO" id="CsV-SR-Z0u">
                                                                         <rect key="frame" x="43" y="0.0" width="225" height="85"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" constant="225" id="YVT-bm-l3T"/>
+                                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="YVT-bm-l3T"/>
                                                                             <constraint firstAttribute="height" constant="85" id="vyE-Rv-jlo"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="71"/>
@@ -428,7 +428,7 @@
                                                                 <rect key="frame" x="80.333333333333343" y="100" width="150" height="49"/>
                                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="150" id="FfA-PX-1Vb"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="FfA-PX-1Vb"/>
                                                                     <constraint firstAttribute="height" constant="49" id="VUs-I2-U5l"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
@@ -440,7 +440,7 @@
                                                                     <action selector="startButtonAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="Grl-9X-ZaY"/>
                                                                 </connections>
                                                             </button>
-                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jfz-Ir-HfA">
+                                                            <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jfz-Ir-HfA">
                                                                 <rect key="frame" x="55.333333333333343" y="164" width="200" height="10"/>
                                                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <constraints>
