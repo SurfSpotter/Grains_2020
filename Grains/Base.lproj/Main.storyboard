@@ -566,21 +566,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bgr.png" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-pz-FRg" userLabel="backgroundImage">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="semolina" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-pz-FRg" userLabel="backgroundImage">
                                 <rect key="frame" x="0.0" y="-28" width="375" height="840"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Единицы измерения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZf-xe-FBM">
-                                <rect key="frame" x="94" y="554.66666666666663" width="187" height="24"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                <color key="textColor" name="CustomFontColourForOtherVc"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="230" placeholderIntrinsicHeight="241" axis="vertical" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="oov-5l-lx4">
-                                <rect key="frame" x="72.666666666666686" y="259.66666666666669" width="230" height="245"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="ygM-kk-mLU">
+                                <rect key="frame" x="28.666666666666671" y="272" width="37" height="244"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="38" placeholderIntrinsicHeight="36" image="shareApp 5" translatesAutoresizingMaskIntoConstraints="NO" id="DvM-Fz-Jmm">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="37" id="HI6-qU-Gpp"/>
+                                            <constraint firstAttribute="height" constant="37" id="mUH-2f-oeg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="rateApp 4" translatesAutoresizingMaskIntoConstraints="NO" id="tx4-Sa-H1D">
+                                        <rect key="frame" x="0.0" y="69" width="37" height="37"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="L5t-Ko-Wnr"/>
+                                            <constraint firstAttribute="width" constant="37" id="MNr-fc-Vzx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="purchaseApp 2" translatesAutoresizingMaskIntoConstraints="NO" id="bP7-Db-cwB">
+                                        <rect key="frame" x="0.0" y="138" width="37" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="cUc-Wz-Rbq"/>
+                                            <constraint firstAttribute="width" constant="37" id="zQu-sO-Y2O"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="sendMail 6" translatesAutoresizingMaskIntoConstraints="NO" id="sQN-x3-ZBG">
+                                        <rect key="frame" x="0.0" y="207" width="37" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="37" id="2Yc-oC-rmG"/>
+                                            <constraint firstAttribute="height" constant="37" id="L96-UO-HEj"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="N3d-Aw-BHg"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="aKN-iN-RT7">
+                                <rect key="frame" x="78.666666666666657" y="273.66666666666669" width="257.66666666666674" height="241.00000000000006"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zox-nM-pyB">
-                                        <rect key="frame" x="1" y="0.0" width="228" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="MYP-va-ctx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <inset key="imageEdgeInsets" minX="80" minY="80" maxX="80" maxY="80"/>
                                         <state key="normal" title="Поделиться с друзьями">
                                             <color key="titleColor" name="CustomFontColourForOtherVc"/>
@@ -590,8 +624,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIU-dX-QXC" userLabel="купить полную версию">
-                                        <rect key="frame" x="4.3333333333333286" y="69" width="221" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <rect key="frame" x="0.0" y="68" width="186" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="efR-7o-i1K"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Купить полную версию">
                                             <color key="titleColor" name="CustomFontColourForOtherVc"/>
                                         </state>
@@ -600,8 +637,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3H-rQ-GNg">
-                                        <rect key="frame" x="11" y="138" width="208" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <rect key="frame" x="0.0" y="136" width="173" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="9Mg-fh-JMU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Оценить приложение">
                                             <color key="titleColor" name="CustomFontColourForOtherVc"/>
                                         </state>
@@ -610,8 +650,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKN-zh-TEb">
-                                        <rect key="frame" x="0.0" y="207" width="230" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <rect key="frame" x="0.0" y="204" width="192" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="ubT-Mp-Ze7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Написать разработчику">
                                             <color key="titleColor" name="CustomFontColourForOtherVc"/>
                                         </state>
@@ -621,37 +664,11 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="rateApp 4" translatesAutoresizingMaskIntoConstraints="NO" id="tx4-Sa-H1D">
-                                <rect key="frame" x="22.666666666666671" y="329.66666666666669" width="38" height="36"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="38" id="8ts-Qn-ufq"/>
-                                    <constraint firstAttribute="height" constant="36" id="nd0-EG-qD6"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="purchaseApp 2" translatesAutoresizingMaskIntoConstraints="NO" id="bP7-Db-cwB">
-                                <rect key="frame" x="22.666666666666671" y="398.66666666666669" width="38" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="Lh4-DT-Xp3"/>
-                                    <constraint firstAttribute="width" constant="38" id="dhJ-op-QDH"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="sendMail 6" translatesAutoresizingMaskIntoConstraints="NO" id="sQN-x3-ZBG">
-                                <rect key="frame" x="22.666666666666671" y="467.66666666666669" width="38" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="38" id="PBo-4F-Go5"/>
-                                    <constraint firstAttribute="height" constant="36" id="iQD-4H-kHu"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="measures 3" translatesAutoresizingMaskIntoConstraints="NO" id="1cc-Zg-Cde">
-                                <rect key="frame" x="22.666666666666671" y="548.66666666666663" width="36" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="Z5H-lI-bqO"/>
-                                    <constraint firstAttribute="width" constant="36" id="dCu-3m-jOy"/>
-                                </constraints>
-                            </imageView>
                             <segmentedControl opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w0X-1n-Oy5">
                                 <rect key="frame" x="0.0" y="618.66666666666663" width="375" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="OfM-XU-mJ7"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Граммы"/>
                                     <segment title="Унции"/>
@@ -661,38 +678,48 @@
                                     <action selector="selectMeasuteSCAction:" destination="LQx-Pu-WCy" eventType="valueChanged" id="zS0-F0-O9N"/>
                                 </connections>
                             </segmentedControl>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="38" placeholderIntrinsicHeight="36" image="shareApp 5" translatesAutoresizingMaskIntoConstraints="NO" id="DvM-Fz-Jmm">
-                                <rect key="frame" x="21.666666666666671" y="259.66666666666669" width="38" height="38"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="6iN-5A-EEM" userLabel="MeasureStack View">
+                                <rect key="frame" x="51.666666666666657" y="562.66666666666663" width="235.99999999999997" height="36"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="measures 3" translatesAutoresizingMaskIntoConstraints="NO" id="1cc-Zg-Cde">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="cte-q8-F8j"/>
+                                            <constraint firstAttribute="width" constant="36" id="gdp-Nb-MrC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Единицы измерения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZf-xe-FBM">
+                                        <rect key="frame" x="49" y="0.0" width="187" height="36"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                        <color key="textColor" name="CustomFontColourForOtherVc"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="38" id="BS5-wY-hnZ"/>
-                                    <constraint firstAttribute="height" constant="38" id="HJp-x7-RDR"/>
+                                    <constraint firstItem="uZf-xe-FBM" firstAttribute="centerY" secondItem="1cc-Zg-Cde" secondAttribute="centerY" id="5xW-3Y-owH"/>
                                 </constraints>
-                            </imageView>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="DvM-Fz-Jmm" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" constant="-147" id="1Wd-g3-ctY"/>
-                            <constraint firstItem="1cc-Zg-Cde" firstAttribute="centerX" secondItem="DvM-Fz-Jmm" secondAttribute="centerX" id="8Tq-nd-GuU"/>
-                            <constraint firstItem="sQN-x3-ZBG" firstAttribute="centerY" secondItem="UKN-zh-TEb" secondAttribute="centerY" id="9hz-AB-mfO"/>
+                            <constraint firstItem="aKN-iN-RT7" firstAttribute="centerY" secondItem="ygM-kk-mLU" secondAttribute="centerY" id="4fR-bM-R35"/>
+                            <constraint firstItem="ygM-kk-mLU" firstAttribute="leading" secondItem="pWy-Vw-z4m" secondAttribute="leading" constant="28.670000000000002" id="6C1-Ae-AKo"/>
                             <constraint firstItem="eVT-pz-FRg" firstAttribute="width" secondItem="qeE-4N-sEt" secondAttribute="width" id="BYm-Rn-cWf"/>
-                            <constraint firstItem="sQN-x3-ZBG" firstAttribute="centerX" secondItem="bP7-Db-cwB" secondAttribute="centerX" id="ILV-Kc-hyg"/>
+                            <constraint firstItem="aKN-iN-RT7" firstAttribute="leading" secondItem="ygM-kk-mLU" secondAttribute="trailing" constant="13" id="DNO-gh-1wS"/>
+                            <constraint firstItem="w0X-1n-Oy5" firstAttribute="top" secondItem="6iN-5A-EEM" secondAttribute="bottom" constant="20" id="I8F-go-wIl"/>
                             <constraint firstItem="w0X-1n-Oy5" firstAttribute="leading" secondItem="pWy-Vw-z4m" secondAttribute="leading" id="IYA-6h-5LP"/>
                             <constraint firstItem="eVT-pz-FRg" firstAttribute="centerY" secondItem="pWy-Vw-z4m" secondAttribute="centerY" constant="5.5" id="JHI-ih-9QU"/>
                             <constraint firstItem="w0X-1n-Oy5" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" id="R7O-ag-G8J"/>
-                            <constraint firstItem="bP7-Db-cwB" firstAttribute="centerY" secondItem="y3H-rQ-GNg" secondAttribute="centerY" id="Sl8-6L-rdQ"/>
-                            <constraint firstItem="DvM-Fz-Jmm" firstAttribute="centerY" secondItem="Zox-nM-pyB" secondAttribute="centerY" id="cPK-g8-9Bh"/>
-                            <constraint firstItem="oov-5l-lx4" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" id="d3S-B3-eke"/>
-                            <constraint firstItem="tx4-Sa-H1D" firstAttribute="centerY" secondItem="xIU-dX-QXC" secondAttribute="centerY" id="df2-SB-7WA"/>
-                            <constraint firstItem="uZf-xe-FBM" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" id="dlP-cm-ZCi"/>
-                            <constraint firstItem="w0X-1n-Oy5" firstAttribute="top" secondItem="uZf-xe-FBM" secondAttribute="bottom" constant="40" id="h9e-B8-6ha"/>
+                            <constraint firstItem="aKN-iN-RT7" firstAttribute="centerY" secondItem="qeE-4N-sEt" secondAttribute="centerY" constant="-12" id="VHM-T4-xlG"/>
+                            <constraint firstItem="pWy-Vw-z4m" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aKN-iN-RT7" secondAttribute="trailing" constant="10" id="dgU-ep-HPn"/>
+                            <constraint firstItem="6iN-5A-EEM" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" constant="-18" id="hwT-8B-4z7"/>
                             <constraint firstItem="eVT-pz-FRg" firstAttribute="centerX" secondItem="pWy-Vw-z4m" secondAttribute="centerX" priority="750" id="kNr-0J-cbX"/>
-                            <constraint firstItem="tx4-Sa-H1D" firstAttribute="centerX" secondItem="DvM-Fz-Jmm" secondAttribute="centerX" constant="1" id="l6J-rt-N9x"/>
-                            <constraint firstItem="1cc-Zg-Cde" firstAttribute="centerY" secondItem="uZf-xe-FBM" secondAttribute="centerY" id="nE3-YL-YRK"/>
+                            <constraint firstItem="6iN-5A-EEM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ygM-kk-mLU" secondAttribute="bottom" constant="20" id="oGD-WD-5LK"/>
+                            <constraint firstItem="pWy-Vw-z4m" firstAttribute="bottom" secondItem="w0X-1n-Oy5" secondAttribute="bottom" constant="79.329999999999998" id="q4y-oF-az9"/>
                             <constraint firstItem="pWy-Vw-z4m" firstAttribute="trailing" secondItem="w0X-1n-Oy5" secondAttribute="trailing" id="rmu-DT-7mv"/>
+                            <constraint firstItem="aKN-iN-RT7" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" constant="20" id="wMV-uC-Tca"/>
                             <constraint firstItem="eVT-pz-FRg" firstAttribute="height" secondItem="qeE-4N-sEt" secondAttribute="height" constant="28" id="wUz-ze-853"/>
-                            <constraint firstItem="uZf-xe-FBM" firstAttribute="top" secondItem="UKN-zh-TEb" secondAttribute="bottom" constant="50" id="xIT-tX-19j"/>
-                            <constraint firstItem="bP7-Db-cwB" firstAttribute="centerX" secondItem="tx4-Sa-H1D" secondAttribute="centerX" id="y2J-G0-SCu"/>
-                            <constraint firstItem="oov-5l-lx4" firstAttribute="centerY" secondItem="qeE-4N-sEt" secondAttribute="centerY" constant="-24" id="yMP-5k-JTn"/>
+                            <constraint firstItem="ygM-kk-mLU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pWy-Vw-z4m" secondAttribute="leading" constant="10" id="xZE-cd-009"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pWy-Vw-z4m"/>
                     </view>
@@ -703,7 +730,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEL-ZE-NPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="802.89855072463774" y="-1363.3928571428571"/>
+            <point key="canvasLocation" x="802.39999999999998" y="-1364.039408866995"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qWT-ey-tEL">
@@ -768,7 +795,6 @@
         <segue reference="vLR-gk-Brw"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Bgr.png" width="678.5999755859375" height="967.67999267578125"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="fire" width="256" height="256"/>
         <image name="gear" catalog="system" width="128" height="119"/>
@@ -780,6 +806,7 @@
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="purchaseApp 2" width="60" height="60"/>
         <image name="rateApp 4" width="60" height="60"/>
+        <image name="semolina" width="1242" height="829"/>
         <image name="sendMail 6" width="60" height="60"/>
         <image name="shareApp 5" width="60" height="60"/>
         <image name="suit.heart" catalog="system" width="128" height="109"/>

@@ -34,7 +34,7 @@ class FavouritesTableViewController: UITableViewController {
    
     
     override func viewWillAppear(_ animated: Bool) {
-        addBackgroundImage()
+        //addBackgroundImage()
     }
     
      // MARK: - Table view data source

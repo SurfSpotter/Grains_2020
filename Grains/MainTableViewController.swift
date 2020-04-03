@@ -39,7 +39,7 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
    
     
     override func viewWillAppear(_ animated: Bool) {
-        addBackgroundImage()
+       // addBackgroundImage()
     }
     
     
