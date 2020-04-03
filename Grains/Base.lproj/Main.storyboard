@@ -272,7 +272,7 @@
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ux5-Gs-dJF" userLabel="back">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ux5-Gs-dJF" userLabel="back">
                                                         <rect key="frame" x="10" y="10.666666666666686" width="40" height="34.333333333333336"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="9Za-Ah-LDN"/>
@@ -284,7 +284,7 @@
                                                             <action selector="backButtonAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="J8E-Q5-khQ"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arp-LM-kT5" userLabel="setTime">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arp-LM-kT5" userLabel="setTime">
                                                         <rect key="frame" x="325" y="8.3333333333333108" width="43" height="39"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="43" id="Ezn-Zg-Lp8"/>
@@ -295,49 +295,6 @@
                                                         <state key="normal" backgroundImage="gear" catalog="system"/>
                                                         <connections>
                                                             <action selector="setTimeButtonAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="Lvo-HO-J89"/>
-                                                        </connections>
-                                                    </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsV-SR-Z0u">
-                                                        <rect key="frame" x="0.0" y="71" width="376" height="107"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="71"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jfz-Ir-HfA">
-                                                        <rect key="frame" x="39" y="224" width="299" height="3"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    </progressView>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FB-iG-HSC" userLabel="start">
-                                                        <rect key="frame" x="100" y="163" width="177" height="47"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                        <state key="normal" title="Старт">
-                                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="startButtonAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="Grl-9X-ZaY"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raS-CC-EMt" userLabel="plusButton">
-                                                        <rect key="frame" x="296" y="104.99999999999989" width="42" height="40"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <state key="normal" backgroundImage="plus.circle" catalog="system"/>
-                                                        <connections>
-                                                            <action selector="plusButTimerAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="bkn-Na-xFs"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uab-ZU-u3k" userLabel="minusButton">
-                                                        <rect key="frame" x="39" y="104.99999999999989" width="42" height="40"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <state key="normal" backgroundImage="minus.circle" catalog="system"/>
-                                                        <connections>
-                                                            <action selector="minusButTimerAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="ADL-6l-TBJ"/>
                                                         </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="kd8-NG-05j">
@@ -425,9 +382,80 @@
                                                             <action selector="setTimerAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="b5W-Cs-9xy"/>
                                                         </connections>
                                                     </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SiD-nX-4Gu">
+                                                        <rect key="frame" x="32.666666666666657" y="45" width="311" height="174"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Sdu-ly-Sov">
+                                                                <rect key="frame" x="0.0" y="0.0" width="311" height="85"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uab-ZU-u3k" userLabel="minusButton">
+                                                                        <rect key="frame" x="0.0" y="28.666666666666686" width="30" height="28.666666666666671"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="30" id="Avj-SD-iFm"/>
+                                                                            <constraint firstAttribute="height" constant="30" id="bMm-be-zOz"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <state key="normal" backgroundImage="minus.circle" catalog="system"/>
+                                                                        <connections>
+                                                                            <action selector="minusButTimerAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="ADL-6l-TBJ"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="130:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="55" translatesAutoresizingMaskIntoConstraints="NO" id="CsV-SR-Z0u">
+                                                                        <rect key="frame" x="43" y="0.0" width="225" height="85"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="225" id="YVT-bm-l3T"/>
+                                                                            <constraint firstAttribute="height" constant="85" id="vyE-Rv-jlo"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="71"/>
+                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raS-CC-EMt" userLabel="plusButton">
+                                                                        <rect key="frame" x="281" y="28.666666666666686" width="30" height="28.666666666666671"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="30" id="C0e-vm-fO8"/>
+                                                                            <constraint firstAttribute="height" constant="30" id="kq2-d5-XEs"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <state key="normal" backgroundImage="plus.circle" catalog="system"/>
+                                                                        <connections>
+                                                                            <action selector="plusButTimerAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="bkn-Na-xFs"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FB-iG-HSC" userLabel="start">
+                                                                <rect key="frame" x="80.333333333333343" y="100" width="150" height="49"/>
+                                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="150" id="FfA-PX-1Vb"/>
+                                                                    <constraint firstAttribute="height" constant="49" id="VUs-I2-U5l"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <state key="normal" title="Старт">
+                                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="startButtonAction:" destination="zn7-Ny-qAU" eventType="touchUpInside" id="Grl-9X-ZaY"/>
+                                                                </connections>
+                                                            </button>
+                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jfz-Ir-HfA">
+                                                                <rect key="frame" x="55.333333333333343" y="164" width="200" height="10"/>
+                                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="200" id="c5g-WK-EHP"/>
+                                                                    <constraint firstAttribute="height" constant="10" id="eKY-aD-BPQ"/>
+                                                                </constraints>
+                                                            </progressView>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" name="backgroundCustomDarkMode"/>
                                                 <constraints>
+                                                    <constraint firstItem="SiD-nX-4Gu" firstAttribute="centerY" secondItem="r76-Ov-Wcx" secondAttribute="centerY" constant="8" id="0J3-D9-xRw"/>
+                                                    <constraint firstItem="SiD-nX-4Gu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r76-Ov-Wcx" secondAttribute="leading" constant="5" id="0Vm-FJ-Ac9"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SiD-nX-4Gu" secondAttribute="trailing" constant="5" id="3KK-1I-ueF"/>
                                                     <constraint firstItem="kd8-NG-05j" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r76-Ov-Wcx" secondAttribute="leading" constant="30" id="61m-9S-CSf"/>
                                                     <constraint firstItem="arp-LM-kT5" firstAttribute="centerY" secondItem="m8F-vE-Ch2" secondAttribute="centerY" id="AI2-9W-fKk"/>
                                                     <constraint firstItem="m8F-vE-Ch2" firstAttribute="centerY" secondItem="ux5-Gs-dJF" secondAttribute="centerY" id="HaR-kQ-GJg"/>
@@ -437,6 +465,7 @@
                                                     <constraint firstItem="3Mf-I0-Rew" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r76-Ov-Wcx" secondAttribute="leading" constant="10" id="Q5b-pI-IAa"/>
                                                     <constraint firstItem="m8F-vE-Ch2" firstAttribute="top" secondItem="r76-Ov-Wcx" secondAttribute="top" constant="15" id="QwV-Q2-8zg"/>
                                                     <constraint firstItem="fZ0-xf-Iwn" firstAttribute="centerX" secondItem="3Mf-I0-Rew" secondAttribute="centerX" id="TTo-fL-t2P"/>
+                                                    <constraint firstItem="SiD-nX-4Gu" firstAttribute="centerX" secondItem="r76-Ov-Wcx" secondAttribute="centerX" id="V4N-HE-edP"/>
                                                     <constraint firstItem="0Rr-PS-ST8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3Mf-I0-Rew" secondAttribute="trailing" constant="40" id="WBe-9R-nUq"/>
                                                     <constraint firstItem="m8F-vE-Ch2" firstAttribute="leading" secondItem="ux5-Gs-dJF" secondAttribute="trailing" constant="10" id="X3M-Wp-awR"/>
                                                     <constraint firstItem="ux5-Gs-dJF" firstAttribute="leading" secondItem="r76-Ov-Wcx" secondAttribute="leading" constant="10" id="cOh-ee-q6D"/>
@@ -452,16 +481,6 @@
                                                     <constraint firstItem="Ha7-B9-Yb1" firstAttribute="centerX" secondItem="0Rr-PS-ST8" secondAttribute="centerX" id="ux3-1e-kdr"/>
                                                     <constraint firstItem="kd8-NG-05j" firstAttribute="top" secondItem="m8F-vE-Ch2" secondAttribute="bottom" constant="25" id="x8s-wa-NmH"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="subviews">
-                                                        <exclude reference="m8F-vE-Ch2"/>
-                                                        <exclude reference="kd8-NG-05j"/>
-                                                        <exclude reference="0Rr-PS-ST8"/>
-                                                        <exclude reference="fZ0-xf-Iwn"/>
-                                                        <exclude reference="Ha7-B9-Yb1"/>
-                                                        <exclude reference="3Mf-I0-Rew"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
