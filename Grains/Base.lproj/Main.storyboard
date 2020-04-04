@@ -32,7 +32,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NameGrain" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cef-fb-qri">
                                             <rect key="frame" x="98" y="0.0" width="303" height="62"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                             <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -132,7 +132,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NameGrain" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kq-nQ-Fxv">
                                             <rect key="frame" x="98" y="0.0" width="261" height="62"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                             <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -570,7 +570,7 @@
                                 <rect key="frame" x="0.0" y="-28" width="414" height="924"/>
                             </imageView>
                             <segmentedControl opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w0X-1n-Oy5">
-                                <rect key="frame" x="0.0" y="623.5" width="414" height="32"/>
+                                <rect key="frame" x="68" y="623.5" width="278" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="OfM-XU-mJ7"/>
                                 </constraints>
@@ -710,7 +710,6 @@
                             <constraint firstItem="pWy-Vw-z4m" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TTP-mc-WU5" secondAttribute="trailing" constant="10" id="Bpq-ek-1Td"/>
                             <constraint firstItem="6iN-5A-EEM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TTP-mc-WU5" secondAttribute="bottom" constant="20" id="Gel-xp-CoX"/>
                             <constraint firstItem="w0X-1n-Oy5" firstAttribute="top" secondItem="6iN-5A-EEM" secondAttribute="bottom" constant="20" id="I8F-go-wIl"/>
-                            <constraint firstItem="w0X-1n-Oy5" firstAttribute="leading" secondItem="pWy-Vw-z4m" secondAttribute="leading" id="IYA-6h-5LP"/>
                             <constraint firstItem="eVT-pz-FRg" firstAttribute="centerY" secondItem="pWy-Vw-z4m" secondAttribute="centerY" constant="5.5" id="JHI-ih-9QU"/>
                             <constraint firstItem="pWy-Vw-z4m" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Kdo-Km-llG" secondAttribute="trailing" constant="10" id="Mts-NX-YFz"/>
                             <constraint firstItem="sQN-x3-ZBG" firstAttribute="centerX" secondItem="tx4-Sa-H1D" secondAttribute="centerX" constant="-2" id="PIq-Bp-xvT"/>
@@ -729,7 +728,6 @@
                             <constraint firstItem="Kdo-Km-llG" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" constant="-14" id="pXA-cr-8z9"/>
                             <constraint firstItem="pWy-Vw-z4m" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="w0X-1n-Oy5" secondAttribute="bottom" priority="750" constant="20" id="q4y-oF-az9"/>
                             <constraint firstItem="TTP-mc-WU5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pWy-Vw-z4m" secondAttribute="leading" constant="10" id="rE5-pF-0D6"/>
-                            <constraint firstItem="pWy-Vw-z4m" firstAttribute="trailing" secondItem="w0X-1n-Oy5" secondAttribute="trailing" id="rmu-DT-7mv"/>
                             <constraint firstItem="6iN-5A-EEM" firstAttribute="top" secondItem="TTP-mc-WU5" secondAttribute="bottom" priority="750" constant="45" id="sfa-oY-cfu"/>
                             <constraint firstItem="0g3-SO-gBy" firstAttribute="centerY" secondItem="qeE-4N-sEt" secondAttribute="centerY" id="v6x-q5-oMz"/>
                             <constraint firstItem="TTP-mc-WU5" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" constant="-14" id="vJn-Gp-l58"/>
@@ -806,7 +804,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vLR-gk-Brw"/>
+        <segue reference="ruM-Qa-UhP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
