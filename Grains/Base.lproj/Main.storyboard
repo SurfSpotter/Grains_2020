@@ -393,7 +393,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="message" size="11"/>
+                                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -621,7 +621,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="semolina" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-pz-FRg" userLabel="backgroundImage">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="77.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-pz-FRg" userLabel="backgroundImage">
                                 <rect key="frame" x="0.0" y="-28" width="414" height="924"/>
                             </imageView>
                             <segmentedControl opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w0X-1n-Oy5">
@@ -862,6 +862,7 @@
         <segue reference="ruM-Qa-UhP"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="77.jpg" width="734.760009765625" height="460.79998779296875"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="fire" width="256" height="256"/>
         <image name="gear" catalog="system" width="128" height="119"/>
@@ -873,7 +874,6 @@
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="purchaseApp 2" width="60" height="60"/>
         <image name="rateApp 4" width="60" height="60"/>
-        <image name="semolina" width="1242" height="829"/>
         <image name="sendMail 6" width="60" height="60"/>
         <image name="shareApp 5" width="60" height="60"/>
         <image name="suit.heart" catalog="system" width="128" height="109"/>
