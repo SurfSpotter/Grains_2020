@@ -27,7 +27,6 @@
 		32F0744A2438BB53000B9611 /* cereals.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32F074492438BB53000B9611 /* cereals.jpg */; };
 		32F0744C24390132000B9611 /* wheat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32F0744B24390132000B9611 /* wheat.jpg */; };
 		32F0744E24390217000B9611 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32F0744D24390216000B9611 /* 7.jpg */; };
-		32F0745024390392000B9611 /* 77.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32F0744F24390392000B9611 /* 77.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +52,6 @@
 		32F074492438BB53000B9611 /* cereals.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cereals.jpg; sourceTree = "<group>"; };
 		32F0744B24390132000B9611 /* wheat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wheat.jpg; sourceTree = "<group>"; };
 		32F0744D24390216000B9611 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
-		32F0744F24390392000B9611 /* 77.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 77.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +70,6 @@
 			children = (
 				32F0744B24390132000B9611 /* wheat.jpg */,
 				32F0744D24390216000B9611 /* 7.jpg */,
-				32F0744F24390392000B9611 /* 77.jpg */,
 				32F074492438BB53000B9611 /* cereals.jpg */,
 			);
 			path = BackGr;
@@ -189,7 +186,6 @@
 				32DF8CF423E77ECA00C738F7 /* LaunchScreen.storyboard in Resources */,
 				325CC1F723F1EB690009551A /* likeMe.png in Resources */,
 				325CC1F823F1EB690009551A /* liked.png in Resources */,
-				32F0745024390392000B9611 /* 77.jpg in Resources */,
 				32F0744E24390217000B9611 /* 7.jpg in Resources */,
 				3250B7192437977E0009C36E /* Assets.xcassets in Resources */,
 				32DF8CEF23E77EC400C738F7 /* Main.storyboard in Resources */,

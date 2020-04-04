@@ -155,7 +155,7 @@ extension MainTableViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
        print (searchController.searchBar.text!)
-        if searchController.searchBar.text != nil && searchController.searchBar.text!.count > 2 {  // если в текстовом поле больше 3х букв то:
+        if searchController.searchBar.text != nil && searchController.searchBar.text!.count > 2 && filteredGrains.isEmpty {  // если в текстовом поле больше 3х букв то:
             
             // Обнуляем прежний массив
             Model.shared.grainsAllTogether.removeAll()
@@ -193,6 +193,7 @@ extension MainTableViewController: UISearchResultsUpdating {
             tableView.reloadData()
             }
         else if searchController.searchBar.text == ""  {
+            filteredGrains.removeAll()
           Model.shared.grainsAllTogether.removeAll()
             Model.shared.appendToArr()
             tableView.reloadData()
