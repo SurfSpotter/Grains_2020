@@ -194,11 +194,17 @@ extension MainTableViewController: UISearchResultsUpdating {
             }
         else if searchController.searchBar.text == ""  {
             filteredGrains.removeAll()
-          Model.shared.grainsAllTogether.removeAll()
-            Model.shared.appendToArr()
             tableView.reloadData()
 
         }
+        
+        else if searchController.searchBar.text?.count == 1  {
+                   filteredGrains.removeAll()
+                 Model.shared.grainsAllTogether.removeAll()
+                   Model.shared.appendToArr()
+                   tableView.reloadData()
+    
+            }
         }
         
         
