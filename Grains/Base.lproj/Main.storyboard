@@ -573,17 +573,6 @@
                                 <rect key="frame" x="28.666666666666671" y="272" width="38" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3H-rQ-GNg">
-                                <rect key="frame" x="103" y="509" width="173" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Оценить приложение">
-                                    <color key="titleColor" name="CustomFontColourForOtherVc"/>
-                                </state>
-                                <connections>
-                                    <action selector="rateAppButtonAction:" destination="LQx-Pu-WCy" eventType="touchUpInside" id="ixz-2e-1of"/>
-                                </connections>
-                            </button>
                             <segmentedControl opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w0X-1n-Oy5">
                                 <rect key="frame" x="0.0" y="702.5" width="414" height="32"/>
                                 <constraints>
@@ -641,11 +630,31 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="rateApp 4" translatesAutoresizingMaskIntoConstraints="NO" id="tx4-Sa-H1D">
-                                <rect key="frame" x="59" y="509" width="38" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="0g3-SO-gBy">
+                                <rect key="frame" x="61.5" y="508.5" width="263" height="37"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="rateApp 4" translatesAutoresizingMaskIntoConstraints="NO" id="tx4-Sa-H1D">
+                                        <rect key="frame" x="0.0" y="0.0" width="38" height="37"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="38" id="SST-ph-aXj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3H-rQ-GNg">
+                                        <rect key="frame" x="44" y="0.0" width="219" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="lcS-x4-KwS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Оценить приложение">
+                                            <color key="titleColor" name="CustomFontColourForOtherVc"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rateAppButtonAction:" destination="LQx-Pu-WCy" eventType="touchUpInside" id="ixz-2e-1of"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="purchaseApp 2" translatesAutoresizingMaskIntoConstraints="NO" id="bP7-Db-cwB">
                                 <rect key="frame" x="28.666666666666671" y="412" width="38" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -676,13 +685,18 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="0g3-SO-gBy" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" constant="-14" id="6uw-G7-rah"/>
                             <constraint firstItem="eVT-pz-FRg" firstAttribute="width" secondItem="qeE-4N-sEt" secondAttribute="width" id="BYm-Rn-cWf"/>
                             <constraint firstItem="pWy-Vw-z4m" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TTP-mc-WU5" secondAttribute="trailing" constant="10" id="Bpq-ek-1Td"/>
                             <constraint firstItem="6iN-5A-EEM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TTP-mc-WU5" secondAttribute="bottom" constant="20" id="Gel-xp-CoX"/>
                             <constraint firstItem="w0X-1n-Oy5" firstAttribute="top" secondItem="6iN-5A-EEM" secondAttribute="bottom" constant="20" id="I8F-go-wIl"/>
                             <constraint firstItem="w0X-1n-Oy5" firstAttribute="leading" secondItem="pWy-Vw-z4m" secondAttribute="leading" id="IYA-6h-5LP"/>
                             <constraint firstItem="eVT-pz-FRg" firstAttribute="centerY" secondItem="pWy-Vw-z4m" secondAttribute="centerY" constant="5.5" id="JHI-ih-9QU"/>
+                            <constraint firstItem="sQN-x3-ZBG" firstAttribute="centerX" secondItem="tx4-Sa-H1D" secondAttribute="centerX" constant="-2" id="PIq-Bp-xvT"/>
                             <constraint firstItem="w0X-1n-Oy5" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" id="R7O-ag-G8J"/>
+                            <constraint firstItem="pWy-Vw-z4m" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0g3-SO-gBy" secondAttribute="trailing" constant="10" id="RjU-ky-nqv"/>
+                            <constraint firstItem="TTP-mc-WU5" firstAttribute="top" secondItem="0g3-SO-gBy" secondAttribute="bottom" constant="20" id="bIE-aF-cNL"/>
+                            <constraint firstItem="0g3-SO-gBy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pWy-Vw-z4m" secondAttribute="leading" constant="10" id="c9V-U3-ioQ"/>
                             <constraint firstItem="6iN-5A-EEM" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" constant="-18" id="hwT-8B-4z7"/>
                             <constraint firstItem="eVT-pz-FRg" firstAttribute="centerX" secondItem="pWy-Vw-z4m" secondAttribute="centerX" priority="750" id="kNr-0J-cbX"/>
                             <constraint firstItem="pWy-Vw-z4m" firstAttribute="bottom" secondItem="w0X-1n-Oy5" secondAttribute="bottom" constant="79.329999999999998" id="q4y-oF-az9"/>
