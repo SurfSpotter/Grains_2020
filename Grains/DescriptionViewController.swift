@@ -48,6 +48,7 @@ var descriptionGrainClass: Grain?
     
     @IBOutlet weak var calMainDescLabOut: UILabel!
     
+    @IBOutlet weak var descScrollView: UIScrollView!
     
    
     
@@ -345,7 +346,8 @@ var descriptionGrainClass: Grain?
         
         super.viewDidLoad()
         
-       
+        
+        
         
         if descriptionGrainClass != nil {
         calMainDescLabOut.text = "\(descriptionGrainClass!.caloriesInCcal)  Ккал".replacingOccurrences(of: ".0", with: "") }
@@ -357,7 +359,8 @@ var descriptionGrainClass: Grain?
         quantOfGrainOut.text = quanOfGrain
         boilTimeLabOut.text = "\(descriptionGrainClass!.timeOfBoil) \(Model.shared.skloneniaMinut(boilTime: descriptionGrainClass!))"
         coutndownTimerOut.text = "\(descriptionGrainClass!.timeOfBoil):00"
-        
+        descScrollView.backgroundColor = Model.shared.hexStringToUIColor(hex: descriptionGrainClass!.backgroungColorInHex) // цвет фона из класса крупы
+        setGrainImage()
         viewOutlet.backgroundColor = Model.shared.hexStringToUIColor(hex: descriptionGrainClass!.backgroungColorInHex) // цвет фона из класса крупы
         setGrainImage()
         hideTimerViewItems()
@@ -365,6 +368,7 @@ var descriptionGrainClass: Grain?
         hideCaloriesViewItems()
         self.backButtomOut.isHidden = true
         setImageFromUsDefBoolStatus()
+        
         
         
         
@@ -382,23 +386,9 @@ var descriptionGrainClass: Grain?
 }
     
     override func viewDidAppear(_ animated: Bool) {
+
         
-//        // Убрать после отладки констрентов!
-//              self.carbLabOut.isHidden = false
-//               self.carbLabOut.text = "Углеводов: \(String(describing: self.descriptionGrainClass!.carbohydrate) )"
-//               self.protLabOut.isHidden = false
-//               self.protLabOut.text = "Белков: \(String(describing: self.descriptionGrainClass!.protein) )"
-//               self.fatLabOut.isHidden = false
-//               self.fatLabOut.text = "Жиров: \(String(describing: self.descriptionGrainClass!.fat) )"
-//               self.in100GrLabOut.isHidden = false
-//               self.in100GrLabOut.text = "В 100 граммах содержится: "
-//               self.calLabOut.isHidden = false
-//        self.calLabOut.text = ("Калорийность: \(self.descriptionGrainClass!.caloriesInCcal)ккал").replacingOccurrences(of: ".0", with: "")
-//               
-//        self.backButtomOut.isHidden = false
-//               
-//               // Убрать после отладки констрентов!
-               
+       
         
         quanOfWaterOut.text = quanOfWater
         quantOfGrainOut.text = quanOfGrain

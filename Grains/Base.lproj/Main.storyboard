@@ -591,6 +591,7 @@
                         <outlet property="charactersViewOutlet" destination="r76-Ov-Wcx" id="2g7-jj-qht"/>
                         <outlet property="coutndownTimerOut" destination="CsV-SR-Z0u" id="gwn-su-rsB"/>
                         <outlet property="descLabelOutlet" destination="jT3-Ls-QvX" id="eWR-Bm-X1a"/>
+                        <outlet property="descScrollView" destination="tZS-NY-NMt" id="O8p-74-MfT"/>
                         <outlet property="descriptionViewOtlet" destination="zxg-6q-PF7" id="Rlf-LI-5Xh"/>
                         <outlet property="fatLabOut" destination="16S-Zb-Cq8" id="79s-go-uUz"/>
                         <outlet property="grainMainImageOut" destination="Pnq-vd-eSH" id="Txe-E5-1mv"/>
