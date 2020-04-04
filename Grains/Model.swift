@@ -163,7 +163,7 @@ class Model: NSObject {
                           protein: 13,
                           caloriesInCcal: 360,
                           description: "Гречку засыпают в холодную, немного подсоленную воду, доводят до кипения и варят на самом тихом огне.",
-                          imageName: "Buckwheat",
+                          imageName: "buckwheat",
                             backGroundColorRed: 157 ,
                             backGroundColorGreen: 105,
                             backGroundColorBlue: 47,
