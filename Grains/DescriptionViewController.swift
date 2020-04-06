@@ -404,6 +404,8 @@ var descriptionGrainClass: Grain?
     
 
     @IBAction func setTimerAction(_ sender: Any) {
+        
+        
         UserDefaults.standard.synchronize()
         
         
@@ -411,12 +413,12 @@ var descriptionGrainClass: Grain?
         // Устанавливаем число бесплатных таймеров
         
         
-        let timesOfFreeTimerUsesRemaining = 13 - UserDefaults.standard.integer(forKey: "timerCounts")
+        let timesOfFreeTimerUsesRemaining = 20 - UserDefaults.standard.integer(forKey: "timerCounts")
         
         // Устанавливаем число бесплатных таймеров
         
+        //print("timesOfFreeTimerUsesRemaining:  \(timesOfFreeTimerUsesRemaining)")
         print("timesOfFreeTimerUsesRemaining:  \(timesOfFreeTimerUsesRemaining)")
-        print("StoreManager.share.timesOfFreeTimerUsesRemaining:  \(StoreManager.share.timesOfFreeTimerUsesRemaining)")
         if timesOfFreeTimerUsesRemaining > 3 {
             
             
@@ -462,7 +464,8 @@ var descriptionGrainClass: Grain?
         
         else if timesOfFreeTimerUsesRemaining == 1 {
          
-            
+            animationOfView(item: charactersViewOutlet)
+            hideMainItems()
             
                    hideMainItems()
                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
@@ -480,7 +483,7 @@ var descriptionGrainClass: Grain?
                
         }
         
-        else if StoreManager.share.timesOfFreeTimerUsesRemaining <= 0 {
+        else if timesOfFreeTimerUsesRemaining <= 0 {
            
                    
                    let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Бесплатные таймеры закончились.", message: "Купить полную версию?", preferredStyle: .alert)
