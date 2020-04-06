@@ -499,7 +499,7 @@ var descriptionGrainClass: Grain?
             
             let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Бесплатные таймеры закончились.", message: "Купить полную версию?", preferredStyle: .alert)
             alertTimesOfUseTimerIsLimited.addAction(UIAlertAction(title: "Да", style: .default, handler: { (UIAlertAction) in
-                StoreManager.share.buyInApp(inAppId: "Id12324")
+                StoreManager.share.buyInApp(inAppId: "grainsFullversion1")
             }) )
             alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "Нет", style: .default, handler: nil))
             
