@@ -24,6 +24,8 @@ class RateManager {
  
         
     }
+    
+    
     class func ShowRateItAppByCount() {
         let runCounts = UserDefaults.standard.integer(forKey: "runCounts")
         if runCounts == 15 { // times how much loads app before SKStoreController Started
@@ -43,6 +45,7 @@ class RateManager {
         incrementCount()
         ShowRateItAppByCount()
         }
+   
     class func resetUDRunCount() {
         UserDefaults.standard.set(0 , forKey: "runCounts")
     }

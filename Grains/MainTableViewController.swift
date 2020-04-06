@@ -17,7 +17,7 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
         // Rate App 
         RateManager.rate()
         navigationController?.navigationBar.alpha = 0.1
-    
+   
     
         
         
@@ -169,7 +169,7 @@ extension MainTableViewController: UISearchResultsUpdating {
             for keyword in i.keyWords {
             // если синоним совпадает с введенным текстом то обнуляем массив и добавляем в пустой массив эту крупу
                 if keyword.contains(searchController.searchBar.text!.lowercased()) {     // i это название класса
-                print(i.name)
+                //print(i.name)
                 
                 filteredGrains.append(i)
                     

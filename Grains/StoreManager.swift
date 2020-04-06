@@ -5,12 +5,29 @@
 //  Created by Алексей Чигарских on 10.03.2020.
 //  Copyright © 2020 Алексей Чигарских. All rights reserved.
 //
-
+import UIKit
 import Foundation
 import StoreKit
 let nPurchaseCompleted = "nPurchaseCompleted"
 
 class StoreManager: NSObject {
+    static let share = StoreManager()
+    //MARK: - количество бесплатный использований таймера
+   // let freeTimesOfUsetimer = 2
+    let timesOfFreeTimerUsesRemaining = 13 -  (UserDefaults.standard.integer(forKey: "timerCounts"))
+    
+    // Класс который считает количество завершенных пользователем таймеров
+        class func incrementUsedTimerTimes() {
+               let runCounts = UserDefaults.standard.integer(forKey: "timerCounts")
+                   UserDefaults.standard.set(runCounts + 1, forKey: "timerCounts")
+                   UserDefaults.standard.synchronize()
+                   print ("timerCounts incremented. Tolal summary is: \(UserDefaults.standard.integer(forKey: "timerCounts"))")
+        
+               
+           }
+    
+    
+    
     class func didBuyFullVersion() {
         UserDefaults.standard.bool(forKey: "luffNoisrev")
         UserDefaults.standard.set(true, forKey: "luffNoisrev")
@@ -30,6 +47,9 @@ class StoreManager: NSObject {
         request.delegate = self
         request.start()
     }
+    
+  
+    
     
     
 }

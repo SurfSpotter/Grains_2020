@@ -111,7 +111,7 @@ var descriptionGrainClass: Grain?
     }
     
     
-    @IBAction func startButtonAction(_ sender: Any) {
+    @IBAction func startButtonAction(_ sender: Any) { 
         if  timerStatus == false && boilTimeInSeconds >= 1 {
         let startTimeSet: TimeInterval = Date().timeIntervalSince1970
         startTime = Int(startTimeSet) //записываем время старта таймера
@@ -179,6 +179,11 @@ var descriptionGrainClass: Grain?
             boilTimeGiveInSec()
             timerStatus = true
         
+            
+            // Считаем количество раз, сколько пользаватель использовал таймер
+            
+            
+            StoreManager.incrementUsedTimerTimes()
             
             
         }
@@ -397,8 +402,46 @@ var descriptionGrainClass: Grain?
         quantOfGrainOut.text = quanOfGrain
     }
     
-    
+
     @IBAction func setTimerAction(_ sender: Any) {
+        UserDefaults.standard.synchronize()
+        
+        
+        
+        // Устанавливаем число бесплатных таймеров
+        
+        
+        let timesOfFreeTimerUsesRemaining = 13 - UserDefaults.standard.integer(forKey: "timerCounts")
+        
+        // Устанавливаем число бесплатных таймеров
+        
+        print("timesOfFreeTimerUsesRemaining:  \(timesOfFreeTimerUsesRemaining)")
+        print("StoreManager.share.timesOfFreeTimerUsesRemaining:  \(StoreManager.share.timesOfFreeTimerUsesRemaining)")
+        if timesOfFreeTimerUsesRemaining > 3 {
+            
+            
+            animationOfView(item: charactersViewOutlet)
+                   hideMainItems()
+                   DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
+                       self.boilTimeGiveInSec()
+                       
+                       
+                       self.showHiddenTimerViewItems()
+                       self.backButtomOut.isHidden = false
+                   
+                       
+                       
+                   }
+            
+            
+            
+        }
+        
+        if timesOfFreeTimerUsesRemaining == 2
+            ||  timesOfFreeTimerUsesRemaining == 3{
+  
+            
+            
         animationOfView(item: charactersViewOutlet)
         hideMainItems()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
@@ -407,10 +450,48 @@ var descriptionGrainClass: Grain?
             
             self.showHiddenTimerViewItems()
             self.backButtomOut.isHidden = false
+        
+           
             
             
+            let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "Осталось \(timesOfFreeTimerUsesRemaining) бесплатных таймера", preferredStyle: .alert)
+            alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
+            self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
+        }
         }
         
+        else if timesOfFreeTimerUsesRemaining == 1 {
+         
+            
+            
+                   hideMainItems()
+                   DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
+                       self.boilTimeGiveInSec()
+                       self.showHiddenTimerViewItems()
+                       self.backButtomOut.isHidden = false
+                   
+            
+            let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "У вас остался \(timesOfFreeTimerUsesRemaining) бесплатный таймер", preferredStyle: .alert)
+                       alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
+                       self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
+            
+            }
+            
+               
+        }
+        
+        else if StoreManager.share.timesOfFreeTimerUsesRemaining <= 0 {
+           
+                   
+                   let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Бесплатные таймеры закончились.", message: "Купить полную версию?", preferredStyle: .alert)
+                        alertTimesOfUseTimerIsLimited.addAction(UIAlertAction(title: "Да", style: .default, handler: { (UIAlertAction) in
+                           StoreManager.share.buyInApp(inAppId: "Id12324")
+                       }) )
+                        alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "Нет", style: .default, handler: nil))
+           
+                              self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
+                      
+               }
         
     }
     

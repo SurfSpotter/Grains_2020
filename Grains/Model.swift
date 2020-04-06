@@ -826,13 +826,13 @@ func skloneniaMinut(boilTime: Grain) -> String {
         grainsAllTogether.append(chechevicaRed)
         grainsAllTogether.append(yachnevayaGrain)
         grainsAllTogether = grainsAllTogether.sorted {$0.name < $1.name}
-        print("This print from function: appendToArr" )
-        for i in Model.shared.grainsAllTogether {
-            let name = i.name
-            print (name)
-        }
-        print(Model.shared.grainsAllTogether.count)
-        print ("This is all Grains in AllTogetherArray")
+        //print("This print from function: appendToArr" )
+//        for i in Model.shared.grainsAllTogether {
+//            let name = i.name
+//            print (name)
+//        }
+        print("Count of AllTogArray \(Model.shared.grainsAllTogether.count)")
+//        print ("This is all Grains in AllTogetherArray")
         
         
     }
