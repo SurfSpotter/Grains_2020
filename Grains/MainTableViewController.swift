@@ -155,7 +155,36 @@ extension MainTableViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
        print (searchController.searchBar.text!)
-        if searchController.searchBar.text != nil && searchController.searchBar.text!.count > 2 && filteredGrains.isEmpty {  // если в текстовом поле больше 3х букв то:
+        if searchController.searchBar.text == "Thanks god iam really VIP" {
+            StoreManager.didBuyFullVersion()
+            let vipAlert = UIAlertController(title: "Ты хороший человек!", message: "Премиум условия активированы.", preferredStyle: .alert)
+            let vipAlertAction = UIAlertAction(title: "ОК", style: .default, handler: nil)
+            vipAlert.addAction(vipAlertAction)
+            present(vipAlert, animated: true, completion: nil)
+        }
+            
+        else if searchController.searchBar.text == "Clear my VIP status" {
+            StoreManager.UsedTimerTimesToDefault()
+            UserDefaults.standard.bool(forKey: "luffNoisrev")
+            UserDefaults.standard.set(false, forKey: "luffNoisrev")
+            UserDefaults.standard.synchronize()
+            let vipAlert = UIAlertController(title: "Вы больше не VIP", message: nil, preferredStyle: .alert)
+            let vipAlertAction = UIAlertAction(title: "ОК", style: .default, handler: nil)
+            vipAlert.addAction(vipAlertAction)
+            present(vipAlert, animated: true, completion: nil)
+        }
+            
+        else if searchController.searchBar.text == "Go to default" {
+            
+            UserDefaults.standard.synchronize()
+            let vipAlert = UIAlertController(title: "Читер!", message: "Бесплатные таймеры обнулены!", preferredStyle: .alert)
+            let vipAlertAction = UIAlertAction(title: "ОК", style: .default, handler: nil)
+            vipAlert.addAction(vipAlertAction)
+            present(vipAlert, animated: true, completion: nil)
+        }
+        
+        
+        else if searchController.searchBar.text != nil && searchController.searchBar.text!.count > 2 && filteredGrains.isEmpty {  // если в текстовом поле больше 3х букв то:
             
             // Обнуляем прежний массив
             Model.shared.grainsAllTogether.removeAll()

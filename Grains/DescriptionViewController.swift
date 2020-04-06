@@ -424,13 +424,13 @@ var descriptionGrainClass: Grain?
         // Устанавливаем число бесплатных таймеров
         
         
-        let timesOfFreeTimerUsesRemaining = 27 - UserDefaults.standard.integer(forKey: "timerCounts")
+        let timesOfFreeTimerUsesRemaining = 4 - UserDefaults.standard.integer(forKey: "timerCounts")
         
         // Устанавливаем число бесплатных таймеров
         
         //print("timesOfFreeTimerUsesRemaining:  \(timesOfFreeTimerUsesRemaining)")
         print("timesOfFreeTimerUsesRemaining:  \(timesOfFreeTimerUsesRemaining)")
-        if timesOfFreeTimerUsesRemaining > 3 {
+        if timesOfFreeTimerUsesRemaining > 3 && !StoreManager.ifFullVersion {
             
             
             animationOfView(item: charactersViewOutlet)
@@ -451,7 +451,7 @@ var descriptionGrainClass: Grain?
         }
         
         if timesOfFreeTimerUsesRemaining == 2
-            ||  timesOfFreeTimerUsesRemaining == 3{
+            ||  timesOfFreeTimerUsesRemaining == 3 && !StoreManager.ifFullVersion {
             
             
             
@@ -473,7 +473,7 @@ var descriptionGrainClass: Grain?
             }
         }
             
-        else if timesOfFreeTimerUsesRemaining == 1 {
+        else if timesOfFreeTimerUsesRemaining == 1 && !StoreManager.ifFullVersion {
             
             animationOfView(item: charactersViewOutlet)
             hideMainItems()
@@ -494,7 +494,7 @@ var descriptionGrainClass: Grain?
             
         }
             
-        else if timesOfFreeTimerUsesRemaining <= 0 {
+        else if timesOfFreeTimerUsesRemaining <= 0 && !StoreManager.ifFullVersion {
             
             
             let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Бесплатные таймеры закончились.", message: "Купить полную версию?", preferredStyle: .alert)
@@ -504,6 +504,27 @@ var descriptionGrainClass: Grain?
             alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "Нет", style: .default, handler: nil))
             
             self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
+            
+        }
+        
+        
+       else {
+            
+            
+            animationOfView(item: charactersViewOutlet)
+            hideMainItems()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
+                self.boilTimeGiveInSec()
+                
+                
+                self.showHiddenTimerViewItems()
+                self.backButtomOut.isHidden = false
+                
+                
+                
+            }
+            
+            
             
         }
     }

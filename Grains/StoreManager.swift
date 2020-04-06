@@ -23,6 +23,13 @@ class StoreManager: NSObject {
         
                
            }
+    class func UsedTimerTimesToDefault() {
+                      UserDefaults.standard.set(0, forKey: "timerCounts")
+                      UserDefaults.standard.synchronize()
+                      print ("timerCounts reset: \(UserDefaults.standard.integer(forKey: "timerCounts"))")
+           
+                  
+              }
     
     
     
