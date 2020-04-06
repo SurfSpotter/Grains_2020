@@ -4,7 +4,7 @@
 //
 //  Created by Алексей Чигарских on 10.03.2020.
 //  Copyright © 2020 Алексей Чигарских. All rights reserved.
-//
+//  
 import UIKit
 import Foundation
 import StoreKit
@@ -13,8 +13,6 @@ let nPurchaseCompleted = "nPurchaseCompleted"
 class StoreManager: NSObject {
     static let share = StoreManager()
     //MARK: - количество бесплатный использований таймера
-   // let freeTimesOfUsetimer = 2
-    //let timesOfFreeTimerUsesRemaining = 15 -  (UserDefaults.standard.integer(forKey: "timerCounts"))
     
     // Класс который считает количество завершенных пользователем таймеров
         class func incrementUsedTimerTimes() {
