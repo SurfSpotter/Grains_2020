@@ -14,6 +14,7 @@
 		325CC1FE23F4A23B0009551A /* FavouritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325CC1FD23F4A23B0009551A /* FavouritesTableViewController.swift */; };
 		325CC20023F4BED90009551A /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325CC1FF23F4BED90009551A /* FavTableViewCell.swift */; };
 		326D17FD24119A0800DE6195 /* RateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D17FC24119A0800DE6195 /* RateManager.swift */; };
+		327564DB243B03FF001444B9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327564DA243B03FF001444B9 /* Extensions.swift */; };
 		32A7445F23EB5892000173D4 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7445E23EB5892000173D4 /* DescriptionViewController.swift */; };
 		32C36A7E240E709C0027D410 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C36A7D240E709C0027D410 /* OtherViewController.swift */; };
 		32CBEEC5242418E1009ADDE9 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */; };
@@ -36,6 +37,7 @@
 		325CC1FD23F4A23B0009551A /* FavouritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewController.swift; sourceTree = "<group>"; };
 		325CC1FF23F4BED90009551A /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 		326D17FC24119A0800DE6195 /* RateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateManager.swift; sourceTree = "<group>"; };
+		327564DA243B03FF001444B9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		32A7445E23EB5892000173D4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		32C36A7D240E709C0027D410 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				32DB9ED223E9FB0200D07561 /* MainTableViewCell.swift */,
 				32A7445E23EB5892000173D4 /* DescriptionViewController.swift */,
 				325CC1FD23F4A23B0009551A /* FavouritesTableViewController.swift */,
+				327564DA243B03FF001444B9 /* Extensions.swift */,
 				325CC1FF23F4BED90009551A /* FavTableViewCell.swift */,
 				32C36A7D240E709C0027D410 /* OtherViewController.swift */,
 				32DF8CFB23E787D700C738F7 /* Model.swift */,
@@ -209,6 +212,7 @@
 				32A7445F23EB5892000173D4 /* DescriptionViewController.swift in Sources */,
 				32DF8CFC23E787D700C738F7 /* Model.swift in Sources */,
 				326D17FD24119A0800DE6195 /* RateManager.swift in Sources */,
+				327564DB243B03FF001444B9 /* Extensions.swift in Sources */,
 				32DB9ED323E9FB0200D07561 /* MainTableViewCell.swift in Sources */,
 				325C593C2417E7EF0067B3BC /* StoreManager.swift in Sources */,
 				325CC1FE23F4A23B0009551A /* FavouritesTableViewController.swift in Sources */,

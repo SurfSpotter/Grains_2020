@@ -135,7 +135,7 @@ class Model: NSObject {
     //MARK: - Grains variable initialized
     
     let boulgour = Grain(name: "Булгур",
-                     keyWords: ["Булгур булгур Bulgur bulgur"],
+                     keyWords: ["Булгур булгур Bulgur boulgur bulgur"],
                      timeOfBoil: 25,
                      proportions: 0.5,
                      backgroungColorInHex: "#BE874A",
@@ -143,7 +143,7 @@ class Model: NSObject {
                      carbohydrate: 14.08,
                      protein: 3.08,
                      caloriesInCcal: 83,
-                     description: "Булгур перед варкой промыть в проточной воде, выложив в сито, слить воду и обжарить булгур в кастрюле на растительном масле 1 минуту, добавить кипяток, варить 20 минут под крышкой на тихом огне, помешивая.",
+                     description: "1. Перед варкой промыть в проточной воде. \n2. Обжарить булгур на растительном масле 3 минуты. \n3. Добавить в крупу кипяток в указанной пропорции.\n4. Варить под крышкой не мешая.",
                     imageName: "boulgour",
                     backGroundColorRed: 1 ,
                     backGroundColorGreen: 1,
@@ -186,7 +186,7 @@ class Model: NSObject {
     )
     
     let goroh = Grain(name: "Горох",
-                    keyWords: ["Горох горох"],
+                    keyWords: ["Горох goroh горох"],
                     timeOfBoil: 60,
                     proportions: 0.33333333333,
                     backgroungColorInHex: "#D1AA85" ,
@@ -238,7 +238,7 @@ class Model: NSObject {
     )
     
     let kukuruza = Grain(name: "Кукуруза",
-                        keyWords: ["кукуруза Кукуруза"],
+                        keyWords: ["кукуруза Кукуруза corn "],
                         timeOfBoil: 30,
                         proportions: 0.2,
                         backgroungColorInHex: "#DE7B0A",
@@ -255,7 +255,7 @@ class Model: NSObject {
     )
     
     let kuskus = Grain(name: "Кускус",
-                        keyWords: ["Кускус кускус кус"],
+                        keyWords: ["Кускус кускус кус kuskus"],
                         timeOfBoil: 5,
                         proportions: 0.5,
                         backgroungColorInHex: "#F8BF79",
@@ -460,7 +460,7 @@ class Model: NSObject {
     
     
     let riceBasmati = Grain(name: "Рис Басмати",
-    keyWords: ["рис", "басмати"],
+    keyWords: ["рис", "басмати", "rice Rice basmati"],
     timeOfBoil: 15,
     proportions: 0.5,
     backgroungColorInHex: "#C8C0B9",
@@ -803,6 +803,7 @@ func skloneniaMinut(boilTime: Grain) -> String {
         grainsAllTogether.append(kukuruza)
         grainsAllTogether.append(kuskus)
         grainsAllTogether.append(semolina)
+        grainsAllTogether.append(soyaBeans)
         grainsAllTogether.append(mash)
         grainsAllTogether.append(nout)
         grainsAllTogether.append(oatmealNoBoil)
@@ -835,6 +836,8 @@ func skloneniaMinut(boilTime: Grain) -> String {
         
         
     }
+    
+    
     
 }
     

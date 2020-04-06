@@ -342,6 +342,7 @@ var descriptionGrainClass: Grain?
             // Действия после покупки проложения
             
             
+            
         }
         
         super.viewDidLoad()
@@ -388,7 +389,9 @@ var descriptionGrainClass: Grain?
     override func viewDidAppear(_ animated: Bool) {
 
         
-       
+        animationOfButton(item: timerButtonOut)
+         animationOfButton(item: caloriesButtonOut)
+        
         
         quanOfWaterOut.text = quanOfWater
         quantOfGrainOut.text = quanOfGrain
@@ -665,6 +668,20 @@ var descriptionGrainClass: Grain?
     })
     
     }
+    
+    func animationOfButton(item: UIButton ) {
+       let item = item
+       UIView.animate(withDuration: 0.6,
+                      animations: {
+                       item.transform = CGAffineTransform(scaleX: 0.9, y: 0.90)
+       },
+                      completion: { _ in
+                       UIView.animate(withDuration: 0.6) {
+                           item.transform = CGAffineTransform.identity
+                       }
+       })
+       
+       }
     
 
 // Checking array to contains doubled classes
