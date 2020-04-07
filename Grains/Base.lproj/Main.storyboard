@@ -280,14 +280,14 @@
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="measure" translatesAutoresizingMaskIntoConstraints="NO" id="EHM-2p-0o7">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="measure" translatesAutoresizingMaskIntoConstraints="NO" id="EHM-2p-0o7">
                                                         <rect key="frame" x="20" y="74.5" width="40" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="UqT-8x-W3I"/>
                                                             <constraint firstAttribute="width" constant="40" id="nCf-gr-7WF"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="b6b-z4-jcg">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="b6b-z4-jcg">
                                                         <rect key="frame" x="20" y="130" width="40" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="Jus-zl-jPj"/>
@@ -398,7 +398,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="menu" size="11"/>
+                                                                        <font key="NSFont" metaFont="message" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -600,6 +600,8 @@
                         <outlet property="descriptionViewOtlet" destination="zxg-6q-PF7" id="Rlf-LI-5Xh"/>
                         <outlet property="fatLabOut" destination="16S-Zb-Cq8" id="79s-go-uUz"/>
                         <outlet property="grainMainImageOut" destination="Pnq-vd-eSH" id="Txe-E5-1mv"/>
+                        <outlet property="hwMuchGrainImgOut" destination="hVr-yZ-6Ye" id="IgU-OH-ZFY"/>
+                        <outlet property="hwMuchWaterImgOut" destination="b6b-z4-jcg" id="YAr-hl-uNe"/>
                         <outlet property="in100GrLabOut" destination="m8F-vE-Ch2" id="gVL-n5-uQ1"/>
                         <outlet property="minusButTimerOut" destination="Uab-ZU-u3k" id="Pdn-tj-8ud"/>
                         <outlet property="plusButTimerOut" destination="raS-CC-EMt" id="4kb-zZ-Ubl"/>
@@ -618,7 +620,7 @@
             </objects>
             <point key="canvasLocation" x="3240" y="282.26600985221677"/>
         </scene>
-        <!--Other View Controller-->
+        <!--Еще-->
         <scene sceneID="bjp-qs-dS0">
             <objects>
                 <viewController id="LQx-Pu-WCy" customClass="OtherViewController" customModule="Grains" customModuleProvider="target" sceneMemberID="viewController">
@@ -626,7 +628,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-pz-FRg" userLabel="backgroundImage">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-pz-FRg" userLabel="backgroundImage">
                                 <rect key="frame" x="0.0" y="-28" width="414" height="924"/>
                             </imageView>
                             <segmentedControl opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w0X-1n-Oy5">
@@ -795,7 +797,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pWy-Vw-z4m"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="Rqd-MG-eWY"/>
+                    <tabBarItem key="tabBarItem" title="Еще" image="ellipsis.circle" catalog="system" id="Rqd-MG-eWY"/>
                     <connections>
                         <outlet property="mesuresSCOutlet" destination="w0X-1n-Oy5" id="GSu-i0-QdB"/>
                     </connections>
@@ -804,11 +806,11 @@
             </objects>
             <point key="canvasLocation" x="801.44927536231887" y="-1364.0625"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Поиск-->
         <scene sceneID="qWT-ey-tEL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A2a-9C-CL5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="9VQ-xD-nQa"/>
+                    <tabBarItem key="tabBarItem" title="Поиск" image="magnifyingglass" catalog="system" id="9VQ-xD-nQa"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tax-iC-2Gz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -843,11 +845,11 @@
             </objects>
             <point key="canvasLocation" x="-107.24637681159422" y="-677.00892857142856"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Избранное-->
         <scene sceneID="fqh-Zq-6Z0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hke-Pc-pjl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" selectedImage="heart" catalog="system" systemItem="favorites" id="2Ur-4U-OgA"/>
+                    <tabBarItem key="tabBarItem" title="Избранное" image="star" catalog="system" id="2Ur-4U-OgA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5P9-yH-cyP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -867,11 +869,13 @@
         <segue reference="ruM-Qa-UhP"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="7.jpg" width="607.32000732421875" height="354.239990234375"/>
+        <image name="7_1.jpg" width="439.55999755859375" height="781.20001220703125"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="ellipsis.circle" catalog="system" width="128" height="121"/>
         <image name="fire" width="256" height="256"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="measure" width="90" height="90"/>
         <image name="measures 3" width="60" height="60"/>
         <image name="minus.circle" catalog="system" width="128" height="121"/>
@@ -881,6 +885,7 @@
         <image name="rateApp 4" width="60" height="60"/>
         <image name="sendMail 6" width="60" height="60"/>
         <image name="shareApp 5" width="60" height="60"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <image name="suit.heart" catalog="system" width="128" height="109"/>
         <image name="timerFill.png" width="512" height="512"/>
         <image name="water" width="90" height="90"/>

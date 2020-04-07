@@ -241,8 +241,13 @@ var descriptionGrainClass: Grain?
     @IBOutlet weak var calLabOut: UILabel!
     
     
-   
-       
+   // MARK: Outlets of DescriptipnVC
+    
+    @IBOutlet weak var hwMuchGrainImgOut: NSLayoutConstraint!
+    
+    @IBOutlet weak var hwMuchWaterImgOut: UIImageView!
+    
+    
     
     
    
@@ -288,8 +293,8 @@ var descriptionGrainClass: Grain?
        
     }
     
-    
-     // Animation of button
+
+     //MARK: - Animation of button
     fileprivate func animationOfButton() {
        
         
