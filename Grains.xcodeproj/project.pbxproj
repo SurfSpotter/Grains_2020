@@ -15,6 +15,10 @@
 		325CC20023F4BED90009551A /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325CC1FF23F4BED90009551A /* FavTableViewCell.swift */; };
 		326D17FD24119A0800DE6195 /* RateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D17FC24119A0800DE6195 /* RateManager.swift */; };
 		327564DB243B03FF001444B9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327564DA243B03FF001444B9 /* Extensions.swift */; };
+		32756504243C76BF001444B9 /* 7_4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 32756500243C76BE001444B9 /* 7_4.pdf */; };
+		32756505243C76BF001444B9 /* 7_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32756501243C76BE001444B9 /* 7_3.jpg */; };
+		32756506243C76BF001444B9 /* 7_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32756502243C76BF001444B9 /* 7_2.png */; };
+		32756507243C76C0001444B9 /* 7_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32756503243C76BF001444B9 /* 7_1.jpg */; };
 		32A7445F23EB5892000173D4 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7445E23EB5892000173D4 /* DescriptionViewController.swift */; };
 		32C36A7E240E709C0027D410 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C36A7D240E709C0027D410 /* OtherViewController.swift */; };
 		32CBEEC5242418E1009ADDE9 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */; };
@@ -38,6 +42,10 @@
 		325CC1FF23F4BED90009551A /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 		326D17FC24119A0800DE6195 /* RateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateManager.swift; sourceTree = "<group>"; };
 		327564DA243B03FF001444B9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		32756500243C76BE001444B9 /* 7_4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 7_4.pdf; sourceTree = "<group>"; };
+		32756501243C76BE001444B9 /* 7_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7_3.jpg; sourceTree = "<group>"; };
+		32756502243C76BF001444B9 /* 7_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_2.png; sourceTree = "<group>"; };
+		32756503243C76BF001444B9 /* 7_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7_1.jpg; sourceTree = "<group>"; };
 		32A7445E23EB5892000173D4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		32C36A7D240E709C0027D410 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
@@ -72,6 +80,10 @@
 			children = (
 				32F0744B24390132000B9611 /* wheat.jpg */,
 				32F0744D24390216000B9611 /* 7.jpg */,
+				32756503243C76BF001444B9 /* 7_1.jpg */,
+				32756502243C76BF001444B9 /* 7_2.png */,
+				32756501243C76BE001444B9 /* 7_3.jpg */,
+				32756500243C76BE001444B9 /* 7_4.pdf */,
 				32F074492438BB53000B9611 /* cereals.jpg */,
 			);
 			path = BackGr;
@@ -191,7 +203,11 @@
 				325CC1F823F1EB690009551A /* liked.png in Resources */,
 				32F0744E24390217000B9611 /* 7.jpg in Resources */,
 				3250B7192437977E0009C36E /* Assets.xcassets in Resources */,
+				32756505243C76BF001444B9 /* 7_3.jpg in Resources */,
 				32DF8CEF23E77EC400C738F7 /* Main.storyboard in Resources */,
+				32756506243C76BF001444B9 /* 7_2.png in Resources */,
+				32756504243C76BF001444B9 /* 7_4.pdf in Resources */,
+				32756507243C76C0001444B9 /* 7_1.jpg in Resources */,
 				32F0744C24390132000B9611 /* wheat.jpg in Resources */,
 				32F0744A2438BB53000B9611 /* cereals.jpg in Resources */,
 			);
