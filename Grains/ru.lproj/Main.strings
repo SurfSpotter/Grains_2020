@@ -1,0 +1,99 @@
+
+/* Class = "UIButton"; normalTitle = "Старт"; ObjectID = "0FB-iG-HSC"; */
+"0FB-iG-HSC.normalTitle" = "Старт";
+
+/* Class = "UILabel"; text = "FatLabOut"; ObjectID = "16S-Zb-Cq8"; */
+"16S-Zb-Cq8.text" = "FatLabOut";
+
+/* Class = "UILabel"; text = "Пропорции:"; ObjectID = "25P-jK-g2n"; */
+"25P-jK-g2n.text" = "Пропорции:";
+
+/* Class = "UITabBarItem"; title = "Избранное"; ObjectID = "2Ur-4U-OgA"; */
+"2Ur-4U-OgA.title" = "Избранное";
+
+/* Class = "UILabel"; text = "NameGrain"; ObjectID = "7kq-nQ-Fxv"; */
+"7kq-nQ-Fxv.text" = "NameGrain";
+
+/* Class = "UILabel"; text = "quantityOfWater"; ObjectID = "8aP-rJ-2KR"; */
+"8aP-rJ-2KR.text" = "quantityOfWater";
+
+/* Class = "UITabBarItem"; title = "Поиск"; ObjectID = "9VQ-xD-nQa"; */
+"9VQ-xD-nQa.title" = "Поиск";
+
+/* Class = "UILabel"; text = "12 minutes"; ObjectID = "Aww-3P-iFx"; */
+"Aww-3P-iFx.text" = "12 minutes";
+
+/* Class = "UINavigationItem"; title = "Крупы"; ObjectID = "B4y-P3-0wm"; */
+"B4y-P3-0wm.title" = "Крупы";
+
+/* Class = "UILabel"; text = "NameGrain"; ObjectID = "Cef-fb-qri"; */
+"Cef-fb-qri.text" = "NameGrain";
+
+/* Class = "UILabel"; text = "130:00"; ObjectID = "CsV-SR-Z0u"; */
+"CsV-SR-Z0u.text" = "130:00";
+
+/* Class = "UILabel"; text = "120 cal"; ObjectID = "Ha7-B9-Yb1"; */
+"Ha7-B9-Yb1.text" = "120 cal";
+
+/* Class = "UILabel"; text = "quantityOfGrain"; ObjectID = "JL3-68-n1a"; */
+"JL3-68-n1a.text" = "quantityOfGrain";
+
+/* Class = "UILabel"; text = "carbLabOut"; ObjectID = "NtY-pz-ubl"; */
+"NtY-pz-ubl.text" = "carbLabOut";
+
+/* Class = "UITabBarItem"; title = "Еще"; ObjectID = "Rqd-MG-eWY"; */
+"Rqd-MG-eWY.title" = "Еще";
+
+/* Class = "UITableViewController"; title = "MainTableViewController"; ObjectID = "Rxo-ts-tES"; */
+"Rxo-ts-tES.title" = "MainTableViewController";
+
+/* Class = "UILabel"; text = "CaloriesLabOut"; ObjectID = "SRX-wF-Ab7"; */
+"SRX-wF-Ab7.text" = "CaloriesLabOut";
+
+/* Class = "UILabel"; text = "Добавляйте сюда любимые крупы"; ObjectID = "TlA-Dy-eaM"; */
+"TlA-Dy-eaM.text" = "Добавляйте сюда любимые крупы";
+
+/* Class = "UIButton"; normalTitle = "Написать разработчику  "; ObjectID = "UKN-zh-TEb"; */
+"UKN-zh-TEb.normalTitle" = "Написать разработчику  ";
+
+/* Class = "UILabel"; text = "ProtLabOut"; ObjectID = "Vtc-b7-33I"; */
+"Vtc-b7-33I.text" = "ProtLabOut";
+
+/* Class = "UILabel"; text = "12 minutes"; ObjectID = "Y5k-Cc-ALE"; */
+"Y5k-Cc-ALE.text" = "12 minutes";
+
+/* Class = "UIButton"; normalTitle = "Поделиться с друзьями"; ObjectID = "Zox-nM-pyB"; */
+"Zox-nM-pyB.normalTitle" = "Поделиться с друзьями";
+
+/* Class = "UIButton"; normalTitle = "  "; ObjectID = "aN9-tT-Gko"; */
+"aN9-tT-Gko.normalTitle" = "  ";
+
+/* Class = "UILabel"; text = "12 min"; ObjectID = "fZ0-xf-Iwn"; */
+"fZ0-xf-Iwn.text" = "12 min";
+
+/* Class = "UILabel"; text = "Однажды менеджеры Лайв Тайпинг подумали: «Как хорошо было бы иметь инструкцию-чеклист, чтобы ничего не забыть перед публикацией приложения в стор. С ней можно перестать носить всё в голове и нпомогает нам. "; ObjectID = "jT3-Ls-QvX"; */
+"jT3-Ls-QvX.text" = "Однажды менеджеры Лайв Тайпинг подумали: «Как хорошо было бы иметь инструкцию-чеклист, чтобы ничего не забыть перед публикацией приложения в стор. С ней можно перестать носить всё в голове и нпомогает нам. ";
+
+/* Class = "UILabel"; text = "in 100gramms"; ObjectID = "m8F-vE-Ch2"; */
+"m8F-vE-Ch2.text" = "in 100gramms";
+
+/* Class = "UILabel"; text = "Единицы измерения"; ObjectID = "uZf-xe-FBM"; */
+"uZf-xe-FBM.text" = "Единицы измерения";
+
+/* Class = "UINavigationItem"; title = "Избранное"; ObjectID = "vAh-zD-BC3"; */
+"vAh-zD-BC3.title" = "Избранное";
+
+/* Class = "UISegmentedControl"; w0X-1n-Oy5.segmentTitles[0] = "Граммы"; ObjectID = "w0X-1n-Oy5"; */
+"w0X-1n-Oy5.segmentTitles[0]" = "Граммы";
+
+/* Class = "UISegmentedControl"; w0X-1n-Oy5.segmentTitles[1] = "Унции"; ObjectID = "w0X-1n-Oy5"; */
+"w0X-1n-Oy5.segmentTitles[1]" = "Унции";
+
+/* Class = "UISegmentedControl"; w0X-1n-Oy5.segmentTitles[2] = "Пропорции"; ObjectID = "w0X-1n-Oy5"; */
+"w0X-1n-Oy5.segmentTitles[2]" = "Пропорции";
+
+/* Class = "UIButton"; normalTitle = "Купить полную версию"; ObjectID = "xIU-dX-QXC"; */
+"xIU-dX-QXC.normalTitle" = "Купить полную версию";
+
+/* Class = "UIButton"; normalTitle = "Оценить приложение"; ObjectID = "y3H-rQ-GNg"; */
+"y3H-rQ-GNg.normalTitle" = "Оценить приложение";
