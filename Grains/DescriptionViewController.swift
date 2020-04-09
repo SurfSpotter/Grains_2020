@@ -399,9 +399,10 @@ var descriptionGrainClass: Grain?
     
     override func viewDidAppear(_ animated: Bool) {
 
-        
+        if timesOfFreeTimerUsesRemaining > 1 {
+            
         animationOfButton(item: timerButtonOut)
-         animationOfButton(item: caloriesButtonOut)
+            animationOfButton(item: caloriesButtonOut)}
         
         
         quanOfWaterOut.text = quanOfWater
@@ -419,17 +420,19 @@ var descriptionGrainClass: Grain?
     
     
 //MARK:  Установи количество бесплатных таймеров здесь
+ 
     
+    // Устанавливаем число бесплатных таймеров
+           
+           
+           let timesOfFreeTimerUsesRemaining = 4 - UserDefaults.standard.integer(forKey: "timerCounts")
     
     fileprivate func alertAndPurshasingForTimer() {
         print("udPurchasing: \(UserDefaults.standard.bool(forKey:"luffNoisrev"))")
         UserDefaults.standard.synchronize()
         
         
-        // Устанавливаем число бесплатных таймеров
-        
-        
-        let timesOfFreeTimerUsesRemaining = 4 - UserDefaults.standard.integer(forKey: "timerCounts")
+       
         
         // Устанавливаем число бесплатных таймеров
         
@@ -475,7 +478,7 @@ var descriptionGrainClass: Grain?
                            
                            
                            
-                           let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "Осталось \(timesOfFreeTimerUsesRemaining) бесплатных таймера", preferredStyle: .alert)
+                        let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "Осталось \(self.timesOfFreeTimerUsesRemaining) бесплатных таймера", preferredStyle: .alert)
                            alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
                            self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
                        }
@@ -500,7 +503,7 @@ var descriptionGrainClass: Grain?
                 
                 
                 
-                let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "Осталось \(timesOfFreeTimerUsesRemaining) бесплатных таймера", preferredStyle: .alert)
+                let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "Осталось \(self.timesOfFreeTimerUsesRemaining) бесплатных таймера", preferredStyle: .alert)
                 alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
                 
                 self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
@@ -519,7 +522,7 @@ var descriptionGrainClass: Grain?
                 self.backButtomOut.isHidden = false
                 
                 
-                let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "У вас остался \(timesOfFreeTimerUsesRemaining) бесплатный таймер", preferredStyle: .alert)
+                let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "У вас остался \(self.timesOfFreeTimerUsesRemaining) бесплатный таймер", preferredStyle: .alert)
                 alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
                 self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
                 
@@ -531,7 +534,7 @@ var descriptionGrainClass: Grain?
         else if timesOfFreeTimerUsesRemaining <= 0 && !StoreManager.ifFullVersion {
             
             
-            let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Купить полную версию?", message: "По цене двух яблок, всего 29 рублей!", preferredStyle: .alert)
+            let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Полная версия\n по цене двух яблок! ", message: "Бесплатные таймеры законились. \nКупить?", preferredStyle: .alert)
             alertTimesOfUseTimerIsLimited.addAction(UIAlertAction(title: "Да", style: .default, handler: { (UIAlertAction) in
                 StoreManager.share.buyInApp(inAppId: "grainsFullversion1")
             }) )
@@ -821,7 +824,7 @@ var descriptionGrainClass: Grain?
        let item = item
        UIView.animate(withDuration: 0.6,
                       animations: {
-                       item.transform = CGAffineTransform(scaleX: 0.9, y: 0.90)
+                       item.transform = CGAffineTransform(scaleX: 0.8, y: 0.80)
        },
                       completion: { _ in
                        UIView.animate(withDuration: 0.6) {
