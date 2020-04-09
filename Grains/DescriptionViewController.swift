@@ -502,6 +502,7 @@ var descriptionGrainClass: Grain?
                 
                 let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "Осталось \(timesOfFreeTimerUsesRemaining) бесплатных таймера", preferredStyle: .alert)
                 alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
+                
                 self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
             }
         }
@@ -530,7 +531,7 @@ var descriptionGrainClass: Grain?
         else if timesOfFreeTimerUsesRemaining <= 0 && !StoreManager.ifFullVersion {
             
             
-            let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Бесплатные таймеры закончились.", message: "Купить полную версию?", preferredStyle: .alert)
+            let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Купить полную версию?", message: "По цене двух яблок, всего 29 рублей!", preferredStyle: .alert)
             alertTimesOfUseTimerIsLimited.addAction(UIAlertAction(title: "Да", style: .default, handler: { (UIAlertAction) in
                 StoreManager.share.buyInApp(inAppId: "grainsFullversion1")
             }) )
