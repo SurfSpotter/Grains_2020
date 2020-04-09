@@ -774,10 +774,10 @@
                                             <constraint firstAttribute="height" constant="36" id="pZU-tE-A45"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7h-Uj-xxm">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7h-Uj-xxm">
                                         <rect key="frame" x="38" y="0.0" width="291" height="36"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                        <state key="normal" title="Восстановить покупку">
+                                        <state key="normal" title="  Восстановить покупку">
                                             <color key="titleColor" name="CustomFontColourForOtherVc"/>
                                         </state>
                                         <connections>
@@ -792,6 +792,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="w0X-1n-Oy5" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" id="2hF-vm-3KP"/>
                             <constraint firstItem="Kdo-Km-llG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pWy-Vw-z4m" secondAttribute="leading" constant="10" id="54p-M1-ewL"/>
                             <constraint firstItem="Kdo-Km-llG" firstAttribute="top" secondItem="cdC-Fv-zwb" secondAttribute="bottom" constant="20" id="5p4-mE-3nF"/>
                             <constraint firstItem="0g3-SO-gBy" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" constant="-14" id="6uw-G7-rah"/>
@@ -821,9 +822,9 @@
                             <constraint firstItem="0g3-SO-gBy" firstAttribute="top" secondItem="Kdo-Km-llG" secondAttribute="bottom" constant="20" id="mmc-tv-fCT"/>
                             <constraint firstItem="bP7-Db-cwB" firstAttribute="centerX" secondItem="DvM-Fz-Jmm" secondAttribute="centerX" id="pMs-wU-eKt"/>
                             <constraint firstItem="Kdo-Km-llG" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" constant="-14" id="pXA-cr-8z9"/>
-                            <constraint firstItem="pWy-Vw-z4m" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="w0X-1n-Oy5" secondAttribute="bottom" priority="750" constant="20" id="q4y-oF-az9"/>
+                            <constraint firstItem="pWy-Vw-z4m" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="w0X-1n-Oy5" secondAttribute="bottom" constant="20" id="q4y-oF-az9"/>
                             <constraint firstItem="TTP-mc-WU5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pWy-Vw-z4m" secondAttribute="leading" constant="10" id="rE5-pF-0D6"/>
-                            <constraint firstItem="0g3-SO-gBy" firstAttribute="centerY" secondItem="qeE-4N-sEt" secondAttribute="centerY" id="v6x-q5-oMz"/>
+                            <constraint firstItem="0g3-SO-gBy" firstAttribute="centerY" secondItem="qeE-4N-sEt" secondAttribute="centerY" priority="750" id="v6x-q5-oMz"/>
                             <constraint firstItem="TTP-mc-WU5" firstAttribute="centerX" secondItem="qeE-4N-sEt" secondAttribute="centerX" constant="-14" id="vJn-Gp-l58"/>
                             <constraint firstItem="eVT-pz-FRg" firstAttribute="height" secondItem="qeE-4N-sEt" secondAttribute="height" constant="28" id="wUz-ze-853"/>
                         </constraints>
