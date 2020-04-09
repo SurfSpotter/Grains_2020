@@ -59,7 +59,7 @@ let buyInApp = StoreManager()
     @IBAction func shareButtonAction(_ sender: Any) {
         
            
-            let urlForSharing : NSURL = NSURL(string: "http://surfspotdevelopco.tilda.ws")!
+            let urlForSharing : NSURL = NSURL(string: "https://apps.apple.com/us/app/крупы-время-варки/id1502428665?l=ru&ls=1")!
             let desctriptionForSharing = "Привет! Скачай вот это приложение \(urlForSharing) уверен тебе понравится!"
             
             
