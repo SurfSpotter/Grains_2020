@@ -422,7 +422,7 @@ var descriptionGrainClass: Grain?
     
     
     fileprivate func alertAndPurshasingForTimer() {
-        
+        print("udPurchasing: \(UserDefaults.standard.bool(forKey:"luffNoisrev"))")
         UserDefaults.standard.synchronize()
         
         
@@ -454,9 +454,37 @@ var descriptionGrainClass: Grain?
             
             
         }
+            
+            
+            
+            else if timesOfFreeTimerUsesRemaining == 3 && !StoreManager.ifFullVersion
+                       //UserDefaults.standard.bool(forKey:"luffNoisrev") == false
+                   {
+                       
+                       
+                       
+                       animationOfView(item: charactersViewOutlet)
+                       hideMainItems()
+                       DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 )  {
+                           self.boilTimeGiveInSec()
+                           
+                           
+                           self.showHiddenTimerViewItems()
+                           self.backButtomOut.isHidden = false
+                           
+                           
+                           
+                           
+                           let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "Осталось \(timesOfFreeTimerUsesRemaining) бесплатных таймера", preferredStyle: .alert)
+                           alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
+                           self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
+                       }
+                   }
+            
         
-        if timesOfFreeTimerUsesRemaining == 2
-            ||  timesOfFreeTimerUsesRemaining == 3 && !StoreManager.ifFullVersion {
+        else if timesOfFreeTimerUsesRemaining == 2 && !StoreManager.ifFullVersion
+             
+        {
             
             
             

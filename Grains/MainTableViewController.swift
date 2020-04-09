@@ -35,6 +35,7 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
         Model.shared.grainsAllTogether.removeAll()
         Model.shared.appendToArr()
         tableView.reloadData()
+        
     }
    
     

@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 import StoreKit
 let nPurchaseCompleted = "nPurchaseCompleted"
-
+let nPurchaseRestored = "nPurnaseRestored"
 class StoreManager: NSObject {
     static let share = StoreManager()
     //MARK: - количество бесплатный использований таймера
@@ -54,11 +54,16 @@ class StoreManager: NSObject {
         request.start()
     }
     
-  
+    func restorePurchase() {
+        SKPaymentQueue.default().add(self)
+        SKPaymentQueue.default().restoreCompletedTransactions()
+        }
+    
+    }
     
     
     
-}
+
 
 extension StoreManager: SKProductsRequestDelegate {
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
@@ -67,6 +72,7 @@ extension StoreManager: SKProductsRequestDelegate {
             let payment = SKPayment(product: product )
             SKPaymentQueue.default().add(self)
             SKPaymentQueue.default().add(payment)
+        
         }
       
         else {print ("нерабочие идентификаторы!")}
@@ -98,7 +104,7 @@ extension StoreManager: SKPaymentTransactionObserver {
                 queue.finishTransaction(transaction)
                 StoreManager.didBuyFullVersion()
                       print ("\(transaction.payment.productIdentifier): restored")
-                NotificationCenter.default.post(name: NSNotification.Name(nPurchaseCompleted), object: nil)
+                NotificationCenter.default.post(name: NSNotification.Name(nPurchaseRestored), object: nil)
                        }
             if  transaction.transactionState ==  SKPaymentTransactionState.deferred {
                        print ("\(transaction.payment.productIdentifier): deferred")

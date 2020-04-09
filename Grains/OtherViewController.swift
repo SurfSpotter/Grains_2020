@@ -16,8 +16,16 @@ let buyInApp = StoreManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: nPurchaseCompleted), object: nil, queue: nil) { (notification) in
-            print ("Notification About purchasing App sended!")
+//            let alertPurchaseSuccess = UIAlertController(title: "Спасибо за покупку!", message: nil, preferredStyle: .alert)
+//            alertPurchaseSuccess.addAction(.init(title: "OK", style: .default , handler: nil))
+//            self.present(alertPurchaseSuccess, animated: true, completion: nil)
         }
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: nPurchaseRestored), object: nil, queue: nil) { (notification) in
+            print ("print of nPurchaseRestored")
+            let alertPurchaseRestored = UIAlertController(title: "Успех!", message: "Покупка восстановлена.", preferredStyle: .alert)
+            alertPurchaseRestored.addAction(.init(title: "OK", style: .default , handler: nil))
+            self.present(alertPurchaseRestored, animated: true, completion: nil)
+               }
         tabBarController?.tabBar.alpha = 0.9
         mesuresSCOutlet.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "uDSelectedMeasureIntCell")
        
@@ -72,6 +80,15 @@ let buyInApp = StoreManager()
     @IBAction func wtiteToDeveloperButtAction(_ sender: Any) {
         showMailComposer()
     }
+    
+    
+    @IBAction func restorePurchase(_ sender: Any) {
+        StoreManager.share.restorePurchase()
+        
+    }
+    
+    
+    
     
     @IBAction func selectMeasuteSCAction(_ sender: UISegmentedControl) {
         OtherViewController.self.uDSelectedMeasure(segmentedIndex: sender.selectedSegmentIndex)
