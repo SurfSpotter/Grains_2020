@@ -15,7 +15,6 @@
 		325CC20023F4BED90009551A /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325CC1FF23F4BED90009551A /* FavTableViewCell.swift */; };
 		326D17FD24119A0800DE6195 /* RateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D17FC24119A0800DE6195 /* RateManager.swift */; };
 		327564DB243B03FF001444B9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327564DA243B03FF001444B9 /* Extensions.swift */; };
-		32756507243C76C0001444B9 /* 7_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32756503243C76BF001444B9 /* 7_1.jpg */; };
 		32A7445F23EB5892000173D4 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7445E23EB5892000173D4 /* DescriptionViewController.swift */; };
 		32C36A7E240E709C0027D410 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C36A7D240E709C0027D410 /* OtherViewController.swift */; };
 		32CBEEC5242418E1009ADDE9 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */; };
@@ -26,6 +25,7 @@
 		32DF8CEF23E77EC400C738F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DF8CED23E77EC400C738F7 /* Main.storyboard */; };
 		32DF8CF423E77ECA00C738F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DF8CF223E77ECA00C738F7 /* LaunchScreen.storyboard */; };
 		32DF8CFC23E787D700C738F7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DF8CFB23E787D700C738F7 /* Model.swift */; };
+		32EDF4712440D02A007E8A53 /* 7_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32EDF4702440D02A007E8A53 /* 7_1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,6 @@
 		325CC1FF23F4BED90009551A /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 		326D17FC24119A0800DE6195 /* RateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateManager.swift; sourceTree = "<group>"; };
 		327564DA243B03FF001444B9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		32756503243C76BF001444B9 /* 7_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7_1.jpg; sourceTree = "<group>"; };
 		3281D315243D32F2006B84B3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		3281D316243D32F2006B84B3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		32A7445E23EB5892000173D4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		32DF8CF323E77ECA00C738F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32DF8CF523E77ECA00C738F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32DF8CFB23E787D700C738F7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		32EDF4702440D02A007E8A53 /* 7_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7_1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 		3250B71A243799D30009C36E /* BackGr */ = {
 			isa = PBXGroup;
 			children = (
-				32756503243C76BF001444B9 /* 7_1.jpg */,
+				32EDF4702440D02A007E8A53 /* 7_1.jpg */,
 			);
 			path = BackGr;
 			sourceTree = "<group>";
@@ -186,9 +186,9 @@
 				32DF8CF423E77ECA00C738F7 /* LaunchScreen.storyboard in Resources */,
 				325CC1F723F1EB690009551A /* likeMe.png in Resources */,
 				325CC1F823F1EB690009551A /* liked.png in Resources */,
+				32EDF4712440D02A007E8A53 /* 7_1.jpg in Resources */,
 				3250B7192437977E0009C36E /* Assets.xcassets in Resources */,
 				32DF8CEF23E77EC400C738F7 /* Main.storyboard in Resources */,
-				32756507243C76C0001444B9 /* 7_1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

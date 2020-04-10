@@ -59,12 +59,11 @@ let buyInApp = StoreManager()
     @IBAction func shareButtonAction(_ sender: Any) {
         
            
-            /*let urlForSharing : NSURL = NSURL(string: "https://apps.apple.com/us/app/крупы-время-варки/id1502428665?l=ru&ls=1")! */
-        let urlForSharing: String = "https://apps.apple.com/us/app/крупы-время-варки/id1502428665?l=ru&ls=1"
-            let desctriptionForSharing = "Привет! Скачай вот это приложение \(urlForSharing) уверен тебе понравится!"
+            let urlForSharing = URL(string:"itms-apps://itunes.apple.com/app/id1502428665")
+            let desctriptionForSharing = "Время варки любимых круп. \nТаймер. Калорийность.\n Скачай, уверен тебе понравится!"
+            let imageIcon = UIImage(named: "launch")
             
-            
-            let vc = UIActivityViewController(activityItems: [desctriptionForSharing], applicationActivities: [])
+        let vc = UIActivityViewController(activityItems: [desctriptionForSharing, imageIcon!, urlForSharing!], applicationActivities: [])
             vc.excludedActivityTypes = [ .airDrop,
                                          .assignToContact,
                                          .openInIBooks,
