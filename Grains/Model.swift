@@ -135,7 +135,7 @@ class Model: NSObject {
     //MARK: - Grains variable initialized
     
     let boulgour = Grain(name: "Булгур".localize(),
-                     keyWords: ["Булгур булгур Bulgur boulgur bulgur"],
+                     keyWords: [" булгур boulgur bulgur"],
                      timeOfBoil: 25,
                      proportions: 0.5,
                      backgroungColorInHex: "#BE874A",
@@ -154,7 +154,7 @@ class Model: NSObject {
 
 
     let buckwheat = Grain(name: "Гречневая крупа".localize(),
-                          keyWords: ["buckwheat, Buckwheat, Греча, Гречка, греча, гречка, ядрица, гречиха "],
+                          keyWords: ["buckwheat, Buckwheat, Гречка, греча, гречка, ядрица, гречиха "],
                           timeOfBoil: 15,
                           proportions: 0.25,
                           backgroungColorInHex: "#B45A17",
@@ -478,7 +478,7 @@ class Model: NSObject {
     
     
     let riceArborio = Grain(name: "Рис Арборио".localize(),
-    keyWords: ["рис", "арборио", "arborio rice", "rice"],
+    keyWords: ["рис", "арборио", "arborio", "rice"],
     timeOfBoil: 20,
     proportions: 0.5,
     backgroungColorInHex: "#D1C6B2",
@@ -516,7 +516,7 @@ class Model: NSObject {
     
     
     let riceLong = Grain(name: "Рис длиннозерный".localize(),
-    keyWords: ["рис", "длиннозерный", "rice rice long grain"],
+    keyWords: ["рис", "длиннозерный", "ricelong grain"],
     timeOfBoil: 25,
     proportions: 0.5,
     backgroungColorInHex: "#6E462D",
@@ -534,7 +534,7 @@ class Model: NSObject {
     
     
     let riceSteamed = Grain(name: "Рис пропаренный".localize(),
-       keyWords: ["рис","rice", "пропаренный steamed rice"],
+       keyWords: ["рис","rice", "пропаренный steamed"],
        timeOfBoil: 25,
        proportions: 0.5,
        backgroungColorInHex: "#C5B096",
@@ -552,7 +552,7 @@ class Model: NSObject {
 
     
     let riceJasmin = Grain(name: "Рис Жасмин".localize(),
-    keyWords: ["рис", "rice", "жасмин rice jasmine"],
+    keyWords: ["рис", "rice", "жасмин jasmine"],
     timeOfBoil: 30,
     proportions: 0.67,
     backgroungColorInHex: "#999589",
@@ -570,7 +570,7 @@ class Model: NSObject {
     
     
     let riceRound = Grain(name: "Рис Круглозерный".localize(),
-    keyWords: ["рис", "rice", "круглозерный round grain rice"],
+    keyWords: ["рис", "rice", "круглозерный round grain"],
     timeOfBoil: 25,
     proportions: 0.33333333333,
     backgroungColorInHex: "#ADACAB",
@@ -605,7 +605,7 @@ class Model: NSObject {
     )
     
     let fasolWhite = Grain(name: "Фасоль белая".localize(),
-                           keyWords: ["фасоль", "fasol", "beans", "белая white beans"],
+                           keyWords: ["фасоль", "fasol", "beans", "белая white "],
     timeOfBoil: 50,
     proportions: 0.33333333333,
     backgroungColorInHex: "#726F60",
@@ -623,7 +623,7 @@ class Model: NSObject {
     
     
     let fasolRed = Grain(name: "Фасоль красная".localize(),
-    keyWords: ["фасоль", "fasol", "red", "красная red beans"],
+    keyWords: ["фасоль", "fasol", "red", "красная beans"],
     timeOfBoil: 60,
     proportions: 0.33333333333,
     backgroungColorInHex: "#E66A75",
