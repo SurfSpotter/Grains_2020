@@ -57,7 +57,7 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
         let searchController = UISearchController()
         navigationItem.searchController = searchController
         searchController.searchResultsUpdater = self
-        searchController.searchBar.placeholder = "Введите название"
+        searchController.searchBar.placeholder = "Введите название".localize()
         searchController.searchBar.delegate = self
         
     }
