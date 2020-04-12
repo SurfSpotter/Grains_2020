@@ -53,8 +53,8 @@
 /* Class = "UILabel"; text = "Добавляйте сюда любимые крупы"; ObjectID = "TlA-Dy-eaM"; */
 "TlA-Dy-eaM.text" = "Add your favorite cereals";
 
-/* Class = "UIButton"; normalTitle = "  Написать разработчику  "; ObjectID = "UKN-zh-TEb"; */
-"UKN-zh-TEb.normalTitle" = "  Write to us  ";
+/* Class = "UIButton"; normalTitle = " Написать разработчику  "; ObjectID = "UKN-zh-TEb"; */
+"UKN-zh-TEb.normalTitle" = " Write to us  ";
 
 /* Class = "UILabel"; text = "ProtLabOut"; ObjectID = "Vtc-b7-33I"; */
 "Vtc-b7-33I.text" = "ProtLabOut";

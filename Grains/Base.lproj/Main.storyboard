@@ -398,7 +398,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="message" size="11"/>
+                                                                        <font key="NSFont" metaFont="label" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -667,8 +667,8 @@
                                     <constraint firstItem="uZf-xe-FBM" firstAttribute="centerY" secondItem="1cc-Zg-Cde" secondAttribute="centerY" id="5xW-3Y-owH"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TTP-mc-WU5" userLabel="WriteToDev">
-                                <rect key="frame" x="41.5" y="486.5" width="303" height="36"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="TTP-mc-WU5" userLabel="WriteToDev">
+                                <rect key="frame" x="43.5" y="486.5" width="299" height="36"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="sendMail 6" translatesAutoresizingMaskIntoConstraints="NO" id="sQN-x3-ZBG">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="36"/>
@@ -677,10 +677,10 @@
                                             <constraint firstAttribute="height" constant="36" id="g8f-eq-Jui"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKN-zh-TEb">
-                                        <rect key="frame" x="43" y="0.0" width="260" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKN-zh-TEb">
+                                        <rect key="frame" x="44" y="0.0" width="255" height="36"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                        <state key="normal" title="  Написать разработчику  ">
+                                        <state key="normal" title=" Написать разработчику  ">
                                             <color key="titleColor" name="CustomFontColourForOtherVc"/>
                                         </state>
                                         <connections>
@@ -693,7 +693,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="0g3-SO-gBy" userLabel="RateAPP">
-                                <rect key="frame" x="43.5" y="429.5" width="299" height="37"/>
+                                <rect key="frame" x="45.5" y="429.5" width="295" height="37"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="rateApp 4" translatesAutoresizingMaskIntoConstraints="NO" id="tx4-Sa-H1D">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="37"/>
@@ -702,8 +702,8 @@
                                             <constraint firstAttribute="width" constant="38" id="SST-ph-aXj"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3H-rQ-GNg">
-                                        <rect key="frame" x="44" y="0.0" width="255" height="37"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3H-rQ-GNg">
+                                        <rect key="frame" x="44" y="0.0" width="251" height="37"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="37" id="lcS-x4-KwS"/>
                                         </constraints>
@@ -718,7 +718,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Kdo-Km-llG" userLabel="PurschaseApp">
-                                <rect key="frame" x="43.5" y="373.5" width="299" height="36"/>
+                                <rect key="frame" x="45.5" y="373.5" width="295" height="36"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="purchaseApp 2" translatesAutoresizingMaskIntoConstraints="NO" id="bP7-Db-cwB">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="36"/>
@@ -727,8 +727,8 @@
                                             <constraint firstAttribute="width" constant="38" id="yHD-Zp-T8h"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIU-dX-QXC" userLabel="купить полную версию">
-                                        <rect key="frame" x="44" y="0.0" width="255" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIU-dX-QXC" userLabel="купить полную версию">
+                                        <rect key="frame" x="44" y="0.0" width="251" height="36"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Купить полную версию">
                                             <color key="titleColor" name="CustomFontColourForOtherVc"/>
@@ -740,7 +740,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="cdC-Fv-zwb" userLabel="ShareApp">
-                                <rect key="frame" x="43.5" y="317.5" width="299" height="36"/>
+                                <rect key="frame" x="45.5" y="317.5" width="295" height="36"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="38" placeholderIntrinsicHeight="36" image="shareApp 5" translatesAutoresizingMaskIntoConstraints="NO" id="DvM-Fz-Jmm">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="36"/>
@@ -749,8 +749,8 @@
                                             <constraint firstAttribute="height" constant="36" id="URX-2z-Kgr"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zox-nM-pyB">
-                                        <rect key="frame" x="44" y="0.0" width="255" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zox-nM-pyB">
+                                        <rect key="frame" x="44" y="0.0" width="251" height="36"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <inset key="imageEdgeInsets" minX="80" minY="80" maxX="80" maxY="80"/>
                                         <state key="normal" title="Поделиться с друзьями">
@@ -764,7 +764,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rs-MO-csV" userLabel="RestorePurchase">
-                                <rect key="frame" x="42.5" y="542.5" width="329" height="36"/>
+                                <rect key="frame" x="44.5" y="542.5" width="325" height="36"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="36" placeholderIntrinsicHeight="36" image="icloud.and.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UZg-8e-WK3">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="37"/>
@@ -774,8 +774,8 @@
                                             <constraint firstAttribute="height" constant="36" id="pZU-tE-A45"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7h-Uj-xxm">
-                                        <rect key="frame" x="38" y="0.0" width="291" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7h-Uj-xxm">
+                                        <rect key="frame" x="38" y="0.0" width="287" height="36"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="  Восстановить покупку">
                                             <color key="titleColor" name="CustomFontColourForOtherVc"/>
