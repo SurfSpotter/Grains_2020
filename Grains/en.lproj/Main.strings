@@ -1,15 +1,15 @@
 
 /* Class = "UIButton"; normalTitle = "Старт"; ObjectID = "0FB-iG-HSC"; */
-"0FB-iG-HSC.normalTitle" = "Старт";
+"0FB-iG-HSC.normalTitle" = "Start";
 
 /* Class = "UILabel"; text = "FatLabOut"; ObjectID = "16S-Zb-Cq8"; */
 "16S-Zb-Cq8.text" = "FatLabOut";
 
 /* Class = "UILabel"; text = "Пропорции:"; ObjectID = "25P-jK-g2n"; */
-"25P-jK-g2n.text" = "Пропорции:";
+"25P-jK-g2n.text" = "Proportions:";
 
 /* Class = "UITabBarItem"; title = "Избранное"; ObjectID = "2Ur-4U-OgA"; */
-"2Ur-4U-OgA.title" = "Избранное";
+"2Ur-4U-OgA.title" = "Favorite";
 
 /* Class = "UILabel"; text = "NameGrain"; ObjectID = "7kq-nQ-Fxv"; */
 "7kq-nQ-Fxv.text" = "NameGrain";
@@ -18,13 +18,13 @@
 "8aP-rJ-2KR.text" = "quantityOfWater";
 
 /* Class = "UITabBarItem"; title = "Поиск"; ObjectID = "9VQ-xD-nQa"; */
-"9VQ-xD-nQa.title" = "Поиск";
+"9VQ-xD-nQa.title" = "All";
 
 /* Class = "UILabel"; text = "12 minutes"; ObjectID = "Aww-3P-iFx"; */
 "Aww-3P-iFx.text" = "12 minutes";
 
 /* Class = "UINavigationItem"; title = "Крупы"; ObjectID = "B4y-P3-0wm"; */
-"B4y-P3-0wm.title" = "Крупы";
+"B4y-P3-0wm.title" = "Grains & cereals";
 
 /* Class = "UILabel"; text = "NameGrain"; ObjectID = "Cef-fb-qri"; */
 "Cef-fb-qri.text" = "NameGrain";
@@ -42,7 +42,7 @@
 "NtY-pz-ubl.text" = "carbLabOut";
 
 /* Class = "UITabBarItem"; title = "Еще"; ObjectID = "Rqd-MG-eWY"; */
-"Rqd-MG-eWY.title" = "Еще";
+"Rqd-MG-eWY.title" = "Other";
 
 /* Class = "UITableViewController"; title = "MainTableViewController"; ObjectID = "Rxo-ts-tES"; */
 "Rxo-ts-tES.title" = "MainTableViewController";
@@ -51,10 +51,10 @@
 "SRX-wF-Ab7.text" = "CaloriesLabOut";
 
 /* Class = "UILabel"; text = "Добавляйте сюда любимые крупы"; ObjectID = "TlA-Dy-eaM"; */
-"TlA-Dy-eaM.text" = "Добавляйте сюда любимые крупы";
+"TlA-Dy-eaM.text" = "Add your favorite here";
 
 /* Class = "UIButton"; normalTitle = "  Написать разработчику  "; ObjectID = "UKN-zh-TEb"; */
-"UKN-zh-TEb.normalTitle" = "  Написать разработчику  ";
+"UKN-zh-TEb.normalTitle" = "  Write to us  ";
 
 /* Class = "UILabel"; text = "ProtLabOut"; ObjectID = "Vtc-b7-33I"; */
 "Vtc-b7-33I.text" = "ProtLabOut";
@@ -63,7 +63,7 @@
 "Y5k-Cc-ALE.text" = "12 minutes";
 
 /* Class = "UIButton"; normalTitle = "Поделиться с друзьями"; ObjectID = "Zox-nM-pyB"; */
-"Zox-nM-pyB.normalTitle" = "Поделиться с друзьями";
+"Zox-nM-pyB.normalTitle" = "Share with friends";
 
 /* Class = "UIButton"; normalTitle = "  "; ObjectID = "aN9-tT-Gko"; */
 "aN9-tT-Gko.normalTitle" = "  ";
@@ -81,10 +81,10 @@
 "m8F-vE-Ch2.text" = "in 100gramms";
 
 /* Class = "UILabel"; text = "Единицы измерения"; ObjectID = "uZf-xe-FBM"; */
-"uZf-xe-FBM.text" = "Единицы измерения";
+"uZf-xe-FBM.text" = "Units of measure";
 
 /* Class = "UINavigationItem"; title = "Избранное"; ObjectID = "vAh-zD-BC3"; */
-"vAh-zD-BC3.title" = "Избранное";
+"vAh-zD-BC3.title" = "Favorite";
 
 /* Class = "UISegmentedControl"; w0X-1n-Oy5.segmentTitles[0] = "Граммы"; ObjectID = "w0X-1n-Oy5"; */
 "w0X-1n-Oy5.segmentTitles[0]" = "Gramms";
