@@ -1,4 +1,3 @@
-
 /* Class = "UIButton"; normalTitle = "Старт"; ObjectID = "0FB-iG-HSC"; */
 "0FB-iG-HSC.normalTitle" = "Старт";
 
@@ -53,8 +52,8 @@
 /* Class = "UILabel"; text = "Добавляйте сюда любимые крупы"; ObjectID = "TlA-Dy-eaM"; */
 "TlA-Dy-eaM.text" = "Добавляйте сюда любимые крупы";
 
-/* Class = "UIButton"; normalTitle = "Написать разработчику  "; ObjectID = "UKN-zh-TEb"; */
-"UKN-zh-TEb.normalTitle" = "Написать разработчику  ";
+/* Class = "UIButton"; normalTitle = "  Написать разработчику  "; ObjectID = "UKN-zh-TEb"; */
+"UKN-zh-TEb.normalTitle" = "  Написать разработчику  ";
 
 /* Class = "UILabel"; text = "ProtLabOut"; ObjectID = "Vtc-b7-33I"; */
 "Vtc-b7-33I.text" = "ProtLabOut";
@@ -67,6 +66,9 @@
 
 /* Class = "UIButton"; normalTitle = "  "; ObjectID = "aN9-tT-Gko"; */
 "aN9-tT-Gko.normalTitle" = "  ";
+
+/* Class = "UIButton"; normalTitle = "  Восстановить покупку"; ObjectID = "b7h-Uj-xxm"; */
+"b7h-Uj-xxm.normalTitle" = "  Восстановить покупку";
 
 /* Class = "UILabel"; text = "12 min"; ObjectID = "fZ0-xf-Iwn"; */
 "fZ0-xf-Iwn.text" = "12 min";

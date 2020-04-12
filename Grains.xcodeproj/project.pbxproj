@@ -41,6 +41,8 @@
 		32A7445E23EB5892000173D4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		32C36A7D240E709C0027D410 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
+		32D2A04C2442D78F006CEBA0 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Main.strings"; sourceTree = "<group>"; };
+		32D2A04D2442D78F006CEBA0 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		32DB9ED023E9E0CB00D07561 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		32DB9ED223E9FB0200D07561 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		32DB9EF723EA105F00D07561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				en,
 				Base,
 				ru,
+				"en-GB",
 			);
 			mainGroup = 32DF8CDB23E77EC400C738F7;
 			productRefGroup = 32DF8CE523E77EC400C738F7 /* Products */;
@@ -223,6 +226,7 @@
 			children = (
 				32DF8CEE23E77EC400C738F7 /* Base */,
 				3281D315243D32F2006B84B3 /* ru */,
+				32D2A04C2442D78F006CEBA0 /* en-GB */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -232,6 +236,7 @@
 			children = (
 				32DF8CF323E77ECA00C738F7 /* Base */,
 				3281D316243D32F2006B84B3 /* ru */,
+				32D2A04D2442D78F006CEBA0 /* en-GB */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
