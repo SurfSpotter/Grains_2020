@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3250B7192437977E0009C36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DB9EF723EA105F00D07561 /* Assets.xcassets */; };
+		325C0ED424438AD200084772 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 325C0ED224438AD200084772 /* InfoPlist.strings */; };
 		325C593C2417E7EF0067B3BC /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325C593B2417E7EF0067B3BC /* StoreManager.swift */; };
 		325CC1F723F1EB690009551A /* likeMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 325CC1F523F1EB690009551A /* likeMe.png */; };
 		325CC1F823F1EB690009551A /* liked.png in Resources */ = {isa = PBXBuildFile; fileRef = 325CC1F623F1EB690009551A /* liked.png */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		325C0ED324438AD200084772 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		325C593B2417E7EF0067B3BC /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		325CC1F523F1EB690009551A /* likeMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeMe.png; sourceTree = "<group>"; };
 		325CC1F623F1EB690009551A /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				32D2A05F2442F31C006CEBA0 /* Localizable.strings */,
+				325C0ED224438AD200084772 /* InfoPlist.strings */,
 			);
 			name = "Locatization En";
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				32EDF4712440D02A007E8A53 /* 7_1.jpg in Resources */,
 				32DF757A2442FAE90037B662 /* Localizable.strings in Resources */,
 				3250B7192437977E0009C36E /* Assets.xcassets in Resources */,
+				325C0ED424438AD200084772 /* InfoPlist.strings in Resources */,
 				32DF8CEF23E77EC400C738F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +239,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		325C0ED224438AD200084772 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				325C0ED324438AD200084772 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		32D2A05F2442F31C006CEBA0 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

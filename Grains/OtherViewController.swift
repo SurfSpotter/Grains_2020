@@ -22,7 +22,7 @@ let buyInApp = StoreManager()
         }
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: nPurchaseRestored), object: nil, queue: nil) { (notification) in
             print ("print of nPurchaseRestored")
-            let alertPurchaseRestored = UIAlertController(title: "Успех!", message: "Покупка восстановлена.".localize(), preferredStyle: .alert)
+            let alertPurchaseRestored = UIAlertController(title: "Успех!".localize(), message: "Покупка восстановлена.".localize(), preferredStyle: .alert)
             alertPurchaseRestored.addAction(.init(title: "OK", style: .default , handler: nil))
             self.present(alertPurchaseRestored, animated: true, completion: nil)
                }
