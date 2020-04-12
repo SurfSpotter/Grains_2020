@@ -18,6 +18,7 @@
 		32A7445F23EB5892000173D4 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7445E23EB5892000173D4 /* DescriptionViewController.swift */; };
 		32C36A7E240E709C0027D410 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C36A7D240E709C0027D410 /* OtherViewController.swift */; };
 		32CBEEC5242418E1009ADDE9 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */; };
+		32D2A0562442E444006CEBA0 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2A0552442E444006CEBA0 /* LocalizationManager.swift */; };
 		32DB9ED123E9E0CB00D07561 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB9ED023E9E0CB00D07561 /* MainTableViewController.swift */; };
 		32DB9ED323E9FB0200D07561 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DB9ED223E9FB0200D07561 /* MainTableViewCell.swift */; };
 		32DF8CE823E77EC400C738F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DF8CE723E77EC400C738F7 /* AppDelegate.swift */; };
@@ -36,13 +37,13 @@
 		325CC1FF23F4BED90009551A /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 		326D17FC24119A0800DE6195 /* RateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateManager.swift; sourceTree = "<group>"; };
 		327564DA243B03FF001444B9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		3281D315243D32F2006B84B3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		3281D316243D32F2006B84B3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		32A7445E23EB5892000173D4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		32C36A7D240E709C0027D410 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
-		32D2A04C2442D78F006CEBA0 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Main.strings"; sourceTree = "<group>"; };
-		32D2A04D2442D78F006CEBA0 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		32D2A0552442E444006CEBA0 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
+		32D2A05C2442EAAB006CEBA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		32D2A05D2442EC4C006CEBA0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		32D2A05E2442EC4D006CEBA0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		32DB9ED023E9E0CB00D07561 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		32DB9ED223E9FB0200D07561 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		32DB9EF723EA105F00D07561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,8 +82,16 @@
 				32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */,
 				325C593B2417E7EF0067B3BC /* StoreManager.swift */,
 				326D17FC24119A0800DE6195 /* RateManager.swift */,
+				32D2A0552442E444006CEBA0 /* LocalizationManager.swift */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		32D2A0512442E396006CEBA0 /* Locatization En */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Locatization En";
 			sourceTree = "<group>";
 		};
 		32DF8CDB23E77EC400C738F7 = {
@@ -106,6 +115,7 @@
 		32DF8CE623E77EC400C738F7 /* Grains */ = {
 			isa = PBXGroup;
 			children = (
+				32D2A0512442E396006CEBA0 /* Locatization En */,
 				32DF8CED23E77EC400C738F7 /* Main.storyboard */,
 				32DF8CE723E77EC400C738F7 /* AppDelegate.swift */,
 				32DF8CE923E77EC400C738F7 /* SceneDelegate.swift */,
@@ -169,7 +179,6 @@
 				en,
 				Base,
 				ru,
-				"en-GB",
 			);
 			mainGroup = 32DF8CDB23E77EC400C738F7;
 			productRefGroup = 32DF8CE523E77EC400C738F7 /* Products */;
@@ -204,6 +213,7 @@
 			files = (
 				32DB9ED123E9E0CB00D07561 /* MainTableViewController.swift in Sources */,
 				32C36A7E240E709C0027D410 /* OtherViewController.swift in Sources */,
+				32D2A0562442E444006CEBA0 /* LocalizationManager.swift in Sources */,
 				325CC20023F4BED90009551A /* FavTableViewCell.swift in Sources */,
 				32DF8CE823E77EC400C738F7 /* AppDelegate.swift in Sources */,
 				32DF8CEA23E77EC400C738F7 /* SceneDelegate.swift in Sources */,
@@ -225,8 +235,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				32DF8CEE23E77EC400C738F7 /* Base */,
-				3281D315243D32F2006B84B3 /* ru */,
-				32D2A04C2442D78F006CEBA0 /* en-GB */,
+				32D2A05C2442EAAB006CEBA0 /* en */,
+				32D2A05D2442EC4C006CEBA0 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -235,8 +245,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				32DF8CF323E77ECA00C738F7 /* Base */,
-				3281D316243D32F2006B84B3 /* ru */,
-				32D2A04D2442D78F006CEBA0 /* en-GB */,
+				32D2A05E2442EC4D006CEBA0 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

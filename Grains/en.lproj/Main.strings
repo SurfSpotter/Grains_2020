@@ -69,7 +69,7 @@
 "aN9-tT-Gko.normalTitle" = "  ";
 
 /* Class = "UIButton"; normalTitle = "  Восстановить покупку"; ObjectID = "b7h-Uj-xxm"; */
-"b7h-Uj-xxm.normalTitle" = "  Восстановить покупку";
+"b7h-Uj-xxm.normalTitle" = "  Restore purshase";
 
 /* Class = "UILabel"; text = "12 min"; ObjectID = "fZ0-xf-Iwn"; */
 "fZ0-xf-Iwn.text" = "12 min";
@@ -87,16 +87,19 @@
 "vAh-zD-BC3.title" = "Избранное";
 
 /* Class = "UISegmentedControl"; w0X-1n-Oy5.segmentTitles[0] = "Граммы"; ObjectID = "w0X-1n-Oy5"; */
-"w0X-1n-Oy5.segmentTitles[0]" = "Граммы";
+"w0X-1n-Oy5.segmentTitles[0]" = "Gramms";
 
 /* Class = "UISegmentedControl"; w0X-1n-Oy5.segmentTitles[1] = "Унции"; ObjectID = "w0X-1n-Oy5"; */
-"w0X-1n-Oy5.segmentTitles[1]" = "Унции";
+"w0X-1n-Oy5.segmentTitles[1]" = "Oz";
 
 /* Class = "UISegmentedControl"; w0X-1n-Oy5.segmentTitles[2] = "Пропорции"; ObjectID = "w0X-1n-Oy5"; */
-"w0X-1n-Oy5.segmentTitles[2]" = "Пропорции";
+"w0X-1n-Oy5.segmentTitles[2]" = "Proportions";
 
 /* Class = "UIButton"; normalTitle = "Купить полную версию"; ObjectID = "xIU-dX-QXC"; */
-"xIU-dX-QXC.normalTitle" = "Купить полную версию";
+"xIU-dX-QXC.normalTitle" = "Buy full version";
 
 /* Class = "UIButton"; normalTitle = "Оценить приложение"; ObjectID = "y3H-rQ-GNg"; */
-"y3H-rQ-GNg.normalTitle" = "Оценить приложение";
+"y3H-rQ-GNg.normalTitle" = "Rate app";
+
+
+
