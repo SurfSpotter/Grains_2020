@@ -421,8 +421,8 @@ class Model: NSObject {
     
   
     
-    let polba = Grain(name: "Полба",
-       keyWords: ["полба"],
+    let polba = Grain(name: "Полба".localize(),
+       keyWords: ["полба spelt"],
        timeOfBoil: 30,
        proportions: 0.33333333333,
        backgroungColorInHex: "#BC9F82",
@@ -430,7 +430,7 @@ class Model: NSObject {
        carbohydrate: 61.2,
        protein: 14.7 ,
        caloriesInCcal: 323,
-       description: "1. Промойте холодной водой. \n2.  Замочите на 1 час. \n3. Слейте воду. \n4. Залейте холодной водой и варите на тихом огне под крышкой.",
+       description: "1. Промойте холодной водой. \n2.  Замочите на 1 час. \n3. Слейте воду. \n4. Залейте холодной водой и варите на тихом огне под крышкой.".localize(),
        imageName: "polba",
        backGroundColorRed: 157 ,
        backGroundColorGreen: 105,
@@ -440,8 +440,8 @@ class Model: NSObject {
     
     
     
-    let millet = Grain(name: "Пшено",
-    keyWords: ["пшено", "пшеничная"],
+    let millet = Grain(name: "Пшено".localize(),
+    keyWords: ["пшено millet", "пшеничная"],
     timeOfBoil: 25,
     proportions: 0.33333333333,
     backgroungColorInHex: "#DEB051",
@@ -449,7 +449,7 @@ class Model: NSObject {
     carbohydrate: 73,
     protein: 11 ,
     caloriesInCcal: 360,
-    description: "1. Промойте проточной водой 3-5 раз. \n2. Залейте холодной водой и варите на медленном огне. \n3. Дайте настояться под крышкой 5-10 минут.",
+    description: "1. Промойте проточной водой 3-5 раз. \n2. Залейте холодной водой и варите на медленном огне. \n3. Дайте настояться под крышкой 5-10 минут.".localize(),
     imageName: "millet",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -459,8 +459,8 @@ class Model: NSObject {
     
     
     
-    let riceBasmati = Grain(name: "Рис Басмати",
-                            keyWords: ["рис", "басмати", "rice"],
+    let riceBasmati = Grain(name: "Рис Басмати".localize(),
+                            keyWords: ["рис", "басмати", "rice basmati "],
     timeOfBoil: 15,
     proportions: 0.666666666,
     backgroungColorInHex: "#C8C0B9",
@@ -468,7 +468,7 @@ class Model: NSObject {
     carbohydrate: 76.4,
     protein: 7.6,
     caloriesInCcal: 340,
-    description: "1. Промойте. \n2. Залейте холодной водой и варите на медленнм огне. \n3. Не мешайте.\n4. Если вода выпарилась, а рис суховат - необходимо добавить кипяток, затем варить до готовности. ",
+    description: "1. Промойте. \n2. Залейте холодной водой и варите на медленнм огне. \n3. Не мешайте.\n4. Если вода выпарилась, а рис суховат - необходимо добавить кипяток, затем варить до готовности.".localize(),
     imageName: "riceBasmati",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -477,8 +477,8 @@ class Model: NSObject {
     )
     
     
-    let riceArborio = Grain(name: "Рис Арборио",
-    keyWords: ["рис", "арборио", "Arborio", "rice"],
+    let riceArborio = Grain(name: "Рис Арборио".localize(),
+    keyWords: ["рис", "арборио", "arborio rice", "rice"],
     timeOfBoil: 20,
     proportions: 0.5,
     backgroungColorInHex: "#D1C6B2",
@@ -486,7 +486,7 @@ class Model: NSObject {
     carbohydrate: 78.8,
     protein: 6.8,
     caloriesInCcal: 338,
-    description: "1. Промойте. \n2. Залейте холодной водой и поставьте на огонь. \n3. Регулярно помешивайте. \n4. Снимите с плиты и дайте настояться под крышкой 10-15 минут.",
+    description: "1. Промойте. \n2. Залейте холодной водой и поставьте на огонь. \n3. Регулярно помешивайте. \n4. Снимите с плиты и дайте настояться под крышкой 10-15 минут.".localize(),
     imageName: "riceArborio",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -496,7 +496,7 @@ class Model: NSObject {
     
     
     
-    let riceWild = Grain(name: "Рис Дикий",
+    let riceWild = Grain(name: "Рис Дикий".localize(),
     keyWords: ["рис", "дикий","wild", "rice"],
     timeOfBoil: 40,
     proportions: 0.33333333333,
@@ -505,7 +505,7 @@ class Model: NSObject {
     carbohydrate: 72,
     protein: 14,
     caloriesInCcal: 357,
-    description: "1. Замочите на 1-3 часа.\n2. Промойте. \n3. Залейте холодной водой и поставьте на огонь. \n4. Регулярно помешивайте.",
+    description: "1. Замочите на 1-3 часа.\n2. Промойте. \n3. Залейте холодной водой и поставьте на огонь. \n4. Регулярно помешивайте.".localize(),
     imageName: "riceWild",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -515,8 +515,8 @@ class Model: NSObject {
     
     
     
-    let riceLong = Grain(name: "Рис длиннозерный",
-    keyWords: ["рис", "длиннозерный", "rice"],
+    let riceLong = Grain(name: "Рис длиннозерный".localize(),
+    keyWords: ["рис", "длиннозерный", "rice rice long grain"],
     timeOfBoil: 25,
     proportions: 0.5,
     backgroungColorInHex: "#6E462D",
@@ -524,7 +524,7 @@ class Model: NSObject {
     carbohydrate: 80,
     protein: 7,
     caloriesInCcal: 365,
-    description: "1. Промойте. \n2. Залейте кипятком и перемешайте. \n3. Варите на медленном огне под крышкой.",
+    description: "1. Промойте. \n2. Залейте кипятком и перемешайте. \n3. Варите на медленном огне под крышкой.".localize(),
     imageName: "riceLong",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -533,8 +533,8 @@ class Model: NSObject {
     )
     
     
-    let riceSteamed = Grain(name: "Рис пропаренный",
-       keyWords: ["рис","rice", "пропаренный"],
+    let riceSteamed = Grain(name: "Рис пропаренный".localize(),
+       keyWords: ["рис","rice", "пропаренный steamed rice"],
        timeOfBoil: 25,
        proportions: 0.5,
        backgroungColorInHex: "#C5B096",
@@ -542,7 +542,7 @@ class Model: NSObject {
        carbohydrate: 74,
        protein: 7,
        caloriesInCcal: 333,
-       description: "1. Промойте. \n2. Залейте кипятком и перемешайте. \n3. Варите на медленном огне под крышкой.",
+       description: "1. Промойте. \n2. Залейте кипятком и перемешайте. \n3. Варите на медленном огне под крышкой.".localize(),
        imageName: "riceSteamed",
        backGroundColorRed: 157 ,
        backGroundColorGreen: 105,
@@ -551,8 +551,8 @@ class Model: NSObject {
        )
 
     
-    let riceJasmin = Grain(name: "Рис Жасмин",
-    keyWords: ["рис", "rice", "жасмин"],
+    let riceJasmin = Grain(name: "Рис Жасмин".localize(),
+    keyWords: ["рис", "rice", "жасмин rice jasmine"],
     timeOfBoil: 30,
     proportions: 0.67,
     backgroungColorInHex: "#999589",
@@ -560,7 +560,7 @@ class Model: NSObject {
     carbohydrate: 76,
     protein: 7.5,
     caloriesInCcal: 340,
-    description: "1. Промойте. \n2. Залейте кипятком и перемешайте. \n3. Варите на медленном огне под крышкой.",
+    description: "1. Промойте. \n2. Залейте кипятком и перемешайте. \n3. Варите на медленном огне под крышкой.".localize(),
     imageName: "riceJasmin",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -569,8 +569,8 @@ class Model: NSObject {
     )
     
     
-    let riceRound = Grain(name: "Рис Круглозерный",
-    keyWords: ["рис", "rice", "круглозерный"],
+    let riceRound = Grain(name: "Рис Круглозерный".localize(),
+    keyWords: ["рис", "rice", "круглозерный round grain rice"],
     timeOfBoil: 25,
     proportions: 0.33333333333,
     backgroungColorInHex: "#ADACAB",
@@ -578,7 +578,7 @@ class Model: NSObject {
     carbohydrate: 83,
     protein: 6.5,
     caloriesInCcal: 360,
-    description: "1. Промойте. \n2. Залейте кипятком и перемешайте. \n3. Варите на медленном огне под крышкой.",
+    description: "1. Промойте. \n2. Залейте кипятком и перемешайте. \n3. Варите на медленном огне под крышкой.".localize(),
     imageName: "riceRound",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -587,7 +587,7 @@ class Model: NSObject {
     )
     
     
-    let soyaBeans = Grain(name: "Соевые бобы",
+    let soyaBeans = Grain(name: "Соевые бобы".localize(),
     keyWords: ["соевые", "soya", "beans", "бобы"],
     timeOfBoil: 25,
     proportions: 0.5,
@@ -596,7 +596,7 @@ class Model: NSObject {
     carbohydrate: 83,
     protein: 6.5,
     caloriesInCcal: 360,
-    description: "1. Замочите на 12 часов.\n2. Промойте.\n3. Залейте холодной водой и варите на медленном огне. \n4. За 10 минут до готовности слейте воду, залейте кипятком и снова поставьте на огонь.",
+    description: "1. Замочите на 12 часов.\n2. Промойте.\n3. Залейте холодной водой и варите на медленном огне. \n4. За 10 минут до готовности слейте воду, залейте кипятком и снова поставьте на огонь.".localize(),
     imageName: "soyaBeans",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -604,8 +604,8 @@ class Model: NSObject {
     backGroundColorAlpha: 1
     )
     
-    let fasolWhite = Grain(name: "Фасоль белая",
-                           keyWords: ["фасоль", "fasol", "beans", "белая"],
+    let fasolWhite = Grain(name: "Фасоль белая".localize(),
+                           keyWords: ["фасоль", "fasol", "beans", "белая white beans"],
     timeOfBoil: 50,
     proportions: 0.33333333333,
     backgroungColorInHex: "#726F60",
@@ -613,7 +613,7 @@ class Model: NSObject {
     carbohydrate: 55,
     protein: 22.3,
     caloriesInCcal: 324,
-    description: "1. Замочите на 12 часов.\n2. Промойте.\n3. Залейте холодной водой и варите на медленном огне. ",
+    description: "1. Замочите на 12 часов.\n2. Промойте.\n3. Залейте холодной водой и варите на медленном огне. ".localize(),
     imageName: "fasolWhite",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -622,8 +622,8 @@ class Model: NSObject {
     )
     
     
-    let fasolRed = Grain(name: "Фасоль красная",
-    keyWords: ["фасоль", "fasol", "red", "красная"],
+    let fasolRed = Grain(name: "Фасоль красная".localize(),
+    keyWords: ["фасоль", "fasol", "red", "красная red beans"],
     timeOfBoil: 60,
     proportions: 0.33333333333,
     backgroungColorInHex: "#E66A75",
@@ -631,7 +631,7 @@ class Model: NSObject {
     carbohydrate: 55,
     protein: 22,
     caloriesInCcal: 330,
-    description: "1. Замочите на 12 часов.\n2. Промойте.\n3. Залейте холодной водой и варите на медленном огне. ",
+    description: "1. Замочите на 12 часов.\n2. Промойте.\n3. Залейте холодной водой и варите на медленном огне. ".localize(),
     imageName: "fasolRed",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -640,8 +640,8 @@ class Model: NSObject {
     )
     
     
-    let chechevicaGreen = Grain(name: "Чечевица зеленая",
-    keyWords: ["чечевица", "зеленая"],
+    let chechevicaGreen = Grain(name: "Чечевица зеленая".localize(),
+    keyWords: ["чечевица", "зеленая lentils green"],
     timeOfBoil: 40,
     proportions: 0.5,
     backgroungColorInHex: "#AE9F8A",
@@ -649,7 +649,7 @@ class Model: NSObject {
     carbohydrate: 65,
     protein: 20,
     caloriesInCcal: 350,
-    description: "1. Замочите на 1-3 часа.\n2. Промойте.\n3. Залейте кипятком и варите на медленном огне. ",
+    description: "1. Замочите на 1-3 часа.\n2. Промойте.\n3. Залейте кипятком и варите на медленном огне. ".localize(),
     imageName: "chechevicaGreen",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -657,8 +657,8 @@ class Model: NSObject {
     backGroundColorAlpha: 1
     )
     
-    let chechevicaRed = Grain(name: "Чечевица красная",
-    keyWords: ["чечевица", "красная"],
+    let chechevicaRed = Grain(name: "Чечевица красная".localize(),
+    keyWords: ["чечевица", "красная lentils red"],
     timeOfBoil: 15,
     proportions: 0.5,
     backgroungColorInHex: "#D27E5E",
@@ -666,7 +666,7 @@ class Model: NSObject {
     carbohydrate: 62.5,
     protein: 24.7,
     caloriesInCcal: 328,
-    description: "1. Промойте.\n2. Залейте холодной водой и варите на медленном огне. ",
+    description: "1. Промойте.\n2. Залейте холодной водой и варите на медленном огне. ".localize(),
     imageName: "chechevicaRed",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -677,8 +677,8 @@ class Model: NSObject {
     
 
     
-    let yachnevayaGrain = Grain(name: "Ячневая крупа",
-    keyWords: ["ячневая", "пшеничная"],
+    let yachnevayaGrain = Grain(name: "Ячневая крупа".localize(),
+    keyWords: ["ячневая", "пшеничная barley grits"],
     timeOfBoil: 20,
     proportions: 0.33333333333,
     backgroungColorInHex: "#D7B683",
@@ -686,7 +686,7 @@ class Model: NSObject {
     carbohydrate: 67.7,
     protein: 10,
     caloriesInCcal: 324,
-    description: "1. Залейте холодной водой и доведите до кипения. \n2. Варите, регулярно помешивая. \n3. После варки дайте постоять под крышкой 10 минут.",
+    description: "1. Залейте холодной водой и доведите до кипения. \n2. Варите, регулярно помешивая. \n3. После варки дайте постоять под крышкой 10 минут.".localize(),
     imageName: "yachnevayaGrain",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,

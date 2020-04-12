@@ -103,7 +103,7 @@
 
 "1. Засыпьте в кипящую воду. \n2. Варите на медленном огне, периодически помешивая." = "
 1. Pour into boiling water.
-\n2. Simmer, stirring while stirring.
+\n2. Simmer, stirring while.
 
 ";
 
@@ -178,7 +178,7 @@
 
 
 
-"Маш" = "";
+"Маш" = "Mash";
 "1. Замочите крупу на 1-3 часа.
 \n2. Промойте в холодной воде.
 \n3. Засыпьте крупу в кипящую воду.
@@ -268,6 +268,147 @@
 \n2. Pour in cold water.
 \n3. Simmer.";
 
+
+
+
+"Полба" = "Spelt";
+
+"1. Промойте холодной водой.
+\n2.  Замочите на 1 час.
+\n3. Слейте воду.
+\n4. Залейте холодной водой и варите на тихом огне под крышкой." = "
+
+1. Rinse with cold water.
+\n2. Soak for 1 hour.
+\n3. Drain the water.
+\n4. Pour in cold water and cook over low heat under a lid.
+";
+
+
+"Пшено" = "Millet";
+
+"1. Промойте проточной водой 3-5 раз.
+\n2. Залейте холодной водой и варите на медленном огне.
+\n3. Дайте настояться под крышкой 5-10 минут." = "
+
+1. Rinse with running water 3-5 times.
+\n2. Pour in cold water and simmer over low heat.
+\n3. Let it stand under the lid for 5-10 minutes.
+";
+
+
+
+"Рис Басмати" = "Basmati Rice";
+
+"1. Промойте. \n2. Залейте холодной водой и варите на медленнм огне. \n3. Не мешайте.\n4. Если вода выпарилась, а рис суховат - необходимо добавить кипяток, затем варить до готовности." = "
+1. Rinse.
+\n2. Pour in cold water and simmer over low heat.
+\n3. Do not stir.
+\n4. If the water has evaporated and the rice is dry - you need to add boiling water, then cook until tender.";
+
+
+
+"Рис Арборио" = "Arborio Rice";
+
+"1. Промойте. \n2. Залейте холодной водой и поставьте на огонь. \n3. Регулярно помешивайте. \n4. Снимите с плиты и дайте настояться под крышкой 10-15 минут." = "";
+
+
+
+"Рис Дикий" = "Wild Rice";
+
+"1. Замочите на 1-3 часа.\n2. Промойте. \n3. Залейте холодной водой и поставьте на огонь. \n4. Регулярно помешивайте." = "
+
+1. Rinse.
+\n2. Pour in cold water and set on fire.
+\n3. Stir regularly.
+\n4. Remove from the stove and leave it under the lid for 10-15 minutes.";
+
+
+
+"Рис длиннозерный" = "Rice long-grain";
+
+"1. Промойте. \n2. Залейте кипятком и перемешайте. \n3. Варите на медленном огне под крышкой." = "
+1. Rinse.
+\n2. Pour boiling water and mix.
+\n3. Simmer under the lid.";
+
+
+
+"Рис пропаренный" = "Steamed Rice";
+
+"1. Промойте. \n2. Залейте кипятком и перемешайте. \n3. Варите на медленном огне под крышкой." = "
+1. Rinse.
+\n2. Pour boiling water and mix.
+\n3. Simmer under the lid.";
+
+
+
+
+"Рис Жасмин" = "Rice Jasmine";
+"1. Промойте. \n2. Залейте кипятком и перемешайте. \n3. Варите на медленном огне под крышкой." = "
+1. Rinse.
+\n2. Pour boiling water and mix.
+\n3. Simmer under the lid.";
+
+
+
+"Рис Круглозерный" = "Round grain rice";
+
+"1. Промойте. \n2. Залейте кипятком и перемешайте. \n3. Варите на медленном огне под крышкой." = "
+1. Rinse.
+\n2. Pour boiling water and mix.
+\n3. Simmer under the lid.";
+
+
+
+
+
+
+
+"Фасоль белая" = "White beans";
+
+"1. Замочите на 12 часов.\n2. Промойте.\n3. Залейте холодной водой и варите на медленном огне. " = "
+
+1. Soak for 12 hours.
+\n2. Rinse.
+\n3. Pour in cold water and simmer over low heat.";
+
+
+
+"Фасоль красная" = "Red beans";
+
+"1. Замочите на 12 часов.\n2. Промойте.\n3. Залейте холодной водой и варите на медленном огне. " = "
+1. Soak for 12 hours.
+\n2. Rinse.
+\n3. Pour in cold water and simmer over low heat.";
+
+
+
+"Чечевица зеленая" = "Lentils green";
+
+"1. Замочите на 1-3 часа.\n2. Промойте.\n3. Залейте кипятком и варите на медленном огне. " = "
+1. Soak for 1-3 hours.
+\n2. Rinse.
+\n3. Pour boiling water and simmer over low heat.";
+
+
+
+
+"Чечевица красная" = "Lentils Red";
+
+"1. Промойте.\n2. Залейте холодной водой и варите на медленном огне. " = "
+1. Rinse.
+\n2. Pour in cold water and simmer over low heat.";
+
+
+
+
+"Ячневая крупа" = "Barley grits";
+
+"1. Залейте холодной водой и доведите до кипения. \n2. Варите, регулярно помешивая. \n3. После варки дайте постоять под крышкой 10 минут." = "
+1. Pour in cold water and bring to a boil.
+\n2. Cook, stirring regularly.
+\n3. After cooking, leave under the lid for 10 minutes.";
 
 
 
