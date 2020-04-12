@@ -362,7 +362,7 @@ var descriptionGrainClass: Grain?
         
         
         if descriptionGrainClass != nil {
-            calMainDescLabOut.text = "\(descriptionGrainClass!.caloriesInCcal)  Ккал".localize().replacingOccurrences(of: ".0", with: "") }
+            calMainDescLabOut.text = "\(descriptionGrainClass!.caloriesInCcal) ".replacingOccurrences(of: ".0", with: "") + "Ккал".localize() }
     
         navigationItem.title = descriptionGrainClass?.name
         descLabelOutlet.text = descriptionGrainClass?.description
@@ -478,7 +478,7 @@ var descriptionGrainClass: Grain?
                            
                            
                            
-                        let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!".localize(), message: "Осталось \(self.timesOfFreeTimerUsesRemaining) бесплатных таймера".localize(), preferredStyle: .alert)
+                        let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!".localize(), message: "Осталось ".localize() + "\(self.timesOfFreeTimerUsesRemaining)" + " бесплатных таймера".localize(), preferredStyle: .alert)
                            alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
                            self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
                        }
@@ -503,7 +503,7 @@ var descriptionGrainClass: Grain?
                 
                 
                 
-                let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "Осталось \(self.timesOfFreeTimerUsesRemaining) бесплатных таймера", preferredStyle: .alert)
+              let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!".localize(), message: "Осталось ".localize() + "\(self.timesOfFreeTimerUsesRemaining)" + " бесплатных таймера".localize(), preferredStyle: .alert)
                 alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
                 
                 self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
@@ -522,7 +522,7 @@ var descriptionGrainClass: Grain?
                 self.backButtomOut.isHidden = false
                 
                 
-                let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "У вас остался \(self.timesOfFreeTimerUsesRemaining) бесплатный таймер", preferredStyle: .alert)
+                let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!".localize(), message: "Осталось ".localize() + "\(self.timesOfFreeTimerUsesRemaining)" + " бесплатных таймера".localize(), preferredStyle: .alert)
                 alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
                 self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
                 
@@ -534,11 +534,11 @@ var descriptionGrainClass: Grain?
         else if timesOfFreeTimerUsesRemaining <= 0 && !StoreManager.ifFullVersion {
             
             
-            let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Полная версия\n по цене двух яблок! ", message: "Бесплатные таймеры законились. \nКупить?", preferredStyle: .alert)
-            alertTimesOfUseTimerIsLimited.addAction(UIAlertAction(title: "Да", style: .default, handler: { (UIAlertAction) in
+            let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Полная версия\n по цене двух яблок!".localize(), message: "Бесплатные таймеры законились. \nКупить?".localize(), preferredStyle: .alert)
+            alertTimesOfUseTimerIsLimited.addAction(UIAlertAction(title: "Да".localize(), style: .default, handler: { (UIAlertAction) in
                 StoreManager.share.buyInApp(inAppId: "grainsFullversion1")
             }) )
-            alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "Нет", style: .default, handler: nil))
+            alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "Нет".localize(), style: .default, handler: nil))
             
             self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
             
@@ -581,15 +581,24 @@ var descriptionGrainClass: Grain?
             self.backButtomOut.isHidden = false
             if (self.descriptionGrainClass) != nil {
                 self.carbLabOut.isHidden = false
-                self.carbLabOut.text = "Углеводов: \(String(describing: self.descriptionGrainClass!.carbohydrate) )"
+                self.carbLabOut.text = "Углеводов: ".localize() + "\(String(describing: self.descriptionGrainClass!.carbohydrate) )" + "г".localize()
                 self.protLabOut.isHidden = false
-                self.protLabOut.text = "Белков: \(String(describing: self.descriptionGrainClass!.protein) )"
+                self.protLabOut.text = "Белков: ".localize() +  "\(String(describing: self.descriptionGrainClass!.protein) )" + "г".localize()
                 self.fatLabOut.isHidden = false
-                self.fatLabOut.text = "Жиров: \(String(describing: self.descriptionGrainClass!.fat) )"
+                self.fatLabOut.text = "Жиров: ".localize() + "\(String(describing: self.descriptionGrainClass!.fat) )" + "г".localize()
                 self.in100GrLabOut.isHidden = false
-                self.in100GrLabOut.text = "В 100 граммах содержится: "
+                
+                if UserDefaults.standard.integer(forKey: "uDSelectedMeasureIntCell") == 1 {
+                    self.in100GrLabOut.text = "В 3,5 унциях содержится: ".localize()
+
+                }
+                else {
+                    self.in100GrLabOut.text = "В 100 граммах содержится: ".localize()
+                }
+                
+                
                 self.calLabOut.isHidden = false
-                self.calLabOut.text = ("Калорийность: \(self.descriptionGrainClass!.caloriesInCcal)ккал").replacingOccurrences(of: ".0", with: "")  // убираем ".0"
+                self.calLabOut.text = "Калорийность: ".localize() + "\(self.descriptionGrainClass!.caloriesInCcal)".replacingOccurrences(of: ".0", with: "") + " ккал".localize() // убираем ".0"
             }
             
         }
@@ -614,7 +623,7 @@ var descriptionGrainClass: Grain?
             self.boilTimeGiveInSec()
             self.coutndownTimerOut.text = self.secondToMMSSFotmatString()
             self.timerStatus = false
-            self.startButtonOut.titleLabel?.text = "Старт"
+            self.startButtonOut.titleLabel?.text = "Старт".localize()
             self.progressBar()
             
             self.showHiddenMainItems()
@@ -716,29 +725,29 @@ var descriptionGrainClass: Grain?
         let usDefSegmentContValue = UserDefaults.standard.integer(forKey: "uDSelectedMeasureIntCell")
         switch usDefSegmentContValue {
         case 0:
-            return "\(String( (round(constValueOfGrain * 10000) / 10000)).replacingOccurrences(of: ".0", with: "")) граммов крупы"
+            return "\(String( (round(constValueOfGrain * 10000) / 10000)).replacingOccurrences(of: ".0", with: ""))" + " граммов крупы".localize()
         case 1:
             let inOz : Double =  round(Double((0.033814 * constValueOfGrain)*100.00)) / 100.00 // Округляем
-        return "\(inOz) Oz крупы"
+            return "\(inOz)" + " Oz крупы".localize()
         case 2:
             let inProportions : Double = 1.0
             let inProportionsStr = String(round(inProportions * 10000) / 10000).replacingOccurrences(of: ".0", with: "") // убираем ноль после запитую
            
             // Склоняем слово "Чашка"
-            var sklCups = "чашки"
+            var sklCups = "чашки".localize()
             switch inProportions  {
             case 0:
-                sklCups = "чашек"
+                sklCups = "чашек".localize()
             case 0.01...0.99:
-            sklCups = "чашки"
+                sklCups = "чашки".localize()
             case 1:
-            sklCups = "чашка"
+                sklCups = "чашка".localize()
             case 6...20:
-            sklCups = "чашек"
+                sklCups = "чашек".localize()
             default:
-                sklCups = "чашки"
+                sklCups = "чашки".localize()
             }
-            return ("\(inProportionsStr) \(sklCups) крупы")
+            return ("\(inProportionsStr) \(sklCups)" + " крупы".localize())
         default:
             return "default"
         }
@@ -753,10 +762,10 @@ var descriptionGrainClass: Grain?
         switch usDefSegmentContValue {
            case 0:
             let rounded = round(Double(constValueOfGrain / descriptionGrainClass!.proportions) * 10) / 10.00
-            return "\(String(rounded).replacingOccurrences(of: ".0", with: "")) мл воды"
+            return "\(String(rounded).replacingOccurrences(of: ".0", with: ""))" + " мл воды".localize()
            case 1:
             let inOz : Double =  round(Double((0.033814 * constValueOfGrain)*10.00) / descriptionGrainClass!.proportions ) / 10.00
-           return "\(inOz) Oz воды"
+           return "\(inOz)" + " Oz воды"
            case 2:
                
                //let inProportions : Double =  Double(signOf: ( constValueOfGrain / descriptionGrainClass!.proportions  ) / 200,  magnitudeOf: descriptionGrainClass!.proportions)
@@ -764,20 +773,20 @@ var descriptionGrainClass: Grain?
             let inProportionInStr: String = String(inProportions).replacingOccurrences(of: ".0", with: "")
             
              // Склоняем слово "Чашка"
-               var sklCups = "чашки"
+            var sklCups = "чашки".localize()
                switch inProportions  {
                case 0:
-                   sklCups = "чашек"
+                sklCups = "чашек".localize()
                case 0.01...0.99:
-                sklCups = "чашки"
+                sklCups = "чашки".localize()
                case 1:
-               sklCups = "чашка"
+                sklCups = "чашка".localize()
                case 5...20:
-               sklCups = "чашек"
+                sklCups = "чашек".localize()
                default:
-                   sklCups = "чашки"
+                sklCups = "чашки".localize()
                }
-               return ("\(inProportionInStr) \(sklCups) воды")
+            return ("\(inProportionInStr) \(sklCups)" + " воды".localize())
            default:
                return "default"
            }

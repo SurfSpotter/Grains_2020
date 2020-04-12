@@ -35,8 +35,40 @@
 "Старт" = "Start";
 "Готово!" = "Done!";
 "Сброс" = "Reset";
-"\(descriptionGrainClass!.caloriesInCcal)  Ккал" = "\(descriptionGrainClass!.caloriesInCcal)  Kcal";
+"Ккал" = "Kcal";
 
 
 "Пользуйтесь на здоровье!" = "Use and enjoy!";
-"Осталось \(self.timesOfFreeTimerUsesRemaining) бесплатных таймера" = "\(self.timesOfFreeTimerUsesRemaining) free timers left.";
+"Осталось " = "";
+" бесплатных таймера" = " free timers left.";
+
+ 
+"Полная версия\n по цене двух яблок!"  = "Full version for the price of two apples!";
+
+"Бесплатные таймеры законились. \nКупить?" = "Demo timers are over, \n Buy Full?";
+
+"Да" = "Yes";
+"Нет" = "No";
+"Углеводов: ";
+"Белков: ";
+"Жиров: ";
+"В 100 граммах содержится: " = "100 grams contains: ";
+"В 3,5 унциях содержится: " =  "3,5 Oz contain: ";
+"Калорийность: " = "Calories: ";
+" ккал" = "kcal";
+
+"Жиров: " = "Fat: ";
+"Белков: " = "Protein: ";
+"Углеводов: " = "Carbohydrate: ";
+"г" = "g";
+" граммов крупы" = " gramms of cereal";
+" Oz крупы" = " Oz of cereal";
+"чашки" = "cups";
+"чашек" = "cups";
+"чашка" = "cup";
+" крупы" = "cereal";
+" мл воды" = " ml of water";
+" Oz воды" = " oz of water";
+" воды" = " of water";
+
+ 
