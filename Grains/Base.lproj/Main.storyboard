@@ -409,7 +409,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="message" size="11"/>
+                                                                        <font key="NSFont" metaFont="label" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -910,7 +910,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ruM-Qa-UhP"/>
+        <segue reference="vLR-gk-Brw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="7_1.jpg" width="439.55999755859375" height="781.20001220703125"/>

@@ -32,8 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		324EC8F224439B11000552D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		325C0ED324438AD200084772 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		325C0ED5244392A000084772 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		325C593B2417E7EF0067B3BC /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		325CC1F523F1EB690009551A /* likeMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeMe.png; sourceTree = "<group>"; };
 		325CC1F623F1EB690009551A /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
@@ -268,7 +268,7 @@
 			children = (
 				32DF8CEE23E77EC400C738F7 /* Base */,
 				32D2A05D2442EC4C006CEBA0 /* ru */,
-				325C0ED5244392A000084772 /* en */,
+				324EC8F224439B11000552D1 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

@@ -9,7 +9,7 @@
 "25P-jK-g2n.text" = "Proportions:";
 
 /* Class = "UITabBarItem"; title = "Избранное"; ObjectID = "2Ur-4U-OgA"; */
-"2Ur-4U-OgA.title" = "Favorite";
+"2Ur-4U-OgA.title" = "Favourite";
 
 /* Class = "UILabel"; text = "NameGrain"; ObjectID = "7kq-nQ-Fxv"; */
 "7kq-nQ-Fxv.text" = "NameGrain";
@@ -25,6 +25,9 @@
 
 /* Class = "UINavigationItem"; title = "Крупы"; ObjectID = "B4y-P3-0wm"; */
 "B4y-P3-0wm.title" = "Cereals and Grains";
+
+/* Class = "UILabel"; text = "Cпособ приготовления:"; ObjectID = "BBq-lb-JMp"; */
+"BBq-lb-JMp.text" = "Cooking method:";
 
 /* Class = "UILabel"; text = "NameGrain"; ObjectID = "Cef-fb-qri"; */
 "Cef-fb-qri.text" = "NameGrain";
@@ -84,7 +87,7 @@
 "uZf-xe-FBM.text" = "Units of measure";
 
 /* Class = "UINavigationItem"; title = "Избранное"; ObjectID = "vAh-zD-BC3"; */
-"vAh-zD-BC3.title" = "Favorite";
+"vAh-zD-BC3.title" = "Favourite";
 
 /* Class = "UISegmentedControl"; w0X-1n-Oy5.segmentTitles[0] = "Граммы"; ObjectID = "w0X-1n-Oy5"; */
 "w0X-1n-Oy5.segmentTitles[0]" = "Gramms";
@@ -100,6 +103,3 @@
 
 /* Class = "UIButton"; normalTitle = "Оценить приложение"; ObjectID = "y3H-rQ-GNg"; */
 "y3H-rQ-GNg.normalTitle" = "Rate app";
-
-"BBq-lb-JMp" = "Cooking method"
-
