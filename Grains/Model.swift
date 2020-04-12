@@ -134,7 +134,7 @@ class Model: NSObject {
    
     //MARK: - Grains variable initialized
     
-    let boulgour = Grain(name: "Булгур",
+    let boulgour = Grain(name: "Булгур".localize(),
                      keyWords: ["Булгур булгур Bulgur boulgur bulgur"],
                      timeOfBoil: 25,
                      proportions: 0.5,
@@ -143,7 +143,7 @@ class Model: NSObject {
                      carbohydrate: 14.08,
                      protein: 3.08,
                      caloriesInCcal: 83,
-                     description: "1. Перед варкой промойте в проточной воде. \n2. Обжарьте булгур на растительном масле 3 минуты. \n3. Добавьте в крупу кипяток в указанной пропорции.\n4. Варите под крышкой не мешая.",
+                     description: "1. Перед варкой промойте в проточной воде. \n2. Обжарьте булгур на растительном масле 3 минуты. \n3. Добавьте в крупу кипяток в указанной пропорции.\n4. Варите под крышкой не мешая.".localize(),
                     imageName: "boulgour",
                     backGroundColorRed: 1 ,
                     backGroundColorGreen: 1,
@@ -153,7 +153,7 @@ class Model: NSObject {
     
 
 
-    let buckwheat = Grain(name: "Гречневая крупа",
+    let buckwheat = Grain(name: "Гречневая крупа".localize(),
                           keyWords: ["buckwheat, Buckwheat, Греча, Гречка, греча, гречка, ядрица, гречиха "],
                           timeOfBoil: 15,
                           proportions: 0.25,
@@ -162,14 +162,14 @@ class Model: NSObject {
                           carbohydrate: 72,
                           protein: 13,
                           caloriesInCcal: 360,
-                          description: "1. Засыпьте в холодную, немного подсоленную воду. \n2. Доведите до кипения и варите на тихом огне.",
+                          description: "1. Засыпьте в холодную, немного подсоленную воду. \n2. Доведите до кипения и варите на тихом огне.".localize(),
                           imageName: "buckwheat",
                             backGroundColorRed: 157 ,
                             backGroundColorGreen: 105,
                             backGroundColorBlue: 47,
                             backGroundColorAlpha: 1
     )
-    let oatmeal = Grain(name: "Геркулес",
+    let oatmeal = Grain(name: "Геркулес".localize(),
                         keyWords: ["Oatmeal", "oatmeal", "овес", "овсянка", "хлопья", "геркулес"],
                         timeOfBoil: 20,
                         proportions: 0.33333333333,
@@ -177,7 +177,7 @@ class Model: NSObject {
                         fat: 6.5, carbohydrate: 60,
                         protein: 13,
                         caloriesInCcal: 370,
-                        description: "1. Засыпьте в кипящую воду. \n2. Варите на медленном огне, периодически помешивая.",
+                        description: "1. Засыпьте в кипящую воду. \n2. Варите на медленном огне, периодически помешивая.".localize(),
                         imageName: "herkuless",
                         backGroundColorRed: 1 ,
                         backGroundColorGreen: 1,
@@ -185,8 +185,8 @@ class Model: NSObject {
                         backGroundColorAlpha: 1
     )
     
-    let goroh = Grain(name: "Горох",
-                    keyWords: ["Горох goroh горох"],
+    let goroh = Grain(name: "Горох".localize(),
+                    keyWords: ["Горох goroh горох peas"],
                     timeOfBoil: 60,
                     proportions: 0.33333333333,
                     backgroungColorInHex: "#D1AA85" ,
@@ -195,7 +195,7 @@ class Model: NSObject {
                     protein: 22.0,
                     caloriesInCcal: 320.0,
                     
-                            description: "1. Заранее замочите. \n2. Хорошо промойте.  \n3. Залейте холодной водой и варите на медленном огне, перирдически помешивая. ",
+                    description: "1. Заранее замочите. \n2. Хорошо промойте.  \n3. Залейте холодной водой и варите на медленном огне, перирдически помешивая. ".localize(),
                     imageName: "goroh" ,
                     backGroundColorRed: 30 ,
                     backGroundColorGreen: 30,
@@ -203,8 +203,8 @@ class Model: NSObject {
                     backGroundColorAlpha: 30 )
     
     
-    let dolichos = Grain(name: "Долихос",
-                        keyWords: ["Долихос долихос dolihos"],
+    let dolichos = Grain(name: "Долихос".localize(),
+                        keyWords: ["долихос doliсhos"],
                         timeOfBoil: 120,
                         proportions: 0.25,
                         backgroungColorInHex: "#D2B566",
@@ -212,7 +212,7 @@ class Model: NSObject {
                         carbohydrate: 59,
                         protein: 21,
                         caloriesInCcal: 329,
-                        description: "1. Замочите на 8-10 часов в большом количестве холодной воды. \n2. Промойте. \n3. Залейте крутым кипятком. \n4. Варите без крышки на слабом огне.",
+                        description: "1. Замочите на 8-10 часов в большом количестве холодной воды. \n2. Промойте. \n3. Залейте крутым кипятком. \n4. Варите без крышки на слабом огне.".localize(),
                         imageName: "dolichos",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
@@ -220,8 +220,8 @@ class Model: NSObject {
                         backGroundColorAlpha: 1
     )
     
-    let kinoa = Grain(name: "Киноа",
-                        keyWords: ["киноа Киноа"],
+    let kinoa = Grain(name: "Киноа".localize(),
+                        keyWords: ["киноа Киноа quinoa "],
                         timeOfBoil: 15,
                         proportions: 0.5,
                         backgroungColorInHex: "#B5BAC0",
@@ -229,7 +229,7 @@ class Model: NSObject {
                         carbohydrate: 67,
                         protein: 14,
                         caloriesInCcal: 390,
-                        description: "1. Тщательно промойте в холодной воде, иначе крупа будет горчить. \n2. Залейте водой. \n3. Варите на медленном огне.",
+                        description: "1. Тщательно промойте в холодной воде, иначе крупа будет горчить. \n2. Залейте холодной водой. \n3. Варите на медленном огне.".localize(),
                         imageName: "kinoa",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
@@ -237,7 +237,7 @@ class Model: NSObject {
                         backGroundColorAlpha: 1
     )
     
-    let kukuruza = Grain(name: "Кукуруза",
+    let kukuruza = Grain(name: "Кукуруза".localize(),
                         keyWords: ["кукуруза Кукуруза corn "],
                         timeOfBoil: 30,
                         proportions: 0.2,
@@ -246,7 +246,7 @@ class Model: NSObject {
                         carbohydrate: 80,
                         protein: 7,
                         caloriesInCcal: 360,
-                        description: "1. Добавьте крупу в кипящую воду. \n2. Варите на медленном огне, периодически помешивая. ",
+                        description: "1. Добавьте крупу в кипящую воду. \n2. Варите на медленном огне, периодически помешивая. ".localize(),
                         imageName: "kukuruza",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
@@ -254,8 +254,8 @@ class Model: NSObject {
                         backGroundColorAlpha: 1
     )
     
-    let kuskus = Grain(name: "Кускус",
-                        keyWords: ["Кускус кускус кус kuskus"],
+    let kuskus = Grain(name: "Кускус".localize(),
+                        keyWords: ["Кускус кускус кус kuskus cous cus"],
                         timeOfBoil: 5,
                         proportions: 0.5,
                         backgroungColorInHex: "#F8BF79",
@@ -263,7 +263,7 @@ class Model: NSObject {
                         carbohydrate: 73,
                         protein: 13,
                         caloriesInCcal: 350,
-                        description: "1. Залейте кипятком. \n2. Накройте крышкой и дайте постоять 5-7 минут. \n3. Чтобы сделать крупу рассыпчатой, просто взбейте ее вилкой.",
+                        description: "1. Залейте кипятком. \n2. Накройте крышкой и дайте постоять 5-7 минут. \n3. Чтобы сделать крупу рассыпчатой, просто взбейте ее вилкой.".localize(),
                         imageName: "kuskus",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
@@ -273,8 +273,8 @@ class Model: NSObject {
     
     
     
-    let semolina = Grain(name: "Манная крупа",
-                        keyWords: ["Манка манная манка "],
+    let semolina = Grain(name: "Манная крупа".localize(),
+                        keyWords: ["Манка манная манка semolina "],
                         timeOfBoil: 7,
                         proportions: 0.1,
                         backgroungColorInHex: "#C3C7C1",
@@ -282,7 +282,7 @@ class Model: NSObject {
                         carbohydrate: 73,
                         protein: 13,
                         caloriesInCcal: 360,
-                        description: "1. Засыпьте в кипящую воду или молоко. \n2. Постоянно помешивайте. \n3. Снимите с плиты и дайте постоять под крышкой 10 минут.",
+                        description: "1. Засыпьте в кипящую воду или молоко. \n2. Постоянно помешивайте. \n3. Снимите с плиты и дайте постоять под крышкой 10 минут.".localize(),
                         imageName: "semolina",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
@@ -291,7 +291,7 @@ class Model: NSObject {
     )
     
     
-    let mash = Grain(name: "Маш",
+    let mash = Grain(name: "Маш".localize(),
                         keyWords: ["mash Mash маш Маш"],
                         timeOfBoil: 35,
                         proportions: 0.4,
@@ -300,7 +300,7 @@ class Model: NSObject {
                         carbohydrate: 46,
                         protein: 23.5 ,
                         caloriesInCcal: 300,
-                        description: "1. Замочите крупу на 1 - 3 часа. \n2. Промойте в холодной воде.\n3. Засыпьте крупу в кипящую воду.\n4. Варите на медленном огне.",
+                        description: "1. Замочите крупу на 1-3 часа. \n2. Промойте в холодной воде.\n3. Засыпьте крупу в кипящую воду.\n4. Варите на медленном огне.".localize(),
                         imageName: "mash",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
@@ -309,8 +309,8 @@ class Model: NSObject {
     )
     
     
-    let nout = Grain(name: "Нут",
-                        keyWords: ["Нут нут "],
+    let nout = Grain(name: "Нут".localize(),
+                        keyWords: ["Нут нут сhickpeas nout nut "],
                         timeOfBoil: 40,
                         proportions: 0.33333333333,
                         backgroungColorInHex: "#CFB8A4",
@@ -318,7 +318,7 @@ class Model: NSObject {
                         carbohydrate: 61,
                         protein: 19 ,
                         caloriesInCcal: 364,
-                        description: "1. Замочите на 3-5 часов.\n2. Промойте.\n3. Залейте холодной водой и варите на медленном огне. \n4. За 10 минут до готовности слейте воду, залейте кипятком и снова поставьте на огонь.",
+                        description: "1. Замочите на 3-5 часов.\n2. Промойте.\n3. Залейте холодной водой и варите на медленном огне. \n4. За 10 минут до готовности слейте воду, залейте кипятком и снова поставьте на огонь.".localize(),
                         imageName: "nout",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
@@ -327,8 +327,8 @@ class Model: NSObject {
     )
     
     
-    let oatmealNoBoil = Grain(name: "Овсяные хлопья не требующие варки",
-                        keyWords: ["овсяные" , "овес", "хлопья" ],
+    let oatmealNoBoil = Grain(name: "Овсяные хлопья не требующие варки".localize(),
+                        keyWords: ["овсяные" , "овес", "хлопья oat oatmel flakes" ],
                         timeOfBoil: 5,
                         proportions: 0.5,
                         backgroungColorInHex: "#83665B",
@@ -336,7 +336,7 @@ class Model: NSObject {
                         carbohydrate: 61,
                         protein: 19 ,
                         caloriesInCcal: 364,
-                        description: "1. Залейте хлопья кипятком или горячим молоком. \n2. Тщательно размешайте. \n3. Накройте крышкой и дайте настояться.",
+                        description: "1. Залейте хлопья кипятком или горячим молоком. \n2. Тщательно размешайте. \n3. Накройте крышкой и дайте настояться.".localize(),
                         imageName: "oatmealNoBoil",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
@@ -345,8 +345,8 @@ class Model: NSObject {
     )
     
     
-    let oatmealNo1 = Grain(name: "Овсяные хлопья №1",
-                        keyWords: ["овсяные" , "овес", "хлопья" ],
+    let oatmealNo1 = Grain(name: "Овсяные хлопья №1".localize(),
+                        keyWords: ["овсяные" , "овес", "хлопья oat oatmel flakes" ],
                         timeOfBoil: 10,
                         proportions: 0.33333333333,
                         backgroungColorInHex: "#C1AD93",
@@ -354,7 +354,7 @@ class Model: NSObject {
                         carbohydrate: 60,
                         protein: 13 ,
                         caloriesInCcal: 380,
-                        description: "1. Засыпьте в кипящую воду или молоко. \n2. Варите на медленном огне. \n3. Снимите с огня, дайте постоять под крышкой 3 минуты.",
+                        description: "1. Засыпьте в кипящую воду или молоко. \n2. Варите на медленном огне. \n3. Снимите с огня, дайте постоять под крышкой 3 минуты.".localize(),
                         imageName: "oatmealNo1",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
@@ -363,8 +363,8 @@ class Model: NSObject {
     )
     
     
-    let oatmealNo2 = Grain(name: "Овсяные хлопья №2",
-                        keyWords: ["овсяные" , "овес", "хлопья" ],
+    let oatmealNo2 = Grain(name: "Овсяные хлопья №2".localize(),
+                        keyWords: ["овсяные" , "овес", "хлопья oat oatmel flakes" ],
                         timeOfBoil: 5,
                         proportions: 0.33333333333,
                         backgroungColorInHex: "#C8C1AC",
@@ -372,7 +372,7 @@ class Model: NSObject {
                         carbohydrate: 60,
                         protein: 13 ,
                         caloriesInCcal: 380,
-                        description: "1. Засыпьте в кипящую воду или молоко.\n2. Варите на медленном огне. \n3. Снимите с огня, дайте постоять под крышкой 3 минуты.",
+                        description: "1. Засыпьте в кипящую воду или молоко.\n2. Варите на медленном огне. \n3. Снимите с огня, дайте постоять под крышкой 3 минуты.".localize(),
                         imageName: "oatmealNo2",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
@@ -381,8 +381,8 @@ class Model: NSObject {
     )
     
     
-    let oatmealNo3 = Grain(name: "Овсяные хлопья №3",
-                        keyWords: ["овсяные" , "овес", "хлопья" ],
+    let oatmealNo3 = Grain(name: "Овсяные хлопья №3".localize(),
+                        keyWords: ["овсяные" , "овес", "хлопья oat oatmel flakes" ],
                         timeOfBoil: 3,
                         proportions: 0.33333333333,
                         backgroungColorInHex: "#947763",
@@ -390,7 +390,7 @@ class Model: NSObject {
                         carbohydrate: 60,
                         protein: 13 ,
                         caloriesInCcal: 380,
-                        description: "1. Засыпьте в кипящую воду или молоко.\n2. Варите на медленном огне. \n3. Снимите с огня, дайте постоять под крышкой 3 минуты.",
+                        description: "1. Засыпьте в кипящую воду или молоко.\n2. Варите на медленном огне. \n3. Снимите с огня, дайте постоять под крышкой 3 минуты.".localize(),
                         imageName: "oatmealNo3",
                         backGroundColorRed: 157 ,
                         backGroundColorGreen: 105,
@@ -400,8 +400,8 @@ class Model: NSObject {
     
     
     
-    let pearlBarley = Grain(name: "Перловая крупа",
-    keyWords: ["перловая" , "перловка" ],
+    let pearlBarley = Grain(name: "Перловая крупа".localize(),
+    keyWords: ["перловая" , "перловка pearl barley" ],
     timeOfBoil: 45,
     proportions: 0.2,
     backgroungColorInHex: "#DBBC9E",
@@ -409,7 +409,7 @@ class Model: NSObject {
     carbohydrate: 69,
     protein: 10 ,
     caloriesInCcal: 320,
-    description: "1. Если вы предварительно замачивали крупу, то время варки сокращается на 15 минут. \n2. Залейте холодной водой. \n3. Варите на медленном огне.",
+    description: "1. Если вы предварительно замачивали крупу, то время варки сокращается на 15 минут. \n2. Залейте холодной водой. \n3. Варите на медленном огне.".localize(),
     imageName: "pearlBarley",
     backGroundColorRed: 157 ,
     backGroundColorGreen: 105,
@@ -747,39 +747,39 @@ class Model: NSObject {
 func skloneniaMinut(boilTime: Grain) -> String {
                switch  boilTime.timeOfBoil  {
                   case 0:
-                  return "минут"
+                  return "минут".localize()
                   case 1:
-                  return "минута"
+                  return "минута".localize()
                   case 2...4 :
-                  return "минуты"
+                  return "минуты".localize()
                   case 5...20 :
-                  return "минут"
+                  return "минут".localize()
                   case 21:
-                  return "минута"
+                  return "минута".localize()
                   case 22...24 :
-                  return "минуты"
+                  return "минуты".localize()
                   case 25...30 :
-                  return "минут"
+                  return "минут".localize()
                   case 31 :
-                  return "минута"
+                  return "минута".localize()
                   case 32...34 :
-                  return "минуты"
+                  return "минуты".localize()
                   case 35...40 :
-                  return "минут"
+                  return "минут".localize()
                   case 41 :
-                  return "минута"
+                  return "минута".localize()
                   case 42...44 :
-                  return "минуты"
+                  return "минуты".localize()
                   case 45...50 :
-                  return "минут"
+                  return "минут".localize()
                   case 51 :
-                  return "минута"
+                  return "минута".localize()
                   case 52...54 :
-                  return "минуты"
+                  return "минуты".localize()
                   case 55...60 :
-                  return "минут"
+                  return "минут".localize()
                   default:
-                      return "мин."
+                      return "мин.".localize()
                   }
               }
     
