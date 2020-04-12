@@ -33,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		325C0ED324438AD200084772 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		325C0ED5244392A000084772 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		325C593B2417E7EF0067B3BC /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		325CC1F523F1EB690009551A /* likeMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeMe.png; sourceTree = "<group>"; };
 		325CC1F623F1EB690009551A /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		32C36A7D240E709C0027D410 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
 		32D2A0552442E444006CEBA0 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
-		32D2A05C2442EAAB006CEBA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		32D2A05D2442EC4C006CEBA0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		32D2A05E2442EC4D006CEBA0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		32D2A0602442F31C006CEBA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -267,8 +267,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				32DF8CEE23E77EC400C738F7 /* Base */,
-				32D2A05C2442EAAB006CEBA0 /* en */,
 				32D2A05D2442EC4C006CEBA0 /* ru */,
+				325C0ED5244392A000084772 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

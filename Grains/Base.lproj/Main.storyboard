@@ -234,7 +234,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D91-P5-lgq">
-                                        <rect key="frame" x="0.0" y="-4" width="414" height="1189"/>
+                                        <rect key="frame" x="0.0" y="-4" width="414" height="1184"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oatmealNo2" translatesAutoresizingMaskIntoConstraints="NO" id="Pnq-vd-eSH" userLabel="grainMainImage">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="406"/>
@@ -256,10 +256,10 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxg-6q-PF7" userLabel="Description viewOutlet">
-                                                <rect key="frame" x="19" y="637" width="376" height="482"/>
+                                                <rect key="frame" x="19" y="637" width="376" height="477"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT3-Ls-QvX">
-                                                        <rect key="frame" x="25" y="251.5" width="326" height="200.5"/>
+                                                        <rect key="frame" x="25" y="246.5" width="326" height="200.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="50" id="SZm-ox-yB8"/>
                                                         </constraints>
@@ -300,8 +300,8 @@
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cпособ приготовления:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBq-lb-JMp">
-                                                        <rect key="frame" x="-8" y="205" width="376" height="26.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cпособ приготовления:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBq-lb-JMp">
+                                                        <rect key="frame" x="69.5" y="205" width="237.5" height="26.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="26.5" id="eD2-lJ-LHt"/>
                                                         </constraints>
@@ -321,10 +321,11 @@
                                                     <constraint firstAttribute="bottom" secondItem="jT3-Ls-QvX" secondAttribute="bottom" constant="30" id="5tx-MA-7Lg"/>
                                                     <constraint firstAttribute="trailing" secondItem="jT3-Ls-QvX" secondAttribute="trailing" constant="25" id="6XJ-YT-hjq"/>
                                                     <constraint firstAttribute="trailing" secondItem="8aP-rJ-2KR" secondAttribute="trailing" constant="2" id="95x-g2-OOF"/>
+                                                    <constraint firstItem="BBq-lb-JMp" firstAttribute="centerX" secondItem="zxg-6q-PF7" secondAttribute="centerX" id="9fU-tn-xXI"/>
                                                     <constraint firstAttribute="trailing" secondItem="JL3-68-n1a" secondAttribute="trailing" constant="20" id="G4q-eA-wqc"/>
                                                     <constraint firstItem="JL3-68-n1a" firstAttribute="top" secondItem="25P-jK-g2n" secondAttribute="bottom" constant="35" id="LdP-Qw-D1W"/>
                                                     <constraint firstItem="8aP-rJ-2KR" firstAttribute="leading" secondItem="b6b-z4-jcg" secondAttribute="trailing" constant="8" id="SuQ-Sg-U14"/>
-                                                    <constraint firstItem="jT3-Ls-QvX" firstAttribute="top" secondItem="BBq-lb-JMp" secondAttribute="bottom" constant="20" id="e2e-IG-sg8"/>
+                                                    <constraint firstItem="jT3-Ls-QvX" firstAttribute="top" secondItem="BBq-lb-JMp" secondAttribute="bottom" constant="15" id="e2e-IG-sg8"/>
                                                     <constraint firstItem="JL3-68-n1a" firstAttribute="centerY" secondItem="EHM-2p-0o7" secondAttribute="centerY" id="hVr-yZ-6Ye"/>
                                                     <constraint firstAttribute="trailing" secondItem="25P-jK-g2n" secondAttribute="trailing" id="kkf-ed-h51"/>
                                                     <constraint firstItem="b6b-z4-jcg" firstAttribute="leading" secondItem="zxg-6q-PF7" secondAttribute="leading" constant="20" id="t2W-mS-j6R"/>
@@ -408,7 +409,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="menu" size="11"/>
+                                                                        <font key="NSFont" metaFont="message" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
