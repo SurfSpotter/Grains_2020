@@ -29,7 +29,7 @@ class UserNotifications: NSObject {
         let content = UNMutableNotificationContent()
         content.title = nameOfGrain
         //content.subtitle = "\(timeInSeconds.timeOfBoil) \(Model.shared.skloneniaMinut(boilTime: timeInSeconds))"
-        content.body = "Ваше блюдо готово, приятного аппетита!"
+        content.body = "Ваше блюдо готово, приятного аппетита!".localize()
         content.sound = .default
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: Double(timeInSeconds), repeats: false)
         let request = UNNotificationRequest(identifier: "notification", content: content, trigger: trigger)

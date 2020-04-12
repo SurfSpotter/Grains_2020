@@ -123,7 +123,7 @@ var descriptionGrainClass: Grain?
         print ("boilTimeInSeconds \(boilTimeInSeconds)")
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerSelector) , userInfo: nil, repeats: true)
         timerStatus = true
-            startButtonOut.setTitle("Пауза", for: .normal)
+            startButtonOut.setTitle("Пауза".localize(), for: .normal)
             progressBar()
             
             
@@ -134,7 +134,7 @@ var descriptionGrainClass: Grain?
         else {
             UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["notification"])
             timer.invalidate()
-            startButtonOut.setTitle("Старт", for: .normal)
+            startButtonOut.setTitle("Старт".localize(), for: .normal)
             timerStatus = false
             progressBar()
             coutndownTimerOut.text = secondToMMSSFotmatString()
@@ -153,7 +153,7 @@ var descriptionGrainClass: Grain?
         
         timer.invalidate()
         
-        startButtonOut.setTitle("Старт", for: .normal)
+        startButtonOut.setTitle("Старт".localize(), for: .normal)
         timerStatus = false
         
         boilTimeGiveInSec()
@@ -175,8 +175,8 @@ var descriptionGrainClass: Grain?
         progressBar()
         if boilTimeInSeconds <= 0 {
             timer.invalidate()
-            coutndownTimerOut.text = "Готово!"
-            startButtonOut.setTitle("Сброс", for: .normal)
+            coutndownTimerOut.text = "Готово!".localize()
+            startButtonOut.setTitle("Сброс".localize(), for: .normal)
             boilTimeGiveInSec()
             timerStatus = true
         
@@ -362,7 +362,7 @@ var descriptionGrainClass: Grain?
         
         
         if descriptionGrainClass != nil {
-        calMainDescLabOut.text = "\(descriptionGrainClass!.caloriesInCcal)  Ккал".replacingOccurrences(of: ".0", with: "") }
+            calMainDescLabOut.text = "\(descriptionGrainClass!.caloriesInCcal)  Ккал".localize().replacingOccurrences(of: ".0", with: "") }
     
         navigationItem.title = descriptionGrainClass?.name
         descLabelOutlet.text = descriptionGrainClass?.description
@@ -478,7 +478,7 @@ var descriptionGrainClass: Grain?
                            
                            
                            
-                        let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!", message: "Осталось \(self.timesOfFreeTimerUsesRemaining) бесплатных таймера", preferredStyle: .alert)
+                        let alertTimesOfUseTimerIsLimited = UIAlertController(title: "Пользуйтесь на здоровье!".localize(), message: "Осталось \(self.timesOfFreeTimerUsesRemaining) бесплатных таймера".localize(), preferredStyle: .alert)
                            alertTimesOfUseTimerIsLimited.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
                            self.present(alertTimesOfUseTimerIsLimited, animated: true, completion: nil)
                        }

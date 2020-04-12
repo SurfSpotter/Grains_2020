@@ -45,7 +45,7 @@ class StoreManager: NSObject {
     
     func buyInApp(inAppId: String) {
         if !SKPaymentQueue.canMakePayments() {
-            print ("Невозможно соверщать покупки.")
+            print ("Невозможно совершить покупку.")
             
         }
         

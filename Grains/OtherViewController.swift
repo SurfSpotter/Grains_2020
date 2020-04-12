@@ -22,7 +22,7 @@ let buyInApp = StoreManager()
         }
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: nPurchaseRestored), object: nil, queue: nil) { (notification) in
             print ("print of nPurchaseRestored")
-            let alertPurchaseRestored = UIAlertController(title: "Успех!", message: "Покупка восстановлена.", preferredStyle: .alert)
+            let alertPurchaseRestored = UIAlertController(title: "Успех!", message: "Покупка восстановлена.".localize(), preferredStyle: .alert)
             alertPurchaseRestored.addAction(.init(title: "OK", style: .default , handler: nil))
             self.present(alertPurchaseRestored, animated: true, completion: nil)
                }
@@ -60,7 +60,7 @@ let buyInApp = StoreManager()
         
            
             let urlForSharing = URL(string:"itms-apps://itunes.apple.com/app/id1502428665")
-            let desctriptionForSharing = "Время варки любимых круп. \nТаймер. Калорийность.\n Скачай, уверен тебе понравится!"
+        let desctriptionForSharing = "Время варки любимых круп. \nТаймер. Калорийность.\n Скачай, уверен тебе понравится!".localize()
             let imageIcon = UIImage(named: "launch")
             
         let vc = UIActivityViewController(activityItems: [desctriptionForSharing, imageIcon!, urlForSharing!], applicationActivities: [])
@@ -118,7 +118,7 @@ let buyInApp = StoreManager()
        
        fileprivate func showMailComposer() {
            guard MFMailComposeViewController.canSendMail() else {
-               let alert = UIAlertController.init(title: "Ошибка", message: "Функция недоступна. Возможно не выполнен вход в почтовую службу", preferredStyle: .alert)
+            let alert = UIAlertController.init(title: "Ошибка".localize(), message: "Функция недоступна. Возможно не выполнен вход в почтовую службу".localize(), preferredStyle: .alert)
                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (UIAlertAction) in
                    
                }))
@@ -128,8 +128,8 @@ let buyInApp = StoreManager()
            let composer = MFMailComposeViewController()
            composer.mailComposeDelegate = self
            composer.setToRecipients(["surfspotdevelop@gmail.com"])
-           composer.setSubject("Grains")
-           composer.setMessageBody("Привет! Ваше приложение просто супер!, но я бы добавил...(напишите ваше пожелание)", isHTML: false)
+           composer.setSubject("Grains and Cereals")
+        composer.setMessageBody("Привет! Ваше приложение просто супер!, но я бы добавил...(напишите ваше пожелание)".localize(), isHTML: false)
            present(composer, animated: true)
            
        
@@ -152,18 +152,18 @@ let buyInApp = StoreManager()
 
 extension OtherViewController: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        let alertSendMailOk = UIAlertController.init(title: "Сообщение отправлено!", message: "Благодарим за вас за помощь!", preferredStyle: .alert)
+        let alertSendMailOk = UIAlertController.init(title: "Сообщение отправлено!".localize(), message: "Благодарим за вас за помощь!".localize(), preferredStyle: .alert)
         alertSendMailOk.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (UIAlertAction) in
             
         }))
-        //present(alertSendMailOk, animated: true)
+        present(alertSendMailOk, animated: true)
         
         
         if let _ = error {
             // show Error Alert
             print ("error when sent email!")
             controller.dismiss(animated: true, completion: nil)
-            let alertError = UIAlertController.init(title: "Ошибка при отправке", message: "Повторите попытку позже.", preferredStyle: .alert)
+            let alertError = UIAlertController.init(title: "Ошибка при отправке".localize(), message: "Повторите попытку позже.".localize(), preferredStyle: .alert)
                        alertError.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (UIAlertAction) in
                            
                        }))

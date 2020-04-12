@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  Grains
+
+  Created by Алексей Чигарских on 12.04.2020.
+  Copyright © 2020 Алексей Чигарских. All rights reserved.
+
+*/
+
+"Ваше блюдо готово, приятного аппетита!" = "Your dish is ready, bon appetit!";
+
+"Покупка восстановлена." = "Purchase restored.";
+
+
+"Время варки любимых круп. \nТаймер. Калорийность.\n Скачай, уверен тебе понравится!" = "Cooking time for your favorite cereals. \nTimer. Calorie content. \nDownload, I'm sure you will like it!";
+
+
+//MARK - Services
+
+"Ошибка" = "Error.";
+"Функция недоступна. Возможно не выполнен вход в почтовую службу" = "The function is not available.";
+
+"Привет! Ваше приложение просто супер!, но я бы добавил...(напишите ваше пожелание)" = "Hello! Your app is nice!. But I would add ... (write your wish)";
+
+"Сообщение отправлено!" = "Message sent!";
+"Благодарим за вас за помощь!" = "Thank you for your help!";
+
+"Ошибка при отправке" = "Error";
+"Повторите попытку позже." = "Please try again later.";
+
+
+// Timer
+
+"Пауза" = "Pause";
+"Старт" = "Start";
+"Готово!" = "Done!";
+"Сброс" = "Reset";
+"\(descriptionGrainClass!.caloriesInCcal)  Ккал" = "\(descriptionGrainClass!.caloriesInCcal)  Kcal";
+
+
+"Пользуйтесь на здоровье!" = "Use and enjoy!";
+"Осталось \(self.timesOfFreeTimerUsesRemaining) бесплатных таймера" = "\(self.timesOfFreeTimerUsesRemaining) free timers left.";
