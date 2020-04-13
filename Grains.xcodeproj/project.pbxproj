@@ -32,19 +32,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		324EC8F224439B11000552D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		325C0ED324438AD200084772 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		325C593B2417E7EF0067B3BC /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		325CC1F523F1EB690009551A /* likeMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeMe.png; sourceTree = "<group>"; };
 		325CC1F623F1EB690009551A /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
 		325CC1FD23F4A23B0009551A /* FavouritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewController.swift; sourceTree = "<group>"; };
 		325CC1FF23F4BED90009551A /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
+		3266393024449DB600445D4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		326639322444A08B00445D4F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		326D17FC24119A0800DE6195 /* RateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateManager.swift; sourceTree = "<group>"; };
 		32A7445E23EB5892000173D4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		32C36A7D240E709C0027D410 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
 		32D2A0552442E444006CEBA0 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
-		32D2A05D2442EC4C006CEBA0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		32D2A05E2442EC4D006CEBA0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		32D2A0602442F31C006CEBA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		32DB9ED023E9E0CB00D07561 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -267,8 +267,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				32DF8CEE23E77EC400C738F7 /* Base */,
-				32D2A05D2442EC4C006CEBA0 /* ru */,
-				324EC8F224439B11000552D1 /* en */,
+				3266393024449DB600445D4F /* en */,
+				326639322444A08B00445D4F /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -406,7 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.2;
+				CURRENT_PROJECT_VERSION = 1.1.3;
 				DEVELOPMENT_TEAM = 84ZHP38C6Z;
 				INFOPLIST_FILE = Grains/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -414,7 +414,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.surfSpot.Grains;
 				PRODUCT_NAME = "Крупы";
 				SWIFT_VERSION = 5.0;
@@ -427,7 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.2;
+				CURRENT_PROJECT_VERSION = 1.1.3;
 				DEVELOPMENT_TEAM = 84ZHP38C6Z;
 				INFOPLIST_FILE = Grains/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -435,7 +435,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.surfSpot.Grains;
 				PRODUCT_NAME = "Крупы";
 				SWIFT_VERSION = 5.0;

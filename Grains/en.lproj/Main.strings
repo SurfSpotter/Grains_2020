@@ -35,6 +35,9 @@
 /* Class = "UILabel"; text = "130:00"; ObjectID = "CsV-SR-Z0u"; */
 "CsV-SR-Z0u.text" = "130:00";
 
+/* Class = "UIButton"; normalTitle = "Write to us"; ObjectID = "DXS-Lu-MOQ"; */
+"DXS-Lu-MOQ.normalTitle" = "Write to us";
+
 /* Class = "UILabel"; text = "120 cal"; ObjectID = "Ha7-B9-Yb1"; */
 "Ha7-B9-Yb1.text" = "120 cal";
 
@@ -43,6 +46,9 @@
 
 /* Class = "UILabel"; text = "carbLabOut"; ObjectID = "NtY-pz-ubl"; */
 "NtY-pz-ubl.text" = "carbLabOut";
+
+/* Class = "UIButton"; normalTitle = "Востановить покупку"; ObjectID = "RNO-5w-rfA"; */
+"RNO-5w-rfA.normalTitle" = "Restore purshase";
 
 /* Class = "UITabBarItem"; title = "Еще"; ObjectID = "Rqd-MG-eWY"; */
 "Rqd-MG-eWY.title" = "Other";
@@ -56,9 +62,6 @@
 /* Class = "UILabel"; text = "Добавляйте сюда любимые крупы"; ObjectID = "TlA-Dy-eaM"; */
 "TlA-Dy-eaM.text" = "Add your favorite cereals";
 
-/* Class = "UIButton"; normalTitle = " Написать разработчику  "; ObjectID = "UKN-zh-TEb"; */
-"UKN-zh-TEb.normalTitle" = " Write to us  ";
-
 /* Class = "UILabel"; text = "ProtLabOut"; ObjectID = "Vtc-b7-33I"; */
 "Vtc-b7-33I.text" = "ProtLabOut";
 
@@ -70,9 +73,6 @@
 
 /* Class = "UIButton"; normalTitle = "  "; ObjectID = "aN9-tT-Gko"; */
 "aN9-tT-Gko.normalTitle" = "  ";
-
-/* Class = "UIButton"; normalTitle = "  Восстановить покупку"; ObjectID = "b7h-Uj-xxm"; */
-"b7h-Uj-xxm.normalTitle" = "  Restore purshase";
 
 /* Class = "UILabel"; text = "12 min"; ObjectID = "fZ0-xf-Iwn"; */
 "fZ0-xf-Iwn.text" = "12 min";

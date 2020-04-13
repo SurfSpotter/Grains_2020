@@ -769,7 +769,7 @@
                                             <color key="titleColor" name="CustomFontColourForOtherVc"/>
                                         </state>
                                         <connections>
-                                            <action selector="rateAppButtonAction:" destination="LQx-Pu-WCy" eventType="touchUpInside" id="MlK-Ny-FmT"/>
+                                            <action selector="wtiteToDeveloperButtAction:" destination="LQx-Pu-WCy" eventType="touchUpInside" id="PTz-n1-JAl"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -797,7 +797,7 @@
                                             <color key="titleColor" name="CustomFontColourForOtherVc"/>
                                         </state>
                                         <connections>
-                                            <action selector="rateAppButtonAction:" destination="LQx-Pu-WCy" eventType="touchUpInside" id="eeX-fM-fFu"/>
+                                            <action selector="restorePurchase:" destination="LQx-Pu-WCy" eventType="touchUpInside" id="ulQ-GI-A5B"/>
                                         </connections>
                                     </button>
                                 </subviews>

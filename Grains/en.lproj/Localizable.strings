@@ -18,7 +18,7 @@
 //MARK - Services
 
 "Ошибка" = "Error.";
-"Функция недоступна. Возможно не выполнен вход в почтовую службу" = "The function is not available.";
+"Функция недоступна. Возможно не выполнен вход в почтовую службу" = "This function is not available.";
 
 "Привет! Ваше приложение просто супер!, но я бы добавил...(напишите ваше пожелание)" = "Hello! Your app is nice!. But I would add ... (write your wish)";
 
