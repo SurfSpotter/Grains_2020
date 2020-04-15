@@ -12,6 +12,10 @@ import MessageUI
 class OtherViewController: UIViewController {
 
 let buyInApp = StoreManager()
+ 
+    
+    @IBOutlet weak var buyFullVersionOut: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +32,31 @@ let buyInApp = StoreManager()
                }
         tabBarController?.tabBar.alpha = 0.9
         mesuresSCOutlet.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "uDSelectedMeasureIntCell")
+        
+//        if UserDefaults.standard.bool(forKey: "luffNoisrev") == true {
+//                   buyFullVersionOut.setTitle("У вас неограниченный таймер".localize(), for: .normal)
+//
+//                     }
+//                     else {
+//                   buyFullVersionOut.setTitle("Купить неограниченный таймер".localize().localize(), for: .normal)
+//
+//                     }
        
+      
+        
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.bool(forKey: "luffNoisrev") == true {
+                          buyFullVersionOut.setTitle("У вас неограниченный таймер".localize(), for: .normal)
+                                            
+                            }
+                            else {
+                          buyFullVersionOut.setTitle("Купить неограниченный таймер".localize().localize(), for: .normal)
+                                 
+                            }
     }
     
     // MARK: - Outlets:
@@ -50,7 +78,13 @@ let buyInApp = StoreManager()
     
     ///! Do purschase the App Function!
     @IBAction func purchaseFullVersion(_ sender: Any) {
-        buyInApp.buyInApp(inAppId: "grainsFullversion1")
+        if UserDefaults.standard.bool(forKey: "luffNoisrev") == false {
+            buyInApp.buyInApp(inAppId: "grainsFullversion1") }
+        else {
+            let alertYouDidBuy = UIAlertController(title: "Безлимитные таймеры уже куплены!", message: nil , preferredStyle: .alert)
+            alertYouDidBuy.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil ))
+            self.present(alertYouDidBuy, animated: true, completion: nil)
+        }
         
         
         

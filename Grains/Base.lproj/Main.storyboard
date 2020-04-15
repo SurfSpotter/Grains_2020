@@ -409,7 +409,7 @@
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <font key="NSFont" metaFont="message" size="11"/>
+                                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -844,6 +844,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Еще" image="ellipsis.circle" catalog="system" id="Rqd-MG-eWY"/>
                     <connections>
+                        <outlet property="buyFullVersionOut" destination="xIU-dX-QXC" id="4KK-5o-YVf"/>
                         <outlet property="mesuresSCOutlet" destination="w0X-1n-Oy5" id="GSu-i0-QdB"/>
                     </connections>
                 </viewController>
