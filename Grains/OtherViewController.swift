@@ -81,7 +81,7 @@ let buyInApp = StoreManager()
         if UserDefaults.standard.bool(forKey: "luffNoisrev") == false {
             buyInApp.buyInApp(inAppId: "grainsFullversion1") }
         else {
-            let alertYouDidBuy = UIAlertController(title: "Безлимитные таймеры уже куплены!", message: nil , preferredStyle: .alert)
+            let alertYouDidBuy = UIAlertController(title: "Безлимитные таймеры уже куплены!".localize(), message: nil , preferredStyle: .alert)
             alertYouDidBuy.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil ))
             self.present(alertYouDidBuy, animated: true, completion: nil)
         }
