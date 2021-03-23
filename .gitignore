@@ -54,7 +54,8 @@ DerivedData
 
 
 ### Xcode ###
-build/
+build/*
+!build/build.xml
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -70,3 +71,5 @@ DerivedData
 *.xcuserstate
 *.xcsettings
 .gitignore.swp
+*.db
+.db
