@@ -9,6 +9,7 @@
 import UIKit
 
 class MainTableViewCell: UITableViewCell {
+    
 
     @IBOutlet weak var imgOfGrain: UIImageView!
     
@@ -28,7 +29,6 @@ class MainTableViewCell: UITableViewCell {
     }
     
     func initCell (grain: Grain) {
-        
         imgOfGrain.image = UIImage(named: grain.grainImgName + "300px")
         nameOfGrainLabel.text = grain.name
         timeOfBoilLabel.text = String(grain.timeOfBoil) + " \(Model.shared.skloneniaMinut(boilTime: grain))"
