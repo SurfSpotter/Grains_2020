@@ -79,6 +79,7 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! MainTableViewCell
         let cellForGrains = Model.shared.grainsAllTogether[indexPath.row]
+        cell.selectionStyle = .none
         cell.initCell(grain: cellForGrains)
         return cell
         
