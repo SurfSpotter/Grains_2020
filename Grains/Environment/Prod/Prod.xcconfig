@@ -1,0 +1,13 @@
+//
+//  Prod.xcconfig
+//  Grains
+//
+//  Created by Алексей Чигарских on 29.03.2021.
+//  Copyright © 2021 Алексей Чигарских. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+AMPLITUDE_API_KEY = 4fc5967d422182a8ef537c992b5f5902
+AMPLITUDE_PROJECT_ID = 318295

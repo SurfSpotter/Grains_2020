@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323D80812612506E0081029E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D80802612506E0081029E /* Environment.swift */; };
 		3250B7192437977E0009C36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DB9EF723EA105F00D07561 /* Assets.xcassets */; };
 		325C0ED424438AD200084772 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 325C0ED224438AD200084772 /* InfoPlist.strings */; };
 		325C593C2417E7EF0067B3BC /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325C593B2417E7EF0067B3BC /* StoreManager.swift */; };
@@ -33,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		30918B2462396B9221BAF27B /* Pods-Grains.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grains.release.xcconfig"; path = "Target Support Files/Pods-Grains/Pods-Grains.release.xcconfig"; sourceTree = "<group>"; };
+		323D80802612506E0081029E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		323D8083261250CE0081029E /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
+		323D8084261250DA0081029E /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
 		325C0ED324438AD200084772 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		325C593B2417E7EF0067B3BC /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		325CC1F523F1EB690009551A /* likeMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeMe.png; sourceTree = "<group>"; };
@@ -73,6 +77,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		323D806C26124FE20081029E /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				323D80802612506E0081029E /* Environment.swift */,
+				323D807E261250480081029E /* Dev */,
+				323D807F2612504F0081029E /* Prod */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		323D806E26124FF20081029E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		323D807E261250480081029E /* Dev */ = {
+			isa = PBXGroup;
+			children = (
+				323D8083261250CE0081029E /* Dev.xcconfig */,
+			);
+			path = Dev;
+			sourceTree = "<group>";
+		};
+		323D807F2612504F0081029E /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+				323D8084261250DA0081029E /* Prod.xcconfig */,
+			);
+			path = Prod;
+			sourceTree = "<group>";
+		};
 		3250B71A243799D30009C36E /* BackGr */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,13 +129,13 @@
 			name = Managers;
 			sourceTree = "<group>";
 		};
-		32D2A0512442E396006CEBA0 /* Locatization En */ = {
+		32D2A0512442E396006CEBA0 /* Locatization */ = {
 			isa = PBXGroup;
 			children = (
 				32D2A05F2442F31C006CEBA0 /* Localizable.strings */,
 				325C0ED224438AD200084772 /* InfoPlist.strings */,
 			);
-			name = "Locatization En";
+			name = Locatization;
 			sourceTree = "<group>";
 		};
 		32DF8CDB23E77EC400C738F7 = {
@@ -124,7 +161,9 @@
 		32DF8CE623E77EC400C738F7 /* Grains */ = {
 			isa = PBXGroup;
 			children = (
-				32D2A0512442E396006CEBA0 /* Locatization En */,
+				323D806C26124FE20081029E /* Environment */,
+				323D806E26124FF20081029E /* Managers */,
+				32D2A0512442E396006CEBA0 /* Locatization */,
 				32DF8CED23E77EC400C738F7 /* Main.storyboard */,
 				32DF8CE723E77EC400C738F7 /* AppDelegate.swift */,
 				32DF8CE923E77EC400C738F7 /* SceneDelegate.swift */,
@@ -150,7 +189,6 @@
 				A3FC010332661F3CBC8C3F36 /* Pods-Grains.debug.xcconfig */,
 				30918B2462396B9221BAF27B /* Pods-Grains.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -303,6 +341,7 @@
 				32DB9ED123E9E0CB00D07561 /* MainTableViewController.swift in Sources */,
 				32C36A7E240E709C0027D410 /* OtherViewController.swift in Sources */,
 				32D2A0562442E444006CEBA0 /* LocalizationManager.swift in Sources */,
+				323D80812612506E0081029E /* Environment.swift in Sources */,
 				325CC20023F4BED90009551A /* FavTableViewCell.swift in Sources */,
 				32DF8CE823E77EC400C738F7 /* AppDelegate.swift in Sources */,
 				32DF8CEA23E77EC400C738F7 /* SceneDelegate.swift in Sources */,
@@ -357,6 +396,7 @@
 /* Begin XCBuildConfiguration section */
 		32DF8CF623E77ECA00C738F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 323D8083261250CE0081029E /* Dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -418,6 +458,7 @@
 		};
 		32DF8CF723E77ECA00C738F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 323D8084261250DA0081029E /* Prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;

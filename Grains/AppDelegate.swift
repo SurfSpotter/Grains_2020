@@ -13,6 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UserNotifications.shared.requestAuthorization()
 
+        print("Amplitude api-key: \(Environment.amplitudeApiKey)")
+        print("Amplitude project-id: \(Environment.amplituProjectId)")
         return true
     }
 
