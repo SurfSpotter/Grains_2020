@@ -1,0 +1,16 @@
+PODS:
+  - Amplitude (7.2.2)
+
+DEPENDENCIES:
+  - Amplitude (~> 7.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Amplitude
+
+SPEC CHECKSUMS:
+  Amplitude: 517cdc7c485bda64b685174426ecbf17746eb16a
+
+PODFILE CHECKSUM: 7e300609ac2af727f14e1c910776ce462817c1f9
+
+COCOAPODS: 1.10.1
