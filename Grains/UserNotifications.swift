@@ -11,48 +11,39 @@ import UserNotifications
 
 class UserNotifications: NSObject {
     static let shared = UserNotifications()
-    
-    
+
     func requestAuthorization() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (success, error) in
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { success, error in
             if success {
                 //
-            }
-            else {
-                print (error?.localizedDescription ?? "error of authorization Notification")
+            } else {
+                print(error?.localizedDescription ?? "error of authorization Notification")
             }
         }
     }
-    
-    
-    func createNotification(timeInSeconds: Int, nameOfGrain: String ) {
+
+    func createNotification(timeInSeconds: Int, nameOfGrain: String) {
         let content = UNMutableNotificationContent()
         content.title = nameOfGrain
-        //content.subtitle = "\(timeInSeconds.timeOfBoil) \(Model.shared.skloneniaMinut(boilTime: timeInSeconds))"
+        // content.subtitle = "\(timeInSeconds.timeOfBoil) \(Model.shared.skloneniaMinut(boilTime: timeInSeconds))"
         content.body = "Ваше блюдо готово, приятного аппетита!".localize()
         content.sound = .default
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: Double(timeInSeconds), repeats: false)
         let request = UNNotificationRequest(identifier: "notification", content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request) { (error) in
+        UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
-                print (error.localizedDescription)
+                print(error.localizedDescription)
+            }
         }
     }
-    
-  
-}
-
 }
 
 extension UserNotifications: UNUserNotificationCenterDelegate {
-   
-
-    
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        print ("Did receive Notification")
+    func userNotificationCenter(_: UNUserNotificationCenter, didReceive _: UNNotificationResponse, withCompletionHandler _: @escaping () -> Void) {
+        print("Did receive Notification")
     }
-    
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+
+    func userNotificationCenter(_: UNUserNotificationCenter, willPresent _: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.alert])
     }
 }
