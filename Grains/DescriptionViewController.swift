@@ -208,6 +208,8 @@ class DescriptionViewController: UIViewController {
     @IBOutlet var addToFavButOut: UIButton!
 
     @IBAction func addToFavButAction(_: Any) {
+        //Analytics
+        AnalyticsManager.shared.logEvent(.add_to_farovites_btn_pressed)
         if descriptionGrainClass != nil {
             if saveInUDBoolStatOfFav.object(forKey: descriptionGrainClass!.name) == nil {
                 saveInUDBoolStatOfFav.set(true, forKey: descriptionGrainClass!.name)
@@ -312,6 +314,8 @@ class DescriptionViewController: UIViewController {
     }
 
     @IBAction func setTimerAction(_: Any) {
+        //Analytics
+        AnalyticsManager.shared.logEvent(.timer_btn_pressed)
         alertAndPurshasingForTimer()
     }
 
@@ -404,6 +408,8 @@ class DescriptionViewController: UIViewController {
     // При нажатии на кнопку, переворачивется экран и показываются калории
 
     @IBAction func showCaloriesButton(_: Any) {
+        //Analytics
+        AnalyticsManager.shared.logEvent(.calories_btn_pressed)
         animationOfView(item: charactersViewOutlet)
         hideMainItems()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {

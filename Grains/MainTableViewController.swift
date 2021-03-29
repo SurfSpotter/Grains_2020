@@ -72,7 +72,7 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
     override func tableView(_: UITableView, didSelectRowAt selectedPath: IndexPath) {
         performSegue(withIdentifier: "goToDesctription", sender: self)
         //Analytics
-        
+        AnalyticsManager.shared.logEvent(.grain_selected, ["grain_name": Model.shared.grainsAllTogether[selectedPath.row].name])
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {

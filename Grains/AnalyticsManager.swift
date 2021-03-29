@@ -45,7 +45,9 @@ enum AnalyticsEvents: String {
     case view_terms_of_use
     case view_privacy_policy
     case grain_selected
-    case timer_selected
+    case timer_btn_pressed
+    case calories_btn_pressed
+    case add_to_farovites_btn_pressed
 }
 
 enum AnalyticsUserProperties: String {
