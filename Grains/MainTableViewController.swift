@@ -11,6 +11,9 @@ import UIKit
 class MainTableViewController: UITableViewController, UISearchControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Analytics
+        AnalyticsManager.shared.logEvent(.view_main)
+        
         // Rate App
         RateManager.rate()
         navigationController?.navigationBar.alpha = 0.1
@@ -66,8 +69,10 @@ class MainTableViewController: UITableViewController, UISearchControllerDelegate
 
     // Segue
 
-    override func tableView(_: UITableView, didSelectRowAt _: IndexPath) {
+    override func tableView(_: UITableView, didSelectRowAt selectedPath: IndexPath) {
         performSegue(withIdentifier: "goToDesctription", sender: self)
+        //Analytics
+        
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {

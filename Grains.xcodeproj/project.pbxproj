@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		323D80812612506E0081029E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D80802612506E0081029E /* Environment.swift */; };
+		323D808A261256520081029E /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323D8089261256520081029E /* AnalyticsManager.swift */; };
 		3250B7192437977E0009C36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DB9EF723EA105F00D07561 /* Assets.xcassets */; };
 		325C0ED424438AD200084772 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 325C0ED224438AD200084772 /* InfoPlist.strings */; };
 		325C593C2417E7EF0067B3BC /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325C593B2417E7EF0067B3BC /* StoreManager.swift */; };
@@ -37,6 +38,7 @@
 		323D80802612506E0081029E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		323D8083261250CE0081029E /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		323D8084261250DA0081029E /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
+		323D8089261256520081029E /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		325C0ED324438AD200084772 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		325C593B2417E7EF0067B3BC /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		325CC1F523F1EB690009551A /* likeMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeMe.png; sourceTree = "<group>"; };
@@ -87,13 +89,6 @@
 			path = Environment;
 			sourceTree = "<group>";
 		};
-		323D806E26124FF20081029E /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		323D807E261250480081029E /* Dev */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +116,7 @@
 		325C593D2417E8210067B3BC /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				323D8089261256520081029E /* AnalyticsManager.swift */,
 				32CBEEC4242418E1009ADDE9 /* UserNotifications.swift */,
 				325C593B2417E7EF0067B3BC /* StoreManager.swift */,
 				326D17FC24119A0800DE6195 /* RateManager.swift */,
@@ -162,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				323D806C26124FE20081029E /* Environment */,
-				323D806E26124FF20081029E /* Managers */,
+				325C593D2417E8210067B3BC /* Managers */,
 				32D2A0512442E396006CEBA0 /* Locatization */,
 				32DF8CED23E77EC400C738F7 /* Main.storyboard */,
 				32DF8CE723E77EC400C738F7 /* AppDelegate.swift */,
@@ -174,7 +170,6 @@
 				325CC1FF23F4BED90009551A /* FavTableViewCell.swift */,
 				32C36A7D240E709C0027D410 /* OtherViewController.swift */,
 				32DF8CFB23E787D700C738F7 /* Model.swift */,
-				325C593D2417E8210067B3BC /* Managers */,
 				32DF8CF223E77ECA00C738F7 /* LaunchScreen.storyboard */,
 				32DF8CF523E77ECA00C738F7 /* Info.plist */,
 				32DB9EF723EA105F00D07561 /* Assets.xcassets */,
@@ -350,6 +345,7 @@
 				326D17FD24119A0800DE6195 /* RateManager.swift in Sources */,
 				32DB9ED323E9FB0200D07561 /* MainTableViewCell.swift in Sources */,
 				325C593C2417E7EF0067B3BC /* StoreManager.swift in Sources */,
+				323D808A261256520081029E /* AnalyticsManager.swift in Sources */,
 				325CC1FE23F4A23B0009551A /* FavouritesTableViewController.swift in Sources */,
 				32CBEEC5242418E1009ADDE9 /* UserNotifications.swift in Sources */,
 			);

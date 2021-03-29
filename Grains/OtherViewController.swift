@@ -41,6 +41,8 @@ class OtherViewController: UIViewController {
     }
 
     override func viewDidAppear(_: Bool) {
+        //Analytics
+        AnalyticsManager.shared.logEvent(.view_settings)
         if UserDefaults.standard.bool(forKey: "luffNoisrev") == true {
             buyFullVersionOut.setTitle("У вас неограниченный таймер".localize(), for: .normal)
         } else {

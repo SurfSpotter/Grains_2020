@@ -27,7 +27,8 @@ class FavouritesTableViewController: UITableViewController {
     }
 
     override func viewWillAppear(_: Bool) {
-        // addBackgroundImage()
+        // Analytics
+        AnalyticsManager.shared.logEvent(.view_favorites)
     }
 
     // MARK: - Table view data source
