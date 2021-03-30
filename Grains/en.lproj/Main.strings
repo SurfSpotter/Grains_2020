@@ -51,7 +51,7 @@
 "RNO-5w-rfA.normalTitle" = "Restore purshase";
 
 /* Class = "UITabBarItem"; title = "Еще"; ObjectID = "Rqd-MG-eWY"; */
-"Rqd-MG-eWY.title" = "Other";
+"Rqd-MG-eWY.title" = "Settings";
 
 /* Class = "UITableViewController"; title = "MainTableViewController"; ObjectID = "Rxo-ts-tES"; */
 "Rxo-ts-tES.title" = "MainTableViewController";
@@ -60,7 +60,7 @@
 "SRX-wF-Ab7.text" = "CaloriesLabOut";
 
 /* Class = "UILabel"; text = "Добавляйте сюда любимые крупы"; ObjectID = "TlA-Dy-eaM"; */
-"TlA-Dy-eaM.text" = "Add your favorite cereals";
+"TlA-Dy-eaM.text" = "Your favorite grains will be here";
 
 /* Class = "UILabel"; text = "ProtLabOut"; ObjectID = "Vtc-b7-33I"; */
 "Vtc-b7-33I.text" = "ProtLabOut";

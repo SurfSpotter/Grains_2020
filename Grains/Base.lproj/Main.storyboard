@@ -850,7 +850,7 @@
                             <constraint firstItem="eVT-pz-FRg" firstAttribute="height" secondItem="qeE-4N-sEt" secondAttribute="height" constant="28" id="wUz-ze-853"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Еще" image="ellipsis.circle" catalog="system" id="Rqd-MG-eWY"/>
+                    <tabBarItem key="tabBarItem" title="Еще" image="person.crop.circle" catalog="system" id="Rqd-MG-eWY"/>
                     <connections>
                         <outlet property="buyFullVersionOut" destination="xIU-dX-QXC" id="4KK-5o-YVf"/>
                         <outlet property="mesuresSCOutlet" destination="w0X-1n-Oy5" id="GSu-i0-QdB"/>
@@ -925,7 +925,6 @@
     <resources>
         <image name="7_1.jpg" width="439.55999755859375" height="781.20001220703125"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
-        <image name="ellipsis.circle" catalog="system" width="128" height="121"/>
         <image name="fire" width="256" height="256"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="heart" catalog="system" width="128" height="109"/>
@@ -935,6 +934,7 @@
         <image name="measures 3" width="60" height="60"/>
         <image name="minus.circle" catalog="system" width="128" height="121"/>
         <image name="oatmealNo2" width="1242" height="932"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <image name="purchaseApp 2" width="60" height="60"/>
         <image name="rateApp 4" width="60" height="60"/>
