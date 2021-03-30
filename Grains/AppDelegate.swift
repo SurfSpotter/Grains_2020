@@ -11,7 +11,6 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        UserNotifications.shared.requestAuthorization()
 
         AnalyticsManager.shared.setUpAmplitude(userId: nil)
         AnalyticsManager.shared.logEvent(.session_start)

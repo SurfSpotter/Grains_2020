@@ -317,6 +317,7 @@ class DescriptionViewController: UIViewController {
         //Analytics
         AnalyticsManager.shared.logEvent(.timer_btn_pressed)
         alertAndPurshasingForTimer()
+        UserNotifications.shared.requestAuthorization()
     }
 
     // MARK: Установи количество бесплатных таймеров здесь
