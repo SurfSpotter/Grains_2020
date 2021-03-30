@@ -15,6 +15,7 @@ class AnalyticsManager {
     /// Setup analitics services
     func setUpAmplitude(userId: String?) {
         Amplitude.instance().initializeApiKey(Environment.amplitudeApiKey)
+        Amplitude.instance().setUserId("test_user")
     }
 
     func logEvent(_ eventName: AnalyticsEvents, _ eventProperties: [String: Any]? = nil) {
